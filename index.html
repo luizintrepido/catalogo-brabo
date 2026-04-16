@@ -1,844 +1,954 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo do Brabo | Recar Automarcas</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Brabo — Veículos</title>
+  <meta name="description" content="Catálogo de veículos seminovos. Compre com confiança, fale no WhatsApp." />
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg2: #1a1a1a;
+      --bg3: #242424;
+      --border: #2e2e2e;
+      --orange: #ff6b00;
+      --orange2: #ff8c00;
+      --text: #f0f0f0;
+      --text2: #a0a0a0;
+      --green: #25d366;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.5);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
 
-  :root {
-    --bg: #0f0f0f;
-    --surface: #181818;
-    --card: #1e1e1e;
-    --border: #2a2a2a;
-    --orange: #f97316;
-    --gold: #d4a017;
-    --text: #e8e8e8;
-    --muted: #888;
-    --white: #ffffff;
-  }
+    /* ── HEADER ── */
+    header {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      letter-spacing: -0.5px;
+      white-space: nowrap;
+    }
+    .logo span { color: var(--text); }
+    .header-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    #updated-at {
+      font-size: 0.75rem;
+      color: var(--text2);
+      white-space: nowrap;
+    }
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    min-height: 100vh;
-  }
+    /* ── SEARCH BAR ── */
+    .search-wrap {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    #search-input {
+      flex: 1;
+      min-width: 200px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    #search-input:focus { border-color: var(--orange); }
+    #search-input::placeholder { color: var(--text2); }
+    select.filter-select {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      outline: none;
+      cursor: pointer;
+    }
+    select.filter-select:focus { border-color: var(--orange); }
 
-  /* HEADER */
-  header {
-    background: var(--surface);
-    border-bottom: 2px solid var(--orange);
-    padding: 20px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  .logo-area {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-  }
-  .logo-eyebrow {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 500;
-  }
-  .logo-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 36px;
-    color: var(--white);
-    letter-spacing: 2px;
-  }
-  .logo-title span {
-    color: var(--orange);
-  }
-  .header-tag {
-    background: var(--orange);
-    color: #000;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 2px;
-  }
+    /* ── FILTER PILLS ── */
+    .pills-wrap {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 20px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pill {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--text2);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .pill:hover { border-color: var(--orange); color: var(--text); }
+    .pill.active {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff;
+    }
+    .pill-sep {
+      width: 1px;
+      height: 20px;
+      background: var(--border);
+      margin: 0 4px;
+    }
 
-  /* HERO STRIP */
-  .hero {
-    background: linear-gradient(135deg, #1a0a00 0%, #0f0f0f 50%, #1a1200 100%);
-    border-bottom: 1px solid var(--border);
-    padding: 40px 32px 32px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: 'ESTOQUE';
-    position: absolute;
-    right: -20px;
-    top: -20px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 180px;
-    color: rgba(249,115,22,0.04);
-    letter-spacing: 4px;
-    user-select: none;
-  }
-  .hero-label {
-    font-size: 11px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 6px;
-  }
-  .hero-headline {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 52px;
-    letter-spacing: 2px;
-    line-height: 1;
-    margin-bottom: 12px;
-  }
-  .hero-headline span { color: var(--orange); }
-  .hero-sub {
-    color: var(--muted);
-    font-size: 14px;
-    max-width: 480px;
-  }
-  .stats {
-    display: flex;
-    gap: 32px;
-    margin-top: 24px;
-  }
-  .stat {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 34px;
-    color: var(--orange);
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+    /* ── RESULTS INFO ── */
+    .results-bar {
+      padding: 10px 20px;
+      font-size: 0.82rem;
+      color: var(--text2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .results-bar strong { color: var(--orange); }
 
-  /* CONTROLS */
-  .controls {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 32px;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .search-wrap {
-    flex: 1;
-    min-width: 200px;
-    position: relative;
-  }
-  .search-wrap svg {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted);
-  }
-  input[type="text"] {
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 10px 12px 10px 38px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    outline: none;
-    transition: border .2s;
-  }
-  input[type="text"]:focus { border-color: var(--orange); }
-  input[type="text"]::placeholder { color: var(--muted); }
+    /* ── GRID ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 20px 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-  select {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 10px 14px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
-    transition: border .2s;
-  }
-  select:focus { border-color: var(--orange); }
+    /* ── CARD ── */
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--orange);
+    }
+    .card-img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      background: var(--bg3);
+      display: block;
+    }
+    .card-img-placeholder {
+      width: 100%;
+      aspect-ratio: 16/10;
+      background: var(--bg3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text2);
+      font-size: 2.5rem;
+    }
+    .card-body {
+      padding: 14px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 2px;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+    .badge-loja-recar { background: #1a3a5c; color: #60b0ff; }
+    .badge-loja-reauto { background: #3a1a00; color: #ff8c40; }
+    .badge-tipo {
+      background: var(--bg3);
+      color: var(--text2);
+      border: 1px solid var(--border);
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .card-versao {
+      font-size: 0.78rem;
+      color: var(--text2);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-specs {
+      display: flex;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: var(--text2);
+      margin-top: 2px;
+      flex-wrap: wrap;
+    }
+    .card-specs span { display: flex; align-items: center; gap: 3px; }
+    .card-price {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--orange);
+      margin-top: auto;
+      padding-top: 8px;
+    }
+    .card-price-zero { color: var(--text2); font-size: 0.9rem; font-weight: 400; }
+    .card-fotos-count {
+      font-size: 0.72rem;
+      color: var(--text2);
+    }
 
-  .filter-pills {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-  .pill {
-    padding: 7px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-    transition: all .2s;
-    letter-spacing: .5px;
-  }
-  .pill:hover { border-color: var(--orange); color: var(--orange); }
-  .pill.active { background: var(--orange); border-color: var(--orange); color: #000; font-weight: 700; }
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text2);
+    }
+    .empty-state .icon { font-size: 4rem; margin-bottom: 16px; }
+    .empty-state h3 { font-size: 1.2rem; color: var(--text); margin-bottom: 8px; }
 
-  .count-bar {
-    padding: 12px 32px;
-    font-size: 12px;
-    color: var(--muted);
-    border-bottom: 1px solid var(--border);
-  }
-  .count-bar strong { color: var(--orange); }
+    /* ── LOADING ── */
+    #loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      gap: 16px;
+      color: var(--text2);
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid var(--border);
+      border-top-color: var(--orange);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* GRID */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2px;
-    padding: 2px;
-  }
+    /* ── MODAL ── */
+    #modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    #modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+    #modal {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+      box-shadow: 0 8px 60px rgba(0,0,0,0.8);
+    }
+    #modal-close {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1001;
+      transition: background 0.2s;
+    }
+    #modal-close:hover { background: var(--orange); border-color: var(--orange); }
 
-  /* CARD */
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    transition: transform .25s, box-shadow .25s, border-color .25s;
-    display: flex;
-    flex-direction: column;
-    animation: fadeUp .4s ease both;
-  }
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(249,115,22,.18);
-    border-color: var(--orange);
-    z-index: 2;
-  }
+    /* ── GALLERY ── */
+    .gallery-wrap {
+      position: relative;
+      background: #000;
+      aspect-ratio: 16/9;
+    }
+    .gallery-main {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .gallery-main-wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      border: none;
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      z-index: 2;
+    }
+    .gallery-nav:hover { background: var(--orange); }
+    .gallery-nav.prev { left: 10px; }
+    .gallery-nav.next { right: 10px; }
+    .gallery-counter {
+      position: absolute;
+      bottom: 10px;
+      right: 14px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .gallery-thumbs {
+      display: flex;
+      gap: 6px;
+      padding: 10px 14px;
+      overflow-x: auto;
+      background: #111;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .gallery-thumbs::-webkit-scrollbar { height: 4px; }
+    .gallery-thumbs::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .gallery-thumb {
+      width: 70px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+      opacity: 0.6;
+      transition: opacity 0.15s, border-color 0.15s;
+    }
+    .gallery-thumb.active, .gallery-thumb:hover {
+      border-color: var(--orange);
+      opacity: 1;
+    }
+    .gallery-no-photo {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--text2);
+      font-size: 3rem;
+    }
+    .gallery-no-photo span { font-size: 0.9rem; }
 
-  .card-img {
-    height: 190px;
-    background: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .4s;
-  }
-  .card:hover .card-img img { transform: scale(1.06); }
-  .card-img-placeholder {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
-    color: rgba(255,255,255,.06);
-    letter-spacing: 2px;
-  }
+    /* ── MODAL DETAILS ── */
+    .modal-details {
+      padding: 20px 24px 28px;
+    }
+    .modal-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .modal-title-block { flex: 1; min-width: 200px; }
+    .modal-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    .modal-versao {
+      font-size: 0.88rem;
+      color: var(--text2);
+      margin-top: 4px;
+    }
+    .modal-price-block { text-align: right; }
+    .modal-price {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--orange);
+    }
+    .modal-price-zero { font-size: 1rem; color: var(--text2); }
 
-  .badge-loja {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 2px;
-  }
-  .badge-reauto { background: #1d4ed8; color: white; }
-  .badge-recar { background: var(--orange); color: #000; }
+    /* specs grid */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .spec-item {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .spec-label {
+      font-size: 0.7rem;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .spec-value {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+    }
 
-  .badge-km {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,.75);
-    backdrop-filter: blur(4px);
-    font-size: 11px;
-    padding: 3px 8px;
-    border-radius: 2px;
-    color: var(--text);
-    font-weight: 500;
-  }
+    /* opcionais */
+    .opcionais-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .opcionais-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .opcional-tag {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 0.78rem;
+      color: var(--text2);
+    }
 
-  .card-body {
-    padding: 16px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .card-marca {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--orange);
-    font-weight: 700;
-  }
-  .card-modelo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    line-height: 1.1;
-    color: var(--white);
-    letter-spacing: .5px;
-  }
-  .card-versao {
-    font-size: 12px;
-    color: var(--muted);
-    line-height: 1.4;
-  }
+    /* CTA buttons */
+    .modal-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-wpp {
+      flex: 1;
+      min-width: 180px;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: filter 0.2s;
+    }
+    .btn-wpp:hover { filter: brightness(1.1); }
+    .btn-site {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-site:hover { border-color: var(--orange); color: var(--text); }
 
-  .card-meta {
-    display: flex;
-    gap: 12px;
-    margin-top: 4px;
-  }
-  .meta-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .meta-item svg { flex-shrink: 0; }
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: var(--text2);
+      margin-top: 20px;
+    }
+    footer a { color: var(--orange); text-decoration: none; }
 
-  .card-footer {
-    padding: 12px 16px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .price {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-  }
-  .price-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
-  .price-value {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px;
-    color: var(--orange);
-    letter-spacing: 1px;
-  }
-
-  .btn-cta {
-    background: var(--orange);
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    padding: 9px 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background .2s, transform .1s;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .btn-cta:hover { background: #ea6c0a; transform: scale(1.03); }
-
-  /* EMPTY */
-  .empty {
-    grid-column: 1/-1;
-    padding: 80px 32px;
-    text-align: center;
-    color: var(--muted);
-  }
-  .empty-icon {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    color: rgba(249,115,22,.1);
-  }
-
-  /* FOOTER */
-  footer {
-    background: var(--surface);
-    border-top: 2px solid var(--orange);
-    padding: 32px;
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  .footer-brand {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-  .footer-brand span { color: var(--orange); }
-  .footer-info { font-size: 13px; color: var(--muted); line-height: 1.8; }
-  .footer-info strong { color: var(--text); }
-
-  .hidden { display: none !important; }
-
-  @media (max-width: 600px) {
-    header { padding: 16px; }
-    .hero { padding: 24px 16px 20px; }
-    .hero-headline { font-size: 36px; }
-    .controls { padding: 12px 16px; }
-    .grid { grid-template-columns: 1fr; }
-  }
-</style>
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); padding: 0 12px 30px; }
+      .search-wrap { padding: 10px 12px; }
+      .pills-wrap { padding: 8px 12px; }
+      header { padding: 12px; }
+      .modal-details { padding: 16px; }
+      .modal-price { font-size: 1.4rem; }
+      .specs-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="logo-area">
-    <span class="logo-eyebrow">Grupo Reauto Veículos</span>
-    <div class="logo-title">O <span>BRABO</span> DAS VENDAS</div>
+  <div class="logo">Catálogo<span> Brabo</span></div>
+  <div class="header-right">
+    <span id="updated-at">Carregando...</span>
   </div>
-  <span class="header-tag">Catálogo Oficial</span>
 </header>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-label">Estoque atualizado</div>
-  <h1 class="hero-headline">Encontre seu <span>próximo carro</span></h1>
-  <p class="hero-sub">Mais de 90 veículos disponíveis entre Recar Automarcas e Reauto Veículos. Financiamento facilitado, aprovação rápida.</p>
-  <div class="stats">
-    <div class="stat"><span class="stat-num" id="totalCount">96</span><span class="stat-label">Veículos</span></div>
-    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Lojas</span></div>
-    <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Anos de mercado</span></div>
-  </div>
-</div>
-
-<!-- CONTROLS -->
-<div class="controls">
-  <div class="search-wrap">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="searchInput" placeholder="Buscar por modelo, marca...">
-  </div>
-  <select id="sortSelect">
-    <option value="">Ordenar por...</option>
+<!-- SEARCH + SORT -->
+<div class="search-wrap">
+  <input type="text" id="search-input" placeholder="Buscar por marca, modelo, versão..." />
+  <select id="sort-select" class="filter-select">
     <option value="preco-asc">Menor preço</option>
     <option value="preco-desc">Maior preço</option>
+    <option value="ano-desc">Mais novo</option>
+    <option value="ano-asc">Mais antigo</option>
     <option value="km-asc">Menor KM</option>
-    <option value="ano-desc">Ano mais novo</option>
   </select>
-  <select id="lojaSelect">
+  <select id="loja-select" class="filter-select">
     <option value="">Todas as lojas</option>
-    <option value="RECAR">Recar Automarcas</option>
-    <option value="REAUTO">Reauto Veículos</option>
+    <option value="RECAR">RECAR</option>
+    <option value="REAUTO">REAUTO</option>
   </select>
 </div>
 
-<div class="controls" style="padding-top:0;border-top:none;gap:8px">
-  <div class="filter-pills" id="pillsContainer">
-    <button class="pill active" data-filter="TODOS">Todos</button>
-    <button class="pill" data-filter="SUV">SUV</button>
-    <button class="pill" data-filter="HATCH">Hatch</button>
-    <button class="pill" data-filter="SEDAN">Sedã</button>
-    <button class="pill" data-filter="PICAPE">Picape</button>
-    <button class="pill" data-filter="MOTO">Moto</button>
-    <button class="pill" data-filter="ATE70K">Até R$ 70k</button>
-    <button class="pill" data-filter="70A100K">R$ 70k–100k</button>
-    <button class="pill" data-filter="ACIMA100K">Acima R$ 100k</button>
-  </div>
+<!-- FILTER PILLS -->
+<div class="pills-wrap">
+  <span style="font-size:0.8rem;color:var(--text2);margin-right:4px;">Tipo:</span>
+  <button class="pill active" data-tipo="">Todos</button>
+  <button class="pill" data-tipo="SUV">SUV</button>
+  <button class="pill" data-tipo="HATCH">Hatch</button>
+  <button class="pill" data-tipo="SEDAN">Sedan</button>
+  <button class="pill" data-tipo="PICAPE">Picape</button>
+  <button class="pill" data-tipo="MOTO">Moto</button>
+  <div class="pill-sep"></div>
+  <span style="font-size:0.8rem;color:var(--text2);margin-right:4px;">Preço:</span>
+  <button class="pill" data-preco="">Todos</button>
+  <button class="pill" data-preco="0-50000">Até R$50k</button>
+  <button class="pill" data-preco="50000-80000">R$50k–80k</button>
+  <button class="pill" data-preco="80000-120000">R$80k–120k</button>
+  <button class="pill" data-preco="120000-999999">Acima R$120k</button>
 </div>
 
-<div class="count-bar"><strong id="resultCount">96</strong> veículos encontrados</div>
+<!-- RESULTS BAR -->
+<div class="results-bar">
+  <span id="results-count">...</span>
+</div>
+
+<!-- LOADING -->
+<div id="loading">
+  <div class="spinner"></div>
+  <span>Carregando catálogo...</span>
+</div>
 
 <!-- GRID -->
-<main style="padding:16px 16px">
-  <div class="grid" id="grid"></div>
-</main>
+<div class="grid" id="cars-grid" style="display:none;"></div>
+
+<!-- MODAL -->
+<div id="modal-overlay">
+  <button id="modal-close" title="Fechar">✕</button>
+  <div id="modal">
+    <!-- gallery -->
+    <div class="gallery-wrap" id="gallery-wrap">
+      <div class="gallery-main-wrap" id="gallery-main-wrap">
+        <div class="gallery-no-photo" id="gallery-no-photo">
+          🚗<span>Sem fotos disponíveis</span>
+        </div>
+      </div>
+      <button class="gallery-nav prev" id="gal-prev">‹</button>
+      <button class="gallery-nav next" id="gal-next">›</button>
+      <div class="gallery-counter" id="gal-counter"></div>
+    </div>
+    <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    <!-- details -->
+    <div class="modal-details" id="modal-details"></div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
-  <div>
-    <div class="footer-brand">O <span>BRABO</span> DAS VENDAS</div>
-    <p style="color:var(--muted);font-size:12px;margin-top:4px">@luiz.obrabodasvendas</p>
-  </div>
-  <div class="footer-info">
-    <strong>Recar Automarcas — Praia Grande/SP</strong><br>
-    (13) 3591-7174 | (13) 97408-6901
-  </div>
-  <div class="footer-info">
-    <strong>Reauto Veículos — Santos &amp; Praia Grande/SP</strong><br>
-    (13) 3221-2747 | (13) 3591-2747
-  </div>
+  <p>Catálogo atualizado automaticamente &bull; <a href="https://wa.me/5513991575019" target="_blank">WhatsApp: (13) 99157-5019</a></p>
 </footer>
 
 <script>
-const vehicles = [
-  // ── REAUTO VEÍCULOS ──────────────────────────────────────
-  { id:1, loja:'REAUTO', marca:'Volkswagen', modelo:'Saveiro', versao:'Robust 1.6 Total Flex 8V', ano:2021, km:74813, preco:67900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/915448/4ccf531f-ddd5-49b0-b7e3-2e170f80fe4b.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/saveiro-robust-1-6-total-flex-8v/2021/915448' },
-  { id:2, loja:'REAUTO', marca:'Hyundai', modelo:'Creta', versao:'Action 1.6 16V Flex Aut.', ano:2021, km:69487, preco:91900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/551103/ffc35728-7d36-4393-acab-bdf27f91440d.jpg', link:'https://reautoveiculos.com.br/carros/hyundai/creta-action-1-6-16v-flex-aut/2021/551103' },
-  { id:3, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Sense 200 TSI 1.0 Flex Aut.', ano:2024, km:55096, preco:104900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/952454/cd5a7470-57c7-41b9-b337-6d3cba0b7204.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-sense-1-0-tsi-flex-5p-aut-pcd/2024/952454' },
-  { id:4, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Sense 200 TSI 1.0 Flex Aut.', ano:2024, km:12800, preco:109900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/953363/948a497a-938d-4bbd-ba79-2c5d0a0e2a5f.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-sense-1-0-tsi-flex-5p-aut-pcd/2024/953363' },
-  { id:5, loja:'REAUTO', marca:'Volkswagen', modelo:'Fox', versao:'Connect 1.6 Flex 8V 5p', ano:2019, km:84248, preco:59900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/785529/e46f7936-2849-42a3-accb-04ce06843072.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/fox-connect-1-6-flex-8v-5p/2019/785529' },
-  { id:6, loja:'REAUTO', marca:'Peugeot', modelo:'2008', versao:'GT 1.0 Turbo Flex Aut.', ano:2025, km:1131, preco:139900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/953313/88a73e85-6703-4c9b-a786-6725f717fcb4.jpg', link:'https://reautoveiculos.com.br/carros/peugeot/2008-gt-1-0-turbo-flex-5p-aut/2025/953313' },
-  { id:7, loja:'REAUTO', marca:'Fiat', modelo:'Mobi', versao:'Trekking 1.0 Flex 5p', ano:2021, km:78020, preco:58900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/953118/798cde6a-3ebd-4983-b52f-4afbe3339974.jpg', link:'https://reautoveiculos.com.br/carros/fiat/mobi-trekking-1-0-flex-5p/2021/953118' },
-  { id:8, loja:'REAUTO', marca:'Ford', modelo:'Maverick', versao:'Lariat FX4 2.0 EcoBoost Aut.', ano:2022, km:50751, preco:162900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/364986/2b545a30-d8df-4aa7-9c18-97046b2c2f8b.jpg', link:'https://reautoveiculos.com.br/carros/ford/maverick-lariat-fx4-2-0-ecoboost-aut/2022/364986' },
-  { id:9, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Road Glide Special', versao:'Special', ano:2018, km:6144, preco:94900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/953304/28b5e428-237f-465c-b6cf-57bc8cd25a86.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/road-glide-special/2018/953304' },
-  { id:10, loja:'REAUTO', marca:'Hyundai', modelo:'HB20S', versao:'Comfort Plus 1.0 TB Flex Aut.', ano:2025, km:7287, preco:94900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/950607/4181243c-0013-4b4e-890b-0b3b0b39a004.jpg', link:'https://reautoveiculos.com.br/carros/hyundai/hb20s-comfort-plus-1-0-tb-flex-12v-aut/2025/950607' },
-  { id:11, loja:'REAUTO', marca:'Fiat', modelo:'Pulse', versao:'Drive 1.3 8V Flex Aut.', ano:2024, km:21296, preco:89900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/951253/815d5365-9a44-4aa7-a0f0-4421cb34028d.jpg', link:'https://reautoveiculos.com.br/carros/fiat/pulse-drive-1-3-8v-flex-aut/2024/951253' },
-  { id:12, loja:'REAUTO', marca:'Jeep', modelo:'Renegade', versao:'Limited 1.8 4x2 Flex Aut.', ano:2021, km:48217, preco:102900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/951974/d8b5ea28-d41b-4442-8d96-24b1e91620d9.jpg', link:'https://reautoveiculos.com.br/carros/jeep/renegade-limited-1-8-4x2-flex-16v-aut/2021/951974' },
-  { id:13, loja:'REAUTO', marca:'Fiat', modelo:'Mobi', versao:'Trekking 1.0 Flex 5p', ano:2021, km:83356, preco:58900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/952013/b44d242a-5c14-4c4d-9508-1e87d81e57bc.jpg', link:'https://reautoveiculos.com.br/carros/fiat/mobi-trekking-1-0-flex-5p/2021/952013' },
-  { id:14, loja:'REAUTO', marca:'Fiat', modelo:'Fastback', versao:'Audace 1.0 Turbo Flex Aut.', ano:2024, km:54359, preco:109900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/952049/b404c74b-cbbc-458e-80ef-aa00a310bf22.jpg', link:'https://reautoveiculos.com.br/carros/fiat/fastback-audace-1-0-200-t-flex-aut/2024/952049' },
-  { id:15, loja:'REAUTO', marca:'Fiat', modelo:'Mobi', versao:'Like 1.0 Fire Flex 5p', ano:2021, km:63450, preco:51900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/540283/d7baf6cc-f6ff-4ef6-9fd5-22c057210cfa.jpg', link:'https://reautoveiculos.com.br/carros/fiat/mobi-like-1-0-fire-flex-5p/2021/540283' },
-  { id:16, loja:'REAUTO', marca:'Citroën', modelo:'C4 Cactus', versao:'Live 1.6 16V Flex Aut.', ano:2022, km:76649, preco:71900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/947616/44378bd7-b3c9-4fef-a6d0-3e926ecb95a1.jpg', link:'https://reautoveiculos.com.br/carros/citroen/c4-cactus-live-1-6-16v-flex-aut/2022/947616' },
-  { id:17, loja:'REAUTO', marca:'Chevrolet', modelo:'Tracker', versao:'Premier 1.2 Turbo Flex Aut.', ano:2021, km:37699, preco:109900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/951133/d09f6635-21a9-468b-80c3-e65b2d6ca681.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-premier-1-2-turbo-12v-flex-aut/2021/951133' },
-  { id:18, loja:'REAUTO', marca:'Chevrolet', modelo:'Montana', versao:'LTZ 1.2 Turbo Flex Aut.', ano:2025, km:4391, preco:127900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/848848/cdb20ed4-5541-4a9f-927b-cd209aa45983.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/montana-ltz-1-2-turbo-flex-12v-4p-aut/2025/848848' },
-  { id:19, loja:'REAUTO', marca:'Chevrolet', modelo:'Montana', versao:'LT 1.2 Turbo Flex Mec.', ano:2024, km:14145, preco:109900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/829108/b21f18ca-09d7-4da3-a056-c94d26187458.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/montana-lt-1-2-turbo-flex-12v-4p-mec/2024/829108' },
-  { id:20, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Fat Boy', versao:'Low/Special FLSTFB', ano:2017, km:29332, preco:72900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/833739/c07455e1-8592-499f-8d12-df2f0f207611.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/fat-boy-low-special-flstfb/2017/833739' },
-  { id:21, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Fat Bob', versao:'114', ano:2024, km:3439, preco:112900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/881903/7e2586e7-2e68-48dd-80de-b24158707e61.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/fat-bob-114/2024/881903' },
-  { id:22, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Road Glide Limited', versao:'FLTRK', ano:2021, km:10900, preco:125900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/473506/7fc7bc33-cc1b-4357-a0c7-8196400b003d.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/road-glide-limited-fltrk/2021/473506' },
-  { id:23, loja:'REAUTO', marca:'BMW', modelo:'X1', versao:'sDrive20i 2.0 TB ActiveFlex Aut.', ano:2022, km:21266, preco:184900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/934576/e65ed445-38ab-4d9e-a836-1b6e5e55d93d.jpg', link:'https://reautoveiculos.com.br/carros/bmw/x1-sdrive-20i-2-0-2-0-tb-acti-flex-aut/2022/934576' },
-  { id:24, loja:'REAUTO', marca:'Volkswagen', modelo:'Polo', versao:'Highline TSI 1.0 Flex Aut.', ano:2024, km:14427, preco:102900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/945723/eaa4af50-3c41-461f-9875-657dec70af44.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/polo-highline-tsi-1-0-flex-12v-aut/2024/945723' },
-  { id:25, loja:'REAUTO', marca:'Chevrolet', modelo:'Onix', versao:'Hatch LT 1.0 TB Flex Mec.', ano:2023, km:30885, preco:77900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/946591/9a2b98da-8e7c-4218-ad7d-cae2344b6450.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/onix-hatch-lt-1-0-12v-tb-flex-5p-mec/2023/946591' },
-  { id:26, loja:'REAUTO', marca:'Jeep', modelo:'Compass', versao:'S T270 1.3 TB Flex Aut.', ano:2023, km:33653, preco:165900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/921353/0df726c6-52db-42a3-bbc6-bb45b09e4706.jpg', link:'https://reautoveiculos.com.br/carros/jeep/compass-s-t270-1-3-tb-4x2-flex-aut/2023/921353' },
-  { id:27, loja:'REAUTO', marca:'Chevrolet', modelo:'Spin', versao:'LT 1.8 8V Flex Aut.', ano:2020, km:67270, preco:71900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/148281/d035d8a5-c1cc-4aa1-83ec-cb6ac1a8bfb4.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/spin-lt-1-8-8v-econo-flex-5p-aut/2020/148281' },
-  { id:28, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Ultra Limited', versao:'Touring', ano:2022, km:10878, preco:133900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/877963/ad86ef5c-a677-43bb-86ec-6c95a1b08751.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/ultra-limited/2022/877963' },
-  { id:29, loja:'REAUTO', marca:'Jeep', modelo:'Compass', versao:'Longitude T270 1.3 TB Flex Aut.', ano:2023, km:55861, preco:131900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/936524/ea97e028-a34e-444e-a26d-e2f439d7c78c.jpg', link:'https://reautoveiculos.com.br/carros/jeep/compass-long-t270-1-3-tb-4x2-flex-aut/2023/936524' },
-  { id:30, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Fat Boy', versao:'FLFBS 114', ano:2020, km:10661, preco:88900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/710494/1d1586a3-b03e-40e7-8588-16314f4aaa29.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/fat-boy-flfbs/2020/710494' },
-  { id:31, loja:'REAUTO', marca:'Honda', modelo:'Fit', versao:'LX 1.5 Flexone 16V Aut.', ano:2018, km:37046, preco:79900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/935121/b29a4ba4-309d-496d-b747-94586ae4d3fe.jpg', link:'https://reautoveiculos.com.br/carros/honda/fit-lx-1-5-flexone-16v-5p-aut/2018/935121' },
-  { id:32, loja:'REAUTO', marca:'Toyota', modelo:'Yaris', versao:'XLS Sedan 1.5 Flex Aut.', ano:2025, km:9935, preco:115900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/934587/fc3be23a-639b-4ec8-b154-1c2e33747a8d.jpg', link:'https://reautoveiculos.com.br/carros/toyota/yaris-xls-sedan-1-5-flex-16v-4p-aut/2025/934587' },
-  { id:33, loja:'REAUTO', marca:'RAM', modelo:'Rampage', versao:'Rebel 2.0 TB 4X4 Diesel Aut.', ano:2024, km:14188, preco:199900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/935994/1d086aff-5bc6-415c-a1e5-ffaaa6f52fcd.jpg', link:'https://reautoveiculos.com.br/carros/ram/rampage-rebel-2-0-tb-cd-4x4-diesel-aut/2024/935994' },
-  { id:34, loja:'REAUTO', marca:'Nissan', modelo:'Kicks', versao:'Exclusive 1.6 16V Flex Aut.', ano:2022, km:35083, preco:104900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/927199/f2b58685-d34a-4baf-a47e-3d004cdc3c59.jpg', link:'https://reautoveiculos.com.br/carros/nissan/kicks-exclusive-1-6-16v-flex-aut/2022/927199' },
-  { id:35, loja:'REAUTO', marca:'Jeep', modelo:'Compass', versao:'S 2.0 4x4 Diesel Aut.', ano:2021, km:62013, preco:134900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/928298/ac5a5c6b-583c-4b45-9262-1afcbaedb4bc.jpg', link:'https://reautoveiculos.com.br/carros/jeep/compass-s-2-0-4x4-tb-16v-diesel-aut/2021/928298' },
-  { id:36, loja:'REAUTO', marca:'Toyota', modelo:'Yaris', versao:'XL Plus Hatch 1.5 Flex Aut.', ano:2022, km:66193, preco:88900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/925122/1289fc6b-0d4e-402b-a651-b594e983239e.jpg', link:'https://reautoveiculos.com.br/carros/toyota/yaris-xl-plus-con-1-5-flex-16v-5p-aut/2022/925122' },
+  const JSON_URL = 'https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/main/vehicles.json';
+  const WHATSAPP = '5513991575019';
 
-  // ── RECAR AUTOMARCAS ────────────────────────────────────
-  { id:37, loja:'RECAR', marca:'Audi', modelo:'Q3', versao:'1.4 TFSI Ambiente Flex S Tronic', ano:2018, km:80000, preco:94900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622559/1_095624.jpg', link:'https://recarautomarcas.com.br/Veiculo/q3-1.4-tfsi-ambiente-flex-4p-s-tronic-flex-2018/4622559/detalhes' },
-  { id:38, loja:'RECAR', marca:'Chery', modelo:'Tiggo 2', versao:'1.5 MPFI 16V Flex Look Manual', ano:2019, km:78000, preco:62900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4227272/1_121619.jpg', link:'https://recarautomarcas.com.br/Veiculo/tiggo-2-1.5-mpfi-16v-flex-look-4p-manual-flex-2019/4227272/detalhes' },
-  { id:39, loja:'RECAR', marca:'Chery', modelo:'Tiggo 8', versao:'1.6 TGDI Gasolina TXS DCT', ano:2023, km:0, preco:142900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622557/1_030500.jpg', link:'https://recarautomarcas.com.br/Veiculo/tiggo-8-1.6-tgdi-gasolina-txs-dct-gasolina-2023/4622557/detalhes' },
-  { id:40, loja:'RECAR', marca:'Chevrolet', modelo:'Onix', versao:'1.0 Turbo Flex LTZ Manual', ano:2021, km:79600, preco:69900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4622556/1_095722.jpg', link:'https://recarautomarcas.com.br/Veiculo/onix-1.0-turbo-flex-ltz-manual-flex-2021/4622556/detalhes' },
-  { id:41, loja:'RECAR', marca:'Fiat', modelo:'Mobi', versao:'1.0 8V EVO Flex Like Manual', ano:2018, km:104400, preco:49900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4639222/1_095605.jpg', link:'https://recarautomarcas.com.br/Veiculo/mobi-1.0-8v-evo-flex-like.-manual-flex-2018/4639222/detalhes' },
-  { id:42, loja:'RECAR', marca:'Fiat', modelo:'Pulse', versao:'1.3 Flex Drive Manual', ano:2023, km:80000, preco:85900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4492433/1_110039.jpg', link:'https://recarautomarcas.com.br/Veiculo/pulse-1.3-flex-drive-manual-flex-2023/4492433/detalhes' },
-  { id:43, loja:'RECAR', marca:'Fiat', modelo:'Uno', versao:'1.0 Fire Flex Attractive Manual', ano:2021, km:117900, preco:49900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4622553/1_095919.jpg', link:'https://recarautomarcas.com.br/Veiculo/uno-1.0-fire-flex-attractive-manual-flex-2021/4622553/detalhes' },
-  { id:44, loja:'RECAR', marca:'Ford', modelo:'EcoSport', versao:'2.0 Titanium 16V Flex Aut.', ano:2014, km:122000, preco:53900, tipo:'SUV', img:'https://www.autocerto.com/images/emBreve.jpg', link:'https://recarautomarcas.com.br/Veiculo/ecosport-2.0-titanium-16v-flex-4p-automatico-flex-2014/4435130/detalhes' },
-  { id:45, loja:'RECAR', marca:'Ford', modelo:'EcoSport', versao:'1.5 TiVCT Flex Freestyle Manual', ano:2018, km:94000, preco:72900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4180355/1_084606.jpg', link:'https://recarautomarcas.com.br/Veiculo/ecosport-1.5-tivct-flex-freestyle-manual-flex-2018/4180355/detalhes' },
-  { id:46, loja:'RECAR', marca:'Ford', modelo:'EcoSport', versao:'1.6 Freestyle 16V Flex Powershift', ano:2017, km:88000, preco:63900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4180323/1_023415.jpg', link:'https://recarautomarcas.com.br/Veiculo/ecosport-1.6-freestyle-16v-flex-4p-powershift-flex-2017/4180323/detalhes' },
-  { id:47, loja:'RECAR', marca:'Honda', modelo:'Civic', versao:'1.8 LXS 16V Flex 4p Aut.', ano:2015, km:137000, preco:72900, tipo:'SEDAN', img:'https://www.autocerto.com/fotos/4130/4120943/1_100726.jpg', link:'https://recarautomarcas.com.br/Veiculo/civic-1.8-lxs-16v-flex-4p-automatico-flex-2015/4120943/detalhes' },
-  { id:48, loja:'RECAR', marca:'Honda', modelo:'CR-V', versao:'2.0 EXL 4X4 16V Gasolina Aut.', ano:2012, km:101260, preco:85900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4275253/1_085241.jpg', link:'https://recarautomarcas.com.br/Veiculo/crv-2.0-exl-4x4-16v-gasolina-4p-automatico-gasolina-2012/4275253/detalhes' },
-  { id:49, loja:'RECAR', marca:'Honda', modelo:'Fit', versao:'1.5 LX 16V Flex 4p Aut.', ano:2017, km:96000, preco:71900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4639226/1_061120.jpg', link:'https://recarautomarcas.com.br/Veiculo/fit-1.5-lx-16v-flex-4p-automatico-flex-2017/4639226/detalhes' },
-  { id:50, loja:'RECAR', marca:'Honda', modelo:'Fit', versao:'1.5 EX 16V Flex 4p Aut.', ano:2019, km:105309, preco:84900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4120984/1_013050.jpg', link:'https://recarautomarcas.com.br/Veiculo/fit-1.5-ex-16v-flex-4p-automatico-flex-2019/4120984/detalhes' },
-  { id:51, loja:'RECAR', marca:'Honda', modelo:'HR-V', versao:'1.8 16V Flex EX 4p Aut.', ano:2019, km:97000, preco:99900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4639254/1_030855.jpg', link:'https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-ex-4p-automatico-flex-2019/4639254/detalhes' },
-  { id:52, loja:'RECAR', marca:'Honda', modelo:'HR-V', versao:'1.8 16V Flex EXL 4p Aut.', ano:2020, km:80000, preco:107900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4639230/1_050043.jpg', link:'https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-exl-4p-automatico-flex-2020/4639230/detalhes' },
-  { id:53, loja:'RECAR', marca:'Kia', modelo:'Soul', versao:'1.6 EX 16V Flex 4p Aut.', ano:2017, km:98000, preco:79900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4046376/1_115023.jpg', link:'https://recarautomarcas.com.br/Veiculo/soul-1.6-ex-16v-flex-4p-automatico-flex-2017/4046376/detalhes' },
-  { id:54, loja:'RECAR', marca:'Kia', modelo:'Soul', versao:'1.6 EX 16V Flex 4p Aut.', ano:2017, km:95000, preco:85900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/3935712/1_020444.jpg', link:'https://recarautomarcas.com.br/Veiculo/soul-1.6-ex-16v-flex-4p-automatico-flex-2017/3935712/detalhes' },
-  { id:55, loja:'RECAR', marca:'Land Rover', modelo:'Range Rover Evoque', versao:'2.0 SE Dynamic 4WD Aut.', ano:2016, km:87919, preco:114900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622551/1_100127.jpg', link:'https://recarautomarcas.com.br/Veiculo/range-rover-evoque-2.0-se-dynamic-4wd-16v-gasolina-4p-automatico-gasolina-2016/4622551/detalhes' },
-  { id:56, loja:'RECAR', marca:'Mitsubishi', modelo:'ASX', versao:'2.0 AWD 16V Flex 4p Aut.', ano:2018, km:122400, preco:83900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622549/1_100216.jpg', link:'https://recarautomarcas.com.br/Veiculo/asx-2.0-awd-16v-flex-4p-automatico-flex-2018/4622549/detalhes' },
-  { id:57, loja:'RECAR', marca:'Nissan', modelo:'Kicks', versao:'1.6 16V FlexStart Active Xtronic', ano:2022, km:83000, preco:89900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4639278/1_030727.jpg', link:'https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-active-xtronic-flex-2022/4639278/detalhes' },
-  { id:58, loja:'RECAR', marca:'Nissan', modelo:'Kicks', versao:'1.6 16V FlexStart SV 4p Xtronic', ano:2018, km:71000, preco:79900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622548/1_100306.jpg', link:'https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sv-4p-xtronic-flex-2018/4622548/detalhes' },
-  { id:59, loja:'RECAR', marca:'Nissan', modelo:'Kicks', versao:'1.6 16V FlexStart Sense Xtronic', ano:2023, km:0, preco:94900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622547/1_030630.jpg', link:'https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2023/4622547/detalhes' },
-  { id:60, loja:'RECAR', marca:'Nissan', modelo:'Kicks', versao:'1.6 16V FlexStart Sense Xtronic', ano:2024, km:60000, preco:101900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4410401/1_032611.jpg', link:'https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2024/4410401/detalhes' },
-  { id:61, loja:'RECAR', marca:'Nissan', modelo:'March', versao:'1.0 S 12V Flex 4p Manual', ano:2018, km:90000, preco:49900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4622546/1_100347.jpg', link:'https://recarautomarcas.com.br/Veiculo/march-1.0-s-12v-flex-4p-manual-flex-2018/4622546/detalhes' },
-  { id:62, loja:'RECAR', marca:'Peugeot', modelo:'2008', versao:'1.6 16V THP Flex Griffe Aut.', ano:2023, km:17000, preco:94900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622545/1_100430.jpg', link:'https://recarautomarcas.com.br/Veiculo/2008-1.6-16v-thp-flex-griffe-4p-automatico-flex-2023/4622545/detalhes' },
-  { id:63, loja:'RECAR', marca:'Renault', modelo:'Captur', versao:'1.6 16V SCE Flex Life X-Tronic', ano:2019, km:103323, preco:74900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4315467/1_115107.jpg', link:'https://recarautomarcas.com.br/Veiculo/captur-1.6-16v-sce-flex-life-x-tronic-flex-2019/4315467/detalhes' },
-  { id:64, loja:'RECAR', marca:'Renault', modelo:'Duster', versao:'2.0 Dynamique 4X2 16V Flex Aut.', ano:2017, km:142000, preco:64900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622542/1_100825.jpg', link:'https://recarautomarcas.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2017/4622542/detalhes' },
-  { id:65, loja:'RECAR', marca:'Renault', modelo:'Duster', versao:'2.0 Dynamique 4X2 16V Flex Aut.', ano:2017, km:101160, preco:64900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622541/1_100654.jpg', link:'https://recarautomarcas.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2017/4622541/detalhes' },
-  { id:66, loja:'RECAR', marca:'Renault', modelo:'Logan', versao:'1.0 12V SCE Flex Life Manual', ano:2022, km:49000, preco:59900, tipo:'SEDAN', img:'https://www.autocerto.com/fotos/4130/4622540/1_100925.jpg', link:'https://recarautomarcas.com.br/Veiculo/logan-1.0-12v-sce-flex-life-manual-flex-2022/4622540/detalhes' },
-  { id:67, loja:'RECAR', marca:'Renault', modelo:'Sandero', versao:'1.0 12V SCE Flex Expression Manual', ano:2020, km:83000, preco:52900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4622539/1_101006.jpg', link:'https://recarautomarcas.com.br/Veiculo/sandero-1.0-12v-sce-flex-expression-manual-flex-2020/4622539/detalhes' },
-  { id:68,  loja:'RECAR', marca:'Chevrolet', modelo:'Tracker', versao:'LT 1.0 Turbo Aut.', ano:2025, km:0, preco:118900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:69,  loja:'RECAR', marca:'Toyota', modelo:'Etios', versao:'XS 1.5 Flex Aut.', ano:2018, km:0, preco:68900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:70,  loja:'RECAR', marca:'Honda', modelo:'Civic', versao:'Sport 2.0 Flex G10 Aut.', ano:2019, km:0, preco:110900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:71,  loja:'RECAR', marca:'Hyundai', modelo:'HB20', versao:'Limited 1.0 Flex Aut.', ano:2025, km:0, preco:89900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:72,  loja:'RECAR', marca:'Volkswagen', modelo:'Nivus', versao:'Highline TSI 1.0 Flex Aut.', ano:2024, km:0, preco:119900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:73,  loja:'RECAR', marca:'Volkswagen', modelo:'T-Cross', versao:'TSI 1.0 Turbo Flex Aut.', ano:2025, km:0, preco:125900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:74,  loja:'RECAR', marca:'Hyundai', modelo:'Creta', versao:'Action 1.6 Flex Aut. (em preparação)', ano:2022, km:66000, preco:99900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:75,  loja:'RECAR', marca:'Hyundai', modelo:'HB20', versao:'Platinum Turbo 1.0 Flex Aut.', ano:2024, km:0, preco:95900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:76,  loja:'RECAR', marca:'Kia', modelo:'Sportage', versao:'EX 2.0 Flex Aut.', ano:2015, km:0, preco:84900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:77,  loja:'RECAR', marca:'Jeep', modelo:'Renegade', versao:'Limited 1.8 4x2 Flex Aut. c/ Teto Solar', ano:2021, km:0, preco:107900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:78,  loja:'RECAR', marca:'Toyota', modelo:'Yaris', versao:'XL Plus Connect 1.5 Flex Aut.', ano:2023, km:0, preco:83900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:79,  loja:'RECAR', marca:'Nissan', modelo:'Kicks', versao:'SL 1.6 CVT (em preparação)', ano:2017, km:74000, preco:82900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:80,  loja:'RECAR', marca:'Volkswagen', modelo:'Up Cross', versao:'TSI 1.0 iMotion Aut. (em preparação)', ano:2020, km:61000, preco:54900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:81,  loja:'RECAR', marca:'Nissan', modelo:'Versa', versao:'SV 1.6 CVT (em preparação)', ano:2017, km:0, preco:0, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:82,  loja:'RECAR', marca:'Renault', modelo:'Sandero Stepway', versao:'1.6 Manual (em preparação)', ano:2019, km:155000, preco:54900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:83,  loja:'RECAR', marca:'Volkswagen', modelo:'Nivus', versao:'Highline TSI 1.0 Flex Aut.', ano:2021, km:0, preco:105900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:84,  loja:'RECAR', marca:'Hyundai', modelo:'HB20', versao:'Comfort 1.0 Flex', ano:2024, km:0, preco:77900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:85,  loja:'RECAR', marca:'Citroën', modelo:'C4 Picasso', versao:'THP Intense 1.6 Flex Aut.', ano:2016, km:0, preco:76900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:86,  loja:'RECAR', marca:'Renault', modelo:'Sandero', versao:'1.0 Completo', ano:2018, km:110000, preco:45900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:87,  loja:'RECAR', marca:'Honda', modelo:'City', versao:'Hatch EXL 1.5 Flex Aut.', ano:2024, km:0, preco:124900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:88,  loja:'RECAR', marca:'Kia', modelo:'Sportage', versao:'2.0 Aut. BLINDADA', ano:2019, km:50000, preco:129900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:89,  loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'Xtreme 1.6 Flex', ano:2019, km:0, preco:62900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:90,  loja:'RECAR', marca:'Ford', modelo:'Ka', versao:'SE 1.0 Completo', ano:2019, km:100000, preco:49900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:91,  loja:'RECAR', marca:'Hyundai', modelo:'Creta', versao:'Comfort 1.0 Turbo Aut.', ano:2025, km:8000, preco:133900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:92,  loja:'RECAR', marca:'Hyundai', modelo:'Tucson', versao:'2.0 Aut. (em preparação)', ano:2015, km:83000, preco:64900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:93,  loja:'RECAR', marca:'Volkswagen', modelo:'Golf', versao:'Comfortline TSI 1.4 Aut. (em preparação)', ano:2020, km:78000, preco:74900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:94,  loja:'RECAR', marca:'Volkswagen', modelo:'Nivus', versao:'Highline TSI 1.0 Flex Aut.', ano:2023, km:0, preco:119900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:95,  loja:'RECAR', marca:'Volkswagen', modelo:'Jetta', versao:'Comfortline 2.0 Aut. (em preparação)', ano:2013, km:115000, preco:61900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:96,  loja:'RECAR', marca:'Kia', modelo:'Sportage', versao:'2.0 Flex Aut.', ano:2022, km:0, preco:139900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:97,  loja:'RECAR', marca:'Citroën', modelo:'C4 Cactus', versao:'Feel 1.6 Flex Aut.', ano:2024, km:0, preco:104900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:98,  loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'1.0 Completo (em preparação)', ano:2012, km:103000, preco:39900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:99,  loja:'RECAR', marca:'Toyota', modelo:'Etios', versao:'X Plus 1.5 Flex', ano:2021, km:0, preco:69900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:100, loja:'RECAR', marca:'Chevrolet', modelo:'Cruze', versao:'Sport LTZ 1.4 Turbo Aut. (em preparação)', ano:2018, km:34000, preco:91900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:101, loja:'RECAR', marca:'Volkswagen', modelo:'T-Cross', versao:'Comfortline 1.0 TSI Aut. IPVA Pago', ano:2024, km:14000, preco:124900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:102, loja:'RECAR', marca:'Volkswagen', modelo:'T-Cross', versao:'1.0 TSI Aut. (em preparação)', ano:2024, km:37000, preco:104900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:103, loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'Xtreme 1.6 Flex', ano:2018, km:0, preco:61900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:104, loja:'RECAR', marca:'Jeep', modelo:'Renegade', versao:'Limited 1.8 Flex Aut. c/ Teto Solar', ano:2021, km:46000, preco:107900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:105, loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'1.0 Manual (em preparação)', ano:2011, km:176000, preco:33900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:106, loja:'REAUTO', marca:'Chevrolet', modelo:'S10', versao:'Pick-Up LS 2.8 TDI 4x4 CD Diesel Mec.', ano:2022, km:75227, preco:139900, tipo:'PICAPE', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/778750/cccec0f8-05f2-4d54-8293-c74a23de3ae4.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/s10-pick-up-ls-2-8-tdi-4x4-cd-dies-mec/2022/778750' },
-  { id:107, loja:'REAUTO', marca:'Honda', modelo:'Civic', versao:'Sport 2.0 Flex 16V Aut. 4p', ano:2019, km:75499, preco:112900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/897070/3f043c5e-2431-4242-a95f-7157442bfe11.jpg', link:'https://reautoveiculos.com.br/carros/honda/civic-sedan-sport-2-0-flex-16v-aut-4p/2019/897070' },
-  { id:108, loja:'REAUTO', marca:'Chevrolet', modelo:'Onix Plus', versao:'Premier 1.0 TB Flex 12V Aut.', ano:2022, km:64350, preco:76900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/922914/722103ea-fd48-43c8-af38-cc46d6c376d4.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/onix-sed-plus-prem-1-0-12v-tb-flex-aut/2022/922914' },
-  { id:109, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'200 TSI 1.0 Flex 12V Aut.', ano:2025, km:17781, preco:129900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/796614/40b7399c-5873-4b77-986e-cab3f895824f.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-1-0-tsi-flex-12v-5p-aut/2025/796614' },
-  { id:110, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Fat Boy', versao:'117', ano:2025, km:502, preco:128900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/757276/1e852897-a29b-407d-92a8-50804c55aabb.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/fat-boy117/2025/757276' },
-  { id:111, loja:'REAUTO', marca:'Volkswagen', modelo:'Nivus', versao:'Highline 1.0 200 TSI Flex Aut.', ano:2021, km:72841, preco:108900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/906059/1911c137-8e95-44e9-9aa7-77c11fc45cac.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2021/906059' },
-  { id:112, loja:'REAUTO', marca:'Jeep', modelo:'Renegade', versao:'Limited 1.8 4x2 Flex 16V Aut.', ano:2021, km:50123, preco:107900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/905623/0c0a17f3-b486-44e4-80be-393c5e56e6f2.jpg', link:'https://reautoveiculos.com.br/carros/jeep/renegade-limited-1-8-4x2-flex-16v-aut/2021/905623' },
-  { id:113, loja:'REAUTO', marca:'Volkswagen', modelo:'Nivus', versao:'Highline 1.0 200 TSI Flex Aut.', ano:2023, km:34134, preco:119900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/874532/973497f6-1027-4217-859e-6c478d395494.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2023/874532' },
-  { id:114, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Comfortline 200 TSI 1.0 Flex Aut.', ano:2024, km:43540, preco:124900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/855303/9a1a65d5-68b9-420b-a3e5-ca7fbba069e9.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-comfortline-1-0-tsi-flex-5p-aut/2024/855303' },
-  { id:115, loja:'REAUTO', marca:'Volkswagen', modelo:'Nivus', versao:'Highline 1.0 200 TSI Flex Aut.', ano:2024, km:32137, preco:124900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/810648/a00c07c3-65f2-4f69-917d-6002460fc1f2.jpg', link:'https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2024/810648' },
-  { id:116, loja:'REAUTO', marca:'Kia', modelo:'Sportage', versao:'LX 2.0 16V Flex Aut.', ano:2015, km:92662, preco:87900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/864270/e25665ab-580c-4863-8b5f-c2e030b73fb5.jpg', link:'https://reautoveiculos.com.br/carros/kia-motors/sportage-lx-2-0-16v-2-0-16v-flex-aut/2015/864270' },
-  { id:117, loja:'REAUTO', marca:'Kia', modelo:'Sportage', versao:'EX 2.0 16V Flex Aut.', ano:2022, km:29998, preco:144900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/722447/bb0d2f76-8350-4058-ab17-7975184f5ef9.jpg', link:'https://reautoveiculos.com.br/carros/kia-motors/sportage-ex-2-0-16v-2-0-16v-flex-aut/2022/722447' },
-  { id:118, loja:'REAUTO', marca:'Hyundai', modelo:'HB20', versao:'Limited Plus 1.0 Flex 12V Mec.', ano:2025, km:26260, preco:89900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/843312/33968e2e-da67-48c3-9abe-4bfe5ce7951b.jpg', link:'https://reautoveiculos.com.br/carros/hyundai/hb20-limited-plus1-0-flex-12v-mec/2025/843312' },
-  { id:119, loja:'REAUTO', marca:'Honda', modelo:'City', versao:'Hatchback EXL 1.5 Flex 16V Aut.', ano:2024, km:15803, preco:129900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/824687/94ccd523-399e-403c-b4b7-2e2b6a54f830.jpg', link:'https://reautoveiculos.com.br/carros/honda/city-hatchback-exl-1-5-flex-16v-aut/2024/824687' },
-  { id:120, loja:'REAUTO', marca:'Citroën', modelo:'C4 Picasso', versao:'Intensive 1.6 Turbo 16V Aut.', ano:2016, km:88093, preco:76900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/859472/c56ccb95-b84c-4417-b683-b03c5c0d7fb8.jpg', link:'https://reautoveiculos.com.br/carros/citroen/c4-picasso-intensive-1-6-turbo-16v-aut/2016/859472' },
-  { id:121, loja:'REAUTO', marca:'Citroën', modelo:'C4 Cactus', versao:'Feel 1.6 16V Flex Aut.', ano:2024, km:28952, preco:104900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/840569/d1537778-4685-444a-87fc-ab9f8b2ebf2c.jpg', link:'https://reautoveiculos.com.br/carros/citroen/c4-cactus-feel-1-6-16v-flex-aut/2024/840569' },
-  { id:122, loja:'REAUTO', marca:'Chevrolet', modelo:'Tracker', versao:'LT 1.0 Turbo 12V Flex Aut.', ano:2025, km:32658, preco:118900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/828281/ba59bb67-18f4-45bd-b07b-1912ca38850d.jpg', link:'https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-lt-1-0-turbo-12v-flex-aut/2025/828281' },
-  { id:123, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Road Glide', versao:'Touring 2025', ano:2025, km:0, preco:211150, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/767769/ae69a7c5-07e6-4244-9047-c431ee5384e4.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/road-glide/2025/767769' },
-  { id:124, loja:'REAUTO', marca:'Hyundai', modelo:'HB20', versao:'Platinum 1.0 TB Flex 12V Aut.', ano:2024, km:31916, preco:95900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/722919/d54d9447-f8fb-4710-9ac2-4c9cc994a914.jpg', link:'https://reautoveiculos.com.br/carros/hyundai/hb20-platinum-1-0-tb-flex-12v-aut/2024/722919' },
-  { id:125, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Street Bob', versao:'117', ano:2025, km:0, preco:122900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/735347/c8be9359-2077-4a50-b3e8-051ceb62e8c4.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/street-bob-117/2025/735347' },
-  { id:126, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Street Glide', versao:'2026', ano:2026, km:0, preco:195350, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/735376/fd960c9b-560c-40c1-8171-d894cdc03470.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/street-glide/2026/735376' },
-  { id:127, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Street Glide', versao:'2026', ano:2026, km:0, preco:190600, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/624316/6a6729ad-d7d2-44be-a63d-4858c66bf3db.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/street-glide/2026/624316' },
-  { id:128, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Road Glide', versao:'2026', ano:2026, km:0, preco:194950, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/669961/e8efb7f4-315a-4352-b451-ebc6435b342c.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/road-glide/2026/669961' },
-  { id:129, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Low Rider ST', versao:'2025', ano:2025, km:0, preco:137900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/655713/bbd684e4-fabd-4f49-af77-9080aea391f5.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/low-rider-st/2025/655713' },
-  { id:130, loja:'REAUTO', marca:'Harley-Davidson', modelo:'Breakout', versao:'2025', ano:2025, km:0, preco:124900, tipo:'MOTO', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/624322/5dfd155e-7ee8-423b-a944-03a00460fad1.jpg', link:'https://reautoveiculos.com.br/motos/harley-davidson/breakout/2025/624322' },
-  { id:131, loja:'REAUTO', marca:'Fiat', modelo:'Pulse', versao:'Drive 1.3 8V Flex Aut.', ano:2022, km:53479, preco:89900, tipo:'SUV', img:'', link:'https://reautoveiculos.com.br/carros/fiat/pulse-drive-1-3-8v-flex-aut/2022/658178' },
-  { id:132, loja:'REAUTO', marca:'Chevrolet', modelo:'Celta', versao:'LT 1.0 MT 4p', ano:2014, km:74880, preco:39900, tipo:'HATCH', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:133, loja:'REAUTO', marca:'Chevrolet', modelo:'Cruze', versao:'LTZ Hatch 1.4 Turbo', ano:2018, km:34051, preco:91900, tipo:'HATCH', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:134, loja:'REAUTO', marca:'Chevrolet', modelo:'Tracker', versao:'LT 1.0 Turbo Aut.', ano:2021, km:30000, preco:92900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/961256/6cbbf8db-a3f4-4668-be18-c798a49abcfa.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:135, loja:'REAUTO', marca:'Fiat', modelo:'Argo', versao:'Drive 1.0 4p', ano:2024, km:56367, preco:69900, tipo:'HATCH', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:136, loja:'REAUTO', marca:'Ford', modelo:'Ka', versao:'SE 1.0 Hatch', ano:2021, km:75000, preco:52900, tipo:'HATCH', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:137, loja:'REAUTO', marca:'Honda', modelo:'City', versao:'Personal 1.5 Flex Aut.', ano:2019, km:1, preco:91900, tipo:'SEDAN', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/965597/c0f87311-afbb-4c26-87bf-faecfe347f29.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:138, loja:'REAUTO', marca:'Jeep', modelo:'Compass', versao:'Longitude 1.3T Flex Aut.', ano:2023, km:1, preco:131900, tipo:'SUV', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:139, loja:'REAUTO', marca:'Jeep', modelo:'Renegade', versao:'Limited 1.8 AT Flex c/ Teto Solar', ano:2021, km:46880, preco:102900, tipo:'SUV', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:140, loja:'REAUTO', marca:'Toyota', modelo:'Yaris', versao:'HB XL 1.3 Flex Aut.', ano:2020, km:64456, preco:86900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/955686/9ad95b73-2654-4687-8920-d9825690663f.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:141, loja:'REAUTO', marca:'Volkswagen', modelo:'Polo Track', versao:'1.0 Manual 4p', ano:2024, km:54000, preco:72900, tipo:'HATCH', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/877123/a00c07c3-65f2-4f69-917d-6002460fc1f2.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:142, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Comfortline 200 TSI 1.0 Flex Aut.', ano:2021, km:28500, preco:106900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/953799/a10cdd4b-597d-45e9-9ea0-4accbe5e8ead.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:143, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Sense 200 TSI 1.0 Flex Aut.', ano:2024, km:10, preco:104900, tipo:'SUV', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:144, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'Sense 200 TSI 1.0 Flex Aut.', ano:2021, km:46000, preco:93900, tipo:'SUV', img:'', link:'https://reautoveiculos.com.br/estoque' },
-  { id:145, loja:'REAUTO', marca:'Volkswagen', modelo:'T-Cross', versao:'200 TSI 1.0 Flex Aut.', ano:2024, km:10, preco:109900, tipo:'SUV', img:'https://resized-images.autoconf.com.br/520x390/filters:format(webp)/veiculos/fotos/962434/7ff09669-55f4-444e-8f2f-290af19507a2.jpg', link:'https://reautoveiculos.com.br/estoque' },
-  { id:146, loja:'RECAR', marca:'Chery', modelo:'Tiggo 8', versao:'1.6 TGDI Gasolina Básico', ano:2023, km:85000, preco:135900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4622557/1_030500.jpg', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:147, loja:'RECAR', marca:'Chevrolet', modelo:'Onix', versao:'1.4 Completo', ano:2018, km:50466, preco:64900, tipo:'HATCH', img:'https://www.autocerto.com/fotos/4130/4706792/1_101423.jpg', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:148, loja:'RECAR', marca:'Chevrolet', modelo:'Onix', versao:'1.4 LT Básico', ano:2015, km:133000, preco:49900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:149, loja:'RECAR', marca:'Fiat', modelo:'500', versao:'1.4 Dual 2p', ano:2012, km:110952, preco:39900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:150, loja:'RECAR', marca:'Fiat', modelo:'500', versao:'Cabrio Dualogic 2p', ano:2015, km:110640, preco:61900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:151, loja:'RECAR', marca:'Honda', modelo:'Civic', versao:'EX CVT 2.0 Flex', ano:2021, km:116442, preco:125900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:152, loja:'RECAR', marca:'Honda', modelo:'Civic', versao:'Sport CVT 2.0 Flex', ano:2019, km:128400, preco:105900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:153, loja:'RECAR', marca:'Honda', modelo:'Fit', versao:'Personal 1.5 Flex Aut.', ano:2018, km:125400, preco:76900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:154, loja:'RECAR', marca:'Hyundai', modelo:'Tucson', versao:'GLS 2.0 Flex Aut.', ano:2014, km:141800, preco:56900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:155, loja:'RECAR', marca:'Hyundai', modelo:'Tucson', versao:'GLSB 2.0 Flex', ano:2015, km:1, preco:64900, tipo:'SUV', img:'https://www.autocerto.com/fotos/4130/4706811/1_101650.jpg', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:156, loja:'RECAR', marca:'Kia', modelo:'Sportage', versao:'LX2 2.0 Flex Aut.', ano:2013, km:97500, preco:72900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:157, loja:'RECAR', marca:'Nissan', modelo:'March', versao:'1.6 SL Manual 4p', ano:2016, km:92000, preco:49900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:158, loja:'RECAR', marca:'Nissan', modelo:'Versa', versao:'1.6 Sense Básico', ano:2019, km:105, preco:65900, tipo:'SEDAN', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:159, loja:'RECAR', marca:'Renault', modelo:'Captur', versao:'Life 1.6 Flex Aut.', ano:2019, km:1, preco:69900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:160, loja:'RECAR', marca:'Renault', modelo:'Duster', versao:'2.0 Dynamique 4X2 Flex Aut.', ano:2017, km:1, preco:64900, tipo:'SUV', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:161, loja:'RECAR', marca:'Renault', modelo:'Sandero', versao:'Stepway 1.6 Manual', ano:2019, km:155000, preco:54900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:162, loja:'RECAR', marca:'Toyota', modelo:'Yaris', versao:'Hatch 1.5 Flex Aut.', ano:2022, km:95668, preco:83900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:163, loja:'RECAR', marca:'Toyota', modelo:'Yaris', versao:'XL Plus 1.5 Flex', ano:2021, km:47821, preco:84900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:164, loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'1.6 G2 Completo', ano:2013, km:159850, preco:42900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:165, loja:'RECAR', marca:'Volkswagen', modelo:'Fox', versao:'1.0 GII Completo', ano:2013, km:125000, preco:41900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-  { id:166, loja:'RECAR', marca:'Volkswagen', modelo:'Golf', versao:'Comfortline 1.4 TSI Aut.', ano:2015, km:78106, preco:74900, tipo:'HATCH', img:'', link:'https://recarautomarcas.com.br/Veiculos' },
-];
+  let allVehicles = [];
+  let filtered = [];
+  let activeFilters = { tipo: '', preco: '' };
+  let currentGalIdx = 0;
+  let currentGalPhotos = [];
 
-let filtered = [...vehicles];
+  // ─── UTILS ────────────────────────────────────────────────────
+  const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
+  const fmtKm   = v => v ? v.toLocaleString('pt-BR') + ' km' : '—';
+  const thumbUrl = id => `https://drive.google.com/thumbnail?id=${id}&sz=w520`;
+  const fullUrl  = id => `https://drive.google.com/uc?id=${id}&export=view`;
 
-function proxyImg(url) {
-  if (!url || url.includes('emBreve')) return '';
-  return url;
-}
-
-function proxyFallback(url) {
-  if (!url || url.includes('emBreve')) return '';
-  const clean = url.replace(/^https?:\/\//, '');
-  return `https://wsrv.nl/?url=${encodeURIComponent(clean)}&w=520&h=390&fit=cover&output=jpg`;
-}
-
-function formatPreco(v) {
-  if (v === 0) return 'Consulte';
-  return 'R$ ' + v.toLocaleString('pt-BR');
-}
-function formatKm(v) {
-  return v === 0 ? '0 km' : v.toLocaleString('pt-BR') + ' km';
-}
-
-function renderCards(list) {
-  const grid = document.getElementById('grid');
-  document.getElementById('resultCount').textContent = list.length;
-  if (list.length === 0) {
-    grid.innerHTML = '<div class="empty"><div class="empty-icon">:(</div><p>Nenhum veículo encontrado</p></div>';
-    return;
-  }
-  grid.innerHTML = list.map((v, i) => {
-    const badgeClass = v.loja === 'RECAR' ? 'badge-recar' : 'badge-reauto';
-    const badgeLabel = v.loja === 'RECAR' ? 'Recar' : 'Reauto';
-    const proxied = proxyImg(v.img);
-    const fallback = proxyFallback(v.img);
-    const noImgHtml = `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;background:#1a1a1a"><span style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#333;letter-spacing:2px">${v.marca.toUpperCase()}</span><span style="font-size:10px;color:#444;letter-spacing:1px;text-transform:uppercase">Foto em breve</span></div>`;
-    const imgId = 'img-' + v.id;
-    const imgHtml = proxied
-      ? `<img id="${imgId}" data-src="${proxied}" data-fallback="${fallback}" alt="${v.marca} ${v.modelo}" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .4s;opacity:0;transition:opacity .3s,transform .4s">`
-      : noImgHtml;
-
-    return `<div class="card" style="animation-delay:${Math.min(i*0.04,0.5)}s">
-      <div class="card-img">
-        ${imgHtml}
-        <span class="badge-loja ${badgeClass}">${badgeLabel}</span>
-        <span class="badge-km">${formatKm(v.km)}</span>
-      </div>
-      <div class="card-body">
-        <div class="card-marca">${v.marca}</div>
-        <div class="card-modelo">${v.modelo}</div>
-        <div class="card-versao">${v.versao}</div>
-        <div class="card-meta">
-          <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            ${v.ano}
-          </span>
-          <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            ${v.tipo}
-          </span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <div class="price">
-          <span class="price-label">a partir de</span>
-          <span class="price-value">${formatPreco(v.preco)}</span>
-        </div>
-        <a class="btn-cta" href="${v.link}" target="_blank">Ver detalhes</a>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-let activeFilter = 'TODOS';
-let searchVal = '';
-let lojaVal = '';
-let sortVal = '';
-
-function applyFilters() {
-  let list = [...vehicles];
-
-  if (searchVal) {
-    const q = searchVal.toLowerCase();
-    list = list.filter(v =>
-      v.modelo.toLowerCase().includes(q) ||
-      v.marca.toLowerCase().includes(q) ||
-      v.versao.toLowerCase().includes(q)
-    );
+  function fmtDate(iso) {
+    try {
+      const d = new Date(iso);
+      return d.toLocaleDateString('pt-BR', { day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' });
+    } catch { return iso; }
   }
 
-  if (lojaVal) list = list.filter(v => v.loja === lojaVal);
-
-  if (activeFilter !== 'TODOS') {
-    if (activeFilter === 'ATE70K') list = list.filter(v => v.preco < 70000);
-    else if (activeFilter === '70A100K') list = list.filter(v => v.preco >= 70000 && v.preco <= 100000);
-    else if (activeFilter === 'ACIMA100K') list = list.filter(v => v.preco > 100000);
-    else list = list.filter(v => v.tipo === activeFilter);
+  // ─── LOAD DATA ─────────────────────────────────────────────────
+  async function loadData() {
+    try {
+      const r = await fetch(JSON_URL + '?t=' + Date.now());
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const data = await r.json();
+      allVehicles = data.vehicles || [];
+      document.getElementById('updated-at').textContent = 'Atualizado em: ' + fmtDate(data.updated_at);
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('cars-grid').style.display = 'grid';
+      applyFilters();
+    } catch (e) {
+      document.getElementById('loading').innerHTML = `
+        <div style="text-align:center;color:var(--text2);">
+          <div style="font-size:3rem;margin-bottom:12px;">⚠️</div>
+          <p>Não foi possível carregar o catálogo.</p>
+          <p style="font-size:0.8rem;margin-top:8px;">${e.message}</p>
+          <button onclick="loadData()" style="margin-top:16px;padding:10px 20px;background:var(--orange);border:none;color:#fff;border-radius:8px;cursor:pointer;font-size:0.9rem;">Tentar novamente</button>
+        </div>`;
+    }
   }
 
-  if (sortVal === 'preco-asc') list.sort((a,b) => a.preco - b.preco);
-  else if (sortVal === 'preco-desc') list.sort((a,b) => b.preco - a.preco);
-  else if (sortVal === 'km-asc') list.sort((a,b) => a.km - b.km);
-  else if (sortVal === 'ano-desc') list.sort((a,b) => b.ano - a.ano);
+  // ─── FILTER & SORT ─────────────────────────────────────────────
+  function applyFilters() {
+    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    const sort = document.getElementById('sort-select').value;
+    const loja = document.getElementById('loja-select').value;
+    const tipoF = activeFilters.tipo;
+    const precoF = activeFilters.preco;
 
-  window.renderCards ? window.renderCards(list) : renderCards(list);
-}
+    filtered = allVehicles.filter(v => {
+      if (q) {
+        const hay = `${v.marca} ${v.modelo} ${v.versao} ${v.ano} ${v.tipo}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      if (loja && v.loja !== loja) return false;
+      if (tipoF && v.tipo !== tipoF) return false;
+      if (precoF) {
+        const [mn, mx] = precoF.split('-').map(Number);
+        if (v.preco < mn || v.preco > mx) return false;
+      }
+      return true;
+    });
 
-document.getElementById('searchInput').addEventListener('input', e => { searchVal = e.target.value; applyFilters(); });
-document.getElementById('sortSelect').addEventListener('change', e => { sortVal = e.target.value; applyFilters(); });
-document.getElementById('lojaSelect').addEventListener('change', e => { lojaVal = e.target.value; applyFilters(); });
+    // Sort
+    filtered.sort((a, b) => {
+      if (sort === 'preco-asc')  return (a.preco||0) - (b.preco||0);
+      if (sort === 'preco-desc') return (b.preco||0) - (a.preco||0);
+      if (sort === 'ano-desc')   return (b.ano||0) - (a.ano||0);
+      if (sort === 'ano-asc')    return (a.ano||0) - (b.ano||0);
+      if (sort === 'km-asc')     return (a.km||0) - (b.km||0);
+      return 0;
+    });
 
-document.getElementById('pillsContainer').addEventListener('click', e => {
-  const pill = e.target.closest('.pill');
-  if (!pill) return;
-  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-  pill.classList.add('active');
-  activeFilter = pill.dataset.filter;
-  applyFilters();
-});
+    renderGrid();
+  }
 
-document.getElementById("totalCount").textContent = vehicles.length;
-renderCards(vehicles);
+  // ─── RENDER GRID ──────────────────────────────────────────────
+  function renderGrid() {
+    const grid = document.getElementById('cars-grid');
+    const rc = document.getElementById('results-count');
 
-async function loadImg(img) {
-  const src = img.dataset.src;
-  if (!src) return;
+    rc.innerHTML = `Mostrando <strong>${filtered.length}</strong> de <strong>${allVehicles.length}</strong> veículos`;
 
-  try {
-    const resp = await fetch(src, { referrerPolicy: 'no-referrer', mode: 'cors' });
-    if (resp.ok) {
-      const blob = await resp.blob();
-      img.src = URL.createObjectURL(blob);
-      img.style.opacity = '1';
+    if (!filtered.length) {
+      grid.innerHTML = `<div class="empty-state">
+        <div class="icon">🔍</div>
+        <h3>Nenhum veículo encontrado</h3>
+        <p>Tente outros filtros ou termos de busca.</p>
+      </div>`;
       return;
     }
-  } catch(e) {}
 
-  try {
-    const clean = src.replace(/^https?:\/\//, '');
-    const proxyUrl = `https://wsrv.nl/?url=${encodeURIComponent(clean)}&w=520&h=390&fit=cover&output=jpg`;
-    const resp2 = await fetch(proxyUrl);
-    if (resp2.ok) {
-      const blob2 = await resp2.blob();
-      img.src = URL.createObjectURL(blob2);
-      img.style.opacity = '1';
+    grid.innerHTML = filtered.map((v, i) => {
+      const foto = v.fotos_drive && v.fotos_drive.length ? thumbUrl(v.fotos_drive[0]) : null;
+      const precoHtml = v.preco
+        ? `<div class="card-price">${fmtPreco(v.preco)}</div>`
+        : `<div class="card-price card-price-zero">Consultar preço</div>`;
+      const lojaClass = v.loja === 'RECAR' ? 'badge-loja-recar' : 'badge-loja-reauto';
+      const nFotos = v.fotos_drive ? v.fotos_drive.length : 0;
+
+      return `<div class="card" onclick="openModal(${i})">
+        ${foto
+          ? `<img class="card-img" src="${foto}" alt="${v.marca} ${v.modelo}" loading="lazy" onerror="this.parentElement.querySelector('.card-img-placeholder').style.display='flex';this.style.display='none';" /><div class="card-img-placeholder" style="display:none">🚗</div>`
+          : `<div class="card-img-placeholder">🚗</div>`}
+        <div class="card-body">
+          <div class="card-badges">
+            <span class="badge ${lojaClass}">${v.loja}</span>
+            <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
+          </div>
+          <div class="card-title">${v.marca} ${v.modelo}</div>
+          <div class="card-versao">${v.versao || '—'}</div>
+          <div class="card-specs">
+            <span>📅 ${v.ano || '—'}</span>
+            <span>🛣️ ${fmtKm(v.km)}</span>
+            ${v.cambio ? `<span>⚙️ ${v.cambio}</span>` : ''}
+          </div>
+          ${precoHtml}
+          ${nFotos > 0 ? `<div class="card-fotos-count">${nFotos} foto${nFotos>1?'s':''}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // ─── MODAL ─────────────────────────────────────────────────────
+  function openModal(idx) {
+    const v = filtered[idx];
+    if (!v) return;
+
+    currentGalPhotos = v.fotos_drive || [];
+    currentGalIdx = 0;
+
+    renderGallery();
+    renderModalDetails(v);
+
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function renderGallery() {
+    const mainWrap = document.getElementById('gallery-main-wrap');
+    const thumbsEl = document.getElementById('gallery-thumbs');
+    const counter  = document.getElementById('gal-counter');
+    const noPhoto  = document.getElementById('gallery-no-photo');
+    const prevBtn  = document.getElementById('gal-prev');
+    const nextBtn  = document.getElementById('gal-next');
+
+    if (!currentGalPhotos.length) {
+      mainWrap.innerHTML = '';
+      mainWrap.appendChild(noPhoto);
+      noPhoto.style.display = 'flex';
+      thumbsEl.innerHTML = '';
+      counter.textContent = '';
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
       return;
     }
-  } catch(e) {}
 
-  img.src = src;
-  img.referrerPolicy = 'no-referrer';
-  img.style.opacity = '1';
-  img.onerror = () => {
-    img.parentNode.innerHTML = img.parentNode.innerHTML.replace(img.outerHTML,
-      `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:100%;height:100%;background:#1a1a1a"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:#333">${img.alt.split(' ')[0].toUpperCase()}</span><span style="font-size:9px;color:#444;letter-spacing:1px">SEM FOTO</span></div>`
+    prevBtn.style.display = 'flex';
+    nextBtn.style.display = 'flex';
+    noPhoto.style.display = 'none';
+
+    // Main image
+    mainWrap.innerHTML = `<img class="gallery-main" id="gal-main-img" src="${thumbUrl(currentGalPhotos[0])}" alt="Foto do veículo" />`;
+
+    // Thumbs
+    thumbsEl.innerHTML = currentGalPhotos.map((id, i) =>
+      `<img class="gallery-thumb ${i===0?'active':''}" src="${thumbUrl(id)}" data-idx="${i}" alt="Foto ${i+1}" loading="lazy" />`
+    ).join('');
+
+    counter.textContent = `1 / ${currentGalPhotos.length}`;
+
+    // Thumb clicks
+    thumbsEl.querySelectorAll('.gallery-thumb').forEach(t => {
+      t.addEventListener('click', () => setGalPhoto(parseInt(t.dataset.idx)));
+    });
+  }
+
+  function setGalPhoto(idx) {
+    if (!currentGalPhotos.length) return;
+    idx = (idx + currentGalPhotos.length) % currentGalPhotos.length;
+    currentGalIdx = idx;
+
+    const mainImg = document.getElementById('gal-main-img');
+    if (mainImg) {
+      mainImg.src = thumbUrl(currentGalPhotos[idx]);
+    }
+
+    document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
+      t.classList.toggle('active', i === idx);
+    });
+
+    document.getElementById('gal-counter').textContent = `${idx+1} / ${currentGalPhotos.length}`;
+
+    // Scroll thumb into view
+    const thumb = document.querySelector(`.gallery-thumb[data-idx="${idx}"]`);
+    if (thumb) thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  document.getElementById('gal-prev').addEventListener('click', () => setGalPhoto(currentGalIdx - 1));
+  document.getElementById('gal-next').addEventListener('click', () => setGalPhoto(currentGalIdx + 1));
+
+  function renderModalDetails(v) {
+    const el = document.getElementById('modal-details');
+    const lojaClass = v.loja === 'RECAR' ? 'badge-loja-recar' : 'badge-loja-reauto';
+
+    const wppMsg = encodeURIComponent(
+      `Olá! Vi o ${v.marca} ${v.modelo} ${v.ano} no catálogo e quero mais informações.`
     );
-  };
-}
+    const wppLink = `https://wa.me/${v.whatsapp || WHATSAPP}?text=${wppMsg}`;
 
-function observeImages() {
-  const imgs = document.querySelectorAll('img[data-src]');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { loadImg(e.target); io.unobserve(e.target); } });
-  }, { rootMargin: '100px' });
-  imgs.forEach(img => io.observe(img));
-}
+    const specs = [
+      { label: 'Ano', value: v.ano || '—' },
+      { label: 'Quilometragem', value: fmtKm(v.km) },
+      { label: 'Câmbio', value: v.cambio || '—' },
+      { label: 'Combustível', value: v.combustivel || '—' },
+      { label: 'Cor', value: v.cor || '—' },
+      { label: 'Tipo', value: v.tipo || '—' },
+    ].filter(s => s.value && s.value !== '—' || s.label === 'Ano');
 
-const _origRender = renderCards;
-window.renderCards = function(list) {
-  _origRender(list);
-  setTimeout(observeImages, 50);
-};
-observeImages();
+    const specHtml = specs.map(s => `
+      <div class="spec-item">
+        <div class="spec-label">${s.label}</div>
+        <div class="spec-value">${s.value}</div>
+      </div>`).join('');
+
+    const opcionaisHtml = v.opcionais && v.opcionais.length
+      ? `<div class="opcionais-title">Opcionais</div>
+         <div class="opcionais-list">${v.opcionais.map(o => `<span class="opcional-tag">${o}</span>`).join('')}</div>`
+      : '';
+
+    const precoHtml = v.preco
+      ? `<div class="modal-price">${fmtPreco(v.preco)}</div>`
+      : `<div class="modal-price-zero">Consultar preço</div>`;
+
+    el.innerHTML = `
+      <div class="modal-top">
+        <div class="modal-title-block">
+          <div class="modal-badges">
+            <span class="badge ${lojaClass}">${v.loja}</span>
+            <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
+          </div>
+          <div class="modal-title">${v.marca} ${v.modelo}</div>
+          <div class="modal-versao">${v.versao || ''}</div>
+        </div>
+        <div class="modal-price-block">${precoHtml}</div>
+      </div>
+      <div class="specs-grid">${specHtml}</div>
+      ${opcionaisHtml}
+      <div class="modal-cta">
+        <a class="btn-wpp" href="${wppLink}" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero esse carro!
+        </a>
+        ${v.url_original ? `<a class="btn-site" href="${v.url_original}" target="_blank" rel="noopener">🔗 Ver anúncio original</a>` : ''}
+      </div>`;
+  }
+
+  // ─── EVENTS ────────────────────────────────────────────────────
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  document.getElementById('modal-overlay').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (!document.getElementById('modal-overlay').classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'ArrowLeft')  setGalPhoto(currentGalIdx - 1);
+    if (e.key === 'ArrowRight') setGalPhoto(currentGalIdx + 1);
+  });
+
+  document.getElementById('search-input').addEventListener('input', applyFilters);
+  document.getElementById('sort-select').addEventListener('change', applyFilters);
+  document.getElementById('loja-select').addEventListener('change', applyFilters);
+
+  // Tipo pills
+  document.querySelectorAll('.pill[data-tipo]').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('.pill[data-tipo]').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      activeFilters.tipo = p.dataset.tipo;
+      applyFilters();
+    });
+  });
+
+  // Preço pills
+  document.querySelectorAll('.pill[data-preco]').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('.pill[data-preco]').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      activeFilters.preco = p.dataset.preco;
+      applyFilters();
+    });
+  });
+
+  // ─── INIT ──────────────────────────────────────────────────────
+  loadData();
 </script>
 </body>
 </html>
