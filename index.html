@@ -625,7 +625,8 @@
     <!-- gallery -->
     <div class="gallery-wrap" id="gallery-wrap">
       <div class="gallery-main-wrap" id="gallery-main-wrap">
-        <div class="gallery-no-photo" id="gallery-no-photo">
+        <img class="gallery-main" id="gal-main-img" src="" alt="Foto do veículo" style="display:none" />
+        <div class="gallery-no-photo" id="gallery-no-photo" style="display:none">
           🚗<span>Sem fotos disponíveis</span>
         </div>
       </div>
@@ -792,7 +793,7 @@
   }
 
   function renderGallery() {
-    const mainWrap = document.getElementById('gallery-main-wrap');
+    const mainImg  = document.getElementById('gal-main-img');
     const thumbsEl = document.getElementById('gallery-thumbs');
     const counter  = document.getElementById('gal-counter');
     const noPhoto  = document.getElementById('gallery-no-photo');
@@ -800,31 +801,28 @@
     const nextBtn  = document.getElementById('gal-next');
 
     if (!currentGalPhotos.length) {
-      mainWrap.innerHTML = '';
-      mainWrap.appendChild(noPhoto);
-      noPhoto.style.display = 'flex';
-      thumbsEl.innerHTML = '';
-      counter.textContent = '';
-      prevBtn.style.display = 'none';
-      nextBtn.style.display = 'none';
+      mainImg.style.display  = 'none';
+      noPhoto.style.display  = 'flex';
+      thumbsEl.innerHTML     = '';
+      counter.textContent    = '';
+      prevBtn.style.display  = 'none';
+      nextBtn.style.display  = 'none';
       return;
     }
 
-    prevBtn.style.display = 'flex';
-    nextBtn.style.display = 'flex';
-    noPhoto.style.display = 'none';
-
-    // Main image
-    mainWrap.innerHTML = `<img class="gallery-main" id="gal-main-img" src="${thumbUrl(currentGalPhotos[0])}" alt="Foto do veículo" />`;
+    // Mostra imagem principal, esconde placeholder
+    noPhoto.style.display  = 'none';
+    mainImg.style.display  = 'block';
+    mainImg.src            = thumbUrl(currentGalPhotos[0]);
+    prevBtn.style.display  = 'flex';
+    nextBtn.style.display  = 'flex';
+    counter.textContent    = `1 / ${currentGalPhotos.length}`;
 
     // Thumbs
     thumbsEl.innerHTML = currentGalPhotos.map((id, i) =>
       `<img class="gallery-thumb ${i===0?'active':''}" src="${thumbUrl(id)}" data-idx="${i}" alt="Foto ${i+1}" loading="lazy" />`
     ).join('');
 
-    counter.textContent = `1 / ${currentGalPhotos.length}`;
-
-    // Thumb clicks
     thumbsEl.querySelectorAll('.gallery-thumb').forEach(t => {
       t.addEventListener('click', () => setGalPhoto(parseInt(t.dataset.idx)));
     });
@@ -836,9 +834,7 @@
     currentGalIdx = idx;
 
     const mainImg = document.getElementById('gal-main-img');
-    if (mainImg) {
-      mainImg.src = thumbUrl(currentGalPhotos[idx]);
-    }
+    if (mainImg) mainImg.src = thumbUrl(currentGalPhotos[idx]);
 
     document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
       t.classList.toggle('active', i === idx);
@@ -846,7 +842,6 @@
 
     document.getElementById('gal-counter').textContent = `${idx+1} / ${currentGalPhotos.length}`;
 
-    // Scroll thumb into view
     const thumb = document.querySelector(`.gallery-thumb[data-idx="${idx}"]`);
     if (thumb) thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   }
