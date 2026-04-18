@@ -697,6 +697,8 @@
       document.getElementById('loading').style.display = 'none';
       document.getElementById('cars-grid').style.display = 'grid';
       applyFilters();
+      // Abre automaticamente se a URL tiver #carro-{id}
+      checkHashAndOpenModal();
     } catch (e) {
       document.getElementById('loading').innerHTML = `
         <div style="text-align:center;color:var(--text2);">
@@ -804,11 +806,16 @@
 
     document.getElementById('modal-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    // Atualiza a URL com o ID do carro para link direto
+    history.pushState({ carId: v.id }, '', `#carro-${v.id}`);
   }
 
   function closeModal() {
     document.getElementById('modal-overlay').classList.remove('open');
     document.body.style.overflow = '';
+    // Remove o hash da URL ao fechar
+    history.pushState(null, '', window.location.pathname);
   }
 
   function renderGallery() {
@@ -927,6 +934,34 @@
       </div>`;
   }
 
+  // ─── LINK DIRETO POR HASH ──────────────────────────────────────
+  function checkHashAndOpenModal() {
+    const hash = window.location.hash; // ex: #carro-970817
+    if (!hash.startsWith('#carro-')) return;
+    const carId = hash.replace('#carro-', '');
+    const idx = filtered.findIndex(v => String(v.id) === carId);
+    if (idx !== -1) {
+      openModal(idx);
+    } else {
+      // Carro pode estar filtrado — busca em todos
+      const idxAll = allVehicles.findIndex(v => String(v.id) === carId);
+      if (idxAll !== -1) {
+        // Limpa filtros e abre
+        filtered = allVehicles;
+        openModal(idxAll);
+      }
+    }
+  }
+
+  // Também responde ao botão Voltar do navegador
+  window.addEventListener('popstate', () => {
+    if (!window.location.hash) {
+      closeModal();
+    } else {
+      checkHashAndOpenModal();
+    }
+  });
+
   // ─── COMPARTILHAR ──────────────────────────────────────────────
   let currentVehicle = null;
 
@@ -934,11 +969,11 @@
     const v = currentVehicle;
     if (!v) return;
 
-    const preco = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Consultar';
-    const km    = v.km    ? `${Number(v.km).toLocaleString('pt-BR')} km`    : '';
-    const url   = 'https://luizintrepido.github.io/catalogo-brabo/';
+    const preco  = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Consultar';
+    const km     = v.km    ? `${Number(v.km).toLocaleString('pt-BR')} km`    : '';
+    const url    = `https://luizintrepido.github.io/catalogo-brabo/#carro-${v.id}`;
 
-    const texto = `🚗 *${v.marca} ${v.modelo} ${v.ano}*\n${v.versao ? v.versao + '\n' : ''}💰 ${preco}${km ? '\n📍 ' + km : ''}\n\n🔗 Ver catálogo completo:\n${url}`;
+    const texto = `🚗 *${v.marca} ${v.modelo} ${v.ano}*\n${v.versao ? v.versao + '\n' : ''}💰 ${preco}${km ? '\n📍 ' + km : ''}\n\n🔗 Ver este carro:\n${url}`;
 
     // Tenta Web Share API (funciona no celular)
     if (navigator.share) {
