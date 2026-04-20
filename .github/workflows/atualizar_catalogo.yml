@@ -1,0 +1,38 @@
+name: Atualizar Catalogo Diariamente
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install requests beautifulsoup4 lxml google-api-python-client google-auth-httplib2 google-auth-oauthlib PyGithub playwright
+      - name: Instalar Chromium
+        run: python -m playwright install chromium --with-deps
+      - name: Restaurar credenciais Google Drive
+        run: |
+          printf "%s" "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" > scraper/credentials.json
+          printf "%s" "${{ secrets.GOOGLE_TOKEN_JSON }}" > scraper/token.json
+      - name: Executar scraper
+        working-directory: scraper
+        env:
+          CATALOG_GITHUB_TOKEN: ${{ secrets.CATALOG_GITHUB_TOKEN }}
+        run: python main.py --no-push
+      - name: Atualizar catalogo
+        run: |
+          cp scraper/vehicles.json vehicles.json
+          git config user.name "Catalogo Brabo Bot"
+          git config user.email "bot@noreply.github.com"
+          git add vehicles.json
+          git diff --staged --quiet && echo "Sem mudancas" || (git commit -m "Auto-update $(TZ=America/Sao_Paulo date +'%d/%m/%Y %H:%M')" && git push)
