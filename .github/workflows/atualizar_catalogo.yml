@@ -22,8 +22,8 @@ jobs:
         run: python -m playwright install chromium --with-deps
       - name: Restaurar credenciais Google Drive
         run: |
-          printf "%s" "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" > scraper/credentials.json
-          printf "%s" "${{ secrets.GOOGLE_TOKEN_JSON }}" > scraper/token.json
+          echo ${{ secrets.GOOGLE_CREDENTIALS_JSON }} | base64 -d > scraper/credentials.json
+          echo ${{ secrets.GOOGLE_TOKEN_JSON }} | base64 -d > scraper/token.json
       - name: Executar scraper
         working-directory: scraper
         env:
