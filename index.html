@@ -971,7 +971,7 @@
 
     const preco  = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Consultar';
     const km     = v.km    ? `${Number(v.km).toLocaleString('pt-BR')} km`    : '';
-    const url    = `https://luizintrepido.github.io/catalogo-brabo/#carro-${v.id}`;
+    const url    = `https://luizintrepido.github.io/catalogo-brabo/carros/${v.id}`;
 
     const texto = `🚗 *${v.marca} ${v.modelo} ${v.ano}*\n${v.versao ? v.versao + '\n' : ''}💰 ${preco}${km ? '\n📍 ' + km : ''}\n\n🔗 Ver este carro:\n${url}`;
 
