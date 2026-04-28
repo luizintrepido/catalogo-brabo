@@ -179,12 +179,8 @@
     .card-img-placeholder {
       width: 100%;
       aspect-ratio: 1/1;
-      background: var(--bg3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text2);
-      font-size: 2.5rem;
+      display: block;
+      object-fit: cover;
     }
     .card-body {
       padding: 14px 16px;
@@ -400,14 +396,16 @@
       width: 100%;
       height: 100%;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      color: var(--text2);
-      font-size: 3rem;
+      overflow: hidden;
     }
-    .gallery-no-photo span { font-size: 0.9rem; }
+    .gallery-no-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-no-photo span { display: none; }
 
     /* ── MODAL DETAILS ── */
     .modal-details {
@@ -644,7 +642,7 @@
       <div class="gallery-main-wrap" id="gallery-main-wrap">
         <img class="gallery-main" id="gal-main-img" src="" alt="Foto do veículo" style="display:none" />
         <div class="gallery-no-photo" id="gallery-no-photo" style="display:none">
-          🚗<span>Sem fotos disponíveis</span>
+          <img src="em-preparacao.jpg" alt="Em preparação" /><span>Em preparação</span>
         </div>
       </div>
       <button class="gallery-nav prev" id="gal-prev">‹</button>
@@ -770,8 +768,8 @@
 
       return `<div class="card" onclick="openModal(${i})">
         ${foto
-          ? `<img class="card-img" src="${foto}" alt="${v.marca} ${v.modelo}" loading="lazy" onerror="this.parentElement.querySelector('.card-img-placeholder').style.display='flex';this.style.display='none';" /><div class="card-img-placeholder" style="display:none">🚗</div>`
-          : `<div class="card-img-placeholder">🚗</div>`}
+          ? `<img class="card-img" src="${foto}" alt="${v.marca} ${v.modelo}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" /><img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" style="display:none" />`
+          : `<img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" />`}
         <div class="card-body">
           <div class="card-badges">
             <span class="badge ${lojaClass}">${v.loja}</span>
