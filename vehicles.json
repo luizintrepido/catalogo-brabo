@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-04T14:21:24.378325",
-  "total": 75,
+  "updated_at": "2026-05-07T10:53:01.947282",
+  "total": 80,
   "vehicles": [
     {
       "id": "934576",
@@ -27,8 +27,7 @@
       ],
       "drive_folder": "1mIYI8c1I78ukCX1al0qXevkwINa-JtaL",
       "url_original": "https://reautoveiculos.com.br/carros/bmw/x1-sdrive-20i-2-0-2-0-tb-acti-flex-aut/2022/934576",
-      "whatsapp": "5513991575019",
-      "slug": "bmw-x1-sdrive-2022"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "756854",
@@ -49,8 +48,7 @@
       ],
       "drive_folder": "19FV6yVIFtp3jTVh9WUmiKA8qhBD7oDlH",
       "url_original": "https://reautoveiculos.com.br/carros/chery/tiggo-7-pro/2022/756854",
-      "whatsapp": "5513991575019",
-      "slug": "chery-tiggo-2022"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "984117",
@@ -71,8 +69,7 @@
       ],
       "drive_folder": "1c2s7lqgU79InR2-XzUGfVua3VV4TpdHH",
       "url_original": "https://reautoveiculos.com.br/carros/citroen/c3-picasso-exclusive-1-6-flex-16v-5p-mec/2015/984117",
-      "whatsapp": "5513991575019",
-      "slug": "citroen-c3-picasso-exclusive-2015"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "859472",
@@ -97,30 +94,28 @@
       ],
       "drive_folder": "1QUK6Rt5QHy-zyseuGirHmdi_9rP8awIj",
       "url_original": "https://reautoveiculos.com.br/carros/citroen/c4-picasso-intensive-1-6-turbo-16v-aut/2016/859472",
-      "whatsapp": "5513991575019",
-      "slug": "citroen-c4-picasso-intensive-2016"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "958539",
+      "id": "986628",
       "loja": "REAUTO",
       "marca": "Fiat",
       "modelo": "Argo Drive",
       "versao": "1 0 6V Flex",
-      "ano": 2024,
-      "km": 56367,
-      "preco": 69900,
+      "ano": 2022,
+      "km": 27465,
+      "preco": 64900,
       "tipo": "HATCH",
       "cor": "",
       "cambio": "Manual",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "1x2sdaX83IFKQSBaXM0GJ_z2fWF9m3okE"
+        "1nogmF-lNktR0nZ26dSmKlZbR8TevnZRD"
       ],
-      "drive_folder": "1nN1JP99xNvt-l3dWXVni_lUr1hglZ60k",
-      "url_original": "https://reautoveiculos.com.br/carros/fiat/argo-drive-1-0-6v-flex/2024/958539",
-      "whatsapp": "5513991575019",
-      "slug": "fiat-argo-drive-2024"
+      "drive_folder": "1_wJUus3jI39Sq268dnVRbPOBOBWiLKkQ",
+      "url_original": "https://reautoveiculos.com.br/carros/fiat/argo-drive-1-0-6v-flex/2022/986628",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "952013",
@@ -145,32 +140,7 @@
       ],
       "drive_folder": "18WKq4BauzsmHk2-q6Wq7I-UPor2jSlan",
       "url_original": "https://reautoveiculos.com.br/carros/fiat/mobi-trekking-1-0-flex-5p/2021/952013",
-      "whatsapp": "5513991575019",
-      "slug": "fiat-mobi-trekking-2021"
-    },
-    {
-      "id": "975147",
-      "loja": "REAUTO",
-      "marca": "Fiat",
-      "modelo": "Palio Attra Italia",
-      "versao": "1 4 Evo F Flex 8V 5P",
-      "ano": 2016,
-      "km": 88683,
-      "preco": 45500,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Manual",
-      "combustivel": "Flex",
-      "opcionais": [
-        "11.0km/l urbano 13.0 km/l rodovia"
-      ],
-      "fotos_drive": [
-        "1tz4yla5VLw9xrPjXCoj3u7JHvKIh3y0R"
-      ],
-      "drive_folder": "1qcr9c9u_yxd-ERKoKFATr2hRgGp6g2Hg",
-      "url_original": "https://reautoveiculos.com.br/carros/fiat/palio-attra-italia-1-4-evo-f-flex-8v-5p/2016/975147",
-      "whatsapp": "5513991575019",
-      "slug": "fiat-palio-attra-italia-2016"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "658178",
@@ -195,60 +165,7 @@
       ],
       "drive_folder": "1WBBiauSQue1NiNvAGXnlMmSE2F4hucj9",
       "url_original": "https://reautoveiculos.com.br/carros/fiat/pulse-drive-1-3-8v-flex-aut/2022/658178",
-      "whatsapp": "5513991575019",
-      "slug": "fiat-pulse-drive-2022"
-    },
-    {
-      "id": "951253",
-      "loja": "REAUTO",
-      "marca": "Fiat",
-      "modelo": "Pulse Drive",
-      "versao": "1 3 8V Flex Aut",
-      "ano": 2024,
-      "km": 21296,
-      "preco": 95900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [
-        "12.5km/l urbano 14.5 km/l rodovia"
-      ],
-      "fotos_drive": [
-        "13PgT2VCaHiqNM0BcuV9MWlqaSz2R_if4",
-        "1_mGg0yx958mt4bUoOUYT6Mu6aeQW3h9m",
-        "1JL1zltFn6bgae-qmEAB72lcUeOoVP0a4",
-        "1zcXzNuZcdDcTUfBr9IC5eo9nmFPxgUUp",
-        "1K-9ljgmPDKhwDdNx8mrHULVNQwPN4m0b"
-      ],
-      "drive_folder": "1cGeajlPkymzayoR0AmYmwTtSY6EeHNCY",
-      "url_original": "https://reautoveiculos.com.br/carros/fiat/pulse-drive-1-3-8v-flex-aut/2024/951253",
-      "whatsapp": "5513991575019",
-      "slug": "fiat-pulse-drive-2024"
-    },
-    {
-      "id": "851806",
-      "loja": "REAUTO",
-      "marca": "Ford",
-      "modelo": "Fusion",
-      "versao": "2 5L I Vct Flex Aut",
-      "ano": 2014,
-      "km": 87810,
-      "preco": 72900,
-      "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [
-        "7.9km/l urbano 11.9 km/l rodovia"
-      ],
-      "fotos_drive": [
-        "1zLXnilhHpA9DSRMVdfI2eeHBTrPKPcz4"
-      ],
-      "drive_folder": "1ytsWYm79YwQdGFq3ZdNAL9yWhWTnkvwc",
-      "url_original": "https://reautoveiculos.com.br/carros/ford/fusion-2-5l-i-vct-flex-aut/2014/851806",
-      "whatsapp": "5513991575019",
-      "slug": "ford-fusion-2014"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "364986",
@@ -273,8 +190,7 @@
       ],
       "drive_folder": "1kDJeA1psvVqKqwKnrzHusxJX1MnS7L5A",
       "url_original": "https://reautoveiculos.com.br/carros/ford/maverick-lariat-fx4-2-0-ecoboost-aut/2022/364986",
-      "whatsapp": "5513991575019",
-      "slug": "ford-maverick-lariat-fx4-2022"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "829108",
@@ -301,34 +217,7 @@
       ],
       "drive_folder": "1lRrm-lqV0sY08gFQYdf1H_GiOWdTojWd",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/montana-lt-1-2-turbo-flex-12v-4p-mec/2024/829108",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-montana-lt-2024"
-    },
-    {
-      "id": "848848",
-      "loja": "REAUTO",
-      "marca": "Chevrolet",
-      "modelo": "Montana Ltz",
-      "versao": "1 2 Turbo Flex 12V 4P Aut",
-      "ano": 2025,
-      "km": 4391,
-      "preco": 127900,
-      "tipo": "PICAPE",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1nsf1c4EQVgFHK5-fnvPFvQYEK7jKNnEm",
-        "1hcHzY_pKH0XOdV8Eh7dzOMdSvrN7MbSw",
-        "1JNxJm3yo_nMJPqMqTsXHOUErbJaCFxDE",
-        "1v2tjCFgXAmjSf2zdfoJmGQZDQAJw7Fgd",
-        "1owZ1CCS0tzeTp_tBWFnvuI9kaai-4BjK"
-      ],
-      "drive_folder": "1zdlWrh1q193xy-zzgT_77BUVDWOdhmu6",
-      "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/montana-ltz-1-2-turbo-flex-12v-4p-aut/2025/848848",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-montana-ltz-2025"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "946591",
@@ -355,8 +244,28 @@
       ],
       "drive_folder": "1Sh7PKMbGN3_D5VTWKG3MbUpreE6_poGL",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/onix-hatch-lt-1-0-12v-tb-flex-5p-mec/2023/946591",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-onix-hatch-lt-2023"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "987056",
+      "loja": "REAUTO",
+      "marca": "Chevrolet",
+      "modelo": "Onix Hatch Lt",
+      "versao": "1 0 8V Flexpower 5P Mec",
+      "ano": 2019,
+      "km": 69138,
+      "preco": 59900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1rIacmHUMZeI06aH1ajE9ymhmGK5AE4Wv"
+      ],
+      "drive_folder": "1e7eW8PxYo6S1LmfIOxacjP_uSElP5V9z",
+      "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/onix-hatch-lt-1-0-8v-flexpower-5p-mec/2019/987056",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "976139",
@@ -366,7 +275,7 @@
       "versao": "1 0 12V 4P Mec",
       "ano": 2022,
       "km": 57970,
-      "preco": 73900,
+      "preco": 69900,
       "tipo": "SEDAN",
       "cor": "",
       "cambio": "Manual",
@@ -383,8 +292,28 @@
       ],
       "drive_folder": "1wVGTFlZ2emBJx_royHe4_JiWUy62Laoz",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/onix-sedan-plus-lt-1-0-12v-4p-mec/2022/976139",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-onix-sedan-plus-lt-2022"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "992272",
+      "loja": "REAUTO",
+      "marca": "Chevrolet",
+      "modelo": "Spin Activ7",
+      "versao": "1 8 8V Econo Flex 5P Aut",
+      "ano": 2024,
+      "km": 19037,
+      "preco": 112900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1tyi1LezhURFlnSNmRZ7aSU0-_0C8IHER"
+      ],
+      "drive_folder": "1x7xca4h5_sgL8wS2MkdAJkXOmaq2qOGM",
+      "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/spin-activ7-1-8-8v-econo-flex-5p-aut/2024/992272",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "961256",
@@ -405,8 +334,7 @@
       ],
       "drive_folder": "1yM3vLnegQJYOIFkVBEOLsN3fIXwCoDrL",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-lt-1-0-turbo-12v-flex-aut/2021/961256",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-tracker-lt-2021"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "975777",
@@ -427,8 +355,7 @@
       ],
       "drive_folder": "1THCvdZCLhe2oGaCDU7FG8B8tU129qF7t",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-lt-1-0-turbo-12v-flex-aut/2024/975777",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-tracker-lt-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "828281",
@@ -453,8 +380,7 @@
       ],
       "drive_folder": "1ziPimKsd8OylMNxQO8V_I7TM2q1ykTlx",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-lt-1-0-turbo-12v-flex-aut/2025/828281",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-tracker-lt-2025"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "951133",
@@ -481,8 +407,7 @@
       ],
       "drive_folder": "1apJWn6QU0iXRr3QbKkWN1rJdb4KYQGPl",
       "url_original": "https://reautoveiculos.com.br/carros/gm-chevrolet/tracker-premier-1-2-turbo-12v-flex-aut/2021/951133",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-tracker-premier-2021"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "824687",
@@ -507,8 +432,7 @@
       ],
       "drive_folder": "1Mrcu8kQrbfy3ddfFPNU4ibKtUnlqOQuu",
       "url_original": "https://reautoveiculos.com.br/carros/honda/city-hatchback-exl-1-5-flex-16v-aut/2024/824687",
-      "whatsapp": "5513991575019",
-      "slug": "honda-city-hatchback-exl-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "613070",
@@ -529,8 +453,7 @@
       ],
       "drive_folder": "1jLgQRQxTu7FNRZUAdYVteCo5VX28EZno",
       "url_original": "https://reautoveiculos.com.br/carros/honda/city-sedan-ex-1-5-flex-16v-4p-aut/2015/613070",
-      "whatsapp": "5513991575019",
-      "slug": "honda-city-sedan-ex-2015"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "897070",
@@ -555,8 +478,7 @@
       ],
       "drive_folder": "1wbLsPTia_AO6oqqmN8cviUIItz-nh7Cq",
       "url_original": "https://reautoveiculos.com.br/carros/honda/civic-sedan-sport-2-0-flex-16v-aut-4p/2019/897070",
-      "whatsapp": "5513991575019",
-      "slug": "honda-civic-sedan-sport-2019"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "917910",
@@ -583,8 +505,30 @@
       ],
       "drive_folder": "1e4LERHao5YJtxMRvPzUPZWm0-HDKR_d9",
       "url_original": "https://reautoveiculos.com.br/carros/hyundai/creta-action-1-6-16v-flex-aut/2022/917910",
-      "whatsapp": "5513991575019",
-      "slug": "hyundai-creta-action-2022"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "983747",
+      "loja": "REAUTO",
+      "marca": "Hyundai",
+      "modelo": "Creta Attitude",
+      "versao": "1 6 16V Flex Aut Pcd",
+      "ano": 2020,
+      "km": 60751,
+      "preco": 89900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [
+        "10.1km/l urbano 11.3 km/l rodovia"
+      ],
+      "fotos_drive": [
+        "15t7e4mpx8Ph4vYvPpp6ckFH6wQa0yMhb"
+      ],
+      "drive_folder": "10yBttAspPMQ8qrsTS_ne8Z9Tv9GBLtjz",
+      "url_original": "https://reautoveiculos.com.br/carros/hyundai/creta-attitude-1-6-16v-flex-aut-pcd/2020/983747",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "977398",
@@ -605,8 +549,7 @@
       ],
       "drive_folder": "1symbp1uQZTjv4Asi8PAjKLBtiV-j8dz2",
       "url_original": "https://reautoveiculos.com.br/carros/hyundai/i30-2-0-16v-145cv-5p-mec/2012/977398",
-      "whatsapp": "5513991575019",
-      "slug": "hyundai-i30-2012"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "936524",
@@ -631,8 +574,7 @@
       ],
       "drive_folder": "1ZIiSQ5z7tvW4QLRmSz3FGv4p6oPB1vOS",
       "url_original": "https://reautoveiculos.com.br/carros/jeep/compass-long-t270-1-3-tb-4x2-flex-aut/2023/936524",
-      "whatsapp": "5513991575019",
-      "slug": "jeep-compass-long-t270-2023"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "958789",
@@ -657,8 +599,30 @@
       ],
       "drive_folder": "19b72ehYHhIh_xuKFfOTuACsB3cPaJvuZ",
       "url_original": "https://reautoveiculos.com.br/carros/jeep/compass-long-t270-1-3-tb-4x2-flex-aut/2023/958789",
-      "whatsapp": "5513991575019",
-      "slug": "jeep-compass-long-t270-1-2023"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "985112",
+      "loja": "REAUTO",
+      "marca": "Jeep",
+      "modelo": "Compass Longitude",
+      "versao": "2 0 4X2 Flex 16V Aut",
+      "ano": 2021,
+      "km": 35533,
+      "preco": 106900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [
+        "8.8km/l urbano 10.8 km/l rodovia"
+      ],
+      "fotos_drive": [
+        "1aiUJdh3CHYTaKCMRKi3aQHFXg3nsPHLd"
+      ],
+      "drive_folder": "1RH6eJ93Fh3As5aWUaGwyWZWUFsnMn4dI",
+      "url_original": "https://reautoveiculos.com.br/carros/jeep/compass-longitude-2-0-4x2-flex-16v-aut/2021/985112",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "928298",
@@ -683,8 +647,7 @@
       ],
       "drive_folder": "1eaj4DcuZHTR2j2UE7poz55YX3Q4k2X_u",
       "url_original": "https://reautoveiculos.com.br/carros/jeep/compass-s-2-0-4x4-tb-16v-diesel-aut/2021/928298",
-      "whatsapp": "5513991575019",
-      "slug": "jeep-compass-s-2021"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "905623",
@@ -709,8 +672,28 @@
       ],
       "drive_folder": "1ehV01ZLz-6XbXmvsFvTQKZbN6TwItTDm",
       "url_original": "https://reautoveiculos.com.br/carros/jeep/renegade-limited-1-8-4x2-flex-16v-aut/2021/905623",
-      "whatsapp": "5513991575019",
-      "slug": "jeep-renegade-limited-2021"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "989347",
+      "loja": "REAUTO",
+      "marca": "Kia",
+      "modelo": "Cerato",
+      "versao": "1 6 16V Flex Aut",
+      "ano": 2019,
+      "km": 47184,
+      "preco": 83900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1m8fDQCdSbnT5YSy2XqU0IHiDwcSdy5TL"
+      ],
+      "drive_folder": "11wSJ8I9FLy2umjEB_8CFTH16BNCwqR7b",
+      "url_original": "https://reautoveiculos.com.br/carros/kia-motors/cerato-1-6-16v-flex-aut/2019/989347",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "722447",
@@ -735,8 +718,7 @@
       ],
       "drive_folder": "1HflUzCre98d-OsoeEaqNhWNn02r9WRAy",
       "url_original": "https://reautoveiculos.com.br/carros/kia-motors/sportage-ex-2-0-16v-2-0-16v-flex-aut/2022/722447",
-      "whatsapp": "5513991575019",
-      "slug": "kia-sportage-ex-2022"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "864270",
@@ -761,8 +743,7 @@
       ],
       "drive_folder": "1DrdvG6tfg_yCsiTMX6pLX5ONlZcOKgw0",
       "url_original": "https://reautoveiculos.com.br/carros/kia-motors/sportage-lx-2-0-16v-2-0-16v-flex-aut/2015/864270",
-      "whatsapp": "5513991575019",
-      "slug": "kia-sportage-lx-2015"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "927199",
@@ -789,8 +770,7 @@
       ],
       "drive_folder": "17j9cikcHkDShaQ-omjL0CauIo3AJTOBF",
       "url_original": "https://reautoveiculos.com.br/carros/nissan/kicks-exclusive-1-6-16v-flex-aut/2022/927199",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-kicks-exclusive-2022"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "977083",
@@ -815,8 +795,7 @@
       ],
       "drive_folder": "1RIXLjxJXenQKZWrpkviqi17e6XFQ7nBH",
       "url_original": "https://reautoveiculos.com.br/carros/nissan/kicks-exclusive-1-6-16v-flex-aut/2024/977083",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-kicks-exclusive-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "984245",
@@ -841,8 +820,32 @@
       ],
       "drive_folder": "1tjy8_NLnW2vScm1RIsxg9V4ccgBfNAoD",
       "url_original": "https://reautoveiculos.com.br/carros/renault/duster-iconic-plus-1-3-tb-16v-flex-aut/2026/984245",
-      "whatsapp": "5513991575019",
-      "slug": "renault-duster-iconic-plus-2026"
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "959287",
+      "loja": "REAUTO",
+      "marca": "Renault",
+      "modelo": "Duster Iconic Plus",
+      "versao": "1 6 16V Flex Aut",
+      "ano": 2026,
+      "km": 7551,
+      "preco": 129900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "16m0EXVD4FgsbEz92OflDBjRtuFcNHYC4",
+        "10BGHWxw_3rq75RV21MhgzapyuGNICNu3",
+        "1eBNCVv7mZX2F6LvzuWMa4Ll59svjy6Jr",
+        "1y-BtlXWwPpLElxlR0vRgJVrWmpU8PYL8",
+        "1123MsgJfJWRRRY1k6SA3FljAzY-HHv_D"
+      ],
+      "drive_folder": "1yoRB-hesjLDzOLdVWtE9saDk0xUGPBUP",
+      "url_original": "https://reautoveiculos.com.br/carros/renault/duster-iconic-plus-1-6-16v-flex-aut/2026/959287",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "955686",
@@ -859,12 +862,15 @@
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "1QUs4P0jXN3rhJqzF1NFOosb98enNY5KD"
+        "1QUs4P0jXN3rhJqzF1NFOosb98enNY5KD",
+        "16BWbcRiSJGTH4ZaYZXcILTDY4IhJKSDT",
+        "1doGT9dkxbMELc_kvrc5nIm9VOzVzrUYT",
+        "17zgVfsLRrXk_dCrn4I1NJsWD3iWhkJl2",
+        "1cSeVXvb3Agp7beiQrgJavqrlwR1FR6mT"
       ],
       "drive_folder": "1V0WMRc_GV8ioZ0HJS078siuMy3IH41hl",
       "url_original": "https://reautoveiculos.com.br/carros/toyota/yaris-xl-live-1-3-flex-16v-5p-aut/2020/955686",
-      "whatsapp": "5513991575019",
-      "slug": "toyota-yaris-xl-live-2020"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "423596",
@@ -889,8 +895,7 @@
       ],
       "drive_folder": "1-hZQWmlUEY_Soi0qFcKe7z0gXG5bCWGP",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/fox-xtreme-1-6-flex-8v-5p/2020/423596",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-fox-xtreme-2020"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "906059",
@@ -915,8 +920,7 @@
       ],
       "drive_folder": "1ftDB0fjDGOwaM2ShZmKQBYiaZyD3kpnt",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2021/906059",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-nivus-highline-2021"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "874532",
@@ -941,8 +945,7 @@
       ],
       "drive_folder": "1Fs-e4qfYDv8TncUVbRYnagxhJhK2pb7n",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2023/874532",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-nivus-highline-2023"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "810648",
@@ -967,8 +970,7 @@
       ],
       "drive_folder": "1YE7e1f6qFQlg9qgIBBnOg2nU2rAUw8Kt",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/nivus-highline-1-0-200-tsi-flex-aut/2024/810648",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-nivus-highline-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "915448",
@@ -995,8 +997,7 @@
       ],
       "drive_folder": "1bubTCLOZFWbBFvb658XzhvZbCSuldMfG",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/saveiro-robust-1-6-total-flex-8v/2021/915448",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-saveiro-robust-2021"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "962434",
@@ -1017,8 +1018,7 @@
       ],
       "drive_folder": "1ZAe2bZ_OsYc70G1Pc8AuR2x6i8o2xS1s",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-1-0-tsi-flex-12v-5p-aut/2024/962434",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-t-cross-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "796614",
@@ -1045,8 +1045,7 @@
       ],
       "drive_folder": "14fEAjnxGH8hSGYkxRb5OXoP09OZEYQP0",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-1-0-tsi-flex-12v-5p-aut/2025/796614",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-t-cross-2025"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "855303",
@@ -1073,8 +1072,7 @@
       ],
       "drive_folder": "14f3uSRJer6SOM4n2W70Rl8Mu0J_10NRv",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/t-cross-comfortline-1-0-tsi-flex-5p-aut/2024/855303",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-t-cross-comfortline-2024"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "974510",
@@ -1099,68 +1097,7 @@
       ],
       "drive_folder": "1wXm9RQdxPd2f9v_DawZTrHj_-KqA69R1",
       "url_original": "https://reautoveiculos.com.br/carros/vw-volkswagen/taos-highline-1-4-250-tsi-flex-aut/2024/974510",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-taos-highline-2024"
-    },
-    {
-      "id": "4639230",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "HR-V",
-      "versao": "1.8 16V Flex Exl 4P Automático 2020",
-      "ano": 2020,
-      "km": 80000,
-      "preco": 107900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1_0t_H7iVs1GTZVGDr29Y5rY8BYV-OF1C",
-        "1s-BbJY6TNeq1Z7AI1Lxyl1iimBbe1j3j",
-        "1Ci0x7nweYYYIIBI30bsJ8Kv7mFkrRwvE",
-        "1YZFEgkeV_-IBU1QIMrlxctPWPQL1mOmb",
-        "1u9v28V-fgM6vrR9wd1ev0EKxYGNJZ1XN",
-        "1gZ1rqAScndpb0anDfXFLb0nIbRM46v8S",
-        "1wbEJOk-IakhKIDEsFvHtcEro7wDIDDJf",
-        "16aJ88TnovwWtdaKgqstHphvFgGefqpXw",
-        "1oR3VmeFxY6BrtrkKpFWI_aXjWrmweSRb"
-      ],
-      "drive_folder": "17dBbqQn_5fmYNCcBkEtjwaI9cECffw-f",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-exl-4p-automatico-flex-2020/4639230/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-hr-v-2020"
-    },
-    {
-      "id": "4180355",
-      "loja": "RECAR",
-      "marca": "Ford",
-      "modelo": "EcoSport",
-      "versao": "1.5 Tivct Flex Freestyle Manual 2018",
-      "ano": 2018,
-      "km": 94000,
-      "preco": 72900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Manual",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1gqhNujaOfMEvfv2JJnWW6KHSKlrjvaGf",
-        "1AamInrwO1rxD35SXMnkj-y8aCWXATiWS",
-        "1d7dpeK2jr3OQeFncT14TL7c1VJ6GYQJ1",
-        "1EjJA4208E0w9jp_X5hGq2y1b9GMignyA",
-        "12ZB9qq94gfDZ4PtxOCh4KAuCWptE4zrH",
-        "1bqpTRd5xDhjM3_qeBjzmq4EjHumPY81x",
-        "1i9OFXrrDOmK3x1syVA_V1cYbCCWev8B0",
-        "18QteoIw9z_CsuzHsTHTaP4fu4cead6Pn",
-        "1b1IcikUgojGkqjCXjC5EB5x2_XmPkDBo"
-      ],
-      "drive_folder": "1rQ2ao17XJX0Mxa2DfakuNnMQXN-aXc6w",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/ecosport-1.5-tivct-flex-freestyle-manual-flex-2018/4180355/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "ford-ecosport-2018"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4639278",
@@ -1189,215 +1126,35 @@
       ],
       "drive_folder": "1-REPrbUFwZEDbDc6Qs9OslE11hNtsELF",
       "url_original": "https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-active-xtronic-flex-2022/4639278/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-kicks-2022"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4622547",
+      "id": "4829892",
       "loja": "RECAR",
-      "marca": "Nissan",
-      "modelo": "Kicks",
-      "versao": "1.6 16V Flexstart Sense Xtronic 2023",
-      "ano": 2023,
-      "km": 0,
-      "preco": 94900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Cvt",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1UrjKHREyYClexQrz2P9EOxx197_d616u",
-        "1sRKNecOAT1fVXxXQQRIIeQYiPjKE3TG7",
-        "1NAtzAc-iBUm_2PLmCh9-WsFRvTNlfMh-",
-        "11o3294raCwbOaqHOBDDc_2OO9wanljcU",
-        "1Dwnp0oCEyFydoxD3b0OtXM6PV6qWh1xl",
-        "1360Oika33vG__x28Tm7de47fAWWRp8cK"
-      ],
-      "drive_folder": "118cg33eHwVpUVwO5tXBOpaGglzuDrfss",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2023/4622547/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-kicks-2023"
-    },
-    {
-      "id": "4775980",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "Civic",
-      "versao": "2.0 16V Flexone Sport 4P Cvt 2019",
-      "ano": 2019,
-      "km": 128000,
-      "preco": 105900,
+      "marca": "N/D",
+      "modelo": "Siena 1.0",
+      "versao": "1.0 Mpi Fire 8V Flex 4P Manual 2009",
+      "ano": 2009,
+      "km": 153490,
+      "preco": 32900,
       "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Cvt",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1GGOMS-66AXPcWclpTXB3kixcehx-V6Z6",
-        "1S8Cgl-ggd7V7MVv94eYkOJMz24j9C0k4",
-        "12Uz6S8cKoW5yBp0Kal9vNBp4tzncg5Bx",
-        "1GSDkqv0ySK1RgTI8xWPTRA61k_NPqLd1",
-        "1-J4ML66Eipzkmm_nXdLVorpvV-Jv8_N1",
-        "1Y-zI8g9GiMLOcDMT6R6nORzrNdQ7QNhh",
-        "1zqM34tm1Ez9kzHfhMFsk_L37efreTHxx",
-        "1w5y1V4ovhS14JOTMq-0F6X9Qocs1v_4K",
-        "1AgvLaBcHIwpDrj7khkz8n-14CqHtapoO"
-      ],
-      "drive_folder": "1oPA3krRf6SrC-Uw9bfqiTYf3yaWQsz8i",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-2.0-16v-flexone-sport-4p-cvt-flex-2019/4775980/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-civic-2019"
-    },
-    {
-      "id": "4743574",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "Civic",
-      "versao": "2.0 16V Flexone Ex 4P Cvt 2021",
-      "ano": 2021,
-      "km": 116000,
-      "preco": 125900,
-      "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Cvt",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1Q76A_3JVMU5Lu80c7GEohZBz8OT9SEgO",
-        "1Auiq7RfUD6WXo_NEmLgxlDVbHESa4lj2",
-        "17k5MZTqcEoU2wauyfs6y_o5Yhg1MndoF",
-        "1ywr0NisyeT1m4t_g5d5ZoLxb8JB2uNd2",
-        "1b3V6IubY5U3btYkePDCemarJaZOjf3dg",
-        "1JJIlj_aLf1qHyNoD1IYuzTINdjJ6GLqS",
-        "1VTAfdPBITmLPQeQyVqW_Sv3m2dPMe0Pq",
-        "1wb5oHFn2qGSE0-32-TkpikC3QHbxLu6a",
-        "13fTqKzO4QZI5M6AxY-VTMCFMgyr2zuxO",
-        "1LPOwqrZApWjMmNT3tyWTU2KlRtynpT4U"
-      ],
-      "drive_folder": "1k8Bh3lm-cXGQ5aeaw8rpf-JkbhkM3uEw",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-2.0-16v-flexone-ex-4p-cvt-flex-2021/4743574/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-civic-2021"
-    },
-    {
-      "id": "4706802",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "FIT",
-      "versao": "1.5 Personal 16V Flex 4P Automático 2018",
-      "ano": 2018,
-      "km": 125000,
-      "preco": 76900,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1ULmJ9_eCRpddLCpykhBZsuWg4JjOE8bt",
-        "18-GlsJ4CcHzc8Jzk_tXgav9RZ5EtS3jt",
-        "16bzcMw-W-oUXpw7WebqjH-XXGkQlWS5R",
-        "1g9TtD7hzeMVgwbJnNHAEWMwmSFrob0Xq",
-        "1SIX-kwfsEvTec0GuNm3VJhDMRvvEugoM",
-        "1xrDpjIPmGWaembc6dbK0DE8pViyBrPiS",
-        "14JbRgSVp66StfQeUkM3p27hYpMD0hB9O",
-        "1E8QB4bLXuh4lG8VwDDjWblVLnR8UjX9B"
-      ],
-      "drive_folder": "1mSYqvZPsu-yr8Jgu0aA_yJMO1zNVLJ4K",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/fit-1.5-personal-16v-flex-4p-automatico-flex-2018/4706802/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-fit-2018"
-    },
-    {
-      "id": "4737395",
-      "loja": "RECAR",
-      "marca": "Nissan",
-      "modelo": "March",
-      "versao": "1.6 Sl 16V Flex 4P Manual 2016",
-      "ano": 2016,
-      "km": 92000,
-      "preco": 49900,
-      "tipo": "HATCH",
       "cor": "",
       "cambio": "Manual",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "1bVa4ENaseIL1NopYVZ9sT1Kl9MwAjLQg",
-        "19hkxID51GdB7eGP3qXBWERxnxt8NEHcB",
-        "1MlrmxkFXL3_RC--vb_o6jfYOEHv-4gKd",
-        "1Rgv-Pc0so6uuqNWPFFoqcfAWd2UkgUsD",
-        "1WjMRC81CQpDoi8eqE828PFqJ4BpQequN",
-        "1mx9A7ve-bH9SurHaUDUVtJB7PcBlyHvk",
-        "1xH7vvWHzHaRMOqzchlPDyW4qKGspOlQZ",
-        "1f9oFpLoLsoNoMgWjdbb0MYFcBTLsPjoG",
-        "1TGKEizYjCsH_a_kzKJOhJFwNfd51-iU0"
+        "1IlCG_CNQGOVujEfWDgiwFXjMcvLnuVTr",
+        "1v4I5fcLQaUPTw-TWf7-6eCfCWf4IUwYb",
+        "1bfDQWPFCiuMO7UWZyxrU-x7iWSE1X4Fs",
+        "14-i6WRYq-RfbI2kBqfRBa5avuoW01JAf",
+        "1kcgNxS11qWVFe2rLhIUqPXvj3L3DXzbe",
+        "1wyC8UikF7zhcWJe94G72Fc8OJIPWq0O-",
+        "1FJPZWmxk9wJHHML-Lro_gN9u2qtPLPGa",
+        "1MLWRa0TsE_tiLQtuJUVEs7Wpr01SuSvh"
       ],
-      "drive_folder": "15V0GdrhS9SG-Wg0ucp2kpy5UUUqjk4jf",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/march-1.6-sl-16v-flex-4p-manual-flex-2016/4737395/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-march-2016"
-    },
-    {
-      "id": "4622542",
-      "loja": "RECAR",
-      "marca": "Renault",
-      "modelo": "Duster",
-      "versao": "2.0 Dynamique 4X2 16V Flex 4P Automático 2017",
-      "ano": 2017,
-      "km": 142000,
-      "preco": 64900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1vWIbKoYmJPbpc06sJBbk3O_W4upqvDG3",
-        "1VEdGsv5-AMY5rJBhu83wFrDyhLjKzmcv",
-        "1hWRzkUB4BsxOZX_P0fS-5C8yMUuLOQ62",
-        "1nwZJcF6xNhIsaREXkDelQnNLCYXmus1k",
-        "1vXgXmt2EUIOj1hIsRQ0Qu4Ui0xiTuWXv",
-        "1fuIly7pMYLDS-iMFpAaKhNP7api5bRxb",
-        "1HqlOhGMqMYvf3p3DDMpEtJhZc8FnVnXM",
-        "10-S_glt-pl_MwhbRYxoE4d8Ql0WMj_sm"
-      ],
-      "drive_folder": "1b_VA4YbEQ0jRvAMlaqGvOQXj8ha_ZjLR",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2017/4622542/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "renault-duster-2017"
-    },
-    {
-      "id": "4622338",
-      "loja": "RECAR",
-      "marca": "Volkswagen",
-      "modelo": "Jetta",
-      "versao": "2.0 Comfortline 120Cv Flex 4P Tiptronic 2013",
-      "ano": 2013,
-      "km": 115000,
-      "preco": 61900,
-      "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1gU14Tuooug63NsCR2TcKR2STP692o-Bx",
-        "1RFVLSWKqE-3RpG90YO3O9Dyc_BxP8juN",
-        "1IJW5Xlym4M_wGFw4cwMig7kuNibCHZID",
-        "12rfPlc-zd2bvSxXhSIUSwfVM1YD2fk9Q",
-        "1iK8yuTQhX_xCT4DFI4kvlB4AAAbdeNr6",
-        "1Ht-E9GgIX_DaEbiDOBFQXKW5zND3WGVc",
-        "1yEsWMxBkK3NnrprdR1JdIa5qKnzj3Zkh",
-        "1oqeVFYtJiygG7AzzmU21AOrGwz0F_2-T",
-        "1ebsrFwAYxVd9kH5MX_d2VWzIPv3_6Uzv",
-        "11v8kTTBFvW6U4q3a7LUTd5qNW4PuYl3h"
-      ],
-      "drive_folder": "1ECal_RyJFf6s1PJ4KvW54sKCEF90uIR_",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/jetta-2.0-comfortline-120cv-flex-4p-tiptronic-flex-2013/4622338/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-jetta-2013"
+      "drive_folder": "1EBvHJRtdB1VXlXPCHgQx80559cV3Z0Dk",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/siena-1.0-mpi-fire-8v-flex-4p-manual-flex-2009/4829892/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4766112",
@@ -1425,283 +1182,32 @@
       ],
       "drive_folder": "1gDuSPDhgESkNAtp52VTWVaVlyKh9NToj",
       "url_original": "https://recarautomarcas.com.br/Veiculo/fit-1.5-ex-16v-flex-4p-automatico-flex-2016/4766112/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-fit-2016"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4622551",
+      "id": "4622545",
       "loja": "RECAR",
-      "marca": "Land Rover",
-      "modelo": "Range Rover Evoque",
-      "versao": "Range Rover Evoque 2.0 Se Dynamic 4Wd 16V Gasolina 4P Automático 2016",
-      "ano": 2016,
-      "km": 87919,
-      "preco": 114900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Gasolina",
-      "opcionais": [],
-      "fotos_drive": [
-        "141QJ3iCHaDlrf1x67wGirdy98iUaAgTZ",
-        "1zoFlpBtBrZZjHBCjJ9LmlYSwgZmCnPFY",
-        "1UdthHkd0898IcZjxMEDbT7YkultWUXBt",
-        "1hcEsEeQGFvg7oWJso7jQUcOqdp4N1Bf1",
-        "1DsUXF1BWZ6Xm-zUA6fkjmQjYndMUPSdI",
-        "1yeBGanO6DOi6qE8LfjXE1wGh305yZlrS",
-        "1Lwn-MHyqTHddKj-zgo5ssUYmlNAeRznM"
-      ],
-      "drive_folder": "1ZCrLOH6YcazVFZhdEV-RrTmshPg8kDJr",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/range-rover-evoque-2.0-se-dynamic-4wd-16v-gasolina-4p-automatico-gasolina-2016/4622551/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "land-range-rover-evoque-2016"
-    },
-    {
-      "id": "4706844",
-      "loja": "RECAR",
-      "marca": "Volkswagen",
-      "modelo": "FOX",
-      "versao": "1.6 Mi 8V Flex 4P Manual 2013",
-      "ano": 2013,
-      "km": 159000,
-      "preco": 42900,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Manual",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [],
-      "drive_folder": "16bMN3WyY-O7qu2sSJbvon0kC9m-SkiyB",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/fox-1.6-mi-8v-flex-4p-manual-flex-2013/4706844/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-fox-2013"
-    },
-    {
-      "id": "4639254",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "HR-V",
-      "versao": "1.8 16V Flex Ex 4P Automático 2019",
-      "ano": 2019,
-      "km": 97000,
-      "preco": 99900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1D1Z7usAL_OvXX1b6KbG7UXJIFK5GbMzR",
-        "1doUaPRdjzFxnljIalTxcSVtdN6Em_aaN",
-        "1ThBbl437ioz7ziNQbF1-ZFshtpTzVoJT",
-        "1kjpu1HAMa5yTw2fBnunZvkpySWhFr28X",
-        "1PWmBSRUYEpBimpCAisDeDTMEiTuBkjiG",
-        "1QU9KYwyv4uxz3wR2-11sVLlEWbeiIcwj",
-        "1Y8i4j9HthQnTX1jDj_nx_8rQKKgv9WyF",
-        "1kmTtoo4K8v8cYX12G0VWU4LUKAv_ETdm",
-        "16nUOxJ75MY5nfBakZ6b5a8kEi477O387"
-      ],
-      "drive_folder": "1gz1Sk518a9lXr5ijipLQGmXD4Vbh3g8H",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-ex-4p-automatico-flex-2019/4639254/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-hr-v-2019"
-    },
-    {
-      "id": "3935712",
-      "loja": "RECAR",
-      "marca": "Kia",
-      "modelo": "Soul",
-      "versao": "1.6 Ex 16V Flex 4P Automático 2017",
-      "ano": 2017,
-      "km": 95000,
-      "preco": 82900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1YOSHll6W2GhTiT2uTGRvWu1ghKdRDDzD",
-        "1-KMUlBfvX8CQ2KCFGX_bihehfe0WyjGQ",
-        "1xBiyzIBqcq9g_38hJB6RVsnGNXz-fgRA",
-        "1vxTJtU2FYqAcq5hci20lzAMEp1qqNSj1",
-        "1HFM10yfovkSGirX0XzrjvXAiQgEtIdXd",
-        "1JRgCV6Zo61QeU4PD5J_E3jY9eBEQSDm9",
-        "1ggMNLNaKj_SunyxA0uJMS6DUec6GjcEk",
-        "1s3zUJc_Ax4nfcqfRgPRO2Hm-Z-DAKWWP",
-        "1neBOeVMp29wJCEHuTJKGATgQD2auTpjB",
-        "1Ro1sjPM7J3y00hoxHoDQ9EV-Z-6BkONk"
-      ],
-      "drive_folder": "1Wjg_aCuu29BAOalgCK1yXZXUvkbjSsWb",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/soul-1.6-ex-16v-flex-4p-automatico-flex-2017/3935712/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "kia-soul-2017"
-    },
-    {
-      "id": "4639289",
-      "loja": "RECAR",
-      "marca": "Toyota",
-      "modelo": "Yaris",
-      "versao": "1.5 16V Flex Xl Plus Connect Multidrive 2022",
-      "ano": 2022,
-      "km": 95000,
-      "preco": 83900,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1dvZXmHV9_aZ_QSnIC6NGM2whb0Tbxz2W",
-        "1wO8rjGOzJui0hFPTpR4Tq7-PSNniOub9",
-        "1zrO34RhSS0f0V5Xx9dZUZzxaBhuHR4ka",
-        "1Zpmb7lPir0WitYV0PtMYoyICJhltvWsv",
-        "1VYxnZVMprPW9CHHN4Ii5Y3nLNZz48jNO",
-        "1P3vHqEpg7D2bzMUZrPAgEnWyYPUm93Sp",
-        "1VJNXLv8fEKgoTt_GDrSqeLidV76nTBn6"
-      ],
-      "drive_folder": "1McVqGL5-J0HpiMycz52yx1EtcoWWhcv7",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/yaris-1.5-16v-flex-xl-plus-connect-multidrive-flex-2022/4639289/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "toyota-yaris-2022"
-    },
-    {
-      "id": "4622556",
-      "loja": "RECAR",
-      "marca": "Chevrolet",
-      "modelo": "Onix",
-      "versao": "1.0 Turbo Flex Ltz Manual 2021",
-      "ano": 2021,
-      "km": 79600,
-      "preco": 66900,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Manual",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1LbYCliwebYXzQAYq3fqeG2OYhSAHVT4I",
-        "184FhGdNYYoTdH-FqoLYcn727v_sncnbv",
-        "1__XiWoa3HWyukq1_-sc9oUwKTVlf6-B2",
-        "12oChwx1E3Ze8ZCUJUgW5A1eA4vVZ4Jvy",
-        "1H-j1pa_MjiDblgQdDaJ8Kx8X3tKdqjeh",
-        "1ukgD7twOdcQKLZs8a7aALKWBxXVbKP2W",
-        "1vh0eusUx1yJWajZcoumfCHyC_4VOFwtO",
-        "1mjXZStDAgovskiRrihLOCk5cBXonPedz",
-        "1olSdhjOQWQR5caAnY5Dx3a-Fx59RXIZG"
-      ],
-      "drive_folder": "1OkSqsBopgarLPNCv7nkU0-YkaSUVGwHs",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/onix-1.0-turbo-flex-ltz-manual-flex-2021/4622556/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "chevrolet-onix-2021"
-    },
-    {
-      "id": "4120943",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "Civic",
-      "versao": "1.8 Lxs 16V Flex 4P Automático 2015",
-      "ano": 2015,
-      "km": 137000,
-      "preco": 72900,
-      "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1f1wnwhhP3V00NxTlzziPa5wYoWZtGTiN",
-        "10jzERREI8F2d0rH65GqD9kkF1OuOhRpx",
-        "1_mdaqLxaZUW0W-EKfHfSM8qvCvwtBm4r",
-        "1DrYzYHG8FiLTeT2Wpvt7ToViTYIyuMRb",
-        "1Wl-IN0RLRku1bI7W7yOTiu-zahQUM2nX",
-        "16UOpMB4izvZtkioCZJEsi8zGb62sIdKo",
-        "1-4TdFhGMl4ArcWJKSXe9ysayb2SvPsRb",
-        "1eUCrpy6uCJRD1E41GGd3zvkb1txghy77",
-        "1rLz0_E3m6oTNt17pthbonrSZA3h-obmo"
-      ],
-      "drive_folder": "1fEgKL0Ua_bWw07wEHFuPqfkLYGWAbqmB",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-1.8-lxs-16v-flex-4p-automatico-flex-2015/4120943/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-civic-2015"
-    },
-    {
-      "id": "4120984",
-      "loja": "RECAR",
-      "marca": "Honda",
-      "modelo": "FIT",
-      "versao": "1.5 Ex 16V Flex 4P Automático 2019",
-      "ano": 2019,
-      "km": 105309,
-      "preco": 84900,
-      "tipo": "HATCH",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1k1RAsERGmdvw8rRqHnDtdLny2NHH4iiz",
-        "1DEKkDTaUjQqpulCLKOww0sQawDc2Ce10",
-        "1gsMDy7sYOH6Jug4ZzmeQO-z4DlgeOA2L",
-        "1OKa03il649T1bz0sGfrwMn102lsn8Rsh",
-        "1tz9K2AQHD74likJMLDc2sc2n_-6mbVff",
-        "1zPuuC6aO07xe9TQP7RqaQytY472aE7xY",
-        "1oiij-ZOqeW9bTFZEfHolYNXerG8yMl8P",
-        "1aHJALisAdcGHmoBCINCYnvL6WKnARKz0",
-        "17FvQ7XBeK9ww0DtcUVXHbOtBPvGU7HhZ"
-      ],
-      "drive_folder": "1tpsivWPju6FCHYLZqmaeell_st7nQm3l",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/fit-1.5-ex-16v-flex-4p-automatico-flex-2019/4120984/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "honda-fit-2019"
-    },
-    {
-      "id": "4737390",
-      "loja": "RECAR",
-      "marca": "Chery",
-      "modelo": "Tiggo 8",
-      "versao": "8 1.6 Tgdi Gasolina Txs Dct 2023",
+      "marca": "Peugeot",
+      "modelo": "2008",
+      "versao": "1.6 16V Thp Flex Griffe 4P Automático 2023",
       "ano": 2023,
-      "km": 85000,
-      "preco": 132900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Gasolina",
-      "opcionais": [],
-      "fotos_drive": [
-        "1fAubd4KXsOqy0FTEAK4-JljnLPYCe-gy",
-        "1pUvVwuIc3j_vrXI2_8gS3TW9npDN5Gj3",
-        "1dkVjYLS2SvdgiCRw0x7INzUaoFdkutZB",
-        "1nc6aKdMzayWk3f2SxksgtUjghZiMbSLu",
-        "14YNb1RHcmzP-BSi6C2xDNTRiXuAsbtXw",
-        "1JTbohco4IfH_wFe_I0LHh3wYpJYpRVFC",
-        "1scDbeR2pwwEhwFKqvgU9KGOL-araI_z_"
-      ],
-      "drive_folder": "1F38Djhs1ikBZeE4YQnlEiy2Ms1l16c-x",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/tiggo-8-1.6-tgdi-gasolina-txs-dct-flex-2023/4737390/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "chery-tiggo-8-2023"
-    },
-    {
-      "id": "4435130",
-      "loja": "RECAR",
-      "marca": "Ford",
-      "modelo": "EcoSport",
-      "versao": "2.0 Titanium 16V Flex 4P Automático 2014",
-      "ano": 2014,
-      "km": 122000,
-      "preco": 53900,
+      "km": 17000,
+      "preco": 94900,
       "tipo": "SUV",
       "cor": "",
       "cambio": "Automático",
       "combustivel": "Flex",
       "opcionais": [],
-      "fotos_drive": [],
-      "drive_folder": "1U0yyAg5Y2rTFWEs9BJTRtkcF90r7k_R4",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/ecosport-2.0-titanium-16v-flex-4p-automatico-flex-2014/4435130/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "ford-ecosport-2014"
+      "fotos_drive": [
+        "1BcbTQAJkQe1cT569__6SvSG0Z1JTQMho",
+        "1UPOyGV0ytQlXFyzoQKGic4g8IO1SKZVB",
+        "1Byxk_iuV8KJlV4QbbcDTxmYqC7ocpA30",
+        "1sQdH55EOMKl1Ineea1WN9Y7a2sdf7a6f",
+        "1MoNv4kX_MW6dw_Xia7yDvw7k8ShHlT53"
+      ],
+      "drive_folder": "1i1ilheo1VyqkWIjhsffIl0Yr4_964-W0",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/2008-1.6-16v-thp-flex-griffe-4p-automatico-flex-2023/4622545/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4706846",
@@ -1731,58 +1237,37 @@
       ],
       "drive_folder": "1u252fgh_-xbHZM8fqMxbsqvlpKKuQlsm",
       "url_original": "https://recarautomarcas.com.br/Veiculo/golf-1.4-tsi-comfortline-16v-gasolina-4p-automatico-gasolina-2015/4706846/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-golf-2015"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4639279",
+      "id": "4743574",
       "loja": "RECAR",
-      "marca": "Toyota",
-      "modelo": "Etios",
-      "versao": "1.5 X Plus 16V Flex 4P Manual 2021",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "versao": "2.0 16V Flexone Ex 4P Cvt 2021",
       "ano": 2021,
-      "km": 134000,
-      "preco": 69900,
-      "tipo": "HATCH",
+      "km": 116000,
+      "preco": 125900,
+      "tipo": "SEDAN",
       "cor": "",
-      "cambio": "Manual",
+      "cambio": "Cvt",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "1m8YWHp12FS2chd8kYG6mQD3AygXOSHDZ",
-        "1xmCWrosnBbUFVOVS666gYYVEGxIPYYI0",
-        "1UIgoxJy66OFwNDo8cp8pWcrB3mre30vS",
-        "1gbpCWA5TdvmcXBoiAcwfuoXJLLOXbc9j",
-        "1YmH0sr8PhnQQm-eZCRdwKYb1slzzgnil",
-        "195TRQCJ5b7LccEFg5oHVO86g7Scqw_us",
-        "1hutl40LdqH_kZRTRwsZMYK18xgW-JcSc",
-        "1c-pUBOz61U8xw4OM-EsebxukKSpDuTM0",
-        "10oeXiQAZwnSO4-BfGH3HSfyqZLTxcI53"
+        "1Q76A_3JVMU5Lu80c7GEohZBz8OT9SEgO",
+        "1Auiq7RfUD6WXo_NEmLgxlDVbHESa4lj2",
+        "17k5MZTqcEoU2wauyfs6y_o5Yhg1MndoF",
+        "1ywr0NisyeT1m4t_g5d5ZoLxb8JB2uNd2",
+        "1b3V6IubY5U3btYkePDCemarJaZOjf3dg",
+        "1JJIlj_aLf1qHyNoD1IYuzTINdjJ6GLqS",
+        "1VTAfdPBITmLPQeQyVqW_Sv3m2dPMe0Pq",
+        "1wb5oHFn2qGSE0-32-TkpikC3QHbxLu6a",
+        "13fTqKzO4QZI5M6AxY-VTMCFMgyr2zuxO",
+        "1LPOwqrZApWjMmNT3tyWTU2KlRtynpT4U"
       ],
-      "drive_folder": "1e17fUOPhLG-EWlctyPPtjBP1GOjmrSZn",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/etios-1.5-x-plus-16v-flex-4p-manual-flex-2021/4639279/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "toyota-etios-2021"
-    },
-    {
-      "id": "4764868",
-      "loja": "RECAR",
-      "marca": "Renault",
-      "modelo": "Duster",
-      "versao": "2.0 Dynamique 4X2 16V Flex 4P Automático 2016",
-      "ano": 2016,
-      "km": 104370,
-      "preco": 61900,
-      "tipo": "SUV",
-      "cor": "",
-      "cambio": "Automático",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [],
-      "drive_folder": "1s1PgLMvmDQzq_V0y28cuLalQZfR_QHBs",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2016/4764868/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "renault-duster-2016"
+      "drive_folder": "1k8Bh3lm-cXGQ5aeaw8rpf-JkbhkM3uEw",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-2.0-16v-flexone-ex-4p-cvt-flex-2021/4743574/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4180323",
@@ -1811,17 +1296,16 @@
       ],
       "drive_folder": "1cmCJXnxlV1GsjWsVV98Oa4NbqsQX5CPe",
       "url_original": "https://recarautomarcas.com.br/Veiculo/ecosport-1.6-freestyle-16v-flex-4p-powershift-flex-2017/4180323/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "ford-ecosport-2017"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4622557",
+      "id": "4737390",
       "loja": "RECAR",
       "marca": "Chery",
       "modelo": "Tiggo 8",
       "versao": "8 1.6 Tgdi Gasolina Txs Dct 2023",
       "ano": 2023,
-      "km": 0,
+      "km": 85000,
       "preco": 132900,
       "tipo": "SUV",
       "cor": "",
@@ -1829,47 +1313,340 @@
       "combustivel": "Gasolina",
       "opcionais": [],
       "fotos_drive": [
-        "1t99am29p3G50cztUVyq_CYcnoywphSyB",
-        "1Gh6YCSpgCbjX9zBCA_v4TgT1dqZxsj6B",
-        "1kb9ZXQJ9H6Lnv4PmOucCiHhhyqRopizR",
-        "18MO0hAO3y20NIcdT41aVJJ2jZVU4B91p",
-        "1zhPAS6ikh2Hfb4SywoalY_ybYCYyhY1V",
-        "1ZTID8BX9nGeb_20fI9Cv90uD9k1XgD8k",
-        "1hsgxpf5pRm4C6CRI7J9pQFSPzskZ4ORh",
-        "1f77z8YPalAptkl0kHMywo_Z2Dt_Yo7A7",
-        "1r4VCq4qHaUw5SnBRecjGQyXW4ZJ3VsaM"
+        "1fAubd4KXsOqy0FTEAK4-JljnLPYCe-gy",
+        "1pUvVwuIc3j_vrXI2_8gS3TW9npDN5Gj3",
+        "1dkVjYLS2SvdgiCRw0x7INzUaoFdkutZB",
+        "1nc6aKdMzayWk3f2SxksgtUjghZiMbSLu",
+        "14YNb1RHcmzP-BSi6C2xDNTRiXuAsbtXw",
+        "1JTbohco4IfH_wFe_I0LHh3wYpJYpRVFC",
+        "1scDbeR2pwwEhwFKqvgU9KGOL-araI_z_"
       ],
-      "drive_folder": "1fS_D_Ghz-wts-k7JBHtqOqGJyReWIgn8",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/tiggo-8-1.6-tgdi-gasolina-txs-dct-gasolina-2023/4622557/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "chery-tiggo-8-8-2023"
+      "drive_folder": "1F38Djhs1ikBZeE4YQnlEiy2Ms1l16c-x",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/tiggo-8-1.6-tgdi-gasolina-txs-dct-flex-2023/4737390/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4410529",
+      "id": "4639279",
       "loja": "RECAR",
-      "marca": "Volkswagen",
-      "modelo": "FOX",
-      "versao": "1.0 Mi 8V Flex 4P Manual 2013",
-      "ano": 2013,
-      "km": 125000,
-      "preco": 41900,
+      "marca": "Toyota",
+      "modelo": "Etios",
+      "versao": "1.5 X Plus 16V Flex 4P Manual 2021",
+      "ano": 2021,
+      "km": 134000,
+      "preco": 69900,
       "tipo": "HATCH",
       "cor": "",
       "cambio": "Manual",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "15kPPBVUZdfXPrccqMYhCJQ6f7vjEVPOp",
-        "1cuUVRyz7Vh1Ffcd67RsnEp4-e3RNGlqq",
-        "18wXQDtDMiW8aFaUqtTy6vxwgEKCBM5Nw",
-        "1juTQbNQ7NFYPQKa5Wjvc0Cp21OwiMNc2",
-        "18AWLP5BGv1SS_-cksBVj3CXwggkiMv-d",
-        "1ACkWE9ZaurWsfpXvJG76i3CklFnyUB4e"
+        "1m8YWHp12FS2chd8kYG6mQD3AygXOSHDZ",
+        "1xmCWrosnBbUFVOVS666gYYVEGxIPYYI0",
+        "1UIgoxJy66OFwNDo8cp8pWcrB3mre30vS",
+        "1gbpCWA5TdvmcXBoiAcwfuoXJLLOXbc9j",
+        "1YmH0sr8PhnQQm-eZCRdwKYb1slzzgnil",
+        "195TRQCJ5b7LccEFg5oHVO86g7Scqw_us",
+        "1hutl40LdqH_kZRTRwsZMYK18xgW-JcSc",
+        "1c-pUBOz61U8xw4OM-EsebxukKSpDuTM0",
+        "10oeXiQAZwnSO4-BfGH3HSfyqZLTxcI53"
       ],
-      "drive_folder": "1UEninvMqpD3LDXY6j2dUa73b49VufXwD",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/fox-1.0-mi-8v-flex-4p-manual-flex-2013/4410529/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "volkswagen-fox-10-2013"
+      "drive_folder": "1e17fUOPhLG-EWlctyPPtjBP1GOjmrSZn",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/etios-1.5-x-plus-16v-flex-4p-manual-flex-2021/4639279/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4622551",
+      "loja": "RECAR",
+      "marca": "Land Rover",
+      "modelo": "Range Rover Evoque",
+      "versao": "Range Rover Evoque 2.0 Se Dynamic 4Wd 16V Gasolina 4P Automático 2016",
+      "ano": 2016,
+      "km": 87919,
+      "preco": 114900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Gasolina",
+      "opcionais": [],
+      "fotos_drive": [
+        "141QJ3iCHaDlrf1x67wGirdy98iUaAgTZ",
+        "1zoFlpBtBrZZjHBCjJ9LmlYSwgZmCnPFY",
+        "1UdthHkd0898IcZjxMEDbT7YkultWUXBt",
+        "1hcEsEeQGFvg7oWJso7jQUcOqdp4N1Bf1",
+        "1DsUXF1BWZ6Xm-zUA6fkjmQjYndMUPSdI",
+        "1yeBGanO6DOi6qE8LfjXE1wGh305yZlrS",
+        "1Lwn-MHyqTHddKj-zgo5ssUYmlNAeRznM"
+      ],
+      "drive_folder": "1ZCrLOH6YcazVFZhdEV-RrTmshPg8kDJr",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/range-rover-evoque-2.0-se-dynamic-4wd-16v-gasolina-4p-automatico-gasolina-2016/4622551/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4622556",
+      "loja": "RECAR",
+      "marca": "Chevrolet",
+      "modelo": "Onix",
+      "versao": "1.0 Turbo Flex Ltz Manual 2021",
+      "ano": 2021,
+      "km": 79600,
+      "preco": 66900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1LbYCliwebYXzQAYq3fqeG2OYhSAHVT4I",
+        "184FhGdNYYoTdH-FqoLYcn727v_sncnbv",
+        "1__XiWoa3HWyukq1_-sc9oUwKTVlf6-B2",
+        "12oChwx1E3Ze8ZCUJUgW5A1eA4vVZ4Jvy",
+        "1H-j1pa_MjiDblgQdDaJ8Kx8X3tKdqjeh",
+        "1ukgD7twOdcQKLZs8a7aALKWBxXVbKP2W",
+        "1vh0eusUx1yJWajZcoumfCHyC_4VOFwtO",
+        "1mjXZStDAgovskiRrihLOCk5cBXonPedz",
+        "1olSdhjOQWQR5caAnY5Dx3a-Fx59RXIZG"
+      ],
+      "drive_folder": "1OkSqsBopgarLPNCv7nkU0-YkaSUVGwHs",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/onix-1.0-turbo-flex-ltz-manual-flex-2021/4622556/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4120943",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "versao": "1.8 Lxs 16V Flex 4P Automático 2015",
+      "ano": 2015,
+      "km": 137000,
+      "preco": 72900,
+      "tipo": "SEDAN",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1f1wnwhhP3V00NxTlzziPa5wYoWZtGTiN",
+        "10jzERREI8F2d0rH65GqD9kkF1OuOhRpx",
+        "1_mdaqLxaZUW0W-EKfHfSM8qvCvwtBm4r",
+        "1DrYzYHG8FiLTeT2Wpvt7ToViTYIyuMRb",
+        "1Wl-IN0RLRku1bI7W7yOTiu-zahQUM2nX",
+        "16UOpMB4izvZtkioCZJEsi8zGb62sIdKo",
+        "1-4TdFhGMl4ArcWJKSXe9ysayb2SvPsRb",
+        "1eUCrpy6uCJRD1E41GGd3zvkb1txghy77",
+        "1rLz0_E3m6oTNt17pthbonrSZA3h-obmo"
+      ],
+      "drive_folder": "1fEgKL0Ua_bWw07wEHFuPqfkLYGWAbqmB",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-1.8-lxs-16v-flex-4p-automatico-flex-2015/4120943/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4844486",
+      "loja": "RECAR",
+      "marca": "N/D",
+      "modelo": "Agile 1.4",
+      "versao": "1.4 Mpfi Lt 8V Flex 4P Manual 2011",
+      "ano": 2011,
+      "km": 125000,
+      "preco": 39900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1hrtvJg9XoUqX3GQCorPxRQ6VsznpC7nQ",
+        "1FYZyF3dqViV2ApKNNZ5e5yWq7kTIe3Mo",
+        "1xDY0DHgR2jqYTMGcJuy6U8T4skPi97bp",
+        "1I8tKpOUa8CU0G205v8q-k0j_6pdmX0-P",
+        "1Wj9POLbNxY75NnVFLUA52fknbA3qspTm",
+        "19Fbs9GWoBOPUSC745CFK3osw9Zd1Z_uQ",
+        "1fx26RwctgFEQL4woVBFnQWHPWpThzzOI",
+        "1h_2Vp8gY7nAehjsuzIOjpGdRpxUj4_Ev"
+      ],
+      "drive_folder": "10jdwEOEvxj_6rPoLHGG6KTvgfgdh7GWD",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/agile-1.4-mpfi-lt-8v-flex-4p-manual-flex-2011/4844486/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "3935712",
+      "loja": "RECAR",
+      "marca": "Kia",
+      "modelo": "Soul",
+      "versao": "1.6 Ex 16V Flex 4P Automático 2017",
+      "ano": 2017,
+      "km": 95000,
+      "preco": 82900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1YOSHll6W2GhTiT2uTGRvWu1ghKdRDDzD",
+        "1-KMUlBfvX8CQ2KCFGX_bihehfe0WyjGQ",
+        "1xBiyzIBqcq9g_38hJB6RVsnGNXz-fgRA",
+        "1vxTJtU2FYqAcq5hci20lzAMEp1qqNSj1",
+        "1HFM10yfovkSGirX0XzrjvXAiQgEtIdXd",
+        "1JRgCV6Zo61QeU4PD5J_E3jY9eBEQSDm9",
+        "1ggMNLNaKj_SunyxA0uJMS6DUec6GjcEk",
+        "1s3zUJc_Ax4nfcqfRgPRO2Hm-Z-DAKWWP",
+        "1neBOeVMp29wJCEHuTJKGATgQD2auTpjB",
+        "1Ro1sjPM7J3y00hoxHoDQ9EV-Z-6BkONk"
+      ],
+      "drive_folder": "1Wjg_aCuu29BAOalgCK1yXZXUvkbjSsWb",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/soul-1.6-ex-16v-flex-4p-automatico-flex-2017/3935712/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4639254",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "HR-V",
+      "versao": "1.8 16V Flex Ex 4P Automático 2019",
+      "ano": 2019,
+      "km": 97000,
+      "preco": 99900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1D1Z7usAL_OvXX1b6KbG7UXJIFK5GbMzR",
+        "1doUaPRdjzFxnljIalTxcSVtdN6Em_aaN",
+        "1ThBbl437ioz7ziNQbF1-ZFshtpTzVoJT",
+        "1kjpu1HAMa5yTw2fBnunZvkpySWhFr28X",
+        "1PWmBSRUYEpBimpCAisDeDTMEiTuBkjiG",
+        "1QU9KYwyv4uxz3wR2-11sVLlEWbeiIcwj",
+        "1Y8i4j9HthQnTX1jDj_nx_8rQKKgv9WyF",
+        "1kmTtoo4K8v8cYX12G0VWU4LUKAv_ETdm",
+        "16nUOxJ75MY5nfBakZ6b5a8kEi477O387"
+      ],
+      "drive_folder": "1gz1Sk518a9lXr5ijipLQGmXD4Vbh3g8H",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-ex-4p-automatico-flex-2019/4639254/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4180355",
+      "loja": "RECAR",
+      "marca": "Ford",
+      "modelo": "EcoSport",
+      "versao": "1.5 Tivct Flex Freestyle Manual 2018",
+      "ano": 2018,
+      "km": 94000,
+      "preco": 72900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1gqhNujaOfMEvfv2JJnWW6KHSKlrjvaGf",
+        "1AamInrwO1rxD35SXMnkj-y8aCWXATiWS",
+        "1d7dpeK2jr3OQeFncT14TL7c1VJ6GYQJ1",
+        "1EjJA4208E0w9jp_X5hGq2y1b9GMignyA",
+        "12ZB9qq94gfDZ4PtxOCh4KAuCWptE4zrH",
+        "1bqpTRd5xDhjM3_qeBjzmq4EjHumPY81x",
+        "1i9OFXrrDOmK3x1syVA_V1cYbCCWev8B0",
+        "18QteoIw9z_CsuzHsTHTaP4fu4cead6Pn",
+        "1b1IcikUgojGkqjCXjC5EB5x2_XmPkDBo"
+      ],
+      "drive_folder": "1rQ2ao17XJX0Mxa2DfakuNnMQXN-aXc6w",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/ecosport-1.5-tivct-flex-freestyle-manual-flex-2018/4180355/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4622547",
+      "loja": "RECAR",
+      "marca": "Nissan",
+      "modelo": "Kicks",
+      "versao": "1.6 16V Flexstart Sense Xtronic 2023",
+      "ano": 2023,
+      "km": 0,
+      "preco": 94900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Cvt",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1UrjKHREyYClexQrz2P9EOxx197_d616u",
+        "1sRKNecOAT1fVXxXQQRIIeQYiPjKE3TG7",
+        "1NAtzAc-iBUm_2PLmCh9-WsFRvTNlfMh-",
+        "11o3294raCwbOaqHOBDDc_2OO9wanljcU",
+        "1Dwnp0oCEyFydoxD3b0OtXM6PV6qWh1xl",
+        "1360Oika33vG__x28Tm7de47fAWWRp8cK"
+      ],
+      "drive_folder": "118cg33eHwVpUVwO5tXBOpaGglzuDrfss",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2023/4622547/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4120984",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "FIT",
+      "versao": "1.5 Ex 16V Flex 4P Automático 2019",
+      "ano": 2019,
+      "km": 105309,
+      "preco": 84900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1k1RAsERGmdvw8rRqHnDtdLny2NHH4iiz",
+        "1DEKkDTaUjQqpulCLKOww0sQawDc2Ce10",
+        "1gsMDy7sYOH6Jug4ZzmeQO-z4DlgeOA2L",
+        "1OKa03il649T1bz0sGfrwMn102lsn8Rsh",
+        "1tz9K2AQHD74likJMLDc2sc2n_-6mbVff",
+        "1zPuuC6aO07xe9TQP7RqaQytY472aE7xY",
+        "1oiij-ZOqeW9bTFZEfHolYNXerG8yMl8P",
+        "1aHJALisAdcGHmoBCINCYnvL6WKnARKz0",
+        "17FvQ7XBeK9ww0DtcUVXHbOtBPvGU7HhZ"
+      ],
+      "drive_folder": "1tpsivWPju6FCHYLZqmaeell_st7nQm3l",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/fit-1.5-ex-16v-flex-4p-automatico-flex-2019/4120984/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4706844",
+      "loja": "RECAR",
+      "marca": "Volkswagen",
+      "modelo": "FOX",
+      "versao": "1.6 Mi 8V Flex 4P Manual 2013",
+      "ano": 2013,
+      "km": 159000,
+      "preco": 42900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [],
+      "drive_folder": "16bMN3WyY-O7qu2sSJbvon0kC9m-SkiyB",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/fox-1.6-mi-8v-flex-4p-manual-flex-2013/4706844/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4435130",
+      "loja": "RECAR",
+      "marca": "Ford",
+      "modelo": "EcoSport",
+      "versao": "2.0 Titanium 16V Flex 4P Automático 2014",
+      "ano": 2014,
+      "km": 122000,
+      "preco": 53900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [],
+      "drive_folder": "1U0yyAg5Y2rTFWEs9BJTRtkcF90r7k_R4",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/ecosport-2.0-titanium-16v-flex-4p-automatico-flex-2014/4435130/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4410401",
@@ -1898,37 +1675,7 @@
       ],
       "drive_folder": "188CPInwZwycIzM6LV-E-DCqoh2QsGgs7",
       "url_original": "https://recarautomarcas.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2024/4410401/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "nissan-kicks-2024"
-    },
-    {
-      "id": "4829892",
-      "loja": "RECAR",
-      "marca": "N/D",
-      "modelo": "Siena 1.0",
-      "versao": "1.0 Mpi Fire 8V Flex 4P Manual 2009",
-      "ano": 2009,
-      "km": 153490,
-      "preco": 32900,
-      "tipo": "SEDAN",
-      "cor": "",
-      "cambio": "Manual",
-      "combustivel": "Flex",
-      "opcionais": [],
-      "fotos_drive": [
-        "1IlCG_CNQGOVujEfWDgiwFXjMcvLnuVTr",
-        "1v4I5fcLQaUPTw-TWf7-6eCfCWf4IUwYb",
-        "1bfDQWPFCiuMO7UWZyxrU-x7iWSE1X4Fs",
-        "14-i6WRYq-RfbI2kBqfRBa5avuoW01JAf",
-        "1kcgNxS11qWVFe2rLhIUqPXvj3L3DXzbe",
-        "1wyC8UikF7zhcWJe94G72Fc8OJIPWq0O-",
-        "1FJPZWmxk9wJHHML-Lro_gN9u2qtPLPGa",
-        "1MLWRa0TsE_tiLQtuJUVEs7Wpr01SuSvh"
-      ],
-      "drive_folder": "1EBvHJRtdB1VXlXPCHgQx80559cV3Z0Dk",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/siena-1.0-mpi-fire-8v-flex-4p-manual-flex-2009/4829892/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "nd-siena-10-2009"
+      "whatsapp": "5513991575019"
     },
     {
       "id": "4706811",
@@ -1959,54 +1706,356 @@
       ],
       "drive_folder": "141GuT-rrT3XLLWZ5QY_D6dd9tEYdgSHf",
       "url_original": "https://recarautomarcas.com.br/Veiculo/tucson-2.0-mpfi-gls-16v-143cv-2wd-flex-4p-automatico-flex-2015/4706811/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "hyundai-tucson-2015"
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4706808",
+      "id": "4639289",
       "loja": "RECAR",
-      "marca": "Hyundai",
-      "modelo": "Tucson",
-      "versao": "2.0 Mpfi Gls 16V 143Cv 2Wd Flex 4P Automático 2014",
-      "ano": 2014,
-      "km": 140000,
-      "preco": 56900,
+      "marca": "Toyota",
+      "modelo": "Yaris",
+      "versao": "1.5 16V Flex Xl Plus Connect Multidrive 2022",
+      "ano": 2022,
+      "km": 95000,
+      "preco": 83900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1dvZXmHV9_aZ_QSnIC6NGM2whb0Tbxz2W",
+        "1wO8rjGOzJui0hFPTpR4Tq7-PSNniOub9",
+        "1zrO34RhSS0f0V5Xx9dZUZzxaBhuHR4ka",
+        "1Zpmb7lPir0WitYV0PtMYoyICJhltvWsv",
+        "1VYxnZVMprPW9CHHN4Ii5Y3nLNZz48jNO",
+        "1P3vHqEpg7D2bzMUZrPAgEnWyYPUm93Sp",
+        "1VJNXLv8fEKgoTt_GDrSqeLidV76nTBn6"
+      ],
+      "drive_folder": "1McVqGL5-J0HpiMycz52yx1EtcoWWhcv7",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/yaris-1.5-16v-flex-xl-plus-connect-multidrive-flex-2022/4639289/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4410529",
+      "loja": "RECAR",
+      "marca": "Volkswagen",
+      "modelo": "FOX",
+      "versao": "1.0 Mi 8V Flex 4P Manual 2013",
+      "ano": 2013,
+      "km": 125000,
+      "preco": 41900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "15kPPBVUZdfXPrccqMYhCJQ6f7vjEVPOp",
+        "1cuUVRyz7Vh1Ffcd67RsnEp4-e3RNGlqq",
+        "18wXQDtDMiW8aFaUqtTy6vxwgEKCBM5Nw",
+        "1juTQbNQ7NFYPQKa5Wjvc0Cp21OwiMNc2",
+        "18AWLP5BGv1SS_-cksBVj3CXwggkiMv-d",
+        "1ACkWE9ZaurWsfpXvJG76i3CklFnyUB4e"
+      ],
+      "drive_folder": "1UEninvMqpD3LDXY6j2dUa73b49VufXwD",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/fox-1.0-mi-8v-flex-4p-manual-flex-2013/4410529/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4836733",
+      "loja": "RECAR",
+      "marca": "N/D",
+      "modelo": "Livina 1.6",
+      "versao": "1.6 Sl X-Gear 16V Flex 4P Manual 2011",
+      "ano": 2011,
+      "km": 133000,
+      "preco": 32900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [],
+      "drive_folder": "1BSBB3qAKdL4Jv3_AqtU907O2RR13kG3l",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/livina-1.6-sl-x-gear-16v-flex-4p-manual-flex-2011/4836733/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4737395",
+      "loja": "RECAR",
+      "marca": "Nissan",
+      "modelo": "March",
+      "versao": "1.6 Sl 16V Flex 4P Manual 2016",
+      "ano": 2016,
+      "km": 92000,
+      "preco": 49900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1bVa4ENaseIL1NopYVZ9sT1Kl9MwAjLQg",
+        "19hkxID51GdB7eGP3qXBWERxnxt8NEHcB",
+        "1MlrmxkFXL3_RC--vb_o6jfYOEHv-4gKd",
+        "1Rgv-Pc0so6uuqNWPFFoqcfAWd2UkgUsD",
+        "1WjMRC81CQpDoi8eqE828PFqJ4BpQequN",
+        "1mx9A7ve-bH9SurHaUDUVtJB7PcBlyHvk",
+        "1xH7vvWHzHaRMOqzchlPDyW4qKGspOlQZ",
+        "1f9oFpLoLsoNoMgWjdbb0MYFcBTLsPjoG",
+        "1TGKEizYjCsH_a_kzKJOhJFwNfd51-iU0"
+      ],
+      "drive_folder": "15V0GdrhS9SG-Wg0ucp2kpy5UUUqjk4jf",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/march-1.6-sl-16v-flex-4p-manual-flex-2016/4737395/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4836772",
+      "loja": "RECAR",
+      "marca": "Volkswagen",
+      "modelo": "FOX",
+      "versao": "1.6 Mi Rock In Rio 8V Flex 4P Manual 2016",
+      "ano": 2016,
+      "km": 115040,
+      "preco": 54900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1TnQdg9LiUbtNbWTcnQMWcXWMNjEJ37uH",
+        "1QJpNLsXB5H1X-COPY2D4KuXzPtyjQlGi",
+        "1f9Xpy-_JgG8cvLVRWxsDuqjxqeHpxnJ1",
+        "1bnpChNsoP5z63sNg9MTVA5QSp97H-yrc",
+        "1RN4w45Uf5NPRNWzxUeaWspvTC2r2h3Nu",
+        "1BHprImOSaIKJG3-diwVbxUp2DppqX_rV",
+        "19j3hJWeTJMfhixY7FELlPmGuJIUJsksr"
+      ],
+      "drive_folder": "1e7MqaEtJxWIHdeBbnXjoirsA7CKJG6ra",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/fox-1.6-mi-rock-in-rio-8v-flex-4p-manual-flex-2016/4836772/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4622338",
+      "loja": "RECAR",
+      "marca": "Volkswagen",
+      "modelo": "Jetta",
+      "versao": "2.0 Comfortline 120Cv Flex 4P Tiptronic 2013",
+      "ano": 2013,
+      "km": 115000,
+      "preco": 61900,
+      "tipo": "SEDAN",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1gU14Tuooug63NsCR2TcKR2STP692o-Bx",
+        "1RFVLSWKqE-3RpG90YO3O9Dyc_BxP8juN",
+        "1IJW5Xlym4M_wGFw4cwMig7kuNibCHZID",
+        "12rfPlc-zd2bvSxXhSIUSwfVM1YD2fk9Q",
+        "1iK8yuTQhX_xCT4DFI4kvlB4AAAbdeNr6",
+        "1Ht-E9GgIX_DaEbiDOBFQXKW5zND3WGVc",
+        "1yEsWMxBkK3NnrprdR1JdIa5qKnzj3Zkh",
+        "1oqeVFYtJiygG7AzzmU21AOrGwz0F_2-T",
+        "1ebsrFwAYxVd9kH5MX_d2VWzIPv3_6Uzv",
+        "11v8kTTBFvW6U4q3a7LUTd5qNW4PuYl3h"
+      ],
+      "drive_folder": "1ECal_RyJFf6s1PJ4KvW54sKCEF90uIR_",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/jetta-2.0-comfortline-120cv-flex-4p-tiptronic-flex-2013/4622338/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4836839",
+      "loja": "RECAR",
+      "marca": "Volkswagen",
+      "modelo": "T-Cross",
+      "versao": "1.0 200 Tsi Total Flex Automático 2024",
+      "ano": 2024,
+      "km": 62000,
+      "preco": 106900,
       "tipo": "SUV",
       "cor": "",
       "cambio": "Automático",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [],
-      "drive_folder": "1Th-wS_Za_CRMGf8GLtzR5fx2o1pdGTYP",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/tucson-2.0-mpfi-gls-16v-143cv-2wd-flex-4p-automatico-flex-2014/4706808/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "hyundai-tucson-2014"
+      "drive_folder": "1r_ukt5aFNC-RRW_-opltm3ovPzBcCh96",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/t-cross-1.0-200-tsi-total-flex-automatico-flex-2024/4836839/detalhes",
+      "whatsapp": "5513991575019"
     },
     {
-      "id": "4622545",
+      "id": "4836589",
       "loja": "RECAR",
-      "marca": "Peugeot",
-      "modelo": "2008",
-      "versao": "1.6 16V Thp Flex Griffe 4P Automático 2023",
-      "ano": 2023,
-      "km": 17000,
-      "preco": 94900,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "versao": "2.0 16V Flexone Sport 4P Cvt 2017",
+      "ano": 2017,
+      "km": 158000,
+      "preco": 96900,
+      "tipo": "SEDAN",
+      "cor": "",
+      "cambio": "Cvt",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1SxCX6fe6VOOzmFl027mCgjWWI_W60DFz",
+        "1GUeD68GYl3wNcQwF3__idX-rTvWKxVcj",
+        "1FAR2OHjvk6edOU_Rn7W_kFJ5xH0BEyco",
+        "1Zf9HJVqEilDgU-5fse9xaUvt_KLY8sl3",
+        "1lzIU7F_tKOe-_749C8OUsfnGalSUEYsv",
+        "1Edl8Dx32nvFn11XhDbAcrCwK01o_ke66",
+        "12o2For4oA0Toa3WaLz2G_tlB6Grjb0vu",
+        "1gREshvRvpvD5LClc5Q1EjPd7PVKlwBEm",
+        "1FmGy40SDxc5WKNjEcx_rgUFEXld9x0y7"
+      ],
+      "drive_folder": "1oYRlLKPBsnCGgawFUuCOaKklNpSYZKR8",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-2.0-16v-flexone-sport-4p-cvt-flex-2017/4836589/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4836608",
+      "loja": "RECAR",
+      "marca": "Jeep",
+      "modelo": "Renegade",
+      "versao": "1.3 T270 Turbo Flex At6 2024",
+      "ano": 2024,
+      "km": 46000,
+      "preco": 99900,
       "tipo": "SUV",
       "cor": "",
       "cambio": "Automático",
       "combustivel": "Flex",
       "opcionais": [],
       "fotos_drive": [
-        "1BcbTQAJkQe1cT569__6SvSG0Z1JTQMho",
-        "1UPOyGV0ytQlXFyzoQKGic4g8IO1SKZVB",
-        "1Byxk_iuV8KJlV4QbbcDTxmYqC7ocpA30",
-        "1sQdH55EOMKl1Ineea1WN9Y7a2sdf7a6f",
-        "1MoNv4kX_MW6dw_Xia7yDvw7k8ShHlT53"
+        "1G6inH8NaRCsC14dXxaWzBm3oVu_nKDno",
+        "1rBthozJRLFBt0zhFN8R-Jx02S8Ri4iao",
+        "1N6ABSTgVGGigpkge23vJQmKtPaeMjwsb",
+        "1hiMsNDRQiAuTWXET6Of1ufJ6wWeV7R5I",
+        "1DkK_eoXSNEAoxgXjcEQFgyw8cbukwSWS",
+        "11xrkZMcsyQVyL9jh3rwg00kBqvgqOefQ",
+        "1Ex0muBWRSrkArYSnpBSumhVxPjMkiwmy",
+        "1e4G-bIlhef10nY07MPZW9I5cZsNbW0ZT",
+        "1um2K-Foy39E1KPdDm3-wPJFLcnBQZZIw"
       ],
-      "drive_folder": "1i1ilheo1VyqkWIjhsffIl0Yr4_964-W0",
-      "url_original": "https://recarautomarcas.com.br/Veiculo/2008-1.6-16v-thp-flex-griffe-4p-automatico-flex-2023/4622545/detalhes",
-      "whatsapp": "5513991575019",
-      "slug": "peugeot-2008-2023"
+      "drive_folder": "1q-1O3te362oFGu6VJ-jhcM9cOG0tdaqp",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/renegade-1.3-t270-turbo-flex-at6-flex-2024/4836608/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4622542",
+      "loja": "RECAR",
+      "marca": "Renault",
+      "modelo": "Duster",
+      "versao": "2.0 Dynamique 4X2 16V Flex 4P Automático 2017",
+      "ano": 2017,
+      "km": 142000,
+      "preco": 64900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1vWIbKoYmJPbpc06sJBbk3O_W4upqvDG3",
+        "1VEdGsv5-AMY5rJBhu83wFrDyhLjKzmcv",
+        "1hWRzkUB4BsxOZX_P0fS-5C8yMUuLOQ62",
+        "1nwZJcF6xNhIsaREXkDelQnNLCYXmus1k",
+        "1vXgXmt2EUIOj1hIsRQ0Qu4Ui0xiTuWXv",
+        "1fuIly7pMYLDS-iMFpAaKhNP7api5bRxb",
+        "1HqlOhGMqMYvf3p3DDMpEtJhZc8FnVnXM",
+        "10-S_glt-pl_MwhbRYxoE4d8Ql0WMj_sm"
+      ],
+      "drive_folder": "1b_VA4YbEQ0jRvAMlaqGvOQXj8ha_ZjLR",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2017/4622542/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4775980",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "versao": "2.0 16V Flexone Sport 4P Cvt 2019",
+      "ano": 2019,
+      "km": 128000,
+      "preco": 105900,
+      "tipo": "SEDAN",
+      "cor": "",
+      "cambio": "Cvt",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1GGOMS-66AXPcWclpTXB3kixcehx-V6Z6",
+        "1S8Cgl-ggd7V7MVv94eYkOJMz24j9C0k4",
+        "12Uz6S8cKoW5yBp0Kal9vNBp4tzncg5Bx",
+        "1GSDkqv0ySK1RgTI8xWPTRA61k_NPqLd1",
+        "1-J4ML66Eipzkmm_nXdLVorpvV-Jv8_N1",
+        "1Y-zI8g9GiMLOcDMT6R6nORzrNdQ7QNhh",
+        "1zqM34tm1Ez9kzHfhMFsk_L37efreTHxx",
+        "1w5y1V4ovhS14JOTMq-0F6X9Qocs1v_4K",
+        "1AgvLaBcHIwpDrj7khkz8n-14CqHtapoO"
+      ],
+      "drive_folder": "1oPA3krRf6SrC-Uw9bfqiTYf3yaWQsz8i",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/civic-2.0-16v-flexone-sport-4p-cvt-flex-2019/4775980/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4639230",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "HR-V",
+      "versao": "1.8 16V Flex Exl 4P Automático 2020",
+      "ano": 2020,
+      "km": 80000,
+      "preco": 107900,
+      "tipo": "SUV",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1_0t_H7iVs1GTZVGDr29Y5rY8BYV-OF1C",
+        "1s-BbJY6TNeq1Z7AI1Lxyl1iimBbe1j3j",
+        "1Ci0x7nweYYYIIBI30bsJ8Kv7mFkrRwvE",
+        "1YZFEgkeV_-IBU1QIMrlxctPWPQL1mOmb",
+        "1u9v28V-fgM6vrR9wd1ev0EKxYGNJZ1XN",
+        "1gZ1rqAScndpb0anDfXFLb0nIbRM46v8S",
+        "1wbEJOk-IakhKIDEsFvHtcEro7wDIDDJf",
+        "16aJ88TnovwWtdaKgqstHphvFgGefqpXw",
+        "1oR3VmeFxY6BrtrkKpFWI_aXjWrmweSRb"
+      ],
+      "drive_folder": "17dBbqQn_5fmYNCcBkEtjwaI9cECffw-f",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/hr-v-1.8-16v-flex-exl-4p-automatico-flex-2020/4639230/detalhes",
+      "whatsapp": "5513991575019"
+    },
+    {
+      "id": "4706802",
+      "loja": "RECAR",
+      "marca": "Honda",
+      "modelo": "FIT",
+      "versao": "1.5 Personal 16V Flex 4P Automático 2018",
+      "ano": 2018,
+      "km": 125000,
+      "preco": 76900,
+      "tipo": "HATCH",
+      "cor": "",
+      "cambio": "Automático",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "fotos_drive": [
+        "1ULmJ9_eCRpddLCpykhBZsuWg4JjOE8bt",
+        "18-GlsJ4CcHzc8Jzk_tXgav9RZ5EtS3jt",
+        "16bzcMw-W-oUXpw7WebqjH-XXGkQlWS5R",
+        "1g9TtD7hzeMVgwbJnNHAEWMwmSFrob0Xq",
+        "1SIX-kwfsEvTec0GuNm3VJhDMRvvEugoM",
+        "1xrDpjIPmGWaembc6dbK0DE8pViyBrPiS",
+        "14JbRgSVp66StfQeUkM3p27hYpMD0hB9O",
+        "1E8QB4bLXuh4lG8VwDDjWblVLnR8UjX9B"
+      ],
+      "drive_folder": "1mSYqvZPsu-yr8Jgu0aA_yJMO1zNVLJ4K",
+      "url_original": "https://recarautomarcas.com.br/Veiculo/fit-1.5-personal-16v-flex-4p-automatico-flex-2018/4706802/detalhes",
+      "whatsapp": "5513991575019"
     }
   ]
 }
