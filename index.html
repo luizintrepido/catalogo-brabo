@@ -16,12 +16,12 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '917262416674683');
+    fbq('init', '738602160165568');
     fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=917262416674683&ev=PageView&noscript=1"/>
+    src="https://www.facebook.com/tr?id=738602160165568&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
   <style>
@@ -702,8 +702,19 @@
     } catch { return iso; }
   }
 
-  // ─── LOAD DATA ─────────────────────────────────────────────────
-  async function loadData() {
+  // ─── DEBOUNCE HELPER ───────────────────────────────────────────
+  function debounce(fn, ms) {
+    let t;
+    return function(...args) {
+      clearTimeout(t);
+      t = setTimeout(() => fn.apply(this, args), ms);
+    };
+  }
+
+  // ─── LOAD DATA (com retry automatico) ──────────────────────────
+  async function loadData(attempt = 1) {
+    const MAX_TRIES = 3;
+    const BACKOFFS = [1000, 3000, 6000];
     try {
       const r = await fetch(JSON_URL + '?t=' + Date.now());
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -713,9 +724,16 @@
       document.getElementById('loading').style.display = 'none';
       document.getElementById('cars-grid').style.display = 'grid';
       applyFilters();
-      // Abre automaticamente se a URL tiver #carro-{id}
-      checkHashAndOpenModal();
+      // Abre o modal apos o render (evita race condition)
+      requestAnimationFrame(() => {
+        setTimeout(checkHashAndOpenModal, 50);
+      });
     } catch (e) {
+      if (attempt < MAX_TRIES) {
+        console.warn(`loadData tentativa ${attempt} falhou, retry em ${BACKOFFS[attempt-1]}ms`, e);
+        setTimeout(() => loadData(attempt + 1), BACKOFFS[attempt - 1]);
+        return;
+      }
       document.getElementById('loading').innerHTML = `
         <div style="text-align:center;color:var(--text2);">
           <div style="font-size:3rem;margin-bottom:12px;">⚠️</div>
@@ -962,19 +980,24 @@
       </div>`;
   }
 
-  // ─── LINK DIRETO POR HASH ──────────────────────────────────────
-  function checkHashAndOpenModal() {
+  // ─── LINK DIRETO POR HASH (com retry para race condition) ─────
+  function checkHashAndOpenModal(attempt = 1) {
     const hash = window.location.hash; // ex: #carro-970817
     if (!hash.startsWith('#carro-')) return;
     const carId = hash.replace('#carro-', '');
+
+    // Se ainda nao carregou, tenta de novo em 200ms (ate 5 tentativas)
+    if (!allVehicles.length && attempt < 5) {
+      setTimeout(() => checkHashAndOpenModal(attempt + 1), 200);
+      return;
+    }
+
     const idx = filtered.findIndex(v => String(v.id) === carId);
     if (idx !== -1) {
       openModal(idx);
     } else {
-      // Carro pode estar filtrado — busca em todos
       const idxAll = allVehicles.findIndex(v => String(v.id) === carId);
       if (idxAll !== -1) {
-        // Limpa filtros e abre
         filtered = allVehicles;
         openModal(idxAll);
       }
@@ -996,6 +1019,17 @@
   function shareVehicle() {
     const v = currentVehicle;
     if (!v) return;
+
+    // Evento Contact do Pixel (intencao forte de compartilhar com terceiro)
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Contact', {
+        content_name: `${v.marca} ${v.modelo} ${v.ano}`,
+        content_category: v.tipo || 'Veículo',
+        content_ids: [v.id],
+        value: v.preco || 0,
+        currency: 'BRL'
+      });
+    }
 
     const preco  = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Consultar';
     const km     = v.km    ? `${Number(v.km).toLocaleString('pt-BR')} km`    : '';
@@ -1039,7 +1073,15 @@
     if (e.key === 'ArrowRight') setGalPhoto(currentGalIdx + 1);
   });
 
-  document.getElementById('search-input').addEventListener('input', applyFilters);
+  // Debounce na busca + evento Search do Pixel
+  const debouncedSearch = debounce(() => {
+    applyFilters();
+    const q = document.getElementById('search-input').value.trim();
+    if (q.length >= 3 && typeof fbq !== 'undefined') {
+      fbq('track', 'Search', { search_string: q });
+    }
+  }, 300);
+  document.getElementById('search-input').addEventListener('input', debouncedSearch);
   document.getElementById('sort-select').addEventListener('change', applyFilters);
   document.getElementById('loja-select').addEventListener('change', applyFilters);
 
