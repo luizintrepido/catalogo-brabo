@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luizintrepido.github.io/catalogo-brabo/sitemap.xml
