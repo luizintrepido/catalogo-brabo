@@ -162,6 +162,26 @@
       gap: 8px;
     }
     .results-bar strong { color: var(--orange); }
+    #btn-share-results {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      background: #25D366;
+      color: #07291a;
+      border: none;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: filter .15s, transform .1s;
+      white-space: nowrap;
+    }
+    #btn-share-results:hover { filter: brightness(1.08); }
+    #btn-share-results:active { transform: scale(.96); }
+    #btn-share-results.copied { background: var(--orange); color: #fff; }
+    #btn-share-results svg { flex-shrink: 0; }
 
     /* ── GRID ── */
     .grid {
@@ -223,6 +243,7 @@
     }
     .badge-loja-recar { background: #1a3a5c; color: #60b0ff; }
     .badge-loja-reauto { background: #3a1a00; color: #ff8c40; }
+    .badge-loja-jonathan { background: #14331f; color: #4ee08a; }
     .badge-tipo {
       background: var(--bg3);
       color: var(--text2);
@@ -607,6 +628,7 @@
 <div class="search-wrap">
   <input type="text" id="search-input" placeholder="Buscar por marca, modelo, versão..." />
   <select id="sort-select" class="filter-select">
+    <option value="recent">Adicionados recentemente</option>
     <option value="preco-asc">Menor preço</option>
     <option value="preco-desc">Maior preço</option>
     <option value="ano-desc">Mais novo</option>
@@ -617,6 +639,7 @@
     <option value="">Todas as lojas</option>
     <option value="RECAR">RECAR</option>
     <option value="REAUTO">REAUTO</option>
+    <option value="JONATHAN">Jonathan</option>
   </select>
 </div>
 
@@ -641,6 +664,10 @@
 <!-- RESULTS BAR -->
 <div class="results-bar">
   <span id="results-count">...</span>
+  <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    <span id="btn-share-results-label">Enviar resultados</span>
+  </button>
 </div>
 
 <!-- LOADING -->
@@ -767,16 +794,21 @@
     });
 
     // Sort
+    const recency = v => (v.added_at ? Date.parse(v.added_at) || 0 : 0);
     filtered.sort((a, b) => {
       if (sort === 'preco-asc')  return (a.preco||0) - (b.preco||0);
       if (sort === 'preco-desc') return (b.preco||0) - (a.preco||0);
       if (sort === 'ano-desc')   return (b.ano||0) - (a.ano||0);
       if (sort === 'ano-asc')    return (a.ano||0) - (b.ano||0);
       if (sort === 'km-asc')     return (a.km||0) - (b.km||0);
-      return 0;
+      // 'recent' (padrao): adicionados recentemente primeiro
+      const ra = recency(a), rb = recency(b);
+      if (rb !== ra) return rb - ra;
+      return String(b.id).localeCompare(String(a.id)); // desempate: id maior = mais novo
     });
 
     renderGrid();
+    syncUrlToFilters();
   }
 
   // ─── RENDER GRID ──────────────────────────────────────────────
@@ -785,6 +817,10 @@
     const rc = document.getElementById('results-count');
 
     rc.innerHTML = `Mostrando <strong>${filtered.length}</strong> de <strong>${allVehicles.length}</strong> veículos`;
+
+    // Botao "Enviar resultados": so aparece quando ha carros para enviar
+    const shareBtn = document.getElementById('btn-share-results');
+    if (shareBtn) shareBtn.style.display = filtered.length ? 'inline-flex' : 'none';
 
     if (!filtered.length) {
       grid.innerHTML = `<div class="empty-state">
@@ -800,7 +836,7 @@
       const precoHtml = v.preco
         ? `<div class="card-price">${fmtPreco(v.preco)}</div>`
         : `<div class="card-price card-price-zero">Consultar preço</div>`;
-      const lojaClass = v.loja === 'RECAR' ? 'badge-loja-recar' : 'badge-loja-reauto';
+      const lojaClass = 'badge-loja-' + (v.loja || 'reauto').toLowerCase();
       const nFotos = v.fotos_drive ? v.fotos_drive.length : 0;
 
       return `<div class="card" onclick="openModal(${i})">
@@ -923,7 +959,7 @@
 
   function renderModalDetails(v) {
     const el = document.getElementById('modal-details');
-    const lojaClass = v.loja === 'RECAR' ? 'badge-loja-recar' : 'badge-loja-reauto';
+    const lojaClass = 'badge-loja-' + (v.loja || 'reauto').toLowerCase();
 
     const wppMsg = encodeURIComponent(
       `Olá! Vi o ${v.marca} ${v.modelo} ${v.ano} no catálogo e quero mais informações.`
@@ -1060,7 +1096,110 @@
     });
   }
 
+  // ─── LINK COMPARTILHAVEL DA BUSCA (filtros via URL) ────────────
+  const CATALOG_BASE = location.origin + location.pathname;
+
+  // Le ?busca=&tipo=&loja=&preco= da URL e aplica nos controles (1x no load)
+  function parseInitialFilters() {
+    const p = new URLSearchParams(location.search);
+    const q     = p.get('busca')  || p.get('q') || '';
+    const tipo  = (p.get('tipo')  || '').toUpperCase();
+    const loja  = (p.get('loja')  || '').toUpperCase();
+    const preco = p.get('preco')  || '';
+    const sort  = p.get('sort')   || '';
+
+    if (q) document.getElementById('search-input').value = q;
+    if (loja) document.getElementById('loja-select').value = loja;
+    if (sort) document.getElementById('sort-select').value = sort;
+
+    if (tipo) {
+      activeFilters.tipo = tipo;
+      document.querySelectorAll('.pill[data-tipo]').forEach(x =>
+        x.classList.toggle('active', x.dataset.tipo === tipo));
+    }
+    if (preco) {
+      activeFilters.preco = preco;
+      document.querySelectorAll('.pill[data-preco]').forEach(x =>
+        x.classList.toggle('active', x.dataset.preco === preco));
+    }
+  }
+
+  // Reflete os filtros atuais na barra de endereco (sem recarregar a pagina)
+  function currentFilterParams() {
+    const p = new URLSearchParams();
+    const q    = document.getElementById('search-input').value.trim();
+    const loja = document.getElementById('loja-select').value;
+    const sort = document.getElementById('sort-select').value;
+    if (q) p.set('busca', q);
+    if (activeFilters.tipo)  p.set('tipo', activeFilters.tipo);
+    if (activeFilters.preco) p.set('preco', activeFilters.preco);
+    if (loja) p.set('loja', loja);
+    if (sort && sort !== 'recent') p.set('sort', sort);
+    return p;
+  }
+
+  function syncUrlToFilters() {
+    const qs = currentFilterParams().toString();
+    const newUrl = CATALOG_BASE + (qs ? '?' + qs : '') + location.hash;
+    history.replaceState(null, '', newUrl);
+  }
+
+  function buildResultsShareUrl() {
+    const qs = currentFilterParams().toString();
+    return CATALOG_BASE + (qs ? '?' + qs : '');
+  }
+
+  // ─── ENVIAR RESULTADOS DA BUSCA PARA UM CLIENTE ────────────────
+  function shareResults() {
+    if (!filtered.length) return;
+
+    const url = buildResultsShareUrl();
+    const MAX_LISTA = 25;
+    const linhas = filtered.slice(0, MAX_LISTA).map(v => {
+      const preco = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Sob consulta';
+      const km = v.km ? ` · ${Number(v.km).toLocaleString('pt-BR')} km` : '';
+      return `• ${v.marca} ${v.modelo} ${v.ano} (${preco}${km})`;
+    });
+    const resto = filtered.length - MAX_LISTA;
+    const extra = resto > 0 ? `\n...e mais ${resto} veículo${resto > 1 ? 's' : ''}` : '';
+
+    const texto =
+      `🚗 Separei ${filtered.length} veículo${filtered.length > 1 ? 's' : ''} pra você:\n\n` +
+      linhas.join('\n') + extra +
+      `\n\n👉 Ver todos com fotos e detalhes:\n${url}`;
+
+    // Evento Contact do Pixel (intencao forte de enviar p/ cliente)
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Contact', {
+        content_type: 'product_group',
+        content_name: 'Resultados da busca',
+        num_items: filtered.length
+      });
+    }
+
+    // Celular: menu nativo de compartilhamento
+    if (navigator.share) {
+      navigator.share({ title: 'Veículos selecionados', text: texto, url }).catch(() => {});
+      return;
+    }
+    // Desktop: copia a mensagem e abre o WhatsApp Web
+    navigator.clipboard.writeText(texto).then(() => {
+      const lbl = document.getElementById('btn-share-results-label');
+      const btn = document.getElementById('btn-share-results');
+      if (lbl && btn) {
+        const orig = lbl.textContent;
+        btn.classList.add('copied');
+        lbl.textContent = 'Copiado!';
+        setTimeout(() => { btn.classList.remove('copied'); lbl.textContent = orig; }, 2200);
+      }
+      window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank');
+    }).catch(() => {
+      window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank');
+    });
+  }
+
   // ─── EVENTS ────────────────────────────────────────────────────
+  document.getElementById('btn-share-results').addEventListener('click', shareResults);
   document.getElementById('modal-close').addEventListener('click', closeModal);
   document.getElementById('modal-overlay').addEventListener('click', e => {
     if (e.target === document.getElementById('modal-overlay')) closeModal();
@@ -1106,6 +1245,7 @@
   });
 
   // ─── INIT ──────────────────────────────────────────────────────
+  parseInitialFilters();
   loadData();
 </script>
 </body>
