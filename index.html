@@ -72,28 +72,31 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 11px;
+      gap: 14px;
       text-decoration: none;
     }
     .brand-logo {
-      height: 44px;
+      height: 64px;
       width: auto;
       display: block;
-      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.6));
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
       transition: transform .15s ease;
     }
-    .brand:hover .brand-logo { transform: scale(1.05); }
+    .brand:hover .brand-logo { transform: scale(1.04); }
+    /* divisor sutil entre logo e wordmark */
     .logo {
       font-family: var(--font-head);
-      font-size: 1.35rem;
+      font-size: 1.55rem;
       font-weight: 700;
       color: var(--orange);
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      line-height: 1;
+      line-height: 0.95;
       white-space: nowrap;
+      padding-left: 14px;
+      border-left: 2px solid rgba(230,184,115,0.45);
     }
-    .logo span { color: var(--text); }
+    .logo span { color: var(--text); display: block; font-size: 0.95rem; color: var(--text2); letter-spacing: 2.5px; }
     .header-right {
       margin-left: auto;
       display: flex;
@@ -693,8 +696,10 @@
       .search-wrap { padding: 10px 12px; }
       .pills-wrap { padding: 8px 12px; }
       header { padding: 10px 12px; gap: 10px; }
-      .brand-logo { height: 36px; }
-      .logo { font-size: 1.1rem; }
+      .brand { gap: 10px; }
+      .brand-logo { height: 50px; }
+      .logo { font-size: 1.2rem; padding-left: 10px; }
+      .logo span { font-size: 0.72rem; letter-spacing: 2px; }
       .btn-brabo { padding: 9px 14px; font-size: 0.74rem; }
       .modal-details { padding: 16px; }
       .modal-price { font-size: 1.5rem; }
@@ -708,7 +713,7 @@
 <header>
   <a class="brand" href="https://luizintrepido.github.io/brabo-landing/" target="_blank" rel="noopener" title="O Brabo das Vendas">
     <img class="brand-logo" src="logo-brabo.png" alt="O Brabo das Vendas" />
-    <span class="logo">Catálogo<span> Brabo</span></span>
+    <span class="logo">Catálogo<span>de Veículos</span></span>
   </a>
   <div class="header-right">
     <a class="btn-brabo" href="https://luizintrepido.github.io/brabo-landing/" target="_blank" rel="noopener" title="Conheça o Brabo das Vendas">
