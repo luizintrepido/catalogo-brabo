@@ -639,7 +639,7 @@
     <option value="">Todas as lojas</option>
     <option value="RECAR">RECAR</option>
     <option value="REAUTO">REAUTO</option>
-    <option value="JONATHAN">Jonathan</option>
+    <option value="JONATHAN">Novidade</option>
   </select>
 </div>
 
@@ -717,6 +717,8 @@
   let currentGalPhotos = [];
 
   // ─── UTILS ────────────────────────────────────────────────────
+  // Rotulo de exibicao da loja (esconde a origem "Jonathan" do cliente)
+  const lojaLabel = loja => loja === 'JONATHAN' ? 'NOVIDADE' : (loja || '');
   const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
   const fmtKm   = v => v ? v.toLocaleString('pt-BR') + ' km' : '—';
   const thumbUrl = id => `https://drive.google.com/thumbnail?id=${id}&sz=w520`;
@@ -845,7 +847,7 @@
           : `<img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" />`}
         <div class="card-body">
           <div class="card-badges">
-            <span class="badge ${lojaClass}">${v.loja}</span>
+            <span class="badge ${lojaClass}">${lojaLabel(v.loja)}</span>
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="card-title">${v.marca} ${v.modelo}</div>
@@ -994,7 +996,7 @@
       <div class="modal-top">
         <div class="modal-title-block">
           <div class="modal-badges">
-            <span class="badge ${lojaClass}">${v.loja}</span>
+            <span class="badge ${lojaClass}">${lojaLabel(v.loja)}</span>
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="modal-title">${v.marca} ${v.modelo}</div>
