@@ -163,7 +163,6 @@
     }
     .results-bar strong { color: var(--orange); }
     #btn-share-results {
-      margin-left: auto;
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -627,6 +626,10 @@
 <!-- SEARCH + SORT -->
 <div class="search-wrap">
   <input type="text" id="search-input" placeholder="Buscar por marca, modelo, versão..." />
+  <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    <span id="btn-share-results-label">Enviar resultados</span>
+  </button>
   <select id="sort-select" class="filter-select">
     <option value="recent">Adicionados recentemente</option>
     <option value="preco-asc">Menor preço</option>
@@ -664,10 +667,6 @@
 <!-- RESULTS BAR -->
 <div class="results-bar">
   <span id="results-count">...</span>
-  <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-    <span id="btn-share-results-label">Enviar resultados</span>
-  </button>
 </div>
 
 <!-- LOADING -->
