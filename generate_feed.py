@@ -10,6 +10,7 @@ Uso:
 """
 
 import json
+import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -55,6 +56,44 @@ def drive_img(file_id: str) -> str:
     return f"https://lh3.googleusercontent.com/d/{file_id}=s1080"
 
 
+# Cache para não testar a mesma imagem 2x
+_img_cache: dict = {}
+
+def img_is_valid(file_id: str, timeout: int = 8) -> bool:
+    """Testa se o link da imagem do Drive retorna uma imagem real (não HTML)."""
+    if file_id in _img_cache:
+        return _img_cache[file_id]
+    url = drive_img(file_id)
+    ok = False
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            ctype = r.headers.get("Content-Type", "")
+            ok = (r.status == 200 and "image" in ctype)
+    except Exception:
+        ok = False
+    _img_cache[file_id] = ok
+    return ok
+
+
+def first_valid_photo(fotos: list, validate: bool) -> tuple:
+    """
+    Retorna (foto_principal_url, fotos_extras_urls).
+    Se validate=True, pula fotos quebradas e usa a primeira que funciona.
+    """
+    if not fotos:
+        return FALLBACK_IMG, []
+
+    if not validate:
+        return drive_img(fotos[0]), [drive_img(f) for f in fotos[1:10]]
+
+    # Encontrar índice da primeira foto válida
+    validas = [f for f in fotos if img_is_valid(f)]
+    if not validas:
+        return FALLBACK_IMG, []
+    return drive_img(validas[0]), [drive_img(f) for f in validas[1:10]]
+
+
 def slug(v: dict) -> str:
     """Gera slug para a URL da página individual do carro."""
     marca  = v.get("marca", "").lower().replace(" ", "-")
@@ -79,9 +118,11 @@ def wa_link(v: dict) -> str:
 
 
 def generate_feed(vehicles_path: str = "vehicles.json",
-                  output_path:   str = "feed.xml") -> int:
+                  output_path:   str = "feed.xml",
+                  validate_images: bool = True) -> int:
     """
     Lê vehicles.json e grava feed.xml.
+    validate_images=True testa cada foto e usa a primeira que funciona.
     Retorna número de itens gerados.
     """
     data = json.loads(Path(vehicles_path).read_text(encoding="utf-8"))
@@ -111,7 +152,7 @@ def generate_feed(vehicles_path: str = "vehicles.json",
             continue  # pula sem preço
 
         fotos = v.get("fotos_drive", [])
-        img_url = drive_img(fotos[0]) if fotos else FALLBACK_IMG
+        img_url, extras = first_valid_photo(fotos, validate_images)
 
         tipo      = v.get("tipo", "")
         combustivel = v.get("combustivel", "")
@@ -144,12 +185,15 @@ def generate_feed(vehicles_path: str = "vehicles.json",
         ET.SubElement(item, "g:availability").text = "in stock"
         ET.SubElement(item, "g:condition").text    = "used"
         ET.SubElement(item, "g:price").text        = f"{preco:.2f} BRL"
+        # Cada veículo é único: quantidade 1 (corrige "Quantidade não informada")
+        ET.SubElement(item, "g:quantity_to_sell_on_facebook").text = "1"
+        ET.SubElement(item, "g:inventory").text    = "1"
         ET.SubElement(item, "g:link").text         = link
         ET.SubElement(item, "g:image_link").text   = img_url
 
-        # Imagens adicionais (até 9 extras)
-        for fid in fotos[1:10]:
-            ET.SubElement(item, "g:additional_image_link").text = drive_img(fid)
+        # Imagens adicionais (até 9 extras, já validadas)
+        for extra_url in extras:
+            ET.SubElement(item, "g:additional_image_link").text = extra_url
 
         ET.SubElement(item, "g:brand").text        = marca
         ET.SubElement(item, "g:make").text         = marca
