@@ -22,6 +22,10 @@ WHATSAPP = "5513991575019"
 BASE_URL  = "https://luizintrepido.github.io/catalogo-brabo"
 FALLBACK_IMG = f"{BASE_URL}/em-preparacao.jpg"
 
+# Preço placeholder para carros "sob consulta" (sem preço público).
+# Permite que apareçam no catálogo Meta, que exige preço > 0.
+PRECO_PLACEHOLDER = 500000
+
 # Mapeamento tipo → body_style para o catálogo Meta
 BODY_STYLE = {
     "Hatch":     "Hatchback",
@@ -149,7 +153,9 @@ def generate_feed(vehicles_path: str = "vehicles.json",
     for v in vehicles:
         preco = v.get("preco", 0)
         if not preco or preco <= 0:
-            continue  # pula sem preço
+            # Carros "sob consulta" (loja JONATHAN) entram com preço placeholder
+            # para aparecerem no catálogo. O valor real é tratado no WhatsApp.
+            preco = PRECO_PLACEHOLDER
 
         fotos = v.get("fotos_drive", [])
         img_url, extras = first_valid_photo(fotos, validate_images)
