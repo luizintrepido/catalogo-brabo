@@ -181,6 +181,10 @@ def main():
         "date_preset": f"last_{DIAS}d" if DIAS in (7, 14, 30) else "last_7d",
         "limit": "100",
     })
+    if "error" in ins:
+        print(f"ERRO na API Meta: {json.dumps(ins['error'], ensure_ascii=False)[:500]}")
+        print("Verifique o secret META_ACCESS_TOKEN (pode estar cortado ou expirado).")
+        sys.exit(1)
     rows = ins.get("data", [])
     print(f"Anúncios avaliados: {len(rows)}")
 
