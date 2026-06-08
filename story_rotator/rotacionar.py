@@ -218,6 +218,11 @@ def main():
     ruins = ruins[:MAX_TROCAS]
 
     # 3. Fotos disponíveis no Drive
+    # O DriveUploader procura credentials.json/token.json no diretório atual.
+    # As credenciais ficam em scraper/, então entramos nessa pasta antes.
+    scraper_dir = BASE.parent / "scraper"
+    if (scraper_dir / "credentials.json").exists() or (scraper_dir / "token.json").exists():
+        os.chdir(scraper_dir)
     drive = DriveUploader()
     fotos = drive.list_files_in_folder(DRIVE_FOLDER)
     print(f"\nFotos na pasta: {len(fotos)}")
