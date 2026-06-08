@@ -57,6 +57,8 @@ CTR_MIN   = 1.5    # CTR abaixo disso = ruim (%)
 CPL_MAX   = 12.0   # custo por conversa acima disso = ruim (R$)
 
 USADAS_FILE = BASE / "usadas.json"
+TROCADOS_FILE = BASE / "trocados.json"
+COOLDOWN_DIAS = 5   # não troca o mesmo anúncio de novo antes disso
 
 
 # ── Meta API ───────────────────────────────────────────
@@ -166,6 +168,28 @@ def salvar_usadas(usadas):
                            encoding="utf-8")
 
 
+def carregar_trocados():
+    if TROCADOS_FILE.exists():
+        try:
+            return json.loads(TROCADOS_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def em_carencia(ad_id, trocados):
+    """True se o anúncio foi trocado há menos de COOLDOWN_DIAS."""
+    from datetime import datetime, timedelta
+    ts = trocados.get(ad_id)
+    if not ts:
+        return False
+    try:
+        dt = datetime.fromisoformat(ts)
+        return datetime.now() - dt < timedelta(days=COOLDOWN_DIAS)
+    except Exception:
+        return False
+
+
 # ── Lógica principal ───────────────────────────────────
 def main():
     if not TOKEN:
@@ -208,6 +232,13 @@ def main():
             print(f"  RUIM: {r.get('ad_name')} -> {motivo}")
         else:
             print(f"  ok:   {r.get('ad_name')} (R${sp:.2f}, {cv} conv, CTR {ctr:.2f}%)")
+
+    # Remover os que estão em carência (trocados recentemente)
+    trocados = carregar_trocados()
+    antes = len(ruins)
+    ruins = [x for x in ruins if not em_carencia(x[0], trocados)]
+    if antes != len(ruins):
+        print(f"  ({antes - len(ruins)} em carência, pulados)")
 
     if not ruins:
         print("\nNenhum anúncio ruim. Nada a trocar. ✅")
@@ -253,11 +284,14 @@ def main():
             continue
         if criar_creative_e_trocar(ad_id, h, foto["name"].replace(".", "_")):
             usadas.add(foto["id"])
+            from datetime import datetime
+            trocados[ad_id] = datetime.now().isoformat()
             trocas += 1
             print(f"   OK! Criativo trocado.")
         time.sleep(2)
 
     salvar_usadas(usadas)
+    TROCADOS_FILE.write_text(json.dumps(trocados, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n=== CONCLUÍDO: {trocas} anúncio(s) renovado(s) ===")
 
 

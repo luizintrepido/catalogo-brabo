@@ -36,5 +36,5 @@ jobs:
         run: |
           git config user.name "Story Rotator Bot"
           git config user.email "bot@noreply.github.com"
-          git add story_rotator/usadas.json
+          git add story_rotator/usadas.json story_rotator/trocados.json
           git diff --staged --quiet && echo "Sem trocas" || (git commit -m "rotacao stories $(TZ=America/Sao_Paulo date +'%d/%m %H:%M')" && git push)
