@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Painel · Catálogo Brabo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f0f0f; --bg2:#1a1a1a; --bg3:#242424; --border:#2e2e2e;
+    --orange:#ff6b00; --orange2:#ff8c00; --gold:#e6b873; --green:#25d366;
+    --text:#f0f0f0; --text2:#a0a0a0; --red:#ff5a5a;
+    --head:'Oswald',sans-serif; --body:'DM Sans',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--body);background:var(--bg);color:var(--text);min-height:100vh;}
+  a{color:var(--orange);}
+  /* TOPBAR */
+  .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:10px;
+    padding:12px 14px;background:linear-gradient(180deg,#1d1d1d,#1a1a1a);
+    border-bottom:1px solid var(--border);box-shadow:0 1px 0 rgba(230,184,115,.14);}
+  .topbar .t-logo{height:34px;}
+  .topbar h1{font-family:var(--head);font-size:1.1rem;text-transform:uppercase;
+    letter-spacing:.5px;color:var(--orange);font-weight:700;line-height:1;}
+  .topbar h1 small{display:block;font-size:.6rem;color:var(--text2);letter-spacing:2px;}
+  .topbar .spacer{margin-left:auto;}
+  .btn{font-family:var(--body);font-weight:700;border:none;border-radius:10px;
+    cursor:pointer;padding:11px 16px;font-size:.9rem;display:inline-flex;align-items:center;
+    gap:7px;justify-content:center;transition:filter .15s,transform .1s;}
+  .btn:active{transform:scale(.97);}
+  .btn-orange{background:var(--orange);color:#fff;}
+  .btn-green{background:var(--green);color:#062a16;}
+  .btn-ghost{background:var(--bg3);color:var(--text);border:1px solid var(--border);}
+  .btn-red{background:#3a1414;color:var(--red);border:1px solid #5a1f1f;}
+  .btn-sm{padding:7px 11px;font-size:.8rem;border-radius:8px;}
+  .btn:disabled{opacity:.5;cursor:not-allowed;}
+  /* LAYOUT */
+  .wrap{max-width:760px;margin:0 auto;padding:14px;}
+  .muted{color:var(--text2);font-size:.85rem;}
+  /* LOGIN */
+  .login-card{max-width:440px;margin:8vh auto;background:var(--bg2);border:1px solid var(--border);
+    border-radius:16px;padding:26px 22px;}
+  .login-card h2{font-family:var(--head);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
+  label{display:block;font-size:.8rem;color:var(--text2);margin:12px 0 5px;font-weight:500;}
+  input,select,textarea{width:100%;background:var(--bg3);border:1px solid var(--border);
+    border-radius:10px;color:var(--text);padding:11px 12px;font-size:.95rem;font-family:var(--body);outline:none;}
+  input:focus,select:focus,textarea:focus{border-color:var(--orange);}
+  textarea{min-height:90px;resize:vertical;}
+  .help{font-size:.74rem;color:var(--text2);margin-top:6px;line-height:1.45;}
+  /* SEARCH + TOOLBAR */
+  .toolbar{display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap;}
+  .toolbar input{flex:1;min-width:160px;}
+  /* CARD LIST */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;}
+  .vcard{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;
+    cursor:pointer;display:flex;flex-direction:column;transition:border-color .15s,transform .1s;}
+  .vcard:active{transform:scale(.98);}
+  .vcard:hover{border-color:var(--orange);}
+  .vcard.is-hidden{opacity:.55;}
+  .vcard.is-dest{border-color:var(--gold);}
+  .vthumb{width:100%;aspect-ratio:4/3;object-fit:cover;background:#000;}
+  .vbody{padding:9px 10px;display:flex;flex-direction:column;gap:3px;}
+  .vtitle{font-family:var(--head);font-size:1rem;line-height:1.1;font-weight:600;}
+  .vsub{font-size:.74rem;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .vprice{font-family:var(--head);color:var(--orange);font-size:1.05rem;font-weight:700;margin-top:2px;}
+  .vflags{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px;}
+  .flag{font-size:.62rem;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:.4px;}
+  .flag-loja{background:var(--bg3);color:var(--text2);}
+  .flag-dest{background:linear-gradient(135deg,var(--gold),#f4d29a);color:#2a1c05;}
+  .flag-hidden{background:#3a1414;color:var(--red);}
+  /* EDITOR */
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .toggles{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap;}
+  .toggle{flex:1;min-width:130px;display:flex;align-items:center;justify-content:space-between;gap:8px;
+    background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:11px 13px;cursor:pointer;}
+  .toggle.on{border-color:var(--orange);}
+  .toggle .sw{width:42px;height:24px;border-radius:99px;background:#444;position:relative;transition:background .2s;flex-shrink:0;}
+  .toggle.on .sw{background:var(--orange);}
+  .toggle .sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .2s;}
+  .toggle.on .sw::after{left:20px;}
+  .toggle.on.dest .sw{background:var(--gold);}
+  /* PHOTOS */
+  .photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:9px;margin-top:8px;}
+  .photo{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#000;}
+  .photo img{width:100%;height:100%;object-fit:cover;}
+  .photo .pdel{position:absolute;top:3px;right:3px;width:24px;height:24px;border-radius:50%;
+    background:rgba(0,0,0,.65);color:#fff;border:none;cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center;}
+  .photo .pmove{position:absolute;bottom:3px;display:flex;gap:3px;left:3px;}
+  .photo .pmove button{width:24px;height:24px;border-radius:6px;background:rgba(0,0,0,.65);color:#fff;border:none;cursor:pointer;}
+  .photo .pcover{position:absolute;top:3px;left:3px;background:var(--orange);color:#fff;font-size:.58rem;font-weight:700;padding:2px 5px;border-radius:4px;}
+  .addphoto{aspect-ratio:1;border:2px dashed var(--border);border-radius:10px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:4px;color:var(--text2);cursor:pointer;font-size:.78rem;text-align:center;}
+  .addphoto:hover{border-color:var(--orange);color:var(--orange);}
+  .section-title{font-family:var(--head);text-transform:uppercase;letter-spacing:.5px;font-size:.95rem;
+    color:var(--text2);margin:20px 0 8px;border-bottom:1px solid var(--border);padding-bottom:6px;}
+  /* TOAST */
+  #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:200;
+    background:#222;border:1px solid var(--border);color:#fff;padding:12px 18px;border-radius:10px;
+    font-size:.9rem;max-width:90%;text-align:center;display:none;box-shadow:0 8px 30px rgba(0,0,0,.5);}
+  #toast.err{border-color:#5a1f1f;background:#2a1414;}
+  #toast.ok{border-color:#1f5a33;background:#142a1c;}
+  .hidden{display:none!important;}
+  .bar-actions{position:sticky;bottom:0;background:linear-gradient(0deg,#141414,#1a1a1a);
+    border-top:1px solid var(--border);padding:12px 14px;display:flex;gap:10px;}
+  .bar-actions .btn{flex:1;}
+  .pubbar{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1px solid var(--border);
+    border-radius:12px;padding:10px 12px;margin-bottom:14px;}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);}
+  .dot.dirty{background:var(--orange);}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar" id="topbar" style="display:none;">
+  <img class="t-logo" src="logo-brabo.png" alt="Brabo" onerror="this.style.display='none'"/>
+  <h1>Painel<small>CATÁLOGO BRABO</small></h1>
+  <span class="spacer"></span>
+  <button class="btn btn-ghost btn-sm" id="btn-logout">Sair</button>
+</div>
+
+<!-- LOGIN -->
+<div id="login">
+  <div class="login-card">
+    <h2>Painel do Brabo</h2>
+    <p class="muted">Acesso restrito. Cole seu token do GitHub para entrar.</p>
+    <label>Token de acesso (GitHub)</label>
+    <input type="password" id="token-input" placeholder="github_pat_..." autocomplete="off" />
+    <div class="help">
+      Use um <b>Fine-grained token</b> com acesso ao repositório <b>catalogo-brabo</b>
+      (permissão <b>Contents: Read and write</b>). O token fica salvo só neste aparelho.
+    </div>
+    <button class="btn btn-orange" id="btn-login" style="width:100%;margin-top:16px;">Entrar</button>
+  </div>
+</div>
+
+<!-- LISTA -->
+<div id="list" class="wrap hidden">
+  <div class="pubbar">
+    <span class="dot" id="pub-dot"></span>
+    <span id="pub-status" class="muted">Tudo publicado.</span>
+    <span class="spacer" style="margin-left:auto;"></span>
+    <button class="btn btn-green btn-sm" id="btn-publish">Publicar</button>
+  </div>
+  <div class="toolbar">
+    <input id="search" placeholder="Buscar carro..." />
+    <button class="btn btn-orange btn-sm" id="btn-new">+ Novo carro</button>
+  </div>
+  <div class="grid" id="cars"></div>
+</div>
+
+<!-- EDITOR -->
+<div id="editor" class="wrap hidden">
+  <button class="btn btn-ghost btn-sm" id="btn-back" style="margin-bottom:12px;">‹ Voltar</button>
+  <h2 id="ed-title" style="font-family:var(--head);text-transform:uppercase;letter-spacing:.5px;"></h2>
+
+  <div class="toggles">
+    <div class="toggle dest" id="tg-dest"><span>★ Destaque</span><span class="sw"></span></div>
+    <div class="toggle" id="tg-hidden"><span>Esconder</span><span class="sw"></span></div>
+  </div>
+
+  <div class="section-title">Informações</div>
+  <div class="field-row">
+    <div><label>Marca</label><input id="f-marca" /></div>
+    <div><label>Modelo</label><input id="f-modelo" /></div>
+  </div>
+  <div class="field-row">
+    <div><label>Ano</label><input id="f-ano" inputmode="numeric" /></div>
+    <div><label>Tipo</label>
+      <select id="f-tipo">
+        <option>SUV</option><option>HATCH</option><option>SEDAN</option>
+        <option>CAMIONETE</option><option>UTILITARIO</option><option>PICAPE</option><option>MOTO</option>
+      </select>
+    </div>
+  </div>
+  <label>Versão</label><input id="f-versao" />
+  <div class="field-row">
+    <div><label>Preço (R$)</label><input id="f-preco" inputmode="numeric" placeholder="0 = sob consulta" /></div>
+    <div><label>KM</label><input id="f-km" inputmode="numeric" /></div>
+  </div>
+  <div class="field-row">
+    <div><label>Cor</label><input id="f-cor" /></div>
+    <div><label>Câmbio</label><input id="f-cambio" /></div>
+  </div>
+  <label>Combustível</label><input id="f-combustivel" />
+  <label>Opcionais (um por linha)</label><textarea id="f-opcionais"></textarea>
+  <label>Descrição</label><textarea id="f-descricao"></textarea>
+
+  <div class="section-title">Fotos</div>
+  <div class="muted" style="font-size:.78rem;">A 1ª foto é a capa. Use as setas para reordenar.</div>
+  <div class="photos" id="ed-photos"></div>
+  <input type="file" id="file-input" accept="image/*" multiple class="hidden" />
+</div>
+
+<div class="bar-actions hidden" id="ed-actions">
+  <button class="btn btn-red" id="btn-delete-manual">Apagar</button>
+  <button class="btn btn-orange" id="btn-save">Salvar</button>
+</div>
+
+<div id="toast"></div>
+
+<script>
+const OWNER='luizintrepido', REPO='catalogo-brabo', BRANCH='master';
+const PAGES_BASE=`https://${OWNER}.github.io/${REPO}`;
+const VJSON_RAW=`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/vehicles.json`;
+const EDITABLE=['preco','km','versao','cor','cambio','combustivel','opcionais','descricao'];
+
+let TOKEN='', vehicles=[], overrides={}, ovSha=null, vjSha=null, current=null, dirty=false;
+
+// ---------- utils ----------
+const $=s=>document.querySelector(s);
+const tk=()=>localStorage.getItem('brabo_admin_token')||'';
+function toast(msg,type){const t=$('#toast');t.textContent=msg;t.className=type||'';t.style.display='block';
+  clearTimeout(t._h);t._h=setTimeout(()=>t.style.display='none',type==='err'?5000:2600);}
+function b64utf8(str){return btoa(unescape(encodeURIComponent(str)));}
+function utf8b64(b64){return decodeURIComponent(escape(atob((b64||'').replace(/\s/g,''))));}
+function photoUrl(e){return (e&&String(e).startsWith('http'))?e:`https://lh3.googleusercontent.com/d/${e}=s400`;}
+function fmtPreco(p){p=Number(p)||0;return p>0?('R$ '+p.toLocaleString('pt-BR')):'Sob consulta';}
+function slugify(t){t=(t||'').toLowerCase();
+  const map={'á':'a','à':'a','ã':'a','â':'a','é':'e','ê':'e','í':'i','ó':'o','õ':'o','ô':'o','ú':'u','ç':'c'};
+  t=t.replace(/[áàãâéêíóõôúç]/g,c=>map[c]||c);
+  return t.replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');}
+
+// ---------- github api ----------
+function ghHeaders(){return {Authorization:'token '+TOKEN,Accept:'application/vnd.github+json'};}
+async function ghGet(path){
+  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=${BRANCH}&t=${Date.now()}`,{headers:ghHeaders()});
+  if(r.status===404)return{sha:null,content:null};
+  if(!r.ok)throw new Error('GitHub '+r.status+': '+(await r.text()).slice(0,120));
+  const d=await r.json();return{sha:d.sha,content:utf8b64(d.content)};
+}
+async function ghPut(path,contentB64,message,sha){
+  const body={message,branch:BRANCH,content:contentB64};if(sha)body.sha=sha;
+  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`,
+    {method:'PUT',headers:ghHeaders(),body:JSON.stringify(body)});
+  if(!r.ok)throw new Error('Falha ao salvar '+path+': '+(await r.text()).slice(0,160));
+  return r.json();
+}
+
+// ---------- overrides (mesma logica do Python) ----------
+function applyOverrides(list,ov){
+  const seen=new Set(),out=[];
+  for(let v of list){const id=String(v.id);seen.add(id);const o=ov[id];
+    if(o){v={...v};const c=o.campos||{};for(const k in c)if(EDITABLE.includes(k))v[k]=c[k];
+      if(Array.isArray(o.fotos))v.fotos_drive=o.fotos;
+      if('destaque'in o)v.destaque=!!o.destaque;
+      if('hidden'in o)v.hidden=!!o.hidden;}
+    out.push(v);}
+  for(const id in ov){const o=ov[id];
+    if(o._manual&&!seen.has(String(id)))out.push(manualToVehicle(id,o));}
+  return out;
+}
+function manualToVehicle(id,o){return{
+  id,loja:o.loja||'MANUAL',marca:o.marca||'',modelo:o.modelo||'',versao:o.versao||'',
+  ano:o.ano||0,km:o.km||0,preco:o.preco||0,tipo:o.tipo||'SUV',cor:o.cor||'',cambio:o.cambio||'',
+  combustivel:o.combustivel||'',opcionais:o.opcionais||[],descricao:o.descricao||'',
+  fotos_drive:o.fotos||[],drive_folder:'',url_original:'',whatsapp:'5513991575019',
+  destaque:!!o.destaque,hidden:!!o.hidden,added_at:o.added_at||'',slug:o.slug||'',_manual:true};}
+
+// ---------- carregar ----------
+async function loadAll(){
+  const vr=await fetch(VJSON_RAW+'?t='+Date.now());
+  const vd=await vr.json();
+  let base=vd.vehicles||[];
+  const og=await ghGet('overrides.json');ovSha=og.sha;overrides=og.content?JSON.parse(og.content):{};
+  const vg=await ghGet('vehicles.json');vjSha=vg.sha;  // sha p/ poder regravar
+  vehicles=applyOverrides(base,overrides);
+  setDirty(false);renderList();
+}
+
+function setDirty(d){dirty=d;$('#pub-dot').className='dot'+(d?' dirty':'');
+  $('#pub-status').textContent=d?'Há mudanças não publicadas.':'Tudo publicado.';}
+
+// ---------- lista ----------
+function renderList(){
+  const q=($('#search').value||'').toLowerCase().trim();
+  const cars=vehicles.filter(v=>!q||`${v.marca} ${v.modelo} ${v.versao} ${v.ano}`.toLowerCase().includes(q))
+    .sort((a,b)=>(b.destaque?1:0)-(a.destaque?1:0));
+  $('#cars').innerHTML=cars.map(v=>{
+    const foto=(v.fotos_drive&&v.fotos_drive.length)?photoUrl(v.fotos_drive[0]):'em-preparacao.jpg';
+    const cls=['vcard'];if(v.hidden)cls.push('is-hidden');if(v.destaque)cls.push('is-dest');
+    return `<div class="${cls.join(' ')}" onclick="openEditor('${v.id}')">
+      <img class="vthumb" src="${foto}" loading="lazy" onerror="this.src='em-preparacao.jpg'"/>
+      <div class="vbody">
+        <div class="vtitle">${v.marca} ${v.modelo}</div>
+        <div class="vsub">${v.ano||'—'} · ${v.versao||''}</div>
+        <div class="vprice">${fmtPreco(v.preco)}</div>
+        <div class="vflags">
+          ${v.destaque?'<span class="flag flag-dest">★</span>':''}
+          ${v.hidden?'<span class="flag flag-hidden">OCULTO</span>':''}
+          <span class="flag flag-loja">${v.loja==='JONATHAN'?'NOVIDADE':(v.loja||'')}</span>
+        </div>
+      </div></div>`;
+  }).join('')||'<p class="muted">Nenhum carro encontrado.</p>';
+}
+
+// ---------- editor ----------
+let edPhotos=[];
+function openEditor(id){
+  current=vehicles.find(v=>String(v.id)===String(id));if(!current)return;
+  const v=current;
+  $('#ed-title').textContent=`${v.marca} ${v.modelo} ${v.ano}`;
+  $('#f-marca').value=v.marca||'';$('#f-modelo').value=v.modelo||'';
+  $('#f-ano').value=v.ano||'';$('#f-tipo').value=v.tipo||'SUV';
+  $('#f-versao').value=v.versao||'';$('#f-preco').value=v.preco||'';$('#f-km').value=v.km||'';
+  $('#f-cor').value=v.cor||'';$('#f-cambio').value=v.cambio||'';$('#f-combustivel').value=v.combustivel||'';
+  $('#f-opcionais').value=(v.opcionais||[]).join('\n');$('#f-descricao').value=v.descricao||'';
+  setToggle('#tg-dest',!!v.destaque);setToggle('#tg-hidden',!!v.hidden);
+  edPhotos=(v.fotos_drive||[]).slice();renderPhotos();
+  $('#btn-delete-manual').style.display=v._manual?'inline-flex':'none';
+  show('editor');
+}
+function setToggle(sel,on){$(sel).classList.toggle('on',on);}
+function renderPhotos(){
+  $('#ed-photos').innerHTML=edPhotos.map((p,i)=>`
+    <div class="photo">
+      ${i===0?'<span class="pcover">CAPA</span>':''}
+      <img src="${photoUrl(p)}" onerror="this.src='em-preparacao.jpg'"/>
+      <button class="pdel" onclick="delPhoto(${i})">✕</button>
+      <div class="pmove">
+        ${i>0?`<button onclick="movePhoto(${i},-1)">‹</button>`:''}
+        ${i<edPhotos.length-1?`<button onclick="movePhoto(${i},1)">›</button>`:''}
+      </div>
+    </div>`).join('')+
+    `<div class="addphoto" onclick="document.getElementById('file-input').click()">＋<span>Adicionar</span></div>`;
+}
+window.delPhoto=i=>{edPhotos.splice(i,1);renderPhotos();};
+window.movePhoto=(i,d)=>{const j=i+d;if(j<0||j>=edPhotos.length)return;
+  [edPhotos[i],edPhotos[j]]=[edPhotos[j],edPhotos[i]];renderPhotos();};
+window.openEditor=openEditor;
+
+// upload de foto -> commit no repo -> guarda URL
+$('#file-input').addEventListener('change',async e=>{
+  const files=[...e.target.files];e.target.value='';
+  for(const f of files){
+    try{
+      toast('Enviando '+f.name+'...');
+      const b64=await fileToB64(f);
+      const ext=(f.name.split('.').pop()||'jpg').toLowerCase().replace(/[^a-z0-9]/g,'')||'jpg';
+      const name=Date.now()+'_'+Math.random().toString(36).slice(2,7)+'.'+ext;
+      const path=`fotos/${current.id}/${name}`;
+      await ghPut(path,b64,'admin: foto '+current.id,null);
+      edPhotos.push(`${PAGES_BASE}/${path}`);renderPhotos();
+      toast('Foto adicionada ✓','ok');
+    }catch(err){toast(err.message,'err');}
+  }
+});
+function fileToB64(file){return new Promise((res,rej)=>{const r=new FileReader();
+  r.onload=()=>res(String(r.result).split(',')[1]);r.onerror=rej;r.readAsDataURL(file);});}
+
+// toggles
+$('#tg-dest').onclick=()=>$('#tg-dest').classList.toggle('on');
+$('#tg-hidden').onclick=()=>$('#tg-hidden').classList.toggle('on');
+
+// salvar edicao no overrides (em memoria)
+$('#btn-save').onclick=()=>{
+  const v=current,id=String(v.id);
+  const num=s=>{const n=parseInt(String(s).replace(/\D/g,''),10);return isNaN(n)?0:n;};
+  const campos={
+    preco:num($('#f-preco').value),km:num($('#f-km').value),
+    versao:$('#f-versao').value.trim(),cor:$('#f-cor').value.trim(),
+    cambio:$('#f-cambio').value.trim(),combustivel:$('#f-combustivel').value.trim(),
+    opcionais:$('#f-opcionais').value.split('\n').map(s=>s.trim()).filter(Boolean),
+    descricao:$('#f-descricao').value.trim(),
+  };
+  const dest=$('#tg-dest').classList.contains('on');
+  const hid=$('#tg-hidden').classList.contains('on');
+  let o=overrides[id]||{};
+  if(v._manual){
+    o={...o,_manual:true,marca:$('#f-marca').value.trim(),modelo:$('#f-modelo').value.trim(),
+       ano:num($('#f-ano').value),tipo:$('#f-tipo').value,...campos,
+       fotos:edPhotos.slice(),destaque:dest,hidden:hid,
+       slug:o.slug||slugify(`${$('#f-marca').value} ${$('#f-modelo').value} ${$('#f-ano').value}`),
+       added_at:o.added_at||new Date().toISOString()};
+  }else{
+    o={...o,campos,fotos:edPhotos.slice(),destaque:dest,hidden:hid};
+  }
+  overrides[id]=o;
+  // reflete na lista local
+  vehicles=applyOverrides(vehicles.filter(x=>!x._manual||overrides[x.id]),overrides);
+  setDirty(true);toast('Salvo (lembre de Publicar)','ok');show('list');renderList();
+};
+
+// novo carro manual
+$('#btn-new').onclick=()=>{
+  const id='manual_'+Date.now();
+  current=manualToVehicle(id,{marca:'',modelo:'',ano:new Date().getFullYear(),tipo:'SUV'});
+  vehicles.push(current);openEditor(id);$('#ed-title').textContent='Novo carro';
+  $('#btn-delete-manual').style.display='none';
+};
+
+// apagar carro manual
+$('#btn-delete-manual').onclick=()=>{
+  if(!current||!current._manual)return;
+  if(!confirm('Apagar este carro manual?'))return;
+  delete overrides[String(current.id)];
+  vehicles=vehicles.filter(v=>String(v.id)!==String(current.id));
+  setDirty(true);toast('Carro removido','ok');show('list');renderList();
+};
+
+// PUBLICAR: grava overrides.json + vehicles.json no repo
+$('#btn-publish').onclick=async()=>{
+  const btn=$('#btn-publish');btn.disabled=true;btn.textContent='Publicando...';
+  try{
+    // limpa carros manuais "vazios" (sem marca/modelo) que ficaram so na memoria
+    Object.keys(overrides).forEach(id=>{const o=overrides[id];
+      if(o._manual&&!o.marca&&!o.modelo)delete overrides[id];});
+    const ovStr=JSON.stringify(overrides,null,2);
+    const r1=await ghPut('overrides.json',b64utf8(ovStr),'admin: editar overrides',ovSha);
+    ovSha=r1.content.sha;
+    // recomputa vehicles.json a partir do publico + overrides
+    const vr=await fetch(VJSON_RAW+'?t='+Date.now());const vd=await vr.json();
+    const base=(vd.vehicles||[]).filter(v=>!v._manual);
+    const finalV=applyOverrides(base,overrides);
+    const out={updated_at:new Date().toISOString(),total:finalV.length,vehicles:finalV};
+    const vg=await ghGet('vehicles.json');  // sha atual
+    const r2=await ghPut('vehicles.json',b64utf8(JSON.stringify(out,null,2)),'admin: publicar catalogo',vg.sha);
+    vjSha=r2.content.sha;
+    vehicles=applyOverrides(base,overrides);
+    setDirty(false);renderList();
+    toast('Publicado! O catálogo atualiza em ~1 min.','ok');
+  }catch(err){toast(err.message,'err');}
+  finally{btn.disabled=false;btn.textContent='Publicar';}
+};
+
+// navegacao
+function show(which){
+  $('#login').classList.toggle('hidden',which!=='login');
+  $('#topbar').style.display=which==='login'?'none':'flex';
+  $('#list').classList.toggle('hidden',which!=='list');
+  $('#editor').classList.toggle('hidden',which!=='editor');
+  $('#ed-actions').classList.toggle('hidden',which!=='editor');
+  window.scrollTo(0,0);
+}
+$('#btn-back').onclick=()=>{show('list');renderList();};
+$('#search').addEventListener('input',renderList);
+
+// login
+async function doLogin(t){
+  TOKEN=t;
+  const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}`,{headers:ghHeaders()});
+  if(!r.ok)throw new Error('Token inválido ou sem acesso ao repositório.');
+  localStorage.setItem('brabo_admin_token',t);
+}
+$('#btn-login').onclick=async()=>{
+  const t=$('#token-input').value.trim();if(!t)return toast('Cole o token','err');
+  $('#btn-login').disabled=true;$('#btn-login').textContent='Entrando...';
+  try{await doLogin(t);show('list');toast('Bem-vindo, Brabo!','ok');await loadAll();}
+  catch(e){toast(e.message,'err');}
+  finally{$('#btn-login').disabled=false;$('#btn-login').textContent='Entrar';}
+};
+$('#btn-logout').onclick=()=>{localStorage.removeItem('brabo_admin_token');location.reload();};
+
+// auto-login se ja tem token
+(async()=>{
+  const t=tk();
+  if(t){try{await doLogin(t);show('list');await loadAll();}catch(e){show('login');}}
+  else show('login');
+})();
+</script>
+</body>
+</html>
