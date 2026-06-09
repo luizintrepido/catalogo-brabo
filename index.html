@@ -331,6 +331,15 @@
       color: var(--text2);
       border: 1px solid var(--border);
     }
+    .badge-destaque {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+      color: #2a1c05;
+      box-shadow: 0 0 10px rgba(230,184,115,0.45);
+    }
+    .card:has(.badge-destaque) {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px rgba(230,184,115,0.35), var(--shadow);
+    }
     .card-title {
       font-family: var(--font-head);
       font-size: 1.12rem;
@@ -823,8 +832,8 @@
   const lojaLabel = loja => loja === 'JONATHAN' ? 'NOVIDADE' : (loja || '');
   const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
   const fmtKm   = v => v ? v.toLocaleString('pt-BR') + ' km' : '—';
-  const thumbUrl = id => `https://drive.google.com/thumbnail?id=${id}&sz=w520`;
-  const fullUrl  = id => `https://drive.google.com/uc?id=${id}&export=view`;
+  const thumbUrl = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/thumbnail?id=${e}&sz=w520`;
+  const fullUrl  = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/uc?id=${e}&export=view`;
 
   function fmtDate(iso) {
     try {
@@ -850,7 +859,8 @@
       const r = await fetch(JSON_URL + '?t=' + Date.now());
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const data = await r.json();
-      allVehicles = data.vehicles || [];
+      // Carros escondidos pelo painel admin nao aparecem no catalogo
+      allVehicles = (data.vehicles || []).filter(v => !v.hidden);
       document.getElementById('updated-at').textContent = 'Atualizado em: ' + fmtDate(data.updated_at);
       document.getElementById('loading').style.display = 'none';
       document.getElementById('cars-grid').style.display = 'grid';
@@ -900,6 +910,9 @@
     // Sort
     const recency = v => (v.added_at ? Date.parse(v.added_at) || 0 : 0);
     filtered.sort((a, b) => {
+      // Destaques sempre no topo, independente da ordenacao escolhida
+      const da = a.destaque ? 1 : 0, db = b.destaque ? 1 : 0;
+      if (db !== da) return db - da;
       if (sort === 'preco-asc')  return (a.preco||0) - (b.preco||0);
       if (sort === 'preco-desc') return (b.preco||0) - (a.preco||0);
       if (sort === 'ano-desc')   return (b.ano||0) - (a.ano||0);
@@ -949,6 +962,7 @@
           : `<img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" />`}
         <div class="card-body">
           <div class="card-badges">
+            ${v.destaque ? `<span class="badge badge-destaque">★ DESTAQUE</span>` : ``}
             <span class="badge ${lojaClass}">${lojaLabel(v.loja)}</span>
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
