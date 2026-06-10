@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T14:15:16.586Z",
+  "updated_at": "2026-06-10T14:47:36.916Z",
   "total": 89,
   "vehicles": [
     {
@@ -332,7 +332,8 @@
       "created_at": "",
       "whatsapp": "5513991575019",
       "slug": "chevrolet-equinox-rs-2024",
-      "added_at": "2026-06-09T10:50:11.558701"
+      "added_at": "2026-06-09T10:50:11.558701",
+      "hidden": true
     },
     {
       "id": "946591",
