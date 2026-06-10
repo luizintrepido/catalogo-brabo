@@ -953,7 +953,6 @@
       const precoHtml = v.preco
         ? `<div class="card-price">${fmtPreco(v.preco)}</div>`
         : `<div class="card-price card-price-zero">Consultar preço</div>`;
-      const lojaClass = 'badge-loja-' + (v.loja || 'reauto').toLowerCase();
       const nFotos = v.fotos_drive ? v.fotos_drive.length : 0;
 
       return `<div class="card" onclick="openModal(${i})">
@@ -963,7 +962,6 @@
         <div class="card-body">
           <div class="card-badges">
             ${v.destaque ? `<span class="badge badge-destaque">★ DESTAQUE</span>` : ``}
-            <span class="badge ${lojaClass}">${lojaLabel(v.loja)}</span>
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="card-title">${v.marca} ${v.modelo}</div>
@@ -1077,7 +1075,6 @@
 
   function renderModalDetails(v) {
     const el = document.getElementById('modal-details');
-    const lojaClass = 'badge-loja-' + (v.loja || 'reauto').toLowerCase();
 
     const wppMsg = encodeURIComponent(
       `Olá! Vi o ${v.marca} ${v.modelo} ${v.ano} no catálogo e quero mais informações.`
@@ -1112,7 +1109,6 @@
       <div class="modal-top">
         <div class="modal-title-block">
           <div class="modal-badges">
-            <span class="badge ${lojaClass}">${lojaLabel(v.loja)}</span>
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="modal-title">${v.marca} ${v.modelo}</div>
