@@ -318,14 +318,6 @@
       border-radius: 4px;
       letter-spacing: 0.5px;
     }
-    .badge-loja-recar { background: #1a3a5c; color: #60b0ff; }
-    .badge-loja-reauto { background: #3a1a00; color: #ff8c40; }
-    .badge-loja-jonathan {
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
-      color: #2a1c05;
-      font-weight: 800;
-      box-shadow: 0 0 10px rgba(230,184,115,0.40);
-    }
     .badge-tipo {
       background: var(--bg3);
       color: var(--text2);
@@ -750,12 +742,6 @@
     <option value="ano-asc">Mais antigo</option>
     <option value="km-asc">Menor KM</option>
   </select>
-  <select id="loja-select" class="filter-select">
-    <option value="">Todas as lojas</option>
-    <option value="RECAR">RECAR</option>
-    <option value="REAUTO">REAUTO</option>
-    <option value="JONATHAN">Novidade</option>
-  </select>
 </div>
 
 <!-- FILTER PILLS -->
@@ -828,8 +814,6 @@
   let currentGalPhotos = [];
 
   // ─── UTILS ────────────────────────────────────────────────────
-  // Rotulo de exibicao da loja (esconde a origem "Jonathan" do cliente)
-  const lojaLabel = loja => loja === 'JONATHAN' ? 'NOVIDADE' : (loja || '');
   const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
   const fmtKm   = v => v ? v.toLocaleString('pt-BR') + ' km' : '—';
   const thumbUrl = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/thumbnail?id=${e}&sz=w520`;
@@ -889,7 +873,6 @@
   function applyFilters() {
     const q = document.getElementById('search-input').value.toLowerCase().trim();
     const sort = document.getElementById('sort-select').value;
-    const loja = document.getElementById('loja-select').value;
     const tipoF = activeFilters.tipo;
     const precoF = activeFilters.preco;
 
@@ -898,7 +881,6 @@
         const hay = `${v.marca} ${v.modelo} ${v.versao} ${v.ano} ${v.tipo}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
-      if (loja && v.loja !== loja) return false;
       if (tipoF && v.tipo !== tipoF) return false;
       if (precoF) {
         const [mn, mx] = precoF.split('-').map(Number);
@@ -1213,17 +1195,15 @@
   // ─── LINK COMPARTILHAVEL DA BUSCA (filtros via URL) ────────────
   const CATALOG_BASE = location.origin + location.pathname;
 
-  // Le ?busca=&tipo=&loja=&preco= da URL e aplica nos controles (1x no load)
+  // Le ?busca=&tipo=&preco= da URL e aplica nos controles (1x no load)
   function parseInitialFilters() {
     const p = new URLSearchParams(location.search);
     const q     = p.get('busca')  || p.get('q') || '';
     const tipo  = (p.get('tipo')  || '').toUpperCase();
-    const loja  = (p.get('loja')  || '').toUpperCase();
     const preco = p.get('preco')  || '';
     const sort  = p.get('sort')   || '';
 
     if (q) document.getElementById('search-input').value = q;
-    if (loja) document.getElementById('loja-select').value = loja;
     if (sort) document.getElementById('sort-select').value = sort;
 
     if (tipo) {
@@ -1242,12 +1222,10 @@
   function currentFilterParams() {
     const p = new URLSearchParams();
     const q    = document.getElementById('search-input').value.trim();
-    const loja = document.getElementById('loja-select').value;
     const sort = document.getElementById('sort-select').value;
     if (q) p.set('busca', q);
     if (activeFilters.tipo)  p.set('tipo', activeFilters.tipo);
     if (activeFilters.preco) p.set('preco', activeFilters.preco);
-    if (loja) p.set('loja', loja);
     if (sort && sort !== 'recent') p.set('sort', sort);
     return p;
   }
@@ -1336,7 +1314,6 @@
   }, 300);
   document.getElementById('search-input').addEventListener('input', debouncedSearch);
   document.getElementById('sort-select').addEventListener('change', applyFilters);
-  document.getElementById('loja-select').addEventListener('change', applyFilters);
 
   // Tipo pills
   document.querySelectorAll('.pill[data-tipo]').forEach(p => {
