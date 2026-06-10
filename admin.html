@@ -176,6 +176,8 @@
       </select>
     </div>
   </div>
+  <label>Loja</label>
+  <select id="f-loja"><option>REAUTO</option><option>RECAR</option></select>
   <label>Versão</label><input id="f-versao" />
   <div class="field-row">
     <div><label>Preço (R$)</label><input id="f-preco" inputmode="numeric" placeholder="0 = sob consulta" /></div>
@@ -247,14 +249,15 @@ function applyOverrides(list,ov){
     if(o){v={...v};const c=o.campos||{};for(const k in c)if(EDITABLE.includes(k))v[k]=c[k];
       if(Array.isArray(o.fotos))v.fotos_drive=o.fotos;
       if('destaque'in o)v.destaque=!!o.destaque;
-      if('hidden'in o)v.hidden=!!o.hidden;}
+      if('hidden'in o)v.hidden=!!o.hidden;
+      if('loja'in o&&o.loja)v.loja=o.loja;}
     out.push(v);}
   for(const id in ov){const o=ov[id];
     if(o._manual&&!seen.has(String(id)))out.push(manualToVehicle(id,o));}
   return out;
 }
 function manualToVehicle(id,o){return{
-  id,loja:o.loja||'MANUAL',marca:o.marca||'',modelo:o.modelo||'',versao:o.versao||'',
+  id,loja:o.loja||'REAUTO',marca:o.marca||'',modelo:o.modelo||'',versao:o.versao||'',
   ano:o.ano||0,km:o.km||0,preco:o.preco||0,tipo:o.tipo||'SUV',cor:o.cor||'',cambio:o.cambio||'',
   combustivel:o.combustivel||'',opcionais:o.opcionais||[],descricao:o.descricao||'',
   fotos_drive:o.fotos||[],drive_folder:'',url_original:'',whatsapp:'5513991575019',
@@ -305,6 +308,7 @@ function openEditor(id){
   $('#ed-title').textContent=`${v.marca} ${v.modelo} ${v.ano}`;
   $('#f-marca').value=v.marca||'';$('#f-modelo').value=v.modelo||'';
   $('#f-ano').value=v.ano||'';$('#f-tipo').value=v.tipo||'SUV';
+  setLoja(v.loja||'REAUTO');
   $('#f-versao').value=v.versao||'';$('#f-preco').value=v.preco||'';$('#f-km').value=v.km||'';
   $('#f-cor').value=v.cor||'';$('#f-cambio').value=v.cambio||'';$('#f-combustivel').value=v.combustivel||'';
   $('#f-opcionais').value=(v.opcionais||[]).join('\n');$('#f-descricao').value=v.descricao||'';
@@ -315,6 +319,13 @@ function openEditor(id){
   show('editor');
 }
 function setToggle(sel,on){$(sel).classList.toggle('on',on);}
+// seleciona a loja; se for um valor fora de REAUTO/RECAR (ex.: JONATHAN), preserva como opcao
+function setLoja(loja){const sel=$('#f-loja');
+  sel.querySelectorAll('option[data-extra]').forEach(o=>o.remove());
+  if(loja!=='REAUTO'&&loja!=='RECAR'){
+    const o=document.createElement('option');o.value=loja;o.textContent=loja;o.dataset.extra='1';
+    sel.insertBefore(o,sel.firstChild);}
+  sel.value=loja;}
 function renderPhotos(){
   $('#ed-photos').innerHTML=edPhotos.map((p,i)=>`
     <div class="photo">
@@ -370,14 +381,15 @@ $('#btn-save').onclick=()=>{
   const dest=$('#tg-dest').classList.contains('on');
   const hid=$('#tg-hidden').classList.contains('on');
   let o=overrides[id]||{};
+  const loja=$('#f-loja').value;
   if(v._manual){
-    o={...o,_manual:true,marca:$('#f-marca').value.trim(),modelo:$('#f-modelo').value.trim(),
+    o={...o,_manual:true,loja,marca:$('#f-marca').value.trim(),modelo:$('#f-modelo').value.trim(),
        ano:num($('#f-ano').value),tipo:$('#f-tipo').value,...campos,
        fotos:edPhotos.slice(),destaque:dest,hidden:hid,
        slug:o.slug||slugify(`${$('#f-marca').value} ${$('#f-modelo').value} ${$('#f-ano').value}`),
        added_at:o.added_at||new Date().toISOString()};
   }else{
-    o={...o,campos,fotos:edPhotos.slice(),destaque:dest,hidden:hid};
+    o={...o,loja,campos,fotos:edPhotos.slice(),destaque:dest,hidden:hid};
   }
   overrides[id]=o;
   // reflete na lista local
