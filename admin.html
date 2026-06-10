@@ -196,7 +196,7 @@
 </div>
 
 <div class="bar-actions hidden" id="ed-actions">
-  <button class="btn btn-red" id="btn-delete-manual">Apagar</button>
+  <button class="btn btn-red" id="btn-delete-manual">Excluir anúncio</button>
   <button class="btn btn-orange" id="btn-save">Salvar</button>
 </div>
 
@@ -310,7 +310,8 @@ function openEditor(id){
   $('#f-opcionais').value=(v.opcionais||[]).join('\n');$('#f-descricao').value=v.descricao||'';
   setToggle('#tg-dest',!!v.destaque);setToggle('#tg-hidden',!!v.hidden);
   edPhotos=(v.fotos_drive||[]).slice();renderPhotos();
-  $('#btn-delete-manual').style.display=v._manual?'inline-flex':'none';
+  // botao excluir aparece p/ QUALQUER carro ja existente (manual ou scrapeado)
+  $('#btn-delete-manual').style.display='inline-flex';
   show('editor');
 }
 function setToggle(sel,on){$(sel).classList.toggle('on',on);}
@@ -392,13 +393,22 @@ $('#btn-new').onclick=()=>{
   $('#btn-delete-manual').style.display='none';
 };
 
-// apagar carro manual
+// excluir anuncio: manual -> apaga override; scrapeado -> esconde (hidden:true,
+// persiste nas rodadas do robo via overrides; some do site mas fica OCULTO no painel)
 $('#btn-delete-manual').onclick=()=>{
-  if(!current||!current._manual)return;
-  if(!confirm('Apagar este carro manual?'))return;
-  delete overrides[String(current.id)];
-  vehicles=vehicles.filter(v=>String(v.id)!==String(current.id));
-  setDirty(true);toast('Carro removido','ok');show('list');renderList();
+  if(!current)return;
+  const id=String(current.id);
+  if(current._manual){
+    if(!confirm('Excluir este carro manual? Ele será removido de vez.'))return;
+    delete overrides[id];
+    vehicles=vehicles.filter(v=>String(v.id)!==id);
+    setDirty(true);toast('Carro removido','ok');show('list');renderList();
+  }else{
+    if(!confirm('Excluir este anúncio do site? Ele sai do catálogo público (fica OCULTO aqui e o robô continua respeitando).'))return;
+    overrides[id]={...(overrides[id]||{}),hidden:true};
+    vehicles=applyOverrides(vehicles.filter(x=>!x._manual||overrides[x.id]),overrides);
+    setDirty(true);toast('Anúncio excluído do site','ok');show('list');renderList();
+  }
 };
 
 // PUBLICAR: grava overrides.json + vehicles.json no repo
