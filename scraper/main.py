@@ -24,7 +24,7 @@ from datetime import datetime
 from pathlib import Path
 
 import config
-from drive_uploader import DriveUploader
+from drive_uploader import DriveUploader, DriveAuthError
 from push_to_github import push_vehicles_json
 
 logging.basicConfig(
@@ -231,13 +231,21 @@ def main():
     # Inicializa Drive
     uploader = None
     root_folder_id = None
+    drive_auth_failed = False
     if not args.no_drive:
         logger.info("Conectando ao Google Drive...")
-        uploader = DriveUploader()
-        root_folder_id = uploader.create_folder_if_not_exists(config.DRIVE_ROOT_FOLDER)
-        logger.info(f"Pasta raiz: '{config.DRIVE_ROOT_FOLDER}'")
+        try:
+            uploader = DriveUploader()
+            root_folder_id = uploader.create_folder_if_not_exists(config.DRIVE_ROOT_FOLDER)
+            logger.info(f"Pasta raiz: '{config.DRIVE_ROOT_FOLDER}'")
+        except DriveAuthError as e:
+            logger.error(f"FALHA NA AUTENTICACAO DO DRIVE: {e}")
+            logger.warning("Continuando sem Drive — fotos existentes serao preservadas.")
+            args.no_drive = True
+            drive_auth_failed = True
 
-    local_base = Path(args.local_dir) if args.no_drive else None
+    # Salva fotos localmente só quando --no-drive foi passado explicitamente
+    local_base = Path(args.local_dir) if (args.no_drive and not drive_auth_failed) else None
 
     # Seleciona sites
     sites_to_run = {k: v for k, v in config.SITES.items() if v["enabled"]}
@@ -267,6 +275,29 @@ def main():
     except Exception as e:
         logger.warning(f"fix_vehicle nao aplicado: {e}")
 
+    # ── Em modo sem Drive, preserva IDs de fotos do vehicles.json existente ──
+    if args.no_drive and all_vehicles:
+        existing_root = Path(__file__).parent.parent / "vehicles.json"
+        if not existing_root.exists():
+            existing_root = Path("vehicles.json")
+        if existing_root.exists():
+            try:
+                existing_data = json.loads(existing_root.read_text(encoding="utf-8"))
+                existing_by_id = {
+                    str(v["id"]): v for v in existing_data.get("vehicles", [])
+                }
+                for v in all_vehicles:
+                    ex = existing_by_id.get(str(v["id"]))
+                    if ex:
+                        v["fotos_drive"] = ex.get("fotos_drive", [])
+                        v["drive_folder"] = ex.get("drive_folder", "")
+                        v.setdefault("slug", ex.get("slug", ""))
+                        v.setdefault("added_at", ex.get("added_at", datetime.now().isoformat()))
+                restored = sum(1 for v in all_vehicles if v.get("fotos_drive"))
+                logger.info(f"IDs de Drive restaurados para {restored}/{len(all_vehicles)} veiculos.")
+            except Exception as e:
+                logger.warning(f"Nao foi possivel restaurar IDs do Drive: {e}")
+
     # ── Salva vehicles.json ──────────────────────────────────────────────────
     total_fotos = sum(len(v.get("fotos_drive", [])) for v in all_vehicles)
     vehicles_data = {
@@ -279,7 +310,7 @@ def main():
     logger.info(f"\nvehicles.json salvo com {len(all_vehicles)} veiculos.")
 
     # ── Push GitHub ──────────────────────────────────────────────────────────
-    if not args.no_push and not args.no_drive:
+    if not args.no_push and (not args.no_drive or drive_auth_failed):
         try:
             push_vehicles_json(str(json_path))
         except Exception as e:

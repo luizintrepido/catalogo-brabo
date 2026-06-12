@@ -15,6 +15,10 @@ logger = logging.getLogger(__name__)
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 
 
+class DriveAuthError(Exception):
+    """Raised when Google Drive authentication fails (expired/revoked token)."""
+
+
 class DriveUploader:
     def __init__(self):
         self.service = self._authenticate()
@@ -26,7 +30,13 @@ class DriveUploader:
             creds = Credentials.from_authorized_user_file(config.GOOGLE_TOKEN_FILE, SCOPES)
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
+                try:
+                    creds.refresh(Request())
+                except Exception as e:
+                    raise DriveAuthError(
+                        f"Token do Google Drive expirado/revogado. "
+                        f"Execute a autenticação novamente: {e}"
+                    ) from e
             else:
                 if not os.path.exists(config.GOOGLE_CREDENTIALS_FILE):
                     raise FileNotFoundError(f"'{config.GOOGLE_CREDENTIALS_FILE}' não encontrado!")
