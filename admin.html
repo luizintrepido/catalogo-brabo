@@ -71,6 +71,7 @@
   .flag-loja{background:var(--bg3);color:var(--text2);}
   .flag-dest{background:linear-gradient(135deg,var(--gold),#f4d29a);color:#2a1c05;}
   .flag-hidden{background:#3a1414;color:var(--red);}
+  .flag-prep{background:#1a2a3a;color:#60aaff;border:1px solid #2a4a6a;}
   /* EDITOR */
   .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   .toggles{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap;}
@@ -160,6 +161,7 @@
   <div class="toggles">
     <div class="toggle dest" id="tg-dest"><span>★ Destaque</span><span class="sw"></span></div>
     <div class="toggle" id="tg-hidden"><span>Esconder</span><span class="sw"></span></div>
+    <div class="toggle" id="tg-prep"><span>⏳ Em preparação</span><span class="sw"></span></div>
   </div>
 
   <div class="section-title">Informações</div>
@@ -251,6 +253,7 @@ function applyOverrides(list,ov){
       if(Array.isArray(o.fotos))v.fotos_drive=o.fotos;
       if('destaque'in o)v.destaque=!!o.destaque;
       if('hidden'in o)v.hidden=!!o.hidden;
+      if('em_preparacao'in o)v.em_preparacao=!!o.em_preparacao;
       if('loja'in o&&o.loja)v.loja=o.loja;}
     out.push(v);}
   for(const id in ov){const o=ov[id];
@@ -295,6 +298,7 @@ function renderList(){
         <div class="vflags">
           ${v.destaque?'<span class="flag flag-dest">★</span>':''}
           ${v.hidden?'<span class="flag flag-hidden">OCULTO</span>':''}
+          ${v.em_preparacao?'<span class="flag flag-prep">⏳ PREP</span>':''}
           <span class="flag flag-loja">${v.loja==='JONATHAN'?'NOVIDADE':(v.loja||'')}</span>
         </div>
       </div></div>`;
@@ -313,7 +317,7 @@ function openEditor(id){
   $('#f-versao').value=v.versao||'';$('#f-preco').value=v.preco||'';$('#f-km').value=v.km||'';
   $('#f-cor').value=v.cor||'';$('#f-cambio').value=v.cambio||'';$('#f-combustivel').value=v.combustivel||'';
   $('#f-opcionais').value=(v.opcionais||[]).join('\n');$('#f-descricao').value=v.descricao||'';
-  setToggle('#tg-dest',!!v.destaque);setToggle('#tg-hidden',!!v.hidden);
+  setToggle('#tg-dest',!!v.destaque);setToggle('#tg-hidden',!!v.hidden);setToggle('#tg-prep',!!v.em_preparacao);
   edPhotos=(v.fotos_drive||[]).slice();renderPhotos();
   // botao excluir aparece p/ QUALQUER carro ja existente (manual ou scrapeado)
   $('#btn-delete-manual').style.display='inline-flex';
@@ -367,6 +371,7 @@ function fileToB64(file){return new Promise((res,rej)=>{const r=new FileReader()
 // toggles
 $('#tg-dest').onclick=()=>$('#tg-dest').classList.toggle('on');
 $('#tg-hidden').onclick=()=>$('#tg-hidden').classList.toggle('on');
+$('#tg-prep').onclick=()=>$('#tg-prep').classList.toggle('on');
 
 // salvar edicao no overrides (em memoria)
 $('#btn-save').onclick=()=>{
@@ -381,16 +386,17 @@ $('#btn-save').onclick=()=>{
   };
   const dest=$('#tg-dest').classList.contains('on');
   const hid=$('#tg-hidden').classList.contains('on');
+  const prep=$('#tg-prep').classList.contains('on');
   let o=overrides[id]||{};
   const loja=$('#f-loja').value;
   if(v._manual){
     o={...o,_manual:true,loja,marca:$('#f-marca').value.trim(),modelo:$('#f-modelo').value.trim(),
        ano:num($('#f-ano').value),tipo:$('#f-tipo').value,...campos,
-       fotos:edPhotos.slice(),destaque:dest,hidden:hid,
+       fotos:edPhotos.slice(),destaque:dest,hidden:hid,em_preparacao:prep,
        slug:o.slug||slugify(`${$('#f-marca').value} ${$('#f-modelo').value} ${$('#f-ano').value}`),
        added_at:o.added_at||new Date().toISOString()};
   }else{
-    o={...o,loja,campos,fotos:edPhotos.slice(),destaque:dest,hidden:hid};
+    o={...o,loja,campos,fotos:edPhotos.slice(),destaque:dest,hidden:hid,em_preparacao:prep};
   }
   overrides[id]=o;
   // reflete na lista local
