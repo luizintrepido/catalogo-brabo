@@ -207,7 +207,8 @@
 <script>
 const OWNER='luizintrepido', REPO='catalogo-brabo', BRANCH='master';
 const PAGES_BASE=`https://${OWNER}.github.io/${REPO}`;
-const VJSON_RAW=`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/vehicles.json`;
+const RAW_BASE=`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;
+const VJSON_RAW=`${RAW_BASE}/vehicles.json`;
 const EDITABLE=['preco','km','versao','cor','cambio','combustivel','opcionais','descricao'];
 
 let TOKEN='', vehicles=[], overrides={}, ovSha=null, vjSha=null, current=null, dirty=false;
@@ -355,7 +356,7 @@ $('#file-input').addEventListener('change',async e=>{
       const name=Date.now()+'_'+Math.random().toString(36).slice(2,7)+'.'+ext;
       const path=`fotos/${current.id}/${name}`;
       await ghPut(path,b64,'admin: foto '+current.id,null);
-      edPhotos.push(`${PAGES_BASE}/${path}`);renderPhotos();
+      edPhotos.push(`${RAW_BASE}/${path}`);renderPhotos();
       toast('Foto adicionada ✓','ok');
     }catch(err){toast(err.message,'err');}
   }
