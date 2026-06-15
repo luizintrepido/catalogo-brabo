@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T13:35:04.370404",
+  "updated_at": "2026-06-15T14:30:30.785Z",
   "total": 95,
   "vehicles": [
     {
@@ -2178,17 +2178,27 @@
       "km": 123000,
       "preco": 42900,
       "tipo": "HATCH",
-      "cor": "",
+      "cor": "prata",
       "cambio": "Manual",
       "combustivel": "Flex",
       "opcionais": [],
-      "fotos_drive": [],
+      "fotos_drive": [
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533774063_7jk4t.jpg",
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533772035_ud8h9.jpg",
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533793431_aq87d.jpg",
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533775913_qd5rf.jpg",
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533777694_htlmn.jpg",
+        "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533779620_rph6u.jpg"
+      ],
       "drive_folder": "1VYmA3iVkLD0M49XFr1yiZsaXk5T4oAoS",
       "url_original": "https://recarautomarcas.com.br/Veiculo/ka-1.0-ti-vct-flex-se-manual-flex-2018/4989098/detalhes",
       "created_at": "",
       "whatsapp": "5513991575019",
       "slug": "ford-ka-2018",
-      "added_at": "2026-06-13T10:37:30.203650"
+      "added_at": "2026-06-13T10:37:30.203650",
+      "descricao": "",
+      "destaque": false,
+      "hidden": false
     },
     {
       "id": "4983117",
@@ -2775,7 +2785,7 @@
       "whatsapp": "5513991575019",
       "destaque": false,
       "hidden": false,
-      "added_at": "2026-06-13T10:37:30.203650",
+      "added_at": "2026-06-10T14:15:10.189Z",
       "slug": "chevrolet-equinox-rs-em-preparacao-2024",
       "_manual": true
     }
