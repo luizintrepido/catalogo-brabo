@@ -328,6 +328,11 @@
       color: #2a1c05;
       box-shadow: 0 0 10px rgba(230,184,115,0.45);
     }
+    .badge-prep {
+      background: #1a2a3a;
+      color: #60aaff;
+      border: 1px solid #2a4a6a;
+    }
     .card:has(.badge-destaque) {
       border-color: var(--gold);
       box-shadow: 0 0 0 1px rgba(230,184,115,0.35), var(--shadow);
@@ -944,6 +949,7 @@
         <div class="card-body">
           <div class="card-badges">
             ${v.destaque ? `<span class="badge badge-destaque">★ DESTAQUE</span>` : ``}
+            ${v.em_preparacao ? `<span class="badge badge-prep">⏳ EM PREPARAÇÃO</span>` : ``}
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="card-title">${v.marca} ${v.modelo}</div>
@@ -1091,6 +1097,7 @@
       <div class="modal-top">
         <div class="modal-title-block">
           <div class="modal-badges">
+            ${v.em_preparacao ? `<span class="badge badge-prep">⏳ EM PREPARAÇÃO</span>` : ``}
             <span class="badge badge-tipo">${v.tipo || 'SUV'}</span>
           </div>
           <div class="modal-title">${v.marca} ${v.modelo}</div>
