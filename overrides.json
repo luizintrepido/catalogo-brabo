@@ -2,6 +2,29 @@
   "1022647": {
     "hidden": true
   },
+  "4989098": {
+    "loja": "RECAR",
+    "campos": {
+      "preco": 42900,
+      "km": 123000,
+      "versao": "1.0 Ti-Vct Flex Se Manual 2018",
+      "cor": "prata",
+      "cambio": "Manual",
+      "combustivel": "Flex",
+      "opcionais": [],
+      "descricao": ""
+    },
+    "fotos": [
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533774063_7jk4t.jpg",
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533772035_ud8h9.jpg",
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533793431_aq87d.jpg",
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533775913_qd5rf.jpg",
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533777694_htlmn.jpg",
+      "https://luizintrepido.github.io/catalogo-brabo/fotos/4989098/1781533779620_rph6u.jpg"
+    ],
+    "destaque": false,
+    "hidden": false
+  },
   "manual_1781100398072": {
     "_manual": true,
     "marca": "Chevrolet",
