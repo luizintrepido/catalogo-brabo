@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — Recar Automarcas / Reauto Veículos. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Wed, 17 Jun 2026 16:02:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 16:12:43 +0000</lastBuildDate>
     <item>
       <g:id>1022817</g:id>
       <g:title>BMW 320I Active 2022</g:title>
@@ -208,6 +208,28 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Ecoboost Aut</g:trim>
       <g:vehicle_id>364986</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>600011</g:id>
+      <g:title>Chevrolet Onix Hatch Lt 2023</g:title>
+      <g:description>Chevrolet Onix Hatch Lt 1.0 12V Flex 5P Mec | Ano 2023 | 39.639 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>71900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chevrolet%20Onix%20Hatch%20Lt%202023%20por%20R%2471.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Chevrolet</g:brand>
+      <g:make>Chevrolet</g:make>
+      <g:model>Onix Hatch Lt</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="39639" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 12V Flex 5P Mec</g:trim>
+      <g:vehicle_id>600011</g:vehicle_id>
     </item>
     <item>
       <g:id>946591</g:id>
@@ -434,6 +456,28 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.6 16V Flex Aut Pcd</g:trim>
       <g:vehicle_id>982254</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>1027362</g:id>
+      <g:title>Hyundai HB20 Comf C Plus C Style 2019</g:title>
+      <g:description>Hyundai HB20 Comf C Plus C Style 1.0 Flex 12V | Ano 2019 | 44.294 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>71900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Hyundai%20HB20%20Comf%20C%20Plus%20C%20Style%202019%20por%20R%2471.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Hyundai</g:brand>
+      <g:make>Hyundai</g:make>
+      <g:model>HB20 Comf C Plus C Style</g:model>
+      <g:year>2019</g:year>
+      <g:mileage value="44294" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 Flex 12V</g:trim>
+      <g:vehicle_id>1027362</g:vehicle_id>
     </item>
     <item>
       <g:id>936524</g:id>
@@ -958,6 +1002,28 @@
       <g:vehicle_id>992288</g:vehicle_id>
     </item>
     <item>
+      <g:id>1013017</g:id>
+      <g:title>Harley Davidson Fat Bob 2019</g:title>
+      <g:description>Harley Davidson Fat Bob 107 | Ano 2019 | 9.195 km | Gasoline | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>76900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Harley%20Davidson%20Fat%20Bob%202019%20por%20R%2476.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Harley Davidson</g:brand>
+      <g:make>Harley Davidson</g:make>
+      <g:model>Fat Bob</g:model>
+      <g:year>2019</g:year>
+      <g:mileage value="9195" unit="KM"/>
+      <g:body_style>Other</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>107</g:trim>
+      <g:vehicle_id>1013017</g:vehicle_id>
+    </item>
+    <item>
       <g:id>881903</g:id>
       <g:title>Harley Davidson Fat Bob 2024</g:title>
       <g:description>Harley Davidson Fat Bob 114 | Ano 2024 | 3.439 km | Gasoline | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -1086,6 +1152,28 @@
       <g:transmission>Manual</g:transmission>
       <g:trim></g:trim>
       <g:vehicle_id>669961</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>455269</g:id>
+      <g:title>Harley Davidson Softail Low Rider S Fxlrs 2020</g:title>
+      <g:description>Harley Davidson Softail Low Rider S Fxlrs | Ano 2020 | 8.413 km | Gasoline | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>81900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Harley%20Davidson%20Softail%20Low%20Rider%20S%20Fxlrs%202020%20por%20R%2481.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Harley Davidson</g:brand>
+      <g:make>Harley Davidson</g:make>
+      <g:model>Softail Low Rider S Fxlrs</g:model>
+      <g:year>2020</g:year>
+      <g:mileage value="8413" unit="KM"/>
+      <g:body_style>Other</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim></g:trim>
+      <g:vehicle_id>455269</g:vehicle_id>
     </item>
     <item>
       <g:id>735347</g:id>
@@ -1274,6 +1362,55 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Dynamique 4X2 16V Flex 4P Automático</g:trim>
       <g:vehicle_id>4622542</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>5026602</g:id>
+      <g:title>Fiat ARGO 2023</g:title>
+      <g:description>Fiat ARGO 1.0 Firefly Flex Drive Manual | Ano 2023 | 92.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>67900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Fiat%20ARGO%202023%20por%20R%2467.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Fiat</g:brand>
+      <g:make>Fiat</g:make>
+      <g:model>ARGO</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="92000" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 Firefly Flex Drive Manual</g:trim>
+      <g:vehicle_id>5026602</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>5030873</g:id>
+      <g:title>Mercedes-Benz SLK 200 2009 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Mercedes-Benz SLK 200 1.8 16V Kompressor Gasolina Automático | Ano 2009 | 55.536 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Mercedes-Benz%20SLK%20200%202009%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1Zwwyw8Vm6ROlkXIDnsKla76Gwa8P8cTR=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1R8Usi9dcwKUod3Qg-5O66TU1F2RyLx3h=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/11RQu-2WX-aWmUEUkPxQGi-K8EsId700C=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ztFlNOBU_ncr1atrHUpGj27F_i7nfatZ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1NfRwFg7bN_TE2BkMV6VWXw7k79Ak5AD9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PwT_YmJcJYvXnMqgDG-Qe93l5dxYa3Mw=s1080</g:additional_image_link>
+      <g:brand>Mercedes-Benz</g:brand>
+      <g:make>Mercedes-Benz</g:make>
+      <g:model>SLK 200</g:model>
+      <g:year>2009</g:year>
+      <g:mileage value="55536" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.8 16V Kompressor Gasolina Automático</g:trim>
+      <g:vehicle_id>5030873</g:vehicle_id>
     </item>
     <item>
       <g:id>5021382</g:id>
@@ -1848,6 +1985,33 @@
       <g:vehicle_id>4639279</g:vehicle_id>
     </item>
     <item>
+      <g:id>5030870</g:id>
+      <g:title>Kia SPORTAGE 2022 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Kia SPORTAGE 2.0 Ex 4X2 16V Flex 4P Automático | Ano 2022 | 30.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Kia%20SPORTAGE%202022%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1tQT5e-3lPbniVrd_ebVM3Rzs6T8hh7pK=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1tKxKLlLVffuaM6it3ALRUh1aP9cxNE-W=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m3shYk8K07FvVMtq9F3w5rbcAxj4HegT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1FmBwHeaB9wpa-AqodGnN62X67J5dqFpA=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gW7uZvKMfVoMMxwAcdxvmLHht1MUiwhg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/108EKGMDEV2VWEs3Z-7372XrxgZ2gkVS6=s1080</g:additional_image_link>
+      <g:brand>Kia</g:brand>
+      <g:make>Kia</g:make>
+      <g:model>SPORTAGE</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="30000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Ex 4X2 16V Flex 4P Automático</g:trim>
+      <g:vehicle_id>5030870</g:vehicle_id>
+    </item>
+    <item>
       <g:id>5026642</g:id>
       <g:title>Ford FIESTA 2013</g:title>
       <g:description>Ford FIESTA 1.6 Rocam Hatch 8V Flex 4P Manual | Ano 2013 | 122.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -1965,6 +2129,28 @@
       <g:transmission>Manual</g:transmission>
       <g:trim>1.0 Firefly Flex Manual</g:trim>
       <g:vehicle_id>5026206</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>5030879</g:id>
+      <g:title>Volkswagen NIVUS 2024 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Volkswagen NIVUS 1.0 200 Tsi Total Flex Highline Automático | Ano 2024 | 32.137 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202024%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2024</g:year>
+      <g:mileage value="32137" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 Tsi Total Flex Highline Automático</g:trim>
+      <g:vehicle_id>5030879</g:vehicle_id>
     </item>
     <item>
       <g:id>5004855</g:id>
@@ -2188,6 +2374,28 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.8 Ltz 16V Flex 4P Automático</g:trim>
       <g:vehicle_id>4987710</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>4989112</g:id>
+      <g:title>Toyota YARIS 2023</g:title>
+      <g:description>Toyota YARIS 1.5 16V Flex Xs Connect Multidrive | Ano 2023 | 79.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>89900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20YARIS%202023%20por%20R%2489.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>YARIS</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="79000" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 16V Flex Xs Connect Multidrive</g:trim>
+      <g:vehicle_id>4989112</g:vehicle_id>
     </item>
     <item>
       <g:id>5026940</g:id>
@@ -2444,6 +2652,37 @@
       <g:vehicle_id>5030875</g:vehicle_id>
     </item>
     <item>
+      <g:id>5030878</g:id>
+      <g:title>Volkswagen Fox 2014 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Volkswagen Fox 1.0 Mi 8V Flex 4P Manual | Ano 2014 | 39.720 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20Fox%202014%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/172qXBbs6SBB8KoO6wFqDmT6b2YgM1B2c=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CH69-Gx-aSQpmXTYRjczuUQ-6vkTkv3H=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hbTWT18UryOj2Lk_d9xNiycLMdPjgjgU=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PjJf9U0ANSudKuRshd2iFDmmHIx8yD3J=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ikNT9lmXGFlowJeB-j-hsnUD8393Kkvx=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1tFsI-H1HZum3-DQo2Jhne3SfQAm9Xu20=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1F3u2CtwF0QaDN3K0Xn6bupNE7f8RguRo=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GnVSxgxMSJ58ROYzU5-0Mo4qp2kI_gX5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TMSRyhLpXvdOgfYs-W0dBuBzCAOp5R9d=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Xvf1PXkola7rj5CxroS6LeFPwFgA9flZ=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>Fox</g:model>
+      <g:year>2014</g:year>
+      <g:mileage value="39720" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 Mi 8V Flex 4P Manual</g:trim>
+      <g:vehicle_id>5030878</g:vehicle_id>
+    </item>
+    <item>
       <g:id>4935867</g:id>
       <g:title>Renault SANDERO 2023</g:title>
       <g:description>Renault SANDERO 1.0 12V Sce Flex S Edition Manual | Ano 2023 | 130.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -2564,6 +2803,35 @@
       <g:vehicle_id>4639289</g:vehicle_id>
     </item>
     <item>
+      <g:id>5030876</g:id>
+      <g:title>Renault CAPTUR 2019 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Renault CAPTUR 1.6 16V Sce Flex Life X-Tronic | Ano 2019 | 72.391 km | Flex-fuel | CVT. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Renault%20CAPTUR%202019%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/146MbJoI2Vdl9HTEry9Gn77IKgiZ8i_tY=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1aloVBjD_ywPGFe0w4rTuQIsrpOqECIAP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1i441YrbgAIH2V8FhSl_hW450mi3R_EY3=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Y9DqchudMQoY0ZjkaO5X1mJ2zAFa3-dG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SDTGSSOGKvZUkxY4SCwLRT3U65tBOCn-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Mu43HPEj9ea-aBc3oxO3CaZqfH9WIcTa=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KEm0q1cUYwNMWifknWCoIipXxLccefjA=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1-zkRBrdUG2vpqUAujp_6kkaGGaHlwWad=s1080</g:additional_image_link>
+      <g:brand>Renault</g:brand>
+      <g:make>Renault</g:make>
+      <g:model>CAPTUR</g:model>
+      <g:year>2019</g:year>
+      <g:mileage value="72391" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.6 16V Sce Flex Life X-Tronic</g:trim>
+      <g:vehicle_id>5030876</g:vehicle_id>
+    </item>
+    <item>
       <g:id>4884005</g:id>
       <g:title>Renault KWID 2024</g:title>
       <g:description>Renault KWID 1.0 12V Sce Flex Zen Manual | Ano 2024 | 82.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -2590,6 +2858,60 @@
       <g:transmission>Manual</g:transmission>
       <g:trim>1.0 12V Sce Flex Zen Manual</g:trim>
       <g:vehicle_id>4884005</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>4435130</g:id>
+      <g:title>Ford ECOSPORT 2014</g:title>
+      <g:description>Ford ECOSPORT 2.0 Titanium 16V Flex 4P Automático | Ano 2014 | 122.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>53900.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Ford%20ECOSPORT%202014%20por%20R%2453.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/em-preparacao.jpg</g:image_link>
+      <g:brand>Ford</g:brand>
+      <g:make>Ford</g:make>
+      <g:model>ECOSPORT</g:model>
+      <g:year>2014</g:year>
+      <g:mileage value="122000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Titanium 16V Flex 4P Automático</g:trim>
+      <g:vehicle_id>4435130</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>5030880</g:id>
+      <g:title>Volkswagen T-CROSS 2022 — Consulte o valor</g:title>
+      <g:description>CONSULTE O VALOR. Volkswagen T-CROSS 1.4 250 Tsi Total Flex Highline Automático | Ano 2022 | 59.847 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>500000.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20T-CROSS%202022%20no%20cat%C3%A1logo%20e%20quero%20saber%20o%20valor%20e%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1UK-K4w_8T4ajRaekOuGLfpQihMCtQ-dg=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1YPxTW_d4U-J6skgKLrHkg4TfD3GuYOfM=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qxXVk3bBP_EPkW6QhCPwkqw2nHdSxsim=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eh3u9fK2ck463GrmQj2IRrfG0Tnvn5b-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Hr-LVQgmwuK1kE_BngOqQ5NK1a1CvsxH=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WjOljARC464MOK51BWXgyUMt4DXzTkqD=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eBCrFSDlTNGC-oMbZLCc3ErWFdpWQGiJ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CTXP4IFeGTvou6jXH9bZOyK1cCXIcv_0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Kg28DGSSgimexMSxIkg2EkJX9lxPkKu7=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RpbT4Dik-CH-gYGqWVq7b9YwG-DdyN8d=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/11eze_TTuWlgV4QbZrO2_UYmkCGNR7rBE=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>T-CROSS</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="59847" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.4 250 Tsi Total Flex Highline Automático</g:trim>
+      <g:vehicle_id>5030880</g:vehicle_id>
     </item>
     <item>
       <g:id>4876802</g:id>
