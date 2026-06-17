@@ -900,6 +900,11 @@
       // Destaques sempre no topo, independente da ordenacao escolhida
       const da = a.destaque ? 1 : 0, db = b.destaque ? 1 : 0;
       if (db !== da) return db - da;
+      // Motos sempre por último (exceto quando filtro de tipo está ativo)
+      if (!activeFilters.tipo) {
+        const ma = a.tipo === 'MOTO' ? 1 : 0, mb = b.tipo === 'MOTO' ? 1 : 0;
+        if (ma !== mb) return ma - mb;
+      }
       if (sort === 'preco-asc')  return (a.preco||0) - (b.preco||0);
       if (sort === 'preco-desc') return (b.preco||0) - (a.preco||0);
       if (sort === 'ano-desc')   return (b.ano||0) - (a.ano||0);
