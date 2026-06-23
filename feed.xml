@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — Recar Automarcas / Reauto Veículos. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Tue, 23 Jun 2026 11:16:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 13:53:15 +0000</lastBuildDate>
     <item>
       <g:id>1022817</g:id>
       <g:title>BMW 320I Active 2022</g:title>
@@ -1472,7 +1472,7 @@
     <item>
       <g:id>4989098</g:id>
       <g:title>Ford KA 2018</g:title>
-      <g:description>Ford KA 1.0 Ti-Vct Flex Se Manual 2018 | Ano 2018 | 123.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:description>Ford KA 1.0 Ti-Vct Flex Se Manual | Ano 2018 | 123.000 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
       <g:price>42900.00 BRL</g:price>
@@ -1492,7 +1492,7 @@
       <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Manual</g:transmission>
-      <g:trim>1.0 Ti-Vct Flex Se Manual 2018</g:trim>
+      <g:trim>1.0 Ti-Vct Flex Se Manual</g:trim>
       <g:vehicle_id>4989098</g:vehicle_id>
     </item>
     <item>
