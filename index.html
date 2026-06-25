@@ -900,6 +900,10 @@
       // Destaques sempre no topo, independente da ordenacao escolhida
       const da = a.destaque ? 1 : 0, db = b.destaque ? 1 : 0;
       if (db !== da) return db - da;
+      // Carros COM foto sempre acima dos sem foto (em preparacao vao pro fim)
+      const fa = (a.fotos_drive && a.fotos_drive.length) ? 1 : 0;
+      const fb = (b.fotos_drive && b.fotos_drive.length) ? 1 : 0;
+      if (fb !== fa) return fb - fa;
       // Motos sempre por último (exceto quando filtro de tipo está ativo)
       if (!activeFilters.tipo) {
         const ma = a.tipo === 'MOTO' ? 1 : 0, mb = b.tipo === 'MOTO' ? 1 : 0;
