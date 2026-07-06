@@ -280,137 +280,12 @@
       transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
       display: flex;
       flex-direction: column;
-      position: relative;
     }
     .card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow);
       border-color: var(--orange);
     }
-    .card.selected {
-      border-color: var(--green);
-      box-shadow: 0 0 0 2px var(--green);
-    }
-
-    /* ── SELECT CHECKBOX (visivel so no modo selecao) ── */
-    .card-select {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 3;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: rgba(10,10,10,0.72);
-      border: 2px solid rgba(255,255,255,0.55);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background .15s, border-color .15s, transform .12s;
-    }
-    body.select-mode .card-select { display: flex; }
-    .card-select:hover { transform: scale(1.08); border-color: var(--green); }
-    .card-select.on {
-      background: var(--green);
-      border-color: var(--green);
-      color: #07291a;
-    }
-
-    /* ── BOTAO MODO SELECAO ── */
-    #btn-select-mode {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 14px;
-      background: var(--bg3);
-      color: var(--text2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: border-color .15s, color .15s, background .15s;
-    }
-    #btn-select-mode:hover { border-color: var(--green); color: var(--text); }
-    body.select-mode #btn-select-mode {
-      background: var(--green);
-      border-color: var(--green);
-      color: #07291a;
-    }
-
-    /* ── SELECTION BAR (flutuante) ── */
-    #selection-bar {
-      position: fixed;
-      left: 50%;
-      bottom: 18px;
-      transform: translateX(-50%) translateY(120%);
-      background: #141414;
-      border: 1px solid var(--orange);
-      border-radius: 999px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-      padding: 10px 10px 10px 20px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      z-index: 500;
-      transition: transform .22s ease;
-      max-width: calc(100vw - 24px);
-    }
-    #selection-bar.show { transform: translateX(-50%) translateY(0); }
-    #selection-bar .sel-count { font-size: 0.9rem; font-weight: 700; white-space: nowrap; }
-    #selection-bar .sel-count strong { color: var(--orange); }
-    #selection-bar button {
-      border: none;
-      border-radius: 999px;
-      padding: 9px 16px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: filter .15s, transform .1s;
-    }
-    #selection-bar button:active { transform: scale(.96); }
-    #btn-send-selected { background: var(--green); color: #07291a; }
-    #btn-send-selected.copied { background: var(--orange); color: #fff; }
-    #btn-clear-selected { background: var(--bg3); color: var(--text2); border: 1px solid var(--border) !important; }
-    @media (max-width: 560px) {
-      #selection-bar { gap: 8px; padding: 8px 8px 8px 14px; }
-      #selection-bar .sel-count { font-size: 0.8rem; }
-      #selection-bar button { padding: 8px 12px; font-size: 0.78rem; }
-    }
-
-    /* ── VITRINE (link de selecionados) ── */
-    .vitrine-banner {
-      background: linear-gradient(135deg, #1a3a2a, #0f2318);
-      border-bottom: 1px solid var(--green);
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-      color: var(--text);
-    }
-    .vitrine-banner strong { color: var(--green); }
-    .vitrine-banner button {
-      margin-left: auto;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      color: var(--text2);
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .vitrine-banner button:hover { border-color: var(--orange); color: var(--text); }
     .card-img {
       width: 100%;
       aspect-ratio: 1/1;
@@ -501,69 +376,6 @@
       color: var(--text2);
     }
 
-    /* ── SKELETON LOADING (shimmer nos cards enquanto carrega) ── */
-    .skel {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-    .skel .sk-img { width: 100%; aspect-ratio: 1/1; }
-    .skel .sk-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
-    .skel .sk-line { height: 14px; border-radius: 4px; }
-    .skel .sk-line.w60 { width: 60%; }
-    .skel .sk-line.w40 { width: 40%; }
-    .skel .sk-line.w80 { width: 80%; height: 22px; }
-    .sk-shimmer {
-      background: linear-gradient(100deg, var(--bg3) 40%, #2e2e2e 50%, var(--bg3) 60%);
-      background-size: 200% 100%;
-      animation: shimmer 1.3s linear infinite;
-    }
-    @keyframes shimmer { to { background-position: -200% 0; } }
-
-    /* ── ENTRADA DOS CARDS (stagger fade-in) ── */
-    .card { animation: cardIn .38s ease both; }
-    .card:nth-child(1)  { animation-delay: .02s; }
-    .card:nth-child(2)  { animation-delay: .06s; }
-    .card:nth-child(3)  { animation-delay: .10s; }
-    .card:nth-child(4)  { animation-delay: .14s; }
-    .card:nth-child(5)  { animation-delay: .18s; }
-    .card:nth-child(6)  { animation-delay: .22s; }
-    .card:nth-child(7)  { animation-delay: .26s; }
-    .card:nth-child(8)  { animation-delay: .30s; }
-    @keyframes cardIn {
-      from { opacity: 0; transform: translateY(14px); }
-      to   { opacity: 1; transform: none; }
-    }
-
-    /* ── FAB WHATSAPP (some quando a barra de selecao esta ativa) ── */
-    #wpp-fab {
-      position: fixed;
-      right: 16px;
-      bottom: 18px;
-      z-index: 400;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--green);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 20px rgba(37,211,102,0.4);
-      text-decoration: none;
-      transition: transform .18s ease, box-shadow .2s;
-    }
-    #wpp-fab:hover { transform: scale(1.08); box-shadow: 0 8px 26px rgba(37,211,102,0.55); }
-    body.has-selbar #wpp-fab { transform: scale(0); pointer-events: none; }
-
-    /* ── ACESSIBILIDADE ── */
-    :focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
-    @media (prefers-reduced-motion: reduce) {
-      .card, .sk-shimmer { animation: none !important; }
-      #selection-bar { transition: none; }
-    }
-
     /* ── EMPTY STATE ── */
     .empty-state {
       grid-column: 1 / -1;
@@ -574,8 +386,16 @@
     .empty-state .icon { font-size: 4rem; margin-bottom: 16px; }
     .empty-state h3 { font-size: 1.2rem; color: var(--text); margin-bottom: 8px; }
 
-    /* ── LOADING (grid de skeletons; herda .grid) ── */
-    #loading { padding-top: 8px; }
+    /* ── LOADING ── */
+    #loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      gap: 16px;
+      color: var(--text2);
+    }
     .spinner {
       width: 48px;
       height: 48px;
@@ -882,23 +702,7 @@
     @media (max-width: 600px) {
       .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); padding: 0 12px 30px; }
       .search-wrap { padding: 10px 12px; }
-      #search-input { min-width: 100%; }
-      .pills-wrap {
-        padding: 8px 12px;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .pills-wrap::-webkit-scrollbar { display: none; }
-      .modal-cta {
-        position: sticky;
-        bottom: 0;
-        background: var(--bg2);
-        padding: 12px 0 4px;
-        margin: 0 -4px;
-        border-top: 1px solid var(--border);
-      }
+      .pills-wrap { padding: 8px 12px; }
       header { padding: 10px 12px; gap: 10px; }
       .brand { gap: 9px; }
       .brand-logo { height: 58px; }
@@ -928,18 +732,9 @@
   </div>
 </header>
 
-<!-- VITRINE (aparece so quando o link tem ?ids=) -->
-<div class="vitrine-banner" id="vitrine-banner" style="display:none">
-  <span>🔗 <strong>Seleção enviada pra você</strong> — <span id="vitrine-count"></span></span>
-  <button onclick="sairDaVitrine()">Ver catálogo completo</button>
-</div>
-
 <!-- SEARCH + SORT -->
 <div class="search-wrap">
   <input type="text" id="search-input" placeholder="Buscar por marca, modelo, versão..." />
-  <button id="btn-select-mode" type="button" onclick="toggleSelectMode()" title="Escolher carros um a um para enviar">
-    <span id="btn-select-mode-icon">☑</span> <span id="btn-select-mode-label">Selecionar</span>
-  </button>
   <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
     <span id="btn-share-results-label">Enviar resultados</span>
@@ -977,15 +772,18 @@
   <span id="results-count">...</span>
 </div>
 
-<!-- LOADING (skeleton do grid) -->
-<div id="loading" class="grid" aria-label="Carregando catálogo"></div>
+<!-- LOADING -->
+<div id="loading">
+  <div class="spinner"></div>
+  <span>Carregando catálogo...</span>
+</div>
 
 <!-- GRID -->
 <div class="grid" id="cars-grid" style="display:none;"></div>
 
 <!-- MODAL -->
 <div id="modal-overlay">
-  <button id="modal-close" title="Fechar" aria-label="Fechar detalhes">✕</button>
+  <button id="modal-close" title="Fechar">✕</button>
   <div id="modal">
     <!-- gallery -->
     <div class="gallery-wrap" id="gallery-wrap">
@@ -995,8 +793,8 @@
           <img src="em-preparacao.jpg" alt="Em preparação" /><span>Em preparação</span>
         </div>
       </div>
-      <button class="gallery-nav prev" id="gal-prev" aria-label="Foto anterior">‹</button>
-      <button class="gallery-nav next" id="gal-next" aria-label="Próxima foto">›</button>
+      <button class="gallery-nav prev" id="gal-prev">‹</button>
+      <button class="gallery-nav next" id="gal-next">›</button>
       <div class="gallery-counter" id="gal-counter"></div>
     </div>
     <div class="gallery-thumbs" id="gallery-thumbs"></div>
@@ -1004,21 +802,6 @@
     <div class="modal-details" id="modal-details"></div>
   </div>
 </div>
-
-<!-- SELECTION BAR -->
-<div id="selection-bar">
-  <span class="sel-count"><strong id="sel-count-n">0</strong> selecionado(s)</span>
-  <button id="btn-send-selected" onclick="shareSelected()">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-    <span id="btn-send-selected-label">Enviar selecionados</span>
-  </button>
-  <button id="btn-clear-selected" onclick="clearSelection()">Limpar</button>
-</div>
-
-<!-- FAB WHATSAPP -->
-<a id="wpp-fab" href="https://wa.me/5513991575019?text=Ol%C3%A1!%20Vi%20o%20cat%C3%A1logo%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
 
 <!-- FOOTER -->
 <footer>
@@ -1034,8 +817,6 @@
   let activeFilters = { tipo: '', preco: '' };
   let currentGalIdx = 0;
   let currentGalPhotos = [];
-  let vitrineIds = null;          // null = catalogo completo; array = so estes ids (link de selecao)
-  let selectedIds = new Set();    // selecao em andamento (antes de gerar o link)
 
   // ─── UTILS ────────────────────────────────────────────────────
   const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
@@ -1072,7 +853,6 @@
       document.getElementById('updated-at').textContent = 'Atualizado em: ' + fmtDate(data.updated_at);
       document.getElementById('loading').style.display = 'none';
       document.getElementById('cars-grid').style.display = 'grid';
-      setupVitrine();
       applyFilters();
       // Abre o modal apos o render (evita race condition)
       requestAnimationFrame(() => {
@@ -1101,8 +881,7 @@
     const tipoF = activeFilters.tipo;
     const precoF = activeFilters.preco;
 
-    const pool = vitrineIds ? allVehicles.filter(v => vitrineIds.includes(String(v.id))) : allVehicles;
-    filtered = pool.filter(v => {
+    filtered = allVehicles.filter(v => {
       if (q) {
         const hay = `${v.marca} ${v.modelo} ${v.versao} ${v.ano} ${v.tipo}`.toLowerCase();
         if (!hay.includes(q)) return false;
@@ -1172,9 +951,7 @@
         : `<div class="card-price card-price-zero">Consultar preço</div>`;
       const nFotos = v.fotos_drive ? v.fotos_drive.length : 0;
 
-      const isSel = selectedIds.has(String(v.id));
-      return `<div class="card ${isSel ? 'selected' : ''}" onclick="cardClick(${i}, '${v.id}')">
-        <div class="card-select ${isSel ? 'on' : ''}" onclick="event.stopPropagation(); toggleSelect('${v.id}')" title="Selecionar para enviar" role="checkbox" aria-checked="${isSel}" aria-label="Selecionar ${v.marca} ${v.modelo}">${isSel ? '✓' : ''}</div>
+      return `<div class="card" onclick="openModal(${i})">
         ${foto
           ? `<img class="card-img" src="${foto}" alt="${v.marca} ${v.modelo}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" /><img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" style="display:none" />`
           : `<img class="card-img-placeholder" src="em-preparacao.jpg" alt="Em preparação" />`}
@@ -1574,144 +1351,7 @@
     });
   });
 
-  // ─── MODO SELEÇÃO (botao liga/desliga; checkbox so aparece ativo) ──
-  let selectMode = false;
-
-  function toggleSelectMode() {
-    selectMode = !selectMode;
-    document.body.classList.toggle('select-mode', selectMode);
-    document.getElementById('btn-select-mode-icon').textContent = selectMode ? '✕' : '☑';
-    document.getElementById('btn-select-mode-label').textContent = selectMode ? 'Cancelar seleção' : 'Selecionar';
-    if (!selectMode) {
-      // sair do modo limpa tudo
-      selectedIds.clear();
-      updateSelectionBar();
-      renderGrid();
-    }
-  }
-
-  // clique no card: modo selecao marca/desmarca; modo normal abre modal
-  function cardClick(idx, id) {
-    if (selectMode) toggleSelect(id);
-    else openModal(idx);
-  }
-
-  // ─── SELEÇÃO MANUAL DE CARROS (link so com os escolhidos) ──────
-  function toggleSelect(id) {
-    id = String(id);
-    if (selectedIds.has(id)) selectedIds.delete(id);
-    else selectedIds.add(id);
-    updateSelectionBar();
-    renderGrid();
-  }
-
-  function clearSelection() {
-    selectedIds.clear();
-    updateSelectionBar();
-    renderGrid();
-  }
-
-  function updateSelectionBar() {
-    const bar = document.getElementById('selection-bar');
-    const n = selectedIds.size;
-    document.getElementById('sel-count-n').textContent = n;
-    bar.classList.toggle('show', n > 0);
-    document.body.classList.toggle('has-selbar', n > 0);   // esconde o FAB do WhatsApp
-  }
-
-  function shareSelected() {
-    if (!selectedIds.size) return;
-    const ids = [...selectedIds];
-    const carros = allVehicles.filter(v => selectedIds.has(String(v.id)));
-    const url = CATALOG_BASE + '?ids=' + ids.join(',');
-
-    const linhas = carros.map(v => {
-      const preco = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Sob consulta';
-      const km = v.km ? ` · ${Number(v.km).toLocaleString('pt-BR')} km` : '';
-      return `• ${v.marca} ${v.modelo} ${v.ano} (${preco}${km})`;
-    });
-    const texto =
-      `🚗 Separei ${carros.length} veículo${carros.length > 1 ? 's' : ''} pra você:\n\n` +
-      linhas.join('\n') +
-      `\n\n👉 Ver com fotos e detalhes:\n${url}`;
-
-    if (typeof fbq !== 'undefined') {
-      fbq('track', 'Contact', {
-        content_type: 'product_group',
-        content_name: 'Seleção manual de veículos',
-        num_items: carros.length
-      });
-    }
-
-    if (navigator.share) {
-      navigator.share({ title: 'Veículos selecionados pra você', text: texto, url }).catch(() => {});
-      return;
-    }
-    navigator.clipboard.writeText(texto).then(() => {
-      const btn = document.getElementById('btn-send-selected');
-      const lbl = document.getElementById('btn-send-selected-label');
-      const orig = lbl.textContent;
-      btn.classList.add('copied');
-      lbl.textContent = 'Copiado!';
-      setTimeout(() => { btn.classList.remove('copied'); lbl.textContent = orig; }, 2200);
-      window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank');
-    }).catch(() => {
-      window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank');
-    });
-  }
-
-  // ─── MODO VITRINE (abrir um link ?ids=1,2,3 mostra so esses carros) ──
-  function setupVitrine() {
-    const p = new URLSearchParams(location.search);
-    const idsParam = p.get('ids');
-    const banner = document.getElementById('vitrine-banner');
-    if (idsParam) {
-      vitrineIds = idsParam.split(',').map(s => s.trim()).filter(Boolean);
-      const achados = allVehicles.filter(v => vitrineIds.includes(String(v.id))).length;
-      document.getElementById('vitrine-count').textContent =
-        `${achados} veículo${achados > 1 ? 's' : ''} selecionado${achados > 1 ? 's' : ''} pro Brabo`;
-      banner.style.display = 'flex';
-    } else {
-      vitrineIds = null;
-      banner.style.display = 'none';
-    }
-  }
-
-  function sairDaVitrine() {
-    vitrineIds = null;
-    document.getElementById('vitrine-banner').style.display = 'none';
-    history.replaceState(null, '', CATALOG_BASE);
-    applyFilters();
-  }
-
-  // ─── SKELETON LOADING ──────────────────────────────────────────
-  function renderSkeleton() {
-    document.getElementById('loading').innerHTML = Array.from({length: 8}, () => `
-      <div class="skel">
-        <div class="sk-img sk-shimmer"></div>
-        <div class="sk-body">
-          <div class="sk-line sk-shimmer w40"></div>
-          <div class="sk-line sk-shimmer w60"></div>
-          <div class="sk-line sk-shimmer w80"></div>
-        </div>
-      </div>`).join('');
-  }
-
-  // ─── SWIPE NA GALERIA (celular) ────────────────────────────────
-  (function() {
-    const wrap = document.getElementById('gallery-wrap');
-    let x0 = null;
-    wrap.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
-    wrap.addEventListener('touchend', e => {
-      if (x0 === null) return;
-      const dx = e.changedTouches[0].clientX - x0;
-      if (Math.abs(dx) > 40) setGalPhoto(currentGalIdx + (dx < 0 ? 1 : -1));
-      x0 = null;
-    }, { passive: true });
-  })();
-
   // ─── INIT ──────────────────────────────────────────────────────
-  renderSkeleton();
   parseInitialFilters();
   loadData();
 </script>
