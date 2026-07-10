@@ -302,6 +302,42 @@
       z-index: 150;
     }
     .main-col { flex: 1; min-width: 0; }
+    /* barra de busca inteligente (sempre visivel) */
+    .searchbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0 14px;
+      margin-bottom: 14px;
+      transition: border-color 0.2s;
+    }
+    .searchbar:focus-within { border-color: var(--orange); }
+    .searchbar .sb-ico { color: var(--text2); flex-shrink: 0; }
+    .searchbar #search-input {
+      flex: 1;
+      background: none;
+      border: none;
+      color: var(--text);
+      padding: 14px 0;
+      font-size: 1rem;
+      outline: none;
+      min-width: 0;
+    }
+    .searchbar #search-input::placeholder { color: var(--text2); }
+    .sb-clear {
+      background: var(--bg2);
+      border: none;
+      color: var(--text2);
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+    .sb-clear:hover { color: var(--text); }
     .toolbar {
       display: flex;
       align-items: center;
@@ -1030,11 +1066,6 @@
     </div>
 
     <div class="fgroup">
-      <label class="flabel" for="search-input">Busca</label>
-      <input type="text" id="search-input" placeholder="Marca, modelo, versão..." />
-    </div>
-
-    <div class="fgroup">
       <label class="flabel" for="sort-select">Ordenar por</label>
       <select id="sort-select" class="filter-select">
         <option value="recent">Adicionados recentemente</option>
@@ -1062,6 +1093,19 @@
         <select id="preco-de" class="filter-select"><option value="">De</option></select>
         <select id="preco-ate" class="filter-select"><option value="">Até</option></select>
       </div>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="km-ate">KM até</label>
+      <select id="km-ate" class="filter-select">
+        <option value="">Qualquer</option>
+        <option value="20000">20 mil</option>
+        <option value="40000">40 mil</option>
+        <option value="60000">60 mil</option>
+        <option value="80000">80 mil</option>
+        <option value="100000">100 mil</option>
+        <option value="150000">150 mil</option>
+      </select>
     </div>
 
     <div class="fgroup">
@@ -1110,6 +1154,11 @@
 
   <!-- CONTEUDO -->
   <main class="main-col">
+    <div class="searchbar">
+      <svg class="sb-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="search-input" autocomplete="off" placeholder="Ex: hb20 onix automático até 60k" />
+      <button class="sb-clear" id="sb-clear" onclick="limparBusca()" aria-label="Limpar busca" style="display:none">✕</button>
+    </div>
     <div class="toolbar">
       <button class="btn-filtros" onclick="abrirFiltros()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
@@ -1277,29 +1326,72 @@
   }
   const checked = id => [...document.querySelectorAll('#'+id+' input:checked')].map(x => x.value);
 
+  // ─── BUSCA INTELIGENTE: "hb20 onix automatico ate 60k km 80" ───
+  function _num(s){
+    s = String(s).replace(/[.,]/g,'');
+    const m = s.match(/(\d+)\s*(k|mil)?/);
+    if (!m) return 0;
+    let n = +m[1];
+    if (m[2]) n *= 1000;
+    else if (n > 0 && n < 1000) n *= 1000;   // "60" solto = 60 mil
+    return n;
+  }
+  function parseBusca(qraw){
+    let q = ' ' + semAcento(String(qraw||'').toLowerCase()) + ' ';
+    const P = { termos:[], precoDe:0, precoAte:0, kmAte:0, cambio:'', carroceria:'' };
+    let m;
+    // KM primeiro (contém a palavra "km")
+    m = q.match(/(?:km|kilometragem)\s*(?:ate|<=?)?\s*(\d[\d.]*)\s*(k|mil)?/) || q.match(/(\d[\d.]*)\s*(k|mil)?\s*km/);
+    if (m) { P.kmAte = _num(m[1] + (m[2]||'')); q = q.replace(m[0], ' '); }
+    // Preço faixa: "de X a Y" / "entre X e Y"
+    m = q.match(/(?:de|entre)\s*(\d[\d.]*)\s*(k|mil)?\s*(?:a|ate|e)\s*(\d[\d.]*)\s*(k|mil)?/);
+    if (m) { P.precoDe = _num(m[1]+(m[2]||'')); P.precoAte = _num(m[3]+(m[4]||'')); q = q.replace(m[0],' '); }
+    // Preço teto: "ate X" / "<= X" / "no maximo X"
+    if (!P.precoAte) { m = q.match(/(?:ate|<=?|abaixo de|no maximo|maximo|max)\s*(\d[\d.]*)\s*(k|mil)?/); if (m) { P.precoAte = _num(m[1]+(m[2]||'')); q = q.replace(m[0],' '); } }
+    // Preço piso: "acima de X" / "a partir de X"
+    if (!P.precoDe) { m = q.match(/(?:acima de|a partir de|minimo|min)\s*(\d[\d.]*)\s*(k|mil)?/); if (m) { P.precoDe = _num(m[1]+(m[2]||'')); q = q.replace(m[0],' '); } }
+    // Preço valor solto com sufixo: "60k" / "60 mil"
+    if (!P.precoAte) { m = q.match(/(\d[\d.]*)\s*(k|mil)\b/); if (m) { P.precoAte = _num(m[1]+m[2]); q = q.replace(m[0],' '); } }
+    // Câmbio
+    if (/\b(automatico|automatica|automat|aut|auto|cvt)\b/.test(q)) { P.cambio='Automático'; q = q.replace(/\b(automatico|automatica|automat|aut|auto|cvt)\b/g,' '); }
+    else if (/\b(manual|mecanico|mecanica|mec)\b/.test(q)) { P.cambio='Manual'; q = q.replace(/\b(manual|mecanico|mecanica|mec)\b/g,' '); }
+    // Carroceria
+    const carro = { suv:'SUV', hatchback:'HATCH', hatch:'HATCH', sedan:'SEDAN', seda:'SEDAN', picape:'PICAPE', pickup:'PICAPE', caminhonete:'PICAPE', moto:'MOTO' };
+    for (const k in carro) { const re = new RegExp('\\b'+k+'\\b'); if (re.test(q)) { P.carroceria = carro[k]; q = q.replace(re,' '); break; } }
+    // Termos livres restantes (modelo/marca) — OR entre eles
+    const stop = new Set(['de','ate','com','por','reais','carro','carros','ano','anos','na','no','ou','e','a','o']);
+    P.termos = q.split(/\s+/).map(s => s.trim()).filter(t => t.length >= 2 && !stop.has(t));
+    return P;
+  }
+
   function applyFilters() {
-    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    const P = parseBusca(document.getElementById('search-input').value);
     const sort = document.getElementById('sort-select').value;
     const loja = document.getElementById('loja-select').value;
     const marca = document.getElementById('marca-select').value;
     const modelo = document.getElementById('modelo-select').value;
-    const precoDe = +document.getElementById('preco-de').value || 0;
-    const precoAte = +document.getElementById('preco-ate').value || 0;
-    const cambioF = checked('cambio-checks');
+    // sidebar tem prioridade; se vazio, usa o que a busca inteligente entendeu
+    const precoDe = (+document.getElementById('preco-de').value || 0) || P.precoDe;
+    const precoAte = (+document.getElementById('preco-ate').value || 0) || P.precoAte;
+    const kmAte = (+document.getElementById('km-ate').value || 0) || P.kmAte;
+    let cambioF = checked('cambio-checks'); if (!cambioF.length && P.cambio) cambioF = [P.cambio];
+    let tipoF = checked('tipo-checks');     if (!tipoF.length && P.carroceria) tipoF = [P.carroceria];
     const combustF = checked('combustivel-checks');
-    const tipoF = checked('tipo-checks');
+    const termos = P.termos;
 
     const pool = vitrineIds ? allVehicles.filter(v => vitrineIds.includes(String(v.id))) : allVehicles;
     filtered = pool.filter(v => {
-      if (q) {
-        const hay = `${v.marca} ${v.modelo} ${v.versao} ${v.ano} ${v.tipo}`.toLowerCase();
-        if (!hay.includes(q)) return false;
+      // termos livres: casa se ALGUM termo aparece (ex "hb20 onix" = hb20 OU onix)
+      if (termos.length) {
+        const hay = semAcento(`${v.marca} ${v.modelo} ${v.versao} ${v.ano}`.toLowerCase());
+        if (!termos.some(t => hay.includes(t))) return false;
       }
       if (loja && v.loja !== loja) return false;
       if (marca && normMarca(v.marca) !== marca) return false;
       if (modelo && (v.modelo||'') !== modelo) return false;
       if (precoDe && (v.preco||0) < precoDe) return false;
       if (precoAte && (v.preco||0) > precoAte) return false;
+      if (kmAte && (v.km||0) > kmAte) return false;
       if (tipoF.length && !tipoF.includes(v.tipo)) return false;
       if (cambioF.length && !cambioF.includes(normCambio(v.cambio))) return false;
       if (combustF.length && !combustF.includes(normCombust(v.combustivel))) return false;
@@ -1733,11 +1825,14 @@
       fbq('track', 'Search', { search_string: q });
     }
   }, 300);
-  document.getElementById('search-input').addEventListener('input', debouncedSearch);
+  document.getElementById('search-input').addEventListener('input', e => {
+    document.getElementById('sb-clear').style.display = e.target.value ? 'block' : 'none';
+    debouncedSearch();
+  });
   document.getElementById('sort-select').addEventListener('change', applyFilters);
 
   // selects e checkboxes da sidebar disparam applyFilters
-  ['sort-select','loja-select','marca-select','modelo-select','preco-de','preco-ate'].forEach(id => {
+  ['sort-select','loja-select','marca-select','modelo-select','preco-de','preco-ate','km-ate'].forEach(id => {
     document.getElementById(id).addEventListener('change', applyFilters);
   });
   document.querySelectorAll('#cambio-checks input, #combustivel-checks input, #tipo-checks input')
@@ -1781,10 +1876,16 @@
 
   function limparFiltros() {
     document.getElementById('search-input').value = '';
-    ['loja-select','marca-select','preco-de','preco-ate'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('sb-clear').style.display = 'none';
+    ['loja-select','marca-select','preco-de','preco-ate','km-ate'].forEach(id => document.getElementById(id).value = '');
     document.getElementById('sort-select').value = 'recent';
     popularModelos();
     document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(c => c.checked = false);
+    applyFilters();
+  }
+  function limparBusca() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('sb-clear').style.display = 'none';
     applyFilters();
   }
 
