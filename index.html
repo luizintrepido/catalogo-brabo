@@ -158,19 +158,8 @@
       .btn-brabo::after { display: none; }
     }
 
-    /* ── SEARCH BAR ── */
-    .search-wrap {
-      background: var(--bg2);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 20px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
+    /* ── CAMPOS DE FORMULARIO (busca + selects) ── */
     #search-input {
-      flex: 1;
-      min-width: 200px;
       background: var(--bg3);
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -193,42 +182,6 @@
       cursor: pointer;
     }
     select.filter-select:focus { border-color: var(--orange); }
-
-    /* ── FILTER PILLS ── */
-    .pills-wrap {
-      background: var(--bg2);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 20px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .pill {
-      padding: 6px 14px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      background: var(--bg3);
-      color: var(--text2);
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.18s;
-      white-space: nowrap;
-      user-select: none;
-    }
-    .pill:hover { border-color: var(--orange); color: var(--text); }
-    .pill.active {
-      background: var(--orange);
-      border-color: var(--orange);
-      color: #fff;
-    }
-    .pill-sep {
-      width: 1px;
-      height: 20px;
-      background: var(--border);
-      margin: 0 4px;
-    }
 
     /* ── RESULTS INFO ── */
     .results-bar {
@@ -260,14 +213,125 @@
     #btn-share-results.copied { background: var(--orange); color: #fff; }
     #btn-share-results svg { flex-shrink: 0; }
 
+    /* ── LAYOUT SIDEBAR + CONTEUDO ── */
+    .layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 18px 20px 40px;
+    }
+    .sidebar {
+      flex: 0 0 250px;
+      width: 250px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      position: sticky;
+      top: 78px;
+      max-height: calc(100vh - 96px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .sidebar-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-head);
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text);
+      padding-bottom: 12px;
+      margin-bottom: 4px;
+      border-bottom: 2px solid var(--orange);
+    }
+    .sb-close { display: none; background: none; border: none; color: var(--text2); font-size: 1.2rem; cursor: pointer; }
+    .fgroup { margin-top: 14px; }
+    .flabel {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text2);
+      margin-bottom: 6px;
+    }
+    .fgroup #search-input,
+    .fgroup .filter-select { width: 100%; }
+    .frow { display: flex; gap: 8px; }
+    .frow .filter-select { min-width: 0; flex: 1; }
+    .fchecks { display: flex; flex-direction: column; gap: 7px; }
+    .fchecks label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: var(--text);
+      cursor: pointer;
+      user-select: none;
+    }
+    .fchecks input[type="checkbox"] {
+      width: 17px; height: 17px;
+      accent-color: var(--orange);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .btn-limpar {
+      width: 100%;
+      margin-top: 18px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color .15s, color .15s;
+    }
+    .btn-limpar:hover { border-color: var(--orange); color: var(--text); }
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 150;
+    }
+    .main-col { flex: 1; min-width: 0; }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-filtros {
+      display: none;
+      align-items: center;
+      gap: 7px;
+      background: var(--orange);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .results-count { font-size: 0.82rem; color: var(--text2); }
+    .results-count strong { color: var(--orange); }
+    .toolbar-actions { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+
     /* ── GRID ── */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 0 20px 40px;
-      max-width: 1400px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 18px;
     }
 
     /* ── CARD ── */
@@ -889,18 +953,29 @@
     footer a { color: var(--orange); text-decoration: none; }
 
     /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); padding: 0 12px 30px; }
-      .search-wrap { padding: 10px 12px; }
-      #search-input { min-width: 100%; }
-      .pills-wrap {
-        padding: 8px 12px;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+    /* ── SIDEBAR responsiva: off-canvas em telas médias/pequenas ── */
+    @media (max-width: 860px) {
+      .btn-filtros { display: inline-flex; }
+      .layout { display: block; padding: 14px 14px 40px; }
+      .sidebar {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: 86%;
+        max-width: 340px;
+        max-height: none;
+        border-radius: 0;
+        z-index: 200;
+        overflow-y: auto;
       }
-      .pills-wrap::-webkit-scrollbar { display: none; }
+      .sidebar.open { display: block; }
+      .sidebar.open ~ .sidebar-overlay { display: block; }
+      .sb-close { display: block; }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+      .toolbar-actions { width: 100%; margin-left: 0; }
+      .toolbar-actions button { flex: 1; justify-content: center; }
       .modal-cta {
         position: sticky;
         bottom: 0;
@@ -944,54 +1019,120 @@
   <button onclick="sairDaVitrine()">Ver catálogo completo</button>
 </div>
 
-<!-- SEARCH + SORT -->
-<div class="search-wrap">
-  <input type="text" id="search-input" placeholder="Buscar por marca, modelo, versão..." />
-  <button id="btn-select-mode" type="button" onclick="toggleSelectMode()" title="Escolher carros um a um para enviar">
-    <span id="btn-select-mode-icon">☑</span> <span id="btn-select-mode-label">Selecionar</span>
-  </button>
-  <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-    <span id="btn-share-results-label">Enviar resultados</span>
-  </button>
-  <select id="sort-select" class="filter-select">
-    <option value="recent">Adicionados recentemente</option>
-    <option value="preco-asc">Menor preço</option>
-    <option value="preco-desc">Maior preço</option>
-    <option value="ano-desc">Mais novo</option>
-    <option value="ano-asc">Mais antigo</option>
-    <option value="km-asc">Menor KM</option>
-  </select>
+<!-- LAYOUT: sidebar de filtros (esq) + conteudo (dir) -->
+<div class="layout">
+
+  <!-- SIDEBAR DE FILTROS -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <span>Filtrar veículos</span>
+      <button class="sb-close" id="sb-close" onclick="fecharFiltros()" aria-label="Fechar filtros">✕</button>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="search-input">Busca</label>
+      <input type="text" id="search-input" placeholder="Marca, modelo, versão..." />
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="sort-select">Ordenar por</label>
+      <select id="sort-select" class="filter-select">
+        <option value="recent">Adicionados recentemente</option>
+        <option value="preco-asc">Menor preço</option>
+        <option value="preco-desc">Maior preço</option>
+        <option value="ano-desc">Ano mais novo</option>
+        <option value="ano-asc">Ano mais antigo</option>
+        <option value="km-asc">Menor KM</option>
+      </select>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="marca-select">Marca</label>
+      <select id="marca-select" class="filter-select"><option value="">Todas as marcas</option></select>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="modelo-select">Modelo</label>
+      <select id="modelo-select" class="filter-select"><option value="">Todos os modelos</option></select>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel">Preço</label>
+      <div class="frow">
+        <select id="preco-de" class="filter-select"><option value="">De</option></select>
+        <select id="preco-ate" class="filter-select"><option value="">Até</option></select>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel">Câmbio</label>
+      <div class="fchecks" id="cambio-checks">
+        <label><input type="checkbox" value="Automático"> Automático</label>
+        <label><input type="checkbox" value="Manual"> Manual</label>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel">Combustível</label>
+      <div class="fchecks" id="combustivel-checks">
+        <label><input type="checkbox" value="Flex"> Flex</label>
+        <label><input type="checkbox" value="Gasolina"> Gasolina</label>
+        <label><input type="checkbox" value="Diesel"> Diesel</label>
+        <label><input type="checkbox" value="Híbrido"> Híbrido</label>
+        <label><input type="checkbox" value="Elétrico"> Elétrico</label>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel">Carroceria</label>
+      <div class="fchecks" id="tipo-checks">
+        <label><input type="checkbox" value="SUV"> SUV</label>
+        <label><input type="checkbox" value="HATCH"> Hatch</label>
+        <label><input type="checkbox" value="SEDAN"> Sedan</label>
+        <label><input type="checkbox" value="PICAPE"> Picape</label>
+        <label><input type="checkbox" value="MOTO"> Moto</label>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <label class="flabel" for="loja-select">Loja</label>
+      <select id="loja-select" class="filter-select">
+        <option value="">Todas as lojas</option>
+        <option value="RECAR">RECAR</option>
+        <option value="REAUTO">REAUTO</option>
+        <option value="JONATHAN">Novidade</option>
+      </select>
+    </div>
+
+    <button class="btn-limpar" onclick="limparFiltros()">Limpar filtros</button>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="fecharFiltros()"></div>
+
+  <!-- CONTEUDO -->
+  <main class="main-col">
+    <div class="toolbar">
+      <button class="btn-filtros" onclick="abrirFiltros()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+        Filtros
+      </button>
+      <span id="results-count" class="results-count">...</span>
+      <div class="toolbar-actions">
+        <button id="btn-select-mode" type="button" onclick="toggleSelectMode()" title="Escolher carros um a um para enviar">
+          <span id="btn-select-mode-icon">☑</span> <span id="btn-select-mode-label">Selecionar</span>
+        </button>
+        <button id="btn-share-results" type="button" title="Enviar estes carros para um cliente">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <span id="btn-share-results-label">Enviar resultados</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- LOADING (skeleton do grid) -->
+    <div id="loading" class="grid" aria-label="Carregando catálogo"></div>
+    <!-- GRID -->
+    <div class="grid" id="cars-grid" style="display:none;"></div>
+  </main>
 </div>
-
-<!-- FILTER PILLS -->
-<div class="pills-wrap">
-  <span style="font-size:0.8rem;color:var(--text2);margin-right:4px;">Tipo:</span>
-  <button class="pill active" data-tipo="">Todos</button>
-  <button class="pill" data-tipo="SUV">SUV</button>
-  <button class="pill" data-tipo="HATCH">Hatch</button>
-  <button class="pill" data-tipo="SEDAN">Sedan</button>
-  <button class="pill" data-tipo="PICAPE">Picape</button>
-  <button class="pill" data-tipo="MOTO">Moto</button>
-  <div class="pill-sep"></div>
-  <span style="font-size:0.8rem;color:var(--text2);margin-right:4px;">Preço:</span>
-  <button class="pill" data-preco="">Todos</button>
-  <button class="pill" data-preco="0-50000">Até R$50k</button>
-  <button class="pill" data-preco="50000-80000">R$50k–80k</button>
-  <button class="pill" data-preco="80000-120000">R$80k–120k</button>
-  <button class="pill" data-preco="120000-999999">Acima R$120k</button>
-</div>
-
-<!-- RESULTS BAR -->
-<div class="results-bar">
-  <span id="results-count">...</span>
-</div>
-
-<!-- LOADING (skeleton do grid) -->
-<div id="loading" class="grid" aria-label="Carregando catálogo"></div>
-
-<!-- GRID -->
-<div class="grid" id="cars-grid" style="display:none;"></div>
 
 <!-- MODAL -->
 <div id="modal-overlay">
@@ -1041,7 +1182,6 @@
 
   let allVehicles = [];
   let filtered = [];
-  let activeFilters = { tipo: '', preco: '' };
   let currentGalIdx = 0;
   let currentGalPhotos = [];
   let vitrineIds = null;          // null = catalogo completo; array = so estes ids (link de selecao)
@@ -1082,6 +1222,7 @@
       document.getElementById('updated-at').textContent = 'Atualizado em: ' + fmtDate(data.updated_at);
       document.getElementById('loading').style.display = 'none';
       document.getElementById('cars-grid').style.display = 'grid';
+      popularFiltros();
       setupVitrine();
       applyFilters();
       // Abre o modal apos o render (evita race condition)
@@ -1105,11 +1246,48 @@
   }
 
   // ─── FILTER & SORT ─────────────────────────────────────────────
+  // ─── NORMALIZADORES (dados da fonte vêm sujos: acento quebrado, case, variações) ──
+  function semAcento(s){ return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/�/g,''); }
+  function normMarca(m){
+    let s = semAcento(String(m||'')).toUpperCase().replace(/[^A-Z ]/g,'').trim();
+    if (s.startsWith('VOLKS')) return 'Volkswagen';
+    if (s.startsWith('CAOA') || s.startsWith('CHERY')) return 'Chery';
+    if (s.startsWith('GWM')) return 'GWM';
+    if (s.startsWith('BMW')) return 'BMW';
+    if (s.startsWith('MERCEDES')) return 'Mercedes-Benz';
+    if (s.startsWith('CITRO')) return 'Citroën';
+    if (s.startsWith('HARLEY')) return 'Harley-Davidson';
+    if (!s) return '';
+    return s.charAt(0) + s.slice(1).toLowerCase();
+  }
+  function normCambio(c){
+    const s = semAcento(String(c||'')).toLowerCase();
+    if (s.includes('manual')) return 'Manual';
+    if (s.includes('autom') || s.includes('cvt')) return 'Automático';
+    return '';
+  }
+  function normCombust(c){
+    const s = semAcento(String(c||'')).toLowerCase();
+    if (s.includes('hibrid') || (s.includes('gasolina') && s.includes('eletric'))) return 'Híbrido';
+    if (s.includes('eletric')) return 'Elétrico';
+    if (s.includes('diesel')) return 'Diesel';
+    if (s.includes('flex')) return 'Flex';
+    if (s.includes('gasolina')) return 'Gasolina';
+    return '';
+  }
+  const checked = id => [...document.querySelectorAll('#'+id+' input:checked')].map(x => x.value);
+
   function applyFilters() {
     const q = document.getElementById('search-input').value.toLowerCase().trim();
     const sort = document.getElementById('sort-select').value;
-    const tipoF = activeFilters.tipo;
-    const precoF = activeFilters.preco;
+    const loja = document.getElementById('loja-select').value;
+    const marca = document.getElementById('marca-select').value;
+    const modelo = document.getElementById('modelo-select').value;
+    const precoDe = +document.getElementById('preco-de').value || 0;
+    const precoAte = +document.getElementById('preco-ate').value || 0;
+    const cambioF = checked('cambio-checks');
+    const combustF = checked('combustivel-checks');
+    const tipoF = checked('tipo-checks');
 
     const pool = vitrineIds ? allVehicles.filter(v => vitrineIds.includes(String(v.id))) : allVehicles;
     filtered = pool.filter(v => {
@@ -1117,15 +1295,19 @@
         const hay = `${v.marca} ${v.modelo} ${v.versao} ${v.ano} ${v.tipo}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
-      if (tipoF && v.tipo !== tipoF) return false;
-      if (precoF) {
-        const [mn, mx] = precoF.split('-').map(Number);
-        if (v.preco < mn || v.preco > mx) return false;
-      }
+      if (loja && v.loja !== loja) return false;
+      if (marca && normMarca(v.marca) !== marca) return false;
+      if (modelo && (v.modelo||'') !== modelo) return false;
+      if (precoDe && (v.preco||0) < precoDe) return false;
+      if (precoAte && (v.preco||0) > precoAte) return false;
+      if (tipoF.length && !tipoF.includes(v.tipo)) return false;
+      if (cambioF.length && !cambioF.includes(normCambio(v.cambio))) return false;
+      if (combustF.length && !combustF.includes(normCombust(v.combustivel))) return false;
       return true;
     });
 
     // Sort
+    const temTipo = tipoF.length > 0;
     const recency = v => (v.added_at ? Date.parse(v.added_at) || 0 : 0);
     filtered.sort((a, b) => {
       // Destaques sempre no topo, independente da ordenacao escolhida
@@ -1136,7 +1318,7 @@
       const fb = (b.fotos_drive && b.fotos_drive.length) ? 1 : 0;
       if (fb !== fa) return fb - fa;
       // Motos sempre por último (exceto quando filtro de tipo está ativo)
-      if (!activeFilters.tipo) {
+      if (!temTipo) {
         const ma = a.tipo === 'MOTO' ? 1 : 0, mb = b.tipo === 'MOTO' ? 1 : 0;
         if (ma !== mb) return ma - mb;
       }
@@ -1444,37 +1626,27 @@
   // ─── LINK COMPARTILHAVEL DA BUSCA (filtros via URL) ────────────
   const CATALOG_BASE = location.origin + location.pathname;
 
-  // Le ?busca=&tipo=&preco= da URL e aplica nos controles (1x no load)
+  // Le ?busca=&loja=&marca=&sort= da URL e aplica nos controles (1x no load)
   function parseInitialFilters() {
     const p = new URLSearchParams(location.search);
-    const q     = p.get('busca')  || p.get('q') || '';
-    const tipo  = (p.get('tipo')  || '').toUpperCase();
-    const preco = p.get('preco')  || '';
-    const sort  = p.get('sort')   || '';
-
+    const q    = p.get('busca') || p.get('q') || '';
+    const loja = (p.get('loja') || '').toUpperCase();
+    const sort = p.get('sort') || '';
     if (q) document.getElementById('search-input').value = q;
     if (sort) document.getElementById('sort-select').value = sort;
-
-    if (tipo) {
-      activeFilters.tipo = tipo;
-      document.querySelectorAll('.pill[data-tipo]').forEach(x =>
-        x.classList.toggle('active', x.dataset.tipo === tipo));
-    }
-    if (preco) {
-      activeFilters.preco = preco;
-      document.querySelectorAll('.pill[data-preco]').forEach(x =>
-        x.classList.toggle('active', x.dataset.preco === preco));
-    }
+    if (loja) document.getElementById('loja-select').value = loja;
   }
 
   // Reflete os filtros atuais na barra de endereco (sem recarregar a pagina)
   function currentFilterParams() {
     const p = new URLSearchParams();
     const q    = document.getElementById('search-input').value.trim();
+    const loja = document.getElementById('loja-select').value;
+    const marca = document.getElementById('marca-select').value;
     const sort = document.getElementById('sort-select').value;
     if (q) p.set('busca', q);
-    if (activeFilters.tipo)  p.set('tipo', activeFilters.tipo);
-    if (activeFilters.preco) p.set('preco', activeFilters.preco);
+    if (loja) p.set('loja', loja);
+    if (marca) p.set('marca', marca);
     if (sort && sort !== 'recent') p.set('sort', sort);
     return p;
   }
@@ -1564,25 +1736,61 @@
   document.getElementById('search-input').addEventListener('input', debouncedSearch);
   document.getElementById('sort-select').addEventListener('change', applyFilters);
 
-  // Tipo pills
-  document.querySelectorAll('.pill[data-tipo]').forEach(p => {
-    p.addEventListener('click', () => {
-      document.querySelectorAll('.pill[data-tipo]').forEach(x => x.classList.remove('active'));
-      p.classList.add('active');
-      activeFilters.tipo = p.dataset.tipo;
-      applyFilters();
-    });
+  // selects e checkboxes da sidebar disparam applyFilters
+  ['sort-select','loja-select','marca-select','modelo-select','preco-de','preco-ate'].forEach(id => {
+    document.getElementById(id).addEventListener('change', applyFilters);
   });
+  document.querySelectorAll('#cambio-checks input, #combustivel-checks input, #tipo-checks input')
+    .forEach(el => el.addEventListener('change', applyFilters));
+  // marca muda -> repopula modelos daquela marca
+  document.getElementById('marca-select').addEventListener('change', popularModelos);
 
-  // Preço pills
-  document.querySelectorAll('.pill[data-preco]').forEach(p => {
-    p.addEventListener('click', () => {
-      document.querySelectorAll('.pill[data-preco]').forEach(x => x.classList.remove('active'));
-      p.classList.add('active');
-      activeFilters.preco = p.dataset.preco;
-      applyFilters();
+  // ─── POPULAR FILTROS a partir do estoque carregado ─────────────
+  function popularMarcas() {
+    const set = new Set();
+    allVehicles.forEach(v => { const m = normMarca(v.marca); if (m) set.add(m); });
+    const sel = document.getElementById('marca-select');
+    sel.innerHTML = '<option value="">Todas as marcas</option>' +
+      [...set].sort((a,b)=>a.localeCompare(b,'pt-BR')).map(m => `<option value="${m}">${m}</option>`).join('');
+  }
+  function popularModelos() {
+    const marca = document.getElementById('marca-select').value;
+    const set = new Set();
+    allVehicles.forEach(v => {
+      if (marca && normMarca(v.marca) !== marca) return;
+      if (v.modelo) set.add(v.modelo);
     });
-  });
+    const sel = document.getElementById('modelo-select');
+    sel.innerHTML = '<option value="">Todos os modelos</option>' +
+      [...set].sort((a,b)=>a.localeCompare(b,'pt-BR')).map(m => `<option value="${m}">${m}</option>`).join('');
+  }
+  function popularPrecos() {
+    const precos = allVehicles.map(v => v.preco||0).filter(p => p > 0);
+    if (!precos.length) return;
+    const max = Math.max(...precos);
+    const faixas = [];
+    for (let p = 20000; p <= Math.min(max, 300000); p += (p < 100000 ? 10000 : 25000)) faixas.push(p);
+    faixas.push(999999);
+    const fmt = v => v >= 999999 ? '300 mil +' : (v/1000) + ' mil';
+    document.getElementById('preco-de').innerHTML = '<option value="">De</option>' +
+      faixas.filter(v=>v<999999).map(v => `<option value="${v}">R$ ${fmt(v)}</option>`).join('');
+    document.getElementById('preco-ate').innerHTML = '<option value="">Até</option>' +
+      faixas.map(v => `<option value="${v}">R$ ${fmt(v)}</option>`).join('');
+  }
+  function popularFiltros() { popularMarcas(); popularModelos(); popularPrecos(); }
+
+  function limparFiltros() {
+    document.getElementById('search-input').value = '';
+    ['loja-select','marca-select','preco-de','preco-ate'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('sort-select').value = 'recent';
+    popularModelos();
+    document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(c => c.checked = false);
+    applyFilters();
+  }
+
+  // ─── SIDEBAR mobile (off-canvas) ───────────────────────────────
+  function abrirFiltros() { document.getElementById('sidebar').classList.add('open'); }
+  function fecharFiltros() { document.getElementById('sidebar').classList.remove('open'); }
 
   // ─── MODO SELEÇÃO (botao liga/desliga; checkbox so aparece ativo) ──
   let selectMode = false;
