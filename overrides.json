@@ -35,7 +35,7 @@
         "Freios ABS com EBD (Distribuição Eletrônica de Frenagem)",
         "Sistema ISOFIX para Cadeirinha Infantil #haval #h6 #carro #venda"
       ],
-      "descricao": ""
+      "descricao": "Segurança e Condução Semiautônoma (ADAS Nível 2+)Controle de Cruzeiro Adaptativo (ACC):\nCom as funções Stop & Go (acompanha o trânsito no para e anda) e Smart Cornering (adapta a velocidade automaticamente nas curvas).  Frenagem e Alertas Autônomos: Sistema de frenagem de emergência que identifica carros, pedestres, motocicletas e bicicletas. Conta também com alerta e frenagem de tráfego cruzado durante a marcha à ré.  Câmeras e Sensores Integrados: Sistema de câmera 540º com função \"chassi invisível\", alimentado por 12 sensores de estacionamento, 5 câmeras e 2 radares.  Assistentes de Manobra e Faixa: Auto reverse assistance (refaz autonomamente de ré os últimos 50 metros percorridos), além de assistente ativo de manutenção, alerta e centralização de faixa.  Desvio Inteligente: Sistema que afasta o carro em até 30 cm dentro da faixa ao realizar ultrapassagens em veículos grandes, como caminhões.\nSegurança Passiva e Alertas: 6 airbags (frontais, laterais e de cortina), alerta de ponto cego (incluindo aviso para abertura de porta mesmo após desligado), EDR (gravação de comportamento do veículo como uma \"caixa-preta\") e fixação ISOFIX.\nConforto e Tecnologia InternaTeto Solar e Assentos: Teto solar panorâmico elétrico de série. Os bancos são revestidos em couro ecológico, sendo os dianteiros equipados com ajustes elétricos e ventilação (o do motorista inclui ajuste lombar elétrico).\nConectividade e Telas: Painel digital, central multimídia imersiva, sistema de som com 8 alto-falantes (140W) e Head-Up Display, que projeta no para-brisa as informações de velocidade e navegação.\nConveniência Urbana: Abertura elétrica do porta-malas (free-hands, por presença), carregamento de celular por indução, múltiplas conexões USB (A e C) e porta-luvas com iluminação em LED.  Acesso Inteligente: A Smart Key permite ligar, desligar, trancar e destrancar as portas apenas pela distância ou aproximação da chave, sem toque nas maçanetas.\nDesign e Equipamentos Externos  Iluminação Inteligente: Faróis com função Auto Highbeam (comutação automática do farol alto), sensor de chuva integrado e lanternas traseiras com acabamento Smoked (fumê).\nAcabamento Externo: Frisos de teto e molduras das janelas finalizadas em Black Piano, grade frontal cromada e retrovisores externos com setas e rebatimento automático.  Rodas e Estética: Rodas de liga leve aro 19\" utilizando pneus medida 235/55 R19, somadas ao estilo robusto de SUV e antena \"shark\" (tubarão)."
     },
     "fotos": [
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151879557_wewj6.jpg",
@@ -48,7 +48,7 @@
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151895243_6f1rt.jpg",
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151897526_thhv4.jpg"
     ],
-    "destaque": false,
+    "destaque": true,
     "hidden": false,
     "em_preparacao": false
   },
@@ -87,7 +87,7 @@
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/1048194/1784151696020_krdma.jpg",
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/1048194/1784151698829_e1bgn.jpg"
     ],
-    "destaque": true,
+    "destaque": false,
     "hidden": false,
     "em_preparacao": false
   },
