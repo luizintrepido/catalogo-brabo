@@ -157,9 +157,31 @@
   .opt-item::before { content: '✓'; color: var(--orange); font-weight: 700; flex: none; }
 
   .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 16px; }
-  .gallery-grid a { border-radius: 8px; overflow: hidden; aspect-ratio: 1/1; }
+  .gallery-grid a { border-radius: 8px; overflow: hidden; aspect-ratio: 1/1; cursor: zoom-in; }
   .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s; }
   .gallery-grid a:hover img { transform: scale(1.06); }
+
+  /* lightbox */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 100;
+    background: rgba(0,0,0,0.92); align-items: center; justify-content: center;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 86vh; border-radius: 8px; box-shadow: var(--shadow); }
+  .lb-close {
+    position: absolute; top: 16px; right: 16px; width: 40px; height: 40px;
+    border-radius: 50%; border: none; background: var(--bg3); color: var(--text);
+    font-size: 1.1rem; cursor: pointer;
+  }
+  .lb-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 46px; height: 46px; border-radius: 50%; border: none;
+    background: var(--bg3); color: var(--text); font-size: 1.6rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lb-prev { left: 14px; }
+  .lb-next { right: 14px; }
+  @media (max-width: 560px) { .lb-nav { width: 38px; height: 38px; font-size: 1.3rem; } }
 
   .trust-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 18px; }
   .trust-item { display: flex; align-items: center; gap: 14px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
@@ -360,18 +382,25 @@
   <section id="galeria">
     <span class="eyebrow">Galeria</span>
     <h2>Fotos reais do carro, sem filtro</h2>
-    <div class="gallery-grid">
-      <a href="https://lh3.googleusercontent.com/d/1ciqrJf-XVaNZt-PV-HlQFIl8aBnLcfLV=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1ciqrJf-XVaNZt-PV-HlQFIl8aBnLcfLV=s600" alt="Haval H6 PHEV19 foto 1" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1wfTOaNnKYqDi21L13IaTEaTqX_TPzsx_=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1wfTOaNnKYqDi21L13IaTEaTqX_TPzsx_=s600" alt="Haval H6 PHEV19 foto 2" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1FLILjEl4qJcQ3m8FZFm2SWwuk5hjxm20=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1FLILjEl4qJcQ3m8FZFm2SWwuk5hjxm20=s600" alt="Haval H6 PHEV19 foto 3" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1qOv8MNYgVkFrj5gpb21PHC_0Lvk5nlqz=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1qOv8MNYgVkFrj5gpb21PHC_0Lvk5nlqz=s600" alt="Haval H6 PHEV19 foto 4" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1VCXBHK2NxlQQE_93m0O0NYVO2ZFRQ0Kq=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1VCXBHK2NxlQQE_93m0O0NYVO2ZFRQ0Kq=s600" alt="Haval H6 PHEV19 foto 5" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1sgnCVRLHPOfs1J5ACVUgrfhdm1uEGB0U=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1sgnCVRLHPOfs1J5ACVUgrfhdm1uEGB0U=s600" alt="Haval H6 PHEV19 foto 6" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1APArpN7WBuQbI5L_CfdaX2-4Wzj06BnR=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1APArpN7WBuQbI5L_CfdaX2-4Wzj06BnR=s600" alt="Haval H6 PHEV19 foto 7" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1wE-bjQKIRKE5NXRuIfShWExTxBmHA2LX=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1wE-bjQKIRKE5NXRuIfShWExTxBmHA2LX=s600" alt="Haval H6 PHEV19 foto 8" loading="lazy"></a>
-      <a href="https://lh3.googleusercontent.com/d/1lVRa7FxyMNmtYPI7aJm-zKOyqcN4dtab=s1600" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1lVRa7FxyMNmtYPI7aJm-zKOyqcN4dtab=s600" alt="Haval H6 PHEV19 foto 9" loading="lazy"></a>
+    <div class="gallery-grid" id="gallery-grid">
+      <a href="https://lh3.googleusercontent.com/d/1ciqrJf-XVaNZt-PV-HlQFIl8aBnLcfLV=s1600" onclick="return openLightbox(event, 0)"><img src="https://lh3.googleusercontent.com/d/1ciqrJf-XVaNZt-PV-HlQFIl8aBnLcfLV=s600" alt="Haval H6 PHEV19 foto 1" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1wfTOaNnKYqDi21L13IaTEaTqX_TPzsx_=s1600" onclick="return openLightbox(event, 1)"><img src="https://lh3.googleusercontent.com/d/1wfTOaNnKYqDi21L13IaTEaTqX_TPzsx_=s600" alt="Haval H6 PHEV19 foto 2" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1FLILjEl4qJcQ3m8FZFm2SWwuk5hjxm20=s1600" onclick="return openLightbox(event, 2)"><img src="https://lh3.googleusercontent.com/d/1FLILjEl4qJcQ3m8FZFm2SWwuk5hjxm20=s600" alt="Haval H6 PHEV19 foto 3" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1qOv8MNYgVkFrj5gpb21PHC_0Lvk5nlqz=s1600" onclick="return openLightbox(event, 3)"><img src="https://lh3.googleusercontent.com/d/1qOv8MNYgVkFrj5gpb21PHC_0Lvk5nlqz=s600" alt="Haval H6 PHEV19 foto 4" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1VCXBHK2NxlQQE_93m0O0NYVO2ZFRQ0Kq=s1600" onclick="return openLightbox(event, 4)"><img src="https://lh3.googleusercontent.com/d/1VCXBHK2NxlQQE_93m0O0NYVO2ZFRQ0Kq=s600" alt="Haval H6 PHEV19 foto 5" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1sgnCVRLHPOfs1J5ACVUgrfhdm1uEGB0U=s1600" onclick="return openLightbox(event, 5)"><img src="https://lh3.googleusercontent.com/d/1sgnCVRLHPOfs1J5ACVUgrfhdm1uEGB0U=s600" alt="Haval H6 PHEV19 foto 6" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1APArpN7WBuQbI5L_CfdaX2-4Wzj06BnR=s1600" onclick="return openLightbox(event, 6)"><img src="https://lh3.googleusercontent.com/d/1APArpN7WBuQbI5L_CfdaX2-4Wzj06BnR=s600" alt="Haval H6 PHEV19 foto 7" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1wE-bjQKIRKE5NXRuIfShWExTxBmHA2LX=s1600" onclick="return openLightbox(event, 7)"><img src="https://lh3.googleusercontent.com/d/1wE-bjQKIRKE5NXRuIfShWExTxBmHA2LX=s600" alt="Haval H6 PHEV19 foto 8" loading="lazy"></a>
+      <a href="https://lh3.googleusercontent.com/d/1lVRa7FxyMNmtYPI7aJm-zKOyqcN4dtab=s1600" onclick="return openLightbox(event, 8)"><img src="https://lh3.googleusercontent.com/d/1lVRa7FxyMNmtYPI7aJm-zKOyqcN4dtab=s600" alt="Haval H6 PHEV19 foto 9" loading="lazy"></a>
     </div>
   </section>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Fechar">✕</button>
+    <button class="lb-nav lb-prev" onclick="navLightbox(-1)" aria-label="Foto anterior">‹</button>
+    <img id="lightbox-img" src="" alt="Foto ampliada" />
+    <button class="lb-nav lb-next" onclick="navLightbox(1)" aria-label="Próxima foto">›</button>
+  </div>
 
   <section id="garantia">
     <span class="eyebrow">Garantia &amp; confiança</span>
@@ -444,6 +473,37 @@
         fbq('track', 'Contact', { content_name: 'Haval H6 PHEV19 2025', content_category: 'SUV', value: 199900, currency: 'BRL' });
       }
     });
+  });
+
+  // ─── LIGHTBOX DA GALERIA (fica na mesma pagina, facil voltar) ───
+  const galleryLinks = Array.from(document.querySelectorAll('#gallery-grid a'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  let lbIndex = 0;
+
+  function openLightbox(e, idx) {
+    e.preventDefault();
+    lbIndex = idx;
+    lightboxImg.src = galleryLinks[idx].getAttribute('href');
+    lightbox.classList.add('open');
+    return false;
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightboxImg.src = '';
+  }
+  function navLightbox(dir) {
+    lbIndex = (lbIndex + dir + galleryLinks.length) % galleryLinks.length;
+    lightboxImg.src = galleryLinks[lbIndex].getAttribute('href');
+  }
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'ArrowRight') navLightbox(1);
   });
 </script>
 
