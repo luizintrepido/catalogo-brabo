@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T21:43:28.634Z",
+  "updated_at": "2026-07-15T21:45:15.665Z",
   "total": 161,
   "vehicles": [
     {
@@ -4283,21 +4283,26 @@
         "Sistema ISOFIX para Cadeirinha Infantil #haval #h6 #carro #venda"
       ],
       "fotos_drive": [
-        "1tcggbTHC_Z1qh0aDoQYhOvtqi5uunAtt",
-        "1u2Lt1bI35tb5L8wGKj3MkhmTNepoDYXH",
-        "1xjGXcfP3mkGePp76yD9yw656INUqWpjQ",
-        "15koI9WUfqTsaQHZ4qdm-d1ooHnrwkfGT",
-        "1cE_iMKVveCYzP6In12vS_plqUhzd3SgA",
-        "17bpZc38K3p3XemoquiDbMoVy9MOzsKWu",
-        "1T2qZhcKYZkVHw0RWLIl3T7-ipx9yqv-v",
-        "1PdDyMDIigfLdnZu4jD-fIqhcu5beBWVV"
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151879557_wewj6.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151882032_dr4zs.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151883825_xxob1.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151885835_buyju.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151887870_oezrb.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151890816_2jz47.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151892904_ogjv1.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151895243_6f1rt.jpg",
+        "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151897526_thhv4.jpg"
       ],
       "drive_folder": "1IodKoaifT9Qexd0I1xMHMJq1hZNL9q7A",
       "url_original": "https://nuzap.com.br/jonathanveiculos#/produto/gwm-haval-h6-phev19-e-traction-automatico-2025",
       "created_at": "2026-07-06T19:23:39",
       "whatsapp": "5513991575019",
       "slug": "gwm-haval-h6-2025",
-      "added_at": "2026-07-06T19:23:39"
+      "added_at": "2026-07-06T19:23:39",
+      "descricao": "",
+      "destaque": false,
+      "hidden": false,
+      "em_preparacao": false
     },
     {
       "id": "299080",
