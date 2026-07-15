@@ -1,4 +1,57 @@
 {
+  "299593": {
+    "loja": "JONATHAN",
+    "campos": {
+      "preco": 199900,
+      "km": 16000,
+      "versao": "PHEV19 (Híbrido Plug-in)",
+      "cor": "Prata",
+      "cambio": "Automático (e-Traction Inteligente)",
+      "combustivel": "Híbrido",
+      "opcionais": [
+        "Direção Elétrica com 3 modos de calibração (Conforto, Normal e Esportivo)",
+        "Garantia da Loja (3 meses)",
+        "Potência Combinada de 326 cv e 54 kgfm de torque",
+        "Painel de Instrumentos Digital de 10,25\" HD Configurável",
+        "Pacote de Conectividade Avançada com Atualizações Over-the-Air (OTA)",
+        "Piloto Automático Adaptativo (ACC) com função Stop & Go",
+        "Assistente de Permanência e Centralização em Faixa (LKA / LCA)",
+        "Alerta de Ponto Cego (BSW) e Alerta de Tráfego Cruzado Traseiro (RCTA)",
+        "Câmera com Visão 360° de Alta Definição com função de Chassis Invisível",
+        "Bancos com Revestimento em Couro Eco premium",
+        "Chave Presencial com Abertura/Fechamento de Portas e Partida por Botão",
+        "Carregador por Indução para Smartphones (Wireless Charger)",
+        "Faróis Full LED Matrix com Assistente de Farol Alto (Auto High Beam)",
+        "Lanternas Traseiras em LED em Barra Única Unificada",
+        "Rodas de Liga Leve 19\" com Acabamento Esportivo Escurecido",
+        "Sensores de Estacionamento Dianteiros e Traseiros",
+        "Sensores de Chuva e de Acendimento Automático dos Faróis (Sensor Crepuscular)",
+        "Retrovisor Interno Eletrocrômico (Antiofuscamento automático)",
+        "Controle Eletrônico de Estabilidade (ESP) e Tração (TCS)",
+        "Assistente de Partida em Rampas (HHC) e Controle de Descida (HDC)",
+        "6 Airbags (Frontais, Laterais e de Cortina)",
+        "Alarme Antifurto Perimétrico e Volumétrico",
+        "Limpador, Lavador e Desembaçador do Vidro Traseiro",
+        "Freios ABS com EBD (Distribuição Eletrônica de Frenagem)",
+        "Sistema ISOFIX para Cadeirinha Infantil #haval #h6 #carro #venda"
+      ],
+      "descricao": ""
+    },
+    "fotos": [
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151879557_wewj6.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151882032_dr4zs.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151883825_xxob1.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151885835_buyju.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151887870_oezrb.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151890816_2jz47.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151892904_ogjv1.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151895243_6f1rt.jpg",
+      "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/299593/1784151897526_thhv4.jpg"
+    ],
+    "destaque": false,
+    "hidden": false,
+    "em_preparacao": false
+  },
   "1022647": {
     "hidden": true
   },
