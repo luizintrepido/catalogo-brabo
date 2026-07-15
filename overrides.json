@@ -7,8 +7,8 @@
     "campos": {
       "preco": 199900,
       "km": 16402,
-      "versao": "",
-      "cor": "",
+      "versao": "1.5 Turbo Aut.",
+      "cor": "cinza",
       "cambio": "Automático",
       "combustivel": "Hibrido",
       "opcionais": [
@@ -34,7 +34,7 @@
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/1048194/1784151696020_krdma.jpg",
       "https://raw.githubusercontent.com/luizintrepido/catalogo-brabo/master/fotos/1048194/1784151698829_e1bgn.jpg"
     ],
-    "destaque": false,
+    "destaque": true,
     "hidden": false,
     "em_preparacao": false
   },
