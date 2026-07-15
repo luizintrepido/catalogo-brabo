@@ -1736,6 +1736,11 @@
     if (!hash.startsWith('#carro-')) return;
     const carId = hash.replace('#carro-', '');
 
+    if (LANDING_PAGES[carId]) {
+      window.location.replace(LANDING_PAGES[carId]);
+      return;
+    }
+
     // Se ainda nao carregou, tenta de novo em 200ms (ate 5 tentativas)
     if (!allVehicles.length && attempt < 5) {
       setTimeout(() => checkHashAndOpenModal(attempt + 1), 200);
@@ -2007,6 +2012,7 @@
   // clique no card: modo selecao marca/desmarca; modo normal abre modal
   function cardClick(idx, id) {
     if (selectMode) toggleSelect(id);
+    else if (LANDING_PAGES[String(id)]) window.location.href = LANDING_PAGES[String(id)];
     else openModal(idx);
   }
 
