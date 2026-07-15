@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T21:42:19.853Z",
+  "updated_at": "2026-07-15T21:43:28.634Z",
   "total": 161,
   "vehicles": [
     {
@@ -383,12 +383,12 @@
       "loja": "REAUTO",
       "marca": "Gwm",
       "modelo": "Haval H6 Phev19 Hibrido",
-      "versao": "",
+      "versao": "1.5 Turbo Aut.",
       "ano": 2025,
       "km": 16402,
       "preco": 199900,
       "tipo": "SUV",
-      "cor": "",
+      "cor": "cinza",
       "cambio": "Automático",
       "combustivel": "Hibrido",
       "opcionais": [
@@ -419,7 +419,7 @@
       "slug": "gwm-haval-h6-phev19-hibrido-2025",
       "added_at": "2026-07-07T13:18:47.258988",
       "descricao": "",
-      "destaque": false,
+      "destaque": true,
       "hidden": false,
       "em_preparacao": false
     },
