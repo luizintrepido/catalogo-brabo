@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — Recar Automarcas / Reauto Veículos. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Thu, 06 Aug 2026 19:31:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 20:33:07 +0000</lastBuildDate>
     <item>
       <g:id>939538</g:id>
       <g:title>BMW X1 Sdrive 2025</g:title>
@@ -1643,7 +1643,7 @@
       <g:model>FOCUS</g:model>
       <g:year>2011</g:year>
       <g:mileage value="187000" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Manual</g:transmission>
       <g:trim>1.6 Gl 8V Flex 4P Manual</g:trim>
@@ -2110,7 +2110,7 @@
       <g:model>A3</g:model>
       <g:year>2016</g:year>
       <g:mileage value="82000" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.4 Tfsi Sportback 16V Gasolina 4P S-Tronic</g:trim>
@@ -2767,7 +2767,7 @@
       <g:model>C 180</g:model>
       <g:year>2018</g:year>
       <g:mileage value="97151" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.6 Cgi Flex Avantgarde 9G-Tronic</g:trim>
@@ -3055,7 +3055,7 @@
       <g:model>LANCER</g:model>
       <g:year>2015</g:year>
       <g:mileage value="5990000" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Cvt 16V Gasolina 4P Automático</g:trim>
@@ -3677,7 +3677,7 @@
       <g:model>Lancer</g:model>
       <g:year>2015</g:year>
       <g:mileage value="164998" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 16V</g:trim>
@@ -4443,7 +4443,7 @@
       <g:model>CORSA Hatch</g:model>
       <g:year>2012</g:year>
       <g:mileage value="99766" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Manual</g:transmission>
       <g:trim>Maxx 1.4</g:trim>
