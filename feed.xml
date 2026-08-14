@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — Recar Automarcas / Reauto Veículos. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Fri, 14 Aug 2026 18:11:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 21:22:54 +0000</lastBuildDate>
     <item>
       <g:id>2306016</g:id>
       <g:title>Hyundai HB20S 2026</g:title>
@@ -159,7 +159,7 @@
       <g:model>308</g:model>
       <g:year>2014</g:year>
       <g:mileage value="100673" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Allure 16V</g:trim>
@@ -415,7 +415,7 @@
       <g:model>TIPO</g:model>
       <g:year>1995</g:year>
       <g:mileage value="204000" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Hatchback</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Manual</g:transmission>
       <g:trim>2.0 IE SLX 8V</g:trim>
@@ -799,7 +799,7 @@
       <g:model>NIVUS</g:model>
       <g:year>2021</g:year>
       <g:mileage value="62000" unit="KM"/>
-      <g:body_style>Hatchback</g:body_style>
+      <g:body_style>SUV</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.0 200 TSI Highline</g:trim>
@@ -1173,7 +1173,7 @@
       <g:model>HILUX</g:model>
       <g:year>2022</g:year>
       <g:mileage value="66708" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Truck</g:body_style>
       <g:fuel_type>Diesel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.8 D-4d Turbo CD SRV 4X4</g:trim>
@@ -1269,7 +1269,7 @@
       <g:model>COROLLA</g:model>
       <g:year>2025</g:year>
       <g:mileage value="18227" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Vvt-ie GLI</g:trim>
@@ -2383,7 +2383,7 @@
       <g:model>POER P30</g:model>
       <g:year>2026</g:year>
       <g:mileage value="197" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Truck</g:body_style>
       <g:fuel_type>Diesel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.4 Turbo Exclusive 4X4</g:trim>
