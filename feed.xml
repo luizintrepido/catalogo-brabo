@@ -4,60 +4,710 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — CarMax Santos / Outlet CarMax. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Sat, 29 Aug 2026 14:02:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 15:27:50 +0000</lastBuildDate>
     <item>
-      <g:id>2311462</g:id>
-      <g:title>Renault KWID 2023</g:title>
-      <g:description>Renault KWID 1.0 12V SCE Intense | Ano 2023 | 20.834 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2308205</g:id>
+      <g:title>Volkswagen VIRTUS 2023</g:title>
+      <g:description>Volkswagen VIRTUS 1.4 250 TSI Exclusive | Ano 2023 | 55.000 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>58790.00 BRL</g:price>
+      <g:price>115790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Renault%20KWID%202023%20por%20R%2458.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1_bJyOfCVckOpTT28PDADlUs91yfP8Jgf=s1080</g:image_link>
-      <g:brand>Renault</g:brand>
-      <g:make>Renault</g:make>
-      <g:model>KWID</g:model>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20VIRTUS%202023%20por%20R%24115.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1zjSEZpDO5QQrRNyeFt4mXKE4jNPcYpct=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1s1G42H9PGupZZbmfxkSmg8UNESlplcGi=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fbRKalIU168HGfce-cP0B3vustclQKPy=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1-OByeMzeW2q_WXTEW-4hGD3MndRaJ-ZB=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1q1eNIjNHKc5eeBjBpJYTWVqO9jNynN3X=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sbUh9XTVBeoW4rnc5FXiF9SVds_SDzZ8=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gWp66CAumnVoFBu7GqgXIJp0hZxEpqPg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qZoQToJZzD9evx3RKy14dq43sA0K-Un0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zh3IFVCKgAb3bnHLelv1n7oVPvtVwsXg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1R65rxzdYCM7fDlJmOpfz2r9rTOkOqoL0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Yyh0vWeEbgl-1j3aZd2OYLwhSYeNNobu=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>VIRTUS</g:model>
       <g:year>2023</g:year>
-      <g:mileage value="20834" unit="KM"/>
-      <g:body_style>Hatchback</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Manual</g:transmission>
-      <g:trim>1.0 12V SCE Intense</g:trim>
-      <g:vehicle_id>2311462</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2051391</g:id>
-      <g:title>Porsche MACAN 2019</g:title>
-      <g:description>Porsche MACAN 2.0 16V | Ano 2019 | 55.200 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>317790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Porsche%20MACAN%202019%20por%20R%24317.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1NtywInROuR_mmmwH63jOBYNU0bEkwz2f=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GQHAxwHPmGWZ221ysXYlbQjP5pwch1cA=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/17yBR0BzAVEU_fRvnrjxQHzLlurcf7G3p=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Fp6JPCKoD2Fj1-QrxfLgNuOEUMuJfwdF=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xolf-ptyLDXzisF9lDM5iSXPRty9Do1J=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QiueQ89W0lRaZGHsTIMj64NojuC3tX8z=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nybH7XBQoE01FIUQnEiLxhVJxPWAqbkc=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/13g5DMhFK3quyWhd-BPiA72mAy4oqauze=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/18RQ6uDNL3_60WBC0jFmZd-Sgrw7jjquE=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/14xaN0LqyA5LgDprnrdfD2FI3XEFlJirT=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qqWgyTLLGYax27GyCBRJRXb-kH1lrsTT=s1080</g:additional_image_link>
-      <g:brand>Porsche</g:brand>
-      <g:make>Porsche</g:make>
-      <g:model>MACAN</g:model>
-      <g:year>2019</g:year>
-      <g:mileage value="55200" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:mileage value="55000" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
-      <g:trim>2.0 16V</g:trim>
-      <g:vehicle_id>2051391</g:vehicle_id>
+      <g:trim>1.4 250 TSI Exclusive</g:trim>
+      <g:vehicle_id>2308205</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2301931</g:id>
+      <g:title>Volkswagen T-CROSS 2026</g:title>
+      <g:description>Volkswagen T-CROSS 1.4 250 TSI Highline | Ano 2026 | 25.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>160790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20T-CROSS%202026%20por%20R%24160.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1PoPKWFeK-y6FIpwCCUhjaCAF-2kF2jK4=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Brdz0qtzyDja8xU64ARSqDdqAEwpG2rg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1B9Dm3oOB91TGDZljMpK4lSOVAmLSo_ns=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Bo0Ang8Hic6575d-_cXes1XYGHk41INJ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GouIvF1TxghcsE2Zt43Ld1tyFECyrG42=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1noNhH89QGw994ExsbIcvMAWB_ZYhRfmK=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17zXTr605itxaAUGFHzGLL1Vj61fe-on5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1M7huuH4RTBdf29la6GxdtamBnDcTS0pc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gdv-vAShWhW1Ua0CJGK-0lYtSg4od5CT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1euRdV1MP9mrlgVeUs4LtCJchII-2YVYD=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1LlMvgEv63WVNXBF5SgO-BxzacptAAqBi=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>T-CROSS</g:model>
+      <g:year>2026</g:year>
+      <g:mileage value="25000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.4 250 TSI Highline</g:trim>
+      <g:vehicle_id>2301931</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2231027</g:id>
+      <g:title>Volkswagen T-CROSS 2025</g:title>
+      <g:description>Volkswagen T-CROSS 1.4 250 TSI Highline | Ano 2025 | 28.567 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>153790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20T-CROSS%202025%20por%20R%24153.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1TGXFY37HE_XsQDLNahSD6TpWqlpOB6m8=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pDYXLa9A5OQpjE-jlaqhHnTA5b_CTCsk=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1YXKhUSG1VUJFVBI5v-67NjJHafseCG_D=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nHtACqSwmzisj3UbGSI3VFUshUOyLgnG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Q-jtHDY94yRyKcYhafgiXfK_pwXxGDvR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1yD0cSp_nEIYXvf6aVHVs16vigtN6_a1C=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kybcstqxZZUQPych0y75OssYhQSKUSbS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nXLQH5ckhShvvxJTRK-IFZ88tamzCqOc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1wFp_QMB7vPWvcnZzCValHsqYV6LBxZAi=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1jDocSPZMyraQVUaqP4UoQnMi-Uqq4f8z=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/16DYqQg1eWRDyyjNn9gvqrRuTZDhmfkWZ=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>T-CROSS</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="28567" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.4 250 TSI Highline</g:trim>
+      <g:vehicle_id>2231027</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2257150</g:id>
+      <g:title>Volkswagen T-CROSS 2026</g:title>
+      <g:description>Volkswagen T-CROSS 1.0 200 TSI Comfortline | Ano 2026 | 23.187 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>153790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20T-CROSS%202026%20por%20R%24153.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1Oaq0S1lTLPpNRljFJrMtBNEuuRONiABf=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RKv7NMJrKd-6OrbxGg0hqOj3WiBCDrw_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1OGnEniz0Qa6DWJwPghP_WKiQXVUOhbqI=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1z_uB23tAcER6fmYjXAQ8Ury1z_aBErgY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1E-3nUB1E0MI1RjmuCypykQVKv_8p7YKp=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sMHBfC_GNIaqwwcO3CCE-V3I4ABJOZmG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/18BV4Db9ZTVeEQT5QJGjdKAQdQfAv9_F4=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Khq366K6-cFqwch5ypHp-mhft1PmN5UW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1id88ZOm34X0SO87QZ7MvsmyokHnWFAnd=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/11AWK2VgUdHuEc7Ylyi9sJqtApTJvHpT3=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1-NH3AfzRBn5x4VO1GXGF4eHCmVSp5Fz2=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>T-CROSS</g:model>
+      <g:year>2026</g:year>
+      <g:mileage value="23187" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Comfortline</g:trim>
+      <g:vehicle_id>2257150</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2302227</g:id>
+      <g:title>Volkswagen SAVEIRO 2024</g:title>
+      <g:description>Volkswagen SAVEIRO 1.6 MSI Extreme CD 16V | Ano 2024 | 53.026 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>106790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20SAVEIRO%202024%20por%20R%24106.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1V-H37ZfP5xsTtp0bp-wKMe3Z10XFbokO=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1haegBJlOLGsi7Sp6UCJ0PfZuRckRt2v9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fk7FOloMoFqJrRtNU1Yv0-ntyuvCe1pA=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kqSBeUq_ApPiFUUdQ-ZxxYoovurKx82a=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gX8i1qyLlklsDOgXkMPnh8mEojFmJy7s=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/12TQBZrPIqIy757UVMEoB8n54CKxaYB3l=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rMYLMo2ZYmYcOIT-Lpnk9eVbrnLXRnHt=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1jqXtz4UMA6m4h5VI3ZCOXoznaTw-xTLM=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1o0e4MKC3pM5R_n_a_P2RxSpquS9lzmSG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1REriED1g_R2dCuqh4kcpQYJmS22angjN=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1N9KGFo2A6axUombqgj8LjmluLLVtLLDU=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>SAVEIRO</g:model>
+      <g:year>2024</g:year>
+      <g:mileage value="53026" unit="KM"/>
+      <g:body_style>Truck</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.6 MSI Extreme CD 16V</g:trim>
+      <g:vehicle_id>2302227</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2171261</g:id>
+      <g:title>Volkswagen NIVUS 2025</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2025 | 18.400 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>132790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202025%20por%20R%24132.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1YDEYQ30evDhabGhYa81_FQ-SD97HKB6l=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1E0PU-TxbH8xi_Hua3Hlz_GwQzrUG_lbK=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17DpxzyJhPK2lit1o76tOnRGE7YhfdShP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1BKJoDZ4U_VjCnsx5uiCNDBRXWhWf2yyg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WFp2YQG2HVXnpOPtm-E9C_tbPEMFsPOi=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xLmP-RE37VqtMkWD41Z1p9Kkwx9xlzM5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1M6kDX4b71R0TIIxBkZG9aOj0dBQ-Qje4=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fSoIeRE6ZuMK91yg6s3jQB1IjpYQGxE8=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/19iL1krTHOjwPm-QZhUgaR80FM2bEjs3Q=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ovM-MIKEWkR8vhqLc0xhaiXLtO_fzeKL=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1c_ikRCL4xl8ACkE7xJBwVG4T95AFRITb=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="18400" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2171261</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2302519</g:id>
+      <g:title>Volkswagen NIVUS 2025</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2025 | 16.228 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>132790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202025%20por%20R%24132.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/16-vuj6dbBhKvm3XtMjwZfGDvIIX9onYu=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1EyZCpkAy4ghdX0XFAMgpdjnz8NYtpdJ-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xqe-ei9XyrP2gGqTR7txeI1Z7kwDLQNp=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14Xkm7nI4-zyRpTp6-A6cNseZWkIgRdtj=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/11ga44yos_qggTv__HnrI4jTVhbMyVhao=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14k-5mxsCosaa51Hxxni2p6MeGyOWxEAv=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PMN8-UheiqRmPwlWmN4E9sL2b5LPAG5I=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hr_oSxHb-DnNTNiswcG8dPlziGhgrCeJ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/18g7gpkGDdZ3qXADiyzJlQnBgDVwrW-pn=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1J6FKwFjiwcRAVCYGQDzHanj64czlw9jV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KZFpf5mfFA9dqckEaNcSQ4OqLlFNNxQ1=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="16228" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2302519</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2307495</g:id>
+      <g:title>Volkswagen NIVUS 2021</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2021 | 62.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>107790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202021%20por%20R%24107.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1T92k8p6Nx5rNegCcHkfUD7bV2qDCT6pk=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fF6NoTf8ltshvk-wWMu-kULfNp1MO8X1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1a9wpN-Z_zS8GMg80TwsC7ahyK4u8sjd3=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vcVViGqm0O93wER1xM5wNO4im7c79r1x=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AVMj2flKZrbY2xOKRAnVvTo73L-wwhEu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GOZst_No2PwCSx4ccx_sM0reU_ihjIGX=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CRDBQhng267_N-mPwyZLPCOqpNCZ0_f4=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17_vSSlVOQ8X2Yx-G5zpW--XGeOuZmww9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Azcj5VxjXhxIxN0SQqiGTLweoDYUDcjm=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qH4-esyX1fJo_i3dxTj56erSigHuWGbg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1EX4Zi23-rE1899oKRW0o0Mbt1cp_DLPK=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2021</g:year>
+      <g:mileage value="62000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2307495</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2301937</g:id>
+      <g:title>Volkswagen NIVUS 2022</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2022 | 55.248 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>110790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202022%20por%20R%24110.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1pi7d4VGE8BPlKwXNDUFjgdO16RKJlwRR=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/101iFOhqPt6WXWGgMUT1Qv-T8DoUJzm6-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CMGVNgw7YoGp5TTiYbBmwxcDU0q6jPRE=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1G9Bh3VGozEznz3RgWZGb4kRfQf5lKpC3=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QbSTr_aasUeaS76tg7PEaFDlmYB3-1kr=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1q3TCn2zM2MQuvn7Wrx8JZjW8-UKYQcTH=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ZUjyTlHKgzRHtIKflDaWMpT3zH6QtfFz=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SFzjiHtoEKjjsL3VAEMzrvpbzN04lEz4=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cJ26e4YPTtETjN59710J5yxcvmZjd6uE=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1jQ7muAeBnGcmTxPfPXhu8XBoqQsPMVnv=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1bI-UhhmkuBEiLMDZfZGDtUsfS027CJOj=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="55248" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2301937</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2252098</g:id>
+      <g:title>Toyota YARIS 2025</g:title>
+      <g:description>Toyota YARIS 1.5 16V XS | Ano 2025 | 40.812 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>106790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20YARIS%202025%20por%20R%24106.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1UicmihEZe2zk4fzCYZKRiRVPXa3MBdIH=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/15I88uXZpj3oaMlGWQzEF3daqf22bNaXw=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vECu9QjWBgCC1flqMBTlhwrCez587SiV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1YsjtP5mAfPwZq_D6lVUCuxxn_QYlyUMu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1esNEa3Ps1mdopuiUwmNju2KUIpGR9LUj=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vZQZpr0CYtpTgIQHzQ5fEmoOnphvPx-K=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/16cv9Exgqp_-Zrs3By2mQbCOQ6RzcgrR9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1774n775czH_NgUIFK-T_iG_SxSIEq6MZ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1O2Gij2-l6OUIYRU1dCAWcElWn-pCDa5E=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1LulywBIPZkG8FC6ci4LTmnfEbFXRI_tc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CFfnwoU2Te42KZSz-38Jf_PmxvtcrNFH=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>YARIS</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="40812" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 16V XS</g:trim>
+      <g:vehicle_id>2252098</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2129601</g:id>
+      <g:title>Volkswagen NIVUS 2023</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Comfortline | Ano 2023 | 65.000 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>103790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202023%20por%20R%24103.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1NOJ7KdwYeJ135irfEWAb0mcPvZ9LNFRs=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JdUOQ4x6atyjLErnOUdnr2-WuB69loev=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pHE7Q79u_v4tijIMbWAIBbzvATgzyX_m=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kAWmXzI6hE34r1-2R0FidkokW_wgdeii=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m8Eet_U9mK8ZyTNOugTfV51mFCzhyaEE=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1DDhBLnoB2bjDuH_oBoDiqWa17LPctxAp=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1FV5-oX4f2r-y3OkEWp7TR7L0ChPxzT2X=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zQfTcjJtTzqV5eWSGEuvLXWxqXuRrHn2=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kWw8N15ThlQmwE5P4hWAsun7_5IFZzpd=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PopM0sjH8nyyqbcoZ5Jocu7P3nHLEERg=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1b9BcwAEoJKC4wTCyI_rKd6TcnxAy6uRF=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="65000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Comfortline</g:trim>
+      <g:vehicle_id>2129601</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2297355</g:id>
+      <g:title>Volkswagen NIVUS 2026</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2026 | 18.079 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>136790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202026%20por%20R%24136.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1PuWgyfIA0PpQrNe6v7rWQdyARP0EZCf5=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1azD52qwsYqh4HjXIzruh9137CODYANr1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/16QS8PUYKdEZWMQYpFZ44kS4tDROyJNA8=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1psnK1x5wcDnB9ZR8pgbnRvVvmNABk1HV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1koJRvrP1TkoBezlWdx1t3TGRcVRHVPOC=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1R2yhIr7g_cM5vABK5M7RWwArCPVs_Koa=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Yg9QeCGGslJNI8k0pnaHnsZypSVEShWO=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1__fXbLGxUiTwfhw2Z4ydRqgta69NnEo9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1__mU_kaW98B_UxZAivIhso2tIUQJzirB=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1s7M5hl5UuEjWiAM8IEUes-dlT4CdEHAR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hwODKPxu-oe0AwNmpSxM-BwqEbvZxQL-=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2026</g:year>
+      <g:mileage value="18079" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2297355</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2274531</g:id>
+      <g:title>Volkswagen NIVUS 2023</g:title>
+      <g:description>Volkswagen NIVUS 1.0 200 TSI Highline | Ano 2023 | 59.092 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>114790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Volkswagen%20NIVUS%202023%20por%20R%24114.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/11ZnVgRVWMTEuGLICKegElDSXof2PuFvf=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14rKKFIqTdc1QIcnomG_NiVpPSI2lK4tY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sJtCdMC5qP65qC1Wlmfr9YJ7VA1A2F1R=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1-kmrjEmijUYNhWlKOSEJsNWiw9-bBCCW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14qE92AVJHSYRHzzq92mQI5esqfB6TyZc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fmHNzp6EOBw1Z_URcdpuH7unVqiwUqpW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xR9vvJMEEJOCgJFrET00XuRmrdADPLYN=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Rh76gAsUYFONq9AXXd2PDHOhYqUqPga5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qhQzT73J8i1NjRKhEf5t8F3tua9K7-9_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xGqopAJ8oys11OU8-LghRrHT_9YMvCo-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13mdr6MR0Zh84Ftyivziv_bkTRF1mcN1Q=s1080</g:additional_image_link>
+      <g:brand>Volkswagen</g:brand>
+      <g:make>Volkswagen</g:make>
+      <g:model>NIVUS</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="59092" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.0 200 TSI Highline</g:trim>
+      <g:vehicle_id>2274531</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2304766</g:id>
+      <g:title>Toyota HILUX SW4 2023</g:title>
+      <g:description>Toyota HILUX SW4 2.8 D-4d Turbo SRX 7L 4X4 | Ano 2023 | 58.845 km | Diesel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>298790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20HILUX%20SW4%202023%20por%20R%24298.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1ZHjxHkHE3oCYYEWrhG4Uuyq0mzj1UDnw=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_MBAIlFafi9cyMqNWl724FqYUoQr55vo=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QxESdVfAhrdTggXFIkkMsoxsNKDtP_Be=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ZFtYofZFnXhpcnuJ3dfBS4f8uOsK2fvM=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1IBtkO4uwySphwLdXg1_gWh3nmsjWZaaN=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1c2xf_agAeh9_4L39QN7wISWehk_8pvG0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1B3fTi2Gd9EvcZVGxaTxO0tDec8G8651S=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1aH0q24WSVZbSUX4BU_R4YbNoA8jgz6Gy=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vLHBFOh6E-cMMGdZFKgYMSmR31pPj96m=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13YogG58EkMAa3gYq_NpFod3JB1Qs2SXP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RCX0wM15khtFk488E39oyKeQzQ56FO2T=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>HILUX SW4</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="58845" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Diesel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.8 D-4d Turbo SRX 7L 4X4</g:trim>
+      <g:vehicle_id>2304766</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2260437</g:id>
+      <g:title>Toyota HILUX SW4 2024</g:title>
+      <g:description>Toyota HILUX SW4 2.8 D-4d Turbo SRX Platinum 7L 4X4 | Ano 2024 | 38.000 km | Diesel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>338790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20HILUX%20SW4%202024%20por%20R%24338.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1kV_VRvN1d-3GQ4tkpn_TWxpUuxEphUAC=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13bmuIaKgDScszbzUJmv70Y8-50RfPbRo=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1BVrxTlcgNU4WX08Y4yJx-W1cq1yW4BZX=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vioEu6USEtS15tpFmCj_O4G9LLQHaV5t=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cEMtMBrlh80OTVBOE_Jq6xRQwxbEEzTH=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1LU_GvOIyvFYvCstSYMgOTtUGG7HfxvE2=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hgxxxLzUKg_MMM7TFT9bElmpTHvFkHhN=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1bllNZmK0Fva6U9PqDcHROvpNhVtOKXOX=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1IfLJJp98nVPKEjkNTmZ2rCn44o6CrKjL=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1XZo5t-dMTvaGvgweIWcOWgimXd2LiRGn=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1niQVPKQ4O_4AhrgCuOUpbzQRbfm-WiOd=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>HILUX SW4</g:model>
+      <g:year>2024</g:year>
+      <g:mileage value="38000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Diesel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.8 D-4d Turbo SRX Platinum 7L 4X4</g:trim>
+      <g:vehicle_id>2260437</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2243991</g:id>
+      <g:title>Toyota YARIS 2024</g:title>
+      <g:description>Toyota YARIS 1.5 16V XLS | Ano 2024 | 38.596 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>109790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20YARIS%202024%20por%20R%24109.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1nj8Nc3KO2PIxqcMDVYglfV__qMS7D2qY=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1w2zRRBvhmgbr-lf7of4FepYR7InAPyIh=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1b0ZvW2WriRasOpj4xL-es_sYjhw9Psm4=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Z1CB5IUTA6ElNHsCWoqJ7QQuxmcoh3UK=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17XLgSj-Xn67i3jh23t-GPs3JI1Vy12JO=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1oqA7Mqf2lO-arHtopLwpCFku-GjK6U1V=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1mDNZPjOr8NfGKZh7uTyrAtxS_dDtqwlM=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1IXCcTpZ52Nm4e3wVasP_DjsBswynoJZ8=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1y9a83EGj7NOwkVFNUKxobaeMQF7XM4oD=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1VID_Tp7OB9KjjvWwoEhUrGYzQpHDX3oS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1O0W0hjnkvCLWiTS7OOhIghecUfIia_x4=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>YARIS</g:model>
+      <g:year>2024</g:year>
+      <g:mileage value="38596" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 16V XLS</g:trim>
+      <g:vehicle_id>2243991</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2060639</g:id>
+      <g:title>Toyota COROLLA CROSS 2022</g:title>
+      <g:description>Toyota COROLLA CROSS 2.0 Vvt-ie XRE | Ano 2022 | 57.328 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>129790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%20CROSS%202022%20por%20R%24129.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1jtNmr8c_wBTfNGKznsqqo_CQojlTSSYJ=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fyz3Mf3qwSjKppmoq6PewOaFxseacdEm=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1K4V11QXpRLOPzzveyW1P3OrR5cncHKEn=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hV_UIpeRiWFucMnKD-UFEPOKD5_AYKFV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zhwt9KvBzv8o9HQYbCR1lCW2JUFLCtMG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14mbubrHIoFfdOF4wsotQuvZBB5LO6GCo=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1uVRBaxB08Ps0r10__TQxh5reYk1eBLMV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1iiHKySQpOUONbgGJtO4LubfUrMYFIVE5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1OqogRwOE5JHggKHqNP0A1soO5FENgXB-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/12vbyAmhUc1YYOeQQkw0VH1fdUZBZMxZS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PiORJ-0opplR8sLPBbJHFuKDolBO4a_X=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA CROSS</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="57328" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Vvt-ie XRE</g:trim>
+      <g:vehicle_id>2060639</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2311457</g:id>
+      <g:title>Toyota COROLLA 2023</g:title>
+      <g:description>Toyota COROLLA 2.0 Vvt-ie XEI | Ano 2023 | 42.994 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>131790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%202023%20por%20R%24131.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1DAqujIK9f36ImBYh6U2QC1a9rqYYl0GB=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/15emwNsCtn0iwCrr9IrGUhNrnU3Ky0tW_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_MVn9TiOGohLYFgFA_5HbWHWITgteTIo=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1n6tmkEfCeZsuRgAgGvto_D6Ggc23mosv=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1V8lBtsDo8qPSrFxlXQ0P3i-DlBDBS_hn=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14RJBlMc-9TY21NENmgFkhjP_EV-VSnOm=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1J3I8jZvVT6l3KaPmZc31i3Q6Llbp0-DS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Ti-5cheNpXNytV9c7ee0Qacx6S4KnyAw=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1p6tXWVO2274ZctCMQbLIrVftGRCL95Od=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ooalBCW_Nt-LPisGOgvbVllWLwZoxO-d=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vl1_15bT-Em02IpTFmRnvpSur-BydLsK=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="42994" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Vvt-ie XEI</g:trim>
+      <g:vehicle_id>2311457</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2286852</g:id>
+      <g:title>Toyota COROLLA 2023</g:title>
+      <g:description>Toyota COROLLA 2.0 Vvt-ie XEI | Ano 2023 | 60.653 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>130790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%202023%20por%20R%24130.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1J8xHM6i2Em47BFa1zmYuz8_oJd8anRzg=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sD8q78nyWz4ZBky97two3GXaYGSEf1Bz=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_uH1uJxsJjA30-TgpyzNVzFf0R7kRv-2=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JDuuYaVGH1p1jVnIKHpdis_GYNpXrhAG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1VlROXNPG9G5bwFyh2_AWTTget8qw15A7=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GniChlwQFqYkd5fS0OOPgfhv_ypMbz5p=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pMLIvKku2S3roy2kvM-wB9vGld2f3WyB=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pDxPE1ePHKEfbN1-HxGC90yduBZdqIS9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CwO_g39HVOIoH1mZEhjv1w-OFXs8z8HS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rv_voSOl46pX2iXmlBu1gyljCfvy0eCs=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gGs_R09z5YCsQZRgDI49VQFED1POtkcP=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="60653" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Vvt-ie XEI</g:trim>
+      <g:vehicle_id>2286852</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>1785308</g:id>
+      <g:title>Toyota COROLLA 2021</g:title>
+      <g:description>Toyota COROLLA 2.0 Vvt-ie XEI | Ano 2021 | 65.504 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>120790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%202021%20por%20R%24120.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1LG3AAiv2Vftq7nLRcKZtpvXgeelzoqeY=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1N3dmQtbO_An4tQs8tpMtRLUxMUvNV7zu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1N6wcSEph6673ZG3XEv30ggHE4AF4Y2J1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ik-2WoK25PohGCv5ig1UMJASi1NWLVq1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SwFW-C1faufz-8T-Y26qIonsHXbOoLse=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1-kIOgKo_34JWTDLNGkH4sHfJd5QV7Z6p=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sk_DpKnL77YQHotBqBdEm6B3Fl22YtSY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1DSuJzTg-USMYD-LEc0E2hU9yt9TuO3gc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1UV3SDWSnxjdUSSU6yovxFDge0I-0M6Ol=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1l6HS9qhN7p70UxBH-H31JfkictD30Pyq=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_g7y4cb4ffsbcGGEDaWqWJNw7jqnTumM=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA</g:model>
+      <g:year>2021</g:year>
+      <g:mileage value="65504" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Vvt-ie XEI</g:trim>
+      <g:vehicle_id>1785308</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2286854</g:id>
+      <g:title>Toyota COROLLA CROSS 2024</g:title>
+      <g:description>Toyota COROLLA CROSS 2.0 Vvt-ie XRE | Ano 2024 | 32.350 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>151790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%20CROSS%202024%20por%20R%24151.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/15UMABbPDft_zbXtwLNf-9G4geG6iLwU5=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_5GQe50uPWLYCr-dp2vk7a5Qyh1EJUtT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1M-yTSrC9mdWNIZNWfR7pojWhHlqR6x5v=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1sz584zfo9ypzbSGuwdcfa-wCQl62LmL3=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/127WhukRflOXvixpiD7Vp73MEU5yHuAlY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17mE8PPIUOie4mJwuWZTXUR17E2kxoKR5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1tlK1HqppJMsTS6s_Q6xT8QMIdYL3ZtAr=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SjiWSLURAyizWkzFN_8Gcu_K0AKIxgnW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1VS1aJOtiXrCiRDJNl_g0Eei2iy2FHP1c=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zbe6rTD5LoxBDJiDsH5229QB1X9kWelY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1mZTOhJd_yeIZGhQFQBmMuInzYxuDV2vJ=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA CROSS</g:model>
+      <g:year>2024</g:year>
+      <g:mileage value="32350" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 Vvt-ie XRE</g:trim>
+      <g:vehicle_id>2286854</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2288370</g:id>
+      <g:title>Toyota HILUX 2022</g:title>
+      <g:description>Toyota HILUX 2.8 D-4d Turbo CD SRV 4X4 | Ano 2022 | 66.708 km | Diesel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>224790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20HILUX%202022%20por%20R%24224.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1lqU_oJCVPH1ZW0y8UoFA_zLpcCdhf2la=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AC-c0D1yid_6bEdsB6QoQcaB7cJLQ5gG=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Dyr7jgSTZxMHbOvAAh69ZfIBjqch9Wsq=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ybFu0sLqXdd2kVw1ctrXbtbxgEC_QsYp=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gQKvbi8sudeaKF794uC3QekSVbW6NEL1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_-6URNVFjYqc80D4MIi_4nCxYhH8xSSH=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JQbOdHkPDA55FA1If2H7DvlbRX6Rnuiw=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1mxcGjWREL6GRxZwPI0UblllyuK1FFTJP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kH_N_oAS0a9Jh4zVRxiy5XvXK6VUw0h_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1MEGUimUsBLo4-JswNoCHEFPrBb77Xh4k=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1t6k7zwRbByjBvAYygm0zK__s0LCwdBVE=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>HILUX</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="66708" unit="KM"/>
+      <g:body_style>Truck</g:body_style>
+      <g:fuel_type>Diesel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.8 D-4d Turbo CD SRV 4X4</g:trim>
+      <g:vehicle_id>2288370</g:vehicle_id>
     </item>
     <item>
       <g:id>2190189</g:id>
@@ -114,68 +764,112 @@
       <g:vehicle_id>2313234</g:vehicle_id>
     </item>
     <item>
-      <g:id>2306529</g:id>
-      <g:title>Peugeot 2008 2022</g:title>
-      <g:description>Peugeot 2008 1.6 16V Allure Pack | Ano 2022 | 61.799 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2051391</g:id>
+      <g:title>Porsche MACAN 2019</g:title>
+      <g:description>Porsche MACAN 2.0 16V | Ano 2019 | 55.200 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>71790.00 BRL</g:price>
+      <g:price>317790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Peugeot%202008%202022%20por%20R%2471.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1_8YUhRYeCBlGmpeGgKRubqpFiEM6-uI5=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kcj--qLXqUAn7nH94QhiEItF6SX4MeH0=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1NtGfQMPZ1KEvUlRLFxWN1-roLZ8ubpfW=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QpyHbXcVAXqMIQ3vP-gHdBoYIVH2qJle=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1w23beitZ_niGaQiFVwB8RIc4IJEUzgwQ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nqe105M8cHsVEMKK2-qX-bNrlOmUp9Xc=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vGiEOcFfyK-_CyXaGEXYPvs3uhOU8fqt=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AVjGwNVIpctAuTMXcUhvOv5Ai2TKgo_p=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/17bzFjufD_vIfziiMPby2oSRwr94IPH4t=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ejA631LjWch6f2nQs5EaVDu1Jb4IIkOR=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KJakaXNk6-cddm1MWNyD-XlP9o4DeHXs=s1080</g:additional_image_link>
-      <g:brand>Peugeot</g:brand>
-      <g:make>Peugeot</g:make>
-      <g:model>2008</g:model>
-      <g:year>2022</g:year>
-      <g:mileage value="61799" unit="KM"/>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Porsche%20MACAN%202019%20por%20R%24317.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1NtywInROuR_mmmwH63jOBYNU0bEkwz2f=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GQHAxwHPmGWZ221ysXYlbQjP5pwch1cA=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17yBR0BzAVEU_fRvnrjxQHzLlurcf7G3p=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Fp6JPCKoD2Fj1-QrxfLgNuOEUMuJfwdF=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1xolf-ptyLDXzisF9lDM5iSXPRty9Do1J=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QiueQ89W0lRaZGHsTIMj64NojuC3tX8z=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nybH7XBQoE01FIUQnEiLxhVJxPWAqbkc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13g5DMhFK3quyWhd-BPiA72mAy4oqauze=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/18RQ6uDNL3_60WBC0jFmZd-Sgrw7jjquE=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/14xaN0LqyA5LgDprnrdfD2FI3XEFlJirT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qqWgyTLLGYax27GyCBRJRXb-kH1lrsTT=s1080</g:additional_image_link>
+      <g:brand>Porsche</g:brand>
+      <g:make>Porsche</g:make>
+      <g:model>MACAN</g:model>
+      <g:year>2019</g:year>
+      <g:mileage value="55200" unit="KM"/>
       <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
-      <g:trim>1.6 16V Allure Pack</g:trim>
-      <g:vehicle_id>2306529</g:vehicle_id>
+      <g:trim>2.0 16V</g:trim>
+      <g:vehicle_id>2051391</g:vehicle_id>
     </item>
     <item>
-      <g:id>2296448</g:id>
-      <g:title>Omoda 5 2027</g:title>
-      <g:description>Omoda 5 1.5 Tgdi HEV Luxury DHT | Ano 2027 | 0 km | Hybrid | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2260857</g:id>
+      <g:title>Toyota COROLLA 2025</g:title>
+      <g:description>Toyota COROLLA 2.0 Vvt-ie GLI | Ano 2025 | 18.227 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>168790.00 BRL</g:price>
+      <g:price>150790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Omoda%205%202027%20por%20R%24168.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/14oYAs5N3IHZ4J3gtIkOmlSlvQn9HaVDi=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1UoNGw4lW9Z4SfbadY7GDRbPIPBraANnH=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gVg9w1XrBbqOEuF23gUIr9PxCaErneO8=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1OS09aD_BFHjo48rZiBJs7UNguLZ7f7hU=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1oNE_Hgb02809dPSEGnqVDCZg_aUhxKa1=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GLp6utkjXxuHEJC4KVI51W5pSFZe1VXI=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/13Wu1TioCGmyein29NxC7UkVgiDN7kU68=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/18GHLBTXxGTDxfxfzotSIatIuQarryk3N=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/18WXrY8j5uAfFudA5qQWKjV_cNOL55L5E=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qpI8HBtyywc0sO88Rht3vWTWVStg460y=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GBdJwTfRo4lYQDV_mEXKc7FSWkpnEM3h=s1080</g:additional_image_link>
-      <g:brand>Omoda</g:brand>
-      <g:make>Omoda</g:make>
-      <g:model>5</g:model>
-      <g:year>2027</g:year>
-      <g:mileage value="0" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Hybrid</g:fuel_type>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Toyota%20COROLLA%202025%20por%20R%24150.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/19abX6pQfiCZBONvEaV7rbRLRQjAyXhwG=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vTlDNaLB_NIzyU2B1V0ZJDT2kCxLE0uR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JyUWxvP5Ob2JZA86mp-sCYhYaezIBk-h=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1C38vJWBLcd3n42Q101h4lfbXlqEE1oM_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/15lX9YowTZ2DX4tEIZElOcQC4k0IZmiyj=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pPME3jQWS6Bl-Bg79w-fyRf3GPNJb9gq=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RLnxO7qF1mogxi3rUxd-RAAjZZRk3QBw=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JUNafYukaLFRZUiQ38LgEkRbcXDZl5l7=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1tkYuxRrKDOhGntfY7TvrG7LY0zhkas5o=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1y34xukOAiirQOdkWrJ6YFsw3Z80bn12V=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1EXGVADAttorD0ptpb6RW69fV4Qkmj6Xp=s1080</g:additional_image_link>
+      <g:brand>Toyota</g:brand>
+      <g:make>Toyota</g:make>
+      <g:model>COROLLA</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="18227" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
-      <g:trim>1.5 Tgdi HEV Luxury DHT</g:trim>
-      <g:vehicle_id>2296448</g:vehicle_id>
+      <g:trim>2.0 Vvt-ie GLI</g:trim>
+      <g:vehicle_id>2260857</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2311462</g:id>
+      <g:title>Renault KWID 2023</g:title>
+      <g:description>Renault KWID 1.0 12V SCE Intense | Ano 2023 | 20.834 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>58790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Renault%20KWID%202023%20por%20R%2458.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1_bJyOfCVckOpTT28PDADlUs91yfP8Jgf=s1080</g:image_link>
+      <g:brand>Renault</g:brand>
+      <g:make>Renault</g:make>
+      <g:model>KWID</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="20834" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 12V SCE Intense</g:trim>
+      <g:vehicle_id>2311462</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2312496</g:id>
+      <g:title>Nissan SENTRA 2025</g:title>
+      <g:description>Nissan SENTRA 2.0 16V Exclusive | Ano 2025 | 30.000 km | Gasoline | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>149790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20SENTRA%202025%20por%20R%24149.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/18urFYJtoJj7-anYQBHM8_iYN17YyjNGw=s1080</g:image_link>
+      <g:brand>Nissan</g:brand>
+      <g:make>Nissan</g:make>
+      <g:model>SENTRA</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="30000" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 16V Exclusive</g:trim>
+      <g:vehicle_id>2312496</g:vehicle_id>
     </item>
     <item>
       <g:id>2310717</g:id>
@@ -230,28 +924,6 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.6 16vstart S Direct</g:trim>
       <g:vehicle_id>2312681</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2312496</g:id>
-      <g:title>Nissan SENTRA 2025</g:title>
-      <g:description>Nissan SENTRA 2.0 16V Exclusive | Ano 2025 | 30.000 km | Gasoline | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>149790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20SENTRA%202025%20por%20R%24149.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/18urFYJtoJj7-anYQBHM8_iYN17YyjNGw=s1080</g:image_link>
-      <g:brand>Nissan</g:brand>
-      <g:make>Nissan</g:make>
-      <g:model>SENTRA</g:model>
-      <g:year>2025</g:year>
-      <g:mileage value="30000" unit="KM"/>
-      <g:body_style>Sedan</g:body_style>
-      <g:fuel_type>Gasoline</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>2.0 16V Exclusive</g:trim>
-      <g:vehicle_id>2312496</g:vehicle_id>
     </item>
     <item>
       <g:id>2253199</g:id>
@@ -318,80 +990,100 @@
       <g:vehicle_id>2249716</g:vehicle_id>
     </item>
     <item>
-      <g:id>2312680</g:id>
-      <g:title>Peugeot 2008 2026</g:title>
-      <g:description>Peugeot 2008 1.0 Turbo 200 Allure | Ano 2026 | 4.846 km | Flex-fuel | CVT. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2296448</g:id>
+      <g:title>Omoda 5 2027</g:title>
+      <g:description>Omoda 5 1.5 Tgdi HEV Luxury DHT | Ano 2027 | 0 km | Hybrid | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>162790.00 BRL</g:price>
+      <g:price>168790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Peugeot%202008%202026%20por%20R%24162.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1UXIHa0CZQJSC5wFItqqrZbxCV0P4Xab4=s1080</g:image_link>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Omoda%205%202027%20por%20R%24168.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/14oYAs5N3IHZ4J3gtIkOmlSlvQn9HaVDi=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1UoNGw4lW9Z4SfbadY7GDRbPIPBraANnH=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1gVg9w1XrBbqOEuF23gUIr9PxCaErneO8=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1OS09aD_BFHjo48rZiBJs7UNguLZ7f7hU=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1oNE_Hgb02809dPSEGnqVDCZg_aUhxKa1=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GLp6utkjXxuHEJC4KVI51W5pSFZe1VXI=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13Wu1TioCGmyein29NxC7UkVgiDN7kU68=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/18GHLBTXxGTDxfxfzotSIatIuQarryk3N=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/18WXrY8j5uAfFudA5qQWKjV_cNOL55L5E=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qpI8HBtyywc0sO88Rht3vWTWVStg460y=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GBdJwTfRo4lYQDV_mEXKc7FSWkpnEM3h=s1080</g:additional_image_link>
+      <g:brand>Omoda</g:brand>
+      <g:make>Omoda</g:make>
+      <g:model>5</g:model>
+      <g:year>2027</g:year>
+      <g:mileage value="0" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Hybrid</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 Tgdi HEV Luxury DHT</g:trim>
+      <g:vehicle_id>2296448</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2306529</g:id>
+      <g:title>Peugeot 2008 2022</g:title>
+      <g:description>Peugeot 2008 1.6 16V Allure Pack | Ano 2022 | 61.799 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>71790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Peugeot%202008%202022%20por%20R%2471.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1_8YUhRYeCBlGmpeGgKRubqpFiEM6-uI5=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kcj--qLXqUAn7nH94QhiEItF6SX4MeH0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1NtGfQMPZ1KEvUlRLFxWN1-roLZ8ubpfW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1QpyHbXcVAXqMIQ3vP-gHdBoYIVH2qJle=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1w23beitZ_niGaQiFVwB8RIc4IJEUzgwQ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nqe105M8cHsVEMKK2-qX-bNrlOmUp9Xc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1vGiEOcFfyK-_CyXaGEXYPvs3uhOU8fqt=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AVjGwNVIpctAuTMXcUhvOv5Ai2TKgo_p=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17bzFjufD_vIfziiMPby2oSRwr94IPH4t=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ejA631LjWch6f2nQs5EaVDu1Jb4IIkOR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KJakaXNk6-cddm1MWNyD-XlP9o4DeHXs=s1080</g:additional_image_link>
       <g:brand>Peugeot</g:brand>
       <g:make>Peugeot</g:make>
       <g:model>2008</g:model>
-      <g:year>2026</g:year>
-      <g:mileage value="4846" unit="KM"/>
+      <g:year>2022</g:year>
+      <g:mileage value="61799" unit="KM"/>
       <g:body_style>SUV</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
-      <g:trim>1.0 Turbo 200 Allure</g:trim>
-      <g:vehicle_id>2312680</g:vehicle_id>
+      <g:trim>1.6 16V Allure Pack</g:trim>
+      <g:vehicle_id>2306529</g:vehicle_id>
     </item>
     <item>
-      <g:id>2159868</g:id>
+      <g:id>2260855</g:id>
       <g:title>Nissan KICKS 2022</g:title>
-      <g:description>Nissan KICKS 1.6 16vstart Active | Ano 2022 | 65.000 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:description>Nissan KICKS 1.6 16vstart Active | Ano 2022 | 44.797 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>91790.00 BRL</g:price>
+      <g:price>96790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202022%20por%20R%2491.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1hOntgjLdeZKnOIkOsEaYLDq0YN1NqnHT=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1a3SiGnShr2otPrRgcSNh21DKqYoA_x-K=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CVusoQrGiv0CG970-woL_sAZayIWGefN=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1NOsICD95_WpzA9Ad2Kpdv2REn3V9qcAC=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1u-i6xQA0fIMispdy1zEjZd3Aa5E7zfyh=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GRTYwff-4-cs7c8Zjl3gq0VWKHmIyzYs=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1wRIaJhHyU7bO6Z50nhC2iFG2RY-VQWOw=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1dSifiW3y3rgr6qrwDYMWNCvUFuNJNpnS=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1obqEJGCOEGiGu07AmrHmV6PaqXcGrAIW=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eWSIBaTDzUHDdQQucJ0xdpifJNqxL9H9=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qG-m8ol1Wd75dX_JsuxlV2oHAVorok42=s1080</g:additional_image_link>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202022%20por%20R%2496.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1zv_Wj33WPo_2WrUrbQhYt21v5mTcJ3Np=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1peNNHZyXF_I9TrHbbGOHjE7TpY8y7VJr=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/19Qhe91drnCGbrqYLJi9Z73ZXrmP0U6Wf=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CCIQ0CcfeyQOIK4U-jsorrxi9CP4injC=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1c437vo_HtY4CG2xiIqJr5jxuL3bJSz3Y=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17EAqIvLoEnq7xIuDFiULMgP8xkn6rETd=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/11xg3QwYbmlzQoxxQBOOCk8yRm4tLj98g=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TlKalsUySc78LkJiA3braxJNBOqXeuIP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/12qS-AdFpUaFk3i9mjFArG2z0hYB1ckLu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1oJqr_U8_JSmcD9zvmxBA0fOrz1yBvId2=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/10Xu2bnlN7tv3M26kGUK1xRfka8orEhuo=s1080</g:additional_image_link>
       <g:brand>Nissan</g:brand>
       <g:make>Nissan</g:make>
       <g:model>KICKS</g:model>
       <g:year>2022</g:year>
-      <g:mileage value="65000" unit="KM"/>
+      <g:mileage value="44797" unit="KM"/>
       <g:body_style>SUV</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.6 16vstart Active</g:trim>
-      <g:vehicle_id>2159868</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2308385</g:id>
-      <g:title>Nissan KICKS 2018</g:title>
-      <g:description>Nissan KICKS 1.6 16V SV | Ano 2018 | 67.000 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>83790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202018%20por%20R%2483.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1WzMiOOO6TO9CaF7xhAFM-gP9FfVHW9iv=s1080</g:image_link>
-      <g:brand>Nissan</g:brand>
-      <g:make>Nissan</g:make>
-      <g:model>KICKS</g:model>
-      <g:year>2018</g:year>
-      <g:mileage value="67000" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.6 16V SV</g:trim>
-      <g:vehicle_id>2308385</g:vehicle_id>
+      <g:vehicle_id>2260855</g:vehicle_id>
     </item>
     <item>
       <g:id>2275665</g:id>
@@ -458,36 +1150,58 @@
       <g:vehicle_id>2243996</g:vehicle_id>
     </item>
     <item>
-      <g:id>2260855</g:id>
+      <g:id>2159868</g:id>
       <g:title>Nissan KICKS 2022</g:title>
-      <g:description>Nissan KICKS 1.6 16vstart Active | Ano 2022 | 44.797 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:description>Nissan KICKS 1.6 16vstart Active | Ano 2022 | 65.000 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>96790.00 BRL</g:price>
+      <g:price>91790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202022%20por%20R%2496.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1zv_Wj33WPo_2WrUrbQhYt21v5mTcJ3Np=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1peNNHZyXF_I9TrHbbGOHjE7TpY8y7VJr=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/19Qhe91drnCGbrqYLJi9Z73ZXrmP0U6Wf=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CCIQ0CcfeyQOIK4U-jsorrxi9CP4injC=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1c437vo_HtY4CG2xiIqJr5jxuL3bJSz3Y=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/17EAqIvLoEnq7xIuDFiULMgP8xkn6rETd=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/11xg3QwYbmlzQoxxQBOOCk8yRm4tLj98g=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TlKalsUySc78LkJiA3braxJNBOqXeuIP=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/12qS-AdFpUaFk3i9mjFArG2z0hYB1ckLu=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1oJqr_U8_JSmcD9zvmxBA0fOrz1yBvId2=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/10Xu2bnlN7tv3M26kGUK1xRfka8orEhuo=s1080</g:additional_image_link>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202022%20por%20R%2491.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1hOntgjLdeZKnOIkOsEaYLDq0YN1NqnHT=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1a3SiGnShr2otPrRgcSNh21DKqYoA_x-K=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CVusoQrGiv0CG970-woL_sAZayIWGefN=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1NOsICD95_WpzA9Ad2Kpdv2REn3V9qcAC=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1u-i6xQA0fIMispdy1zEjZd3Aa5E7zfyh=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GRTYwff-4-cs7c8Zjl3gq0VWKHmIyzYs=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1wRIaJhHyU7bO6Z50nhC2iFG2RY-VQWOw=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1dSifiW3y3rgr6qrwDYMWNCvUFuNJNpnS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1obqEJGCOEGiGu07AmrHmV6PaqXcGrAIW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eWSIBaTDzUHDdQQucJ0xdpifJNqxL9H9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qG-m8ol1Wd75dX_JsuxlV2oHAVorok42=s1080</g:additional_image_link>
       <g:brand>Nissan</g:brand>
       <g:make>Nissan</g:make>
       <g:model>KICKS</g:model>
       <g:year>2022</g:year>
-      <g:mileage value="44797" unit="KM"/>
+      <g:mileage value="65000" unit="KM"/>
       <g:body_style>SUV</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>1.6 16vstart Active</g:trim>
-      <g:vehicle_id>2260855</g:vehicle_id>
+      <g:vehicle_id>2159868</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2308385</g:id>
+      <g:title>Nissan KICKS 2018</g:title>
+      <g:description>Nissan KICKS 1.6 16V SV | Ano 2018 | 67.000 km | Flex-fuel | XTronic. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>83790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Nissan%20KICKS%202018%20por%20R%2483.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1WzMiOOO6TO9CaF7xhAFM-gP9FfVHW9iv=s1080</g:image_link>
+      <g:brand>Nissan</g:brand>
+      <g:make>Nissan</g:make>
+      <g:model>KICKS</g:model>
+      <g:year>2018</g:year>
+      <g:mileage value="67000" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.6 16V SV</g:trim>
+      <g:vehicle_id>2308385</g:vehicle_id>
     </item>
     <item>
       <g:id>2308755</g:id>
@@ -520,6 +1234,60 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 EX 4X2 16V</g:trim>
       <g:vehicle_id>2308755</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2309787</g:id>
+      <g:title>Jeep COMPASS 2023</g:title>
+      <g:description>Jeep COMPASS 1.3 T270 Turbo S | Ano 2023 | 41.820 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>151790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Jeep%20COMPASS%202023%20por%20R%24151.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1O1mybL3LcsuHK3Jqrjnj1RrVUVjpNm0I=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1n9SFvnumwX1Wt_ZwFjrX3c2iQ6aKhzZQ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Yip5ZVjjlPpmwMUm9Ywj66DwaIew8-Dx=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rtIog5QhmBYW9Mcy_au-wbltGSTHB1x7=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/10nKYBQ4sl42NcYWNp7BLc-zkKG82HsE-=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/13qdQP1jO0qOsHzbk3viVrcbZxP5pkx-0=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1W1PnVDV2at1iNFSgMxmSI4v3r9S8U1uF=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1awXoNhCreU-VeySQBweFkICGsfdIXTEe=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/176WTWRmUVYOgj2kO9dKO93MdH9CASbtO=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SEEMSgoH1X0xVp2BJsm5-QV2fIteyBMt=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1H_PoOmq-vhUppcfs0Nx5UZPDMfsiP__Q=s1080</g:additional_image_link>
+      <g:brand>Jeep</g:brand>
+      <g:make>Jeep</g:make>
+      <g:model>COMPASS</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="41820" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.3 T270 Turbo S</g:trim>
+      <g:vehicle_id>2309787</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2313232</g:id>
+      <g:title>Jeep COMPASS 2023</g:title>
+      <g:description>Jeep COMPASS 1.3 T270 Turbo S | Ano 2023 | 29.213 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>153790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Jeep%20COMPASS%202023%20por%20R%24153.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1QJFTYGzw9GULNzFz13D9OFQLVWL1oBXD=s1080</g:image_link>
+      <g:brand>Jeep</g:brand>
+      <g:make>Jeep</g:make>
+      <g:model>COMPASS</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="29213" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.3 T270 Turbo S</g:trim>
+      <g:vehicle_id>2313232</g:vehicle_id>
     </item>
     <item>
       <g:id>2314065</g:id>
@@ -640,28 +1408,6 @@
       <g:vehicle_id>2305360</g:vehicle_id>
     </item>
     <item>
-      <g:id>2313232</g:id>
-      <g:title>Jeep COMPASS 2023</g:title>
-      <g:description>Jeep COMPASS 1.3 T270 Turbo S | Ano 2023 | 29.213 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>153790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Jeep%20COMPASS%202023%20por%20R%24153.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1QJFTYGzw9GULNzFz13D9OFQLVWL1oBXD=s1080</g:image_link>
-      <g:brand>Jeep</g:brand>
-      <g:make>Jeep</g:make>
-      <g:model>COMPASS</g:model>
-      <g:year>2023</g:year>
-      <g:mileage value="29213" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.3 T270 Turbo S</g:trim>
-      <g:vehicle_id>2313232</g:vehicle_id>
-    </item>
-    <item>
       <g:id>2211280</g:id>
       <g:title>Jeep COMMANDER 2025</g:title>
       <g:description>Jeep COMMANDER 2.0 Hurricane 4 Turbo Blackhawk | Ano 2025 | 20.219 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -692,38 +1438,6 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 Hurricane 4 Turbo Blackhawk</g:trim>
       <g:vehicle_id>2211280</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2309787</g:id>
-      <g:title>Jeep COMPASS 2023</g:title>
-      <g:description>Jeep COMPASS 1.3 T270 Turbo S | Ano 2023 | 41.820 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>151790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Jeep%20COMPASS%202023%20por%20R%24151.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1O1mybL3LcsuHK3Jqrjnj1RrVUVjpNm0I=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1n9SFvnumwX1Wt_ZwFjrX3c2iQ6aKhzZQ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Yip5ZVjjlPpmwMUm9Ywj66DwaIew8-Dx=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rtIog5QhmBYW9Mcy_au-wbltGSTHB1x7=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/10nKYBQ4sl42NcYWNp7BLc-zkKG82HsE-=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/13qdQP1jO0qOsHzbk3viVrcbZxP5pkx-0=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1W1PnVDV2at1iNFSgMxmSI4v3r9S8U1uF=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1awXoNhCreU-VeySQBweFkICGsfdIXTEe=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/176WTWRmUVYOgj2kO9dKO93MdH9CASbtO=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1SEEMSgoH1X0xVp2BJsm5-QV2fIteyBMt=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1H_PoOmq-vhUppcfs0Nx5UZPDMfsiP__Q=s1080</g:additional_image_link>
-      <g:brand>Jeep</g:brand>
-      <g:make>Jeep</g:make>
-      <g:model>COMPASS</g:model>
-      <g:year>2023</g:year>
-      <g:mileage value="41820" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.3 T270 Turbo S</g:trim>
-      <g:vehicle_id>2309787</g:vehicle_id>
     </item>
     <item>
       <g:id>2302349</g:id>
@@ -886,6 +1600,38 @@
       <g:vehicle_id>2259054</g:vehicle_id>
     </item>
     <item>
+      <g:id>2241743</g:id>
+      <g:title>Honda CITY 2023</g:title>
+      <g:description>Honda CITY 1.5 I-vtec Hatch EXL | Ano 2023 | 33.017 km | Flex-fuel | CVT. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>110790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Honda%20CITY%202023%20por%20R%24110.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1KwEuJ6C2BLWlYtCtZHvZMvOyW8Op8ETQ=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nk542YQbaZiDaB0cG6OeXCypekMfjIgj=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cvqHPPI_ztXLcDdamXAjA3cm8SsIP5GU=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CuAebPgwZxBxngeHm5kX6IGBFlqgBFtu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m2J26ekxieuJivFhb0G9dqB9QZTNiuu9=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RcMOQc0xwYL_25goJGIs_wBACzSg2nf6=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/15cptCbN40sle1ySvuw2Ec7WuVDYcUMkZ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Bf05g_fp1qgeZOZ7yErsw7CtW6noFW0v=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TxmnKje0ost5QtLhJF7JMsYH4Lss3AnD=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1uuZGmGESdbgRItG1g9lcwDosLqEGZHdC=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pxB1uLmOtVQx_t3Bthup_30VnVcvQhBp=s1080</g:additional_image_link>
+      <g:brand>Honda</g:brand>
+      <g:make>Honda</g:make>
+      <g:model>CITY</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="33017" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 I-vtec Hatch EXL</g:trim>
+      <g:vehicle_id>2241743</g:vehicle_id>
+    </item>
+    <item>
       <g:id>2265536</g:id>
       <g:title>Ford TERRITORY 2023</g:title>
       <g:description>Ford TERRITORY 1.5 Ecoboost Gtdi Titanium | Ano 2023 | 54.262 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
@@ -948,38 +1694,6 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>39,4 KW PRO</g:trim>
       <g:vehicle_id>2305243</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2241743</g:id>
-      <g:title>Honda CITY 2023</g:title>
-      <g:description>Honda CITY 1.5 I-vtec Hatch EXL | Ano 2023 | 33.017 km | Flex-fuel | CVT. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>110790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Honda%20CITY%202023%20por%20R%24110.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1KwEuJ6C2BLWlYtCtZHvZMvOyW8Op8ETQ=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1nk542YQbaZiDaB0cG6OeXCypekMfjIgj=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cvqHPPI_ztXLcDdamXAjA3cm8SsIP5GU=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1CuAebPgwZxBxngeHm5kX6IGBFlqgBFtu=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m2J26ekxieuJivFhb0G9dqB9QZTNiuu9=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RcMOQc0xwYL_25goJGIs_wBACzSg2nf6=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/15cptCbN40sle1ySvuw2Ec7WuVDYcUMkZ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Bf05g_fp1qgeZOZ7yErsw7CtW6noFW0v=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TxmnKje0ost5QtLhJF7JMsYH4Lss3AnD=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1uuZGmGESdbgRItG1g9lcwDosLqEGZHdC=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pxB1uLmOtVQx_t3Bthup_30VnVcvQhBp=s1080</g:additional_image_link>
-      <g:brand>Honda</g:brand>
-      <g:make>Honda</g:make>
-      <g:model>CITY</g:model>
-      <g:year>2023</g:year>
-      <g:mileage value="33017" unit="KM"/>
-      <g:body_style>Hatchback</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.5 I-vtec Hatch EXL</g:trim>
-      <g:vehicle_id>2241743</g:vehicle_id>
     </item>
     <item>
       <g:id>2288420</g:id>
@@ -1164,58 +1878,36 @@
       <g:vehicle_id>2311857</g:vehicle_id>
     </item>
     <item>
-      <g:id>2288375</g:id>
-      <g:title>Fiat ARGO 2026</g:title>
-      <g:description>Fiat ARGO 1.3 Firefly Trekking | Ano 2026 | 2.700 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2309784</g:id>
+      <g:title>Chevrolet SPIN 2025</g:title>
+      <g:description>Chevrolet SPIN 1.8 Premier 8V | Ano 2025 | 13.545 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>99790.00 BRL</g:price>
+      <g:price>128790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Fiat%20ARGO%202026%20por%20R%2499.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1QoUO_vajVNTp-Jq3wAVKOIRgN3F0oATm=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1UYNx5iSdkcCqdkI7rnxEUkXzA3SvZzpT=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WTf6PnS3MLOX3w5_3zem0oMMQzn5f1Gs=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1wO1MTW0r-QLmfjRMlA6Nri2s_4dMseDr=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TTQJBDJjOcyD21s7_bpREyLY7YtBqnzb=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zyEmKlDfTgA9MWbf3DflNeJvrzExMdkm=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1EdryzoTGLOAK8TqxWJpwBXOdGnDgEaoB=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1iseEHkvLwoVhHiAEURBpvEWTqIZzWgyP=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1lHyvFxyAPbU0tBSl8gJLjuGq-3w05tbT=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cb-cCvPB8Mg_0CLNH6mRY7ejOUgWQ1wJ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1D0UaYbxQ0wloTfRrEmffk0ta738IP0Pe=s1080</g:additional_image_link>
-      <g:brand>Fiat</g:brand>
-      <g:make>Fiat</g:make>
-      <g:model>ARGO</g:model>
-      <g:year>2026</g:year>
-      <g:mileage value="2700" unit="KM"/>
-      <g:body_style>Hatchback</g:body_style>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chevrolet%20SPIN%202025%20por%20R%24128.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1qT9i_PqGu3iQAN5siGqxfjhYK2jmlBE9=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WWtaCTpplPKua2drR5EzZ05CuLea0Oh2=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/12GphZUalya69TGTSkSrkkH0B6EBGWWvR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1l0-H0g1nAO1Zpm5dhX9j3AQYCdJNShRQ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RL5E0V-NJF8RNmLFEWPaWLYtAK490g-z=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1U8w2VAgnDHfpszt3weaefOKq_c4OQ4YY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PIwPwIUr5Bbn830JwgbF4VNhwS6MHk7Z=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GlfyW1nuzVWBdU7_gar-DCOUPbzNQ49X=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/17Jmm6ypTzq6jqU6NRDpPYGLZOHxAzixv=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/15GsyPuV6dqhwPmCu1VlNxEI9ESunrYqS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eAIkrz2kyHOHwSAF9q1X91fGz4DV200O=s1080</g:additional_image_link>
+      <g:brand>Chevrolet</g:brand>
+      <g:make>Chevrolet</g:make>
+      <g:model>SPIN</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="13545" unit="KM"/>
+      <g:body_style>Other</g:body_style>
       <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Manual</g:transmission>
-      <g:trim>1.3 Firefly Trekking</g:trim>
-      <g:vehicle_id>2288375</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2313225</g:id>
-      <g:title>Citroën C3 2023</g:title>
-      <g:description>Citroën C3 1.0 Firefly Feel | Ano 2023 | 21.915 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>65790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Citro%C3%ABn%20C3%202023%20por%20R%2465.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1m5AGsVTKceR_gs5WXFkLvbYye6C-2DXR=s1080</g:image_link>
-      <g:brand>Citroën</g:brand>
-      <g:make>Citroën</g:make>
-      <g:model>C3</g:model>
-      <g:year>2023</g:year>
-      <g:mileage value="21915" unit="KM"/>
-      <g:body_style>Hatchback</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Manual</g:transmission>
-      <g:trim>1.0 Firefly Feel</g:trim>
-      <g:vehicle_id>2313225</g:vehicle_id>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.8 Premier 8V</g:trim>
+      <g:vehicle_id>2309784</g:vehicle_id>
     </item>
     <item>
       <g:id>2311469</g:id>
@@ -1250,144 +1942,58 @@
       <g:vehicle_id>2311469</g:vehicle_id>
     </item>
     <item>
-      <g:id>2309784</g:id>
-      <g:title>Chevrolet SPIN 2025</g:title>
-      <g:description>Chevrolet SPIN 1.8 Premier 8V | Ano 2025 | 13.545 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2313225</g:id>
+      <g:title>Citroën C3 2023</g:title>
+      <g:description>Citroën C3 1.0 Firefly Feel | Ano 2023 | 21.915 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>128790.00 BRL</g:price>
+      <g:price>65790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chevrolet%20SPIN%202025%20por%20R%24128.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1qT9i_PqGu3iQAN5siGqxfjhYK2jmlBE9=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WWtaCTpplPKua2drR5EzZ05CuLea0Oh2=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/12GphZUalya69TGTSkSrkkH0B6EBGWWvR=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1l0-H0g1nAO1Zpm5dhX9j3AQYCdJNShRQ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1RL5E0V-NJF8RNmLFEWPaWLYtAK490g-z=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1U8w2VAgnDHfpszt3weaefOKq_c4OQ4YY=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PIwPwIUr5Bbn830JwgbF4VNhwS6MHk7Z=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1GlfyW1nuzVWBdU7_gar-DCOUPbzNQ49X=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/17Jmm6ypTzq6jqU6NRDpPYGLZOHxAzixv=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/15GsyPuV6dqhwPmCu1VlNxEI9ESunrYqS=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eAIkrz2kyHOHwSAF9q1X91fGz4DV200O=s1080</g:additional_image_link>
-      <g:brand>Chevrolet</g:brand>
-      <g:make>Chevrolet</g:make>
-      <g:model>SPIN</g:model>
-      <g:year>2025</g:year>
-      <g:mileage value="13545" unit="KM"/>
-      <g:body_style>Other</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.8 Premier 8V</g:trim>
-      <g:vehicle_id>2309784</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2310703</g:id>
-      <g:title>Bmw X6 2022</g:title>
-      <g:description>Bmw X6 3.0 Twinpower 40I M Sport | Ano 2022 | 22.926 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>509790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Bmw%20X6%202022%20por%20R%24509.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1WbhRJ3Jf9JfrGDHGfO53bf1NdHCTkDPS=s1080</g:image_link>
-      <g:brand>Bmw</g:brand>
-      <g:make>Bmw</g:make>
-      <g:model>X6</g:model>
-      <g:year>2022</g:year>
-      <g:mileage value="22926" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Gasoline</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>3.0 Twinpower 40I M Sport</g:trim>
-      <g:vehicle_id>2310703</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2305209</g:id>
-      <g:title>Byd DOLPHIN MINI 2027</g:title>
-      <g:description>Byd DOLPHIN MINI 38 KW GL | Ano 2027 | 0 km | Electric | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>118790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Byd%20DOLPHIN%20MINI%202027%20por%20R%24118.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1DDE8-nKC4xk2HnbolaGxWXjBzFBe44Vy=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1HgURKi3xcNV28fzIN6PAVha06RCTZ4Oz=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fnqWGigTKNRLSxJV2d5FdWnref50oOSn=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hi_Oj8SVCB_hh8X6nyaTQOJi5LQogbA6=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1BwhtcCz2oAHyeZUKviTadEi_VI05fWgc=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/105L55lTmmismGVqUHU1qceSkHZXShVi5=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qYy_F7wtJH7E2Zw9NGI9AuydNvo4vkiL=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ZAdxP-F2ffrkq4CKWHNkrvFAPLSgrded=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AHTEcsbtaiyQReaK6PqLoZtWqzWiLnYW=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1seEeJX5ZL9g-FcnVpR0g-doRX_g6VSXu=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1d3zUI4nb_CXn-nWtyeK6icf3alrZAlxs=s1080</g:additional_image_link>
-      <g:brand>Byd</g:brand>
-      <g:make>Byd</g:make>
-      <g:model>DOLPHIN MINI</g:model>
-      <g:year>2027</g:year>
-      <g:mileage value="0" unit="KM"/>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Citro%C3%ABn%20C3%202023%20por%20R%2465.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1m5AGsVTKceR_gs5WXFkLvbYye6C-2DXR=s1080</g:image_link>
+      <g:brand>Citroën</g:brand>
+      <g:make>Citroën</g:make>
+      <g:model>C3</g:model>
+      <g:year>2023</g:year>
+      <g:mileage value="21915" unit="KM"/>
       <g:body_style>Hatchback</g:body_style>
-      <g:fuel_type>Electric</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>38 KW GL</g:trim>
-      <g:vehicle_id>2305209</g:vehicle_id>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.0 Firefly Feel</g:trim>
+      <g:vehicle_id>2313225</g:vehicle_id>
     </item>
     <item>
-      <g:id>2296453</g:id>
-      <g:title>Byd SONG PLUS 2027</g:title>
-      <g:description>Byd SONG PLUS 1.5 Dm-i Turbo | Ano 2027 | 0 km | Hybrid | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2288375</g:id>
+      <g:title>Fiat ARGO 2026</g:title>
+      <g:description>Fiat ARGO 1.3 Firefly Trekking | Ano 2026 | 2.700 km | Flex-fuel | Manual. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>247790.00 BRL</g:price>
+      <g:price>99790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Byd%20SONG%20PLUS%202027%20por%20R%24247.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1EN1rCkFKAylH-rbJpfFRK0jushGulMmU=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JahZFFJAndTVYDusfPgJ9O4taEG055DY=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1S89aJpgBfG_WRkRVdB4Y7dszIBHjFPFx=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fnHNpAPObz8K7B44Vcp4hr9B4LdMuZ72=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kIbLsaqBNckgVJ2W9OmJj3lkO7QdKmE_=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JbgQsVv5OxzWnbb_4PmtCYXXsY26Lwhx=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1z_9FQvSwGnjjxu6cN5LSK5FfK4H-DhM5=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m0X9WZYOc-ddph_VlPYBJGHY_OPk6YDy=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_2PtJpdC0dUOG7CIsaFWf_MjJ4jun-OP=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1aMhAt7DHGNQkDSY5xYM2NKeljWPcrxIS=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KdzTGbUAEB4tXN6gSiDRGx8wcR_xAtNw=s1080</g:additional_image_link>
-      <g:brand>Byd</g:brand>
-      <g:make>Byd</g:make>
-      <g:model>SONG PLUS</g:model>
-      <g:year>2027</g:year>
-      <g:mileage value="0" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Hybrid</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.5 Dm-i Turbo</g:trim>
-      <g:vehicle_id>2296453</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>2313229</g:id>
-      <g:title>Chery TIGGO 8 2025</g:title>
-      <g:description>Chery TIGGO 8 1.6 Tgdi TXS MAX Drive | Ano 2025 | 27.235 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>169790.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chery%20TIGGO%208%202025%20por%20R%24169.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1Z6tz66HHDYscbTglWF3r1ui_GKZwqDaF=s1080</g:image_link>
-      <g:brand>Chery</g:brand>
-      <g:make>Chery</g:make>
-      <g:model>TIGGO 8</g:model>
-      <g:year>2025</g:year>
-      <g:mileage value="27235" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Gasoline</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.6 Tgdi TXS MAX Drive</g:trim>
-      <g:vehicle_id>2313229</g:vehicle_id>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Fiat%20ARGO%202026%20por%20R%2499.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1QoUO_vajVNTp-Jq3wAVKOIRgN3F0oATm=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1UYNx5iSdkcCqdkI7rnxEUkXzA3SvZzpT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WTf6PnS3MLOX3w5_3zem0oMMQzn5f1Gs=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1wO1MTW0r-QLmfjRMlA6Nri2s_4dMseDr=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1TTQJBDJjOcyD21s7_bpREyLY7YtBqnzb=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1zyEmKlDfTgA9MWbf3DflNeJvrzExMdkm=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1EdryzoTGLOAK8TqxWJpwBXOdGnDgEaoB=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1iseEHkvLwoVhHiAEURBpvEWTqIZzWgyP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1lHyvFxyAPbU0tBSl8gJLjuGq-3w05tbT=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1cb-cCvPB8Mg_0CLNH6mRY7ejOUgWQ1wJ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1D0UaYbxQ0wloTfRrEmffk0ta738IP0Pe=s1080</g:additional_image_link>
+      <g:brand>Fiat</g:brand>
+      <g:make>Fiat</g:make>
+      <g:model>ARGO</g:model>
+      <g:year>2026</g:year>
+      <g:mileage value="2700" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Manual</g:transmission>
+      <g:trim>1.3 Firefly Trekking</g:trim>
+      <g:vehicle_id>2288375</g:vehicle_id>
     </item>
     <item>
       <g:id>2306101</g:id>
@@ -1422,36 +2028,112 @@
       <g:vehicle_id>2306101</g:vehicle_id>
     </item>
     <item>
-      <g:id>2307505</g:id>
-      <g:title>Bmw 320I 2026</g:title>
-      <g:description>Bmw 320I 2.0 16V Turbo M Sport | Ano 2026 | 3.841 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:id>2313229</g:id>
+      <g:title>Chery TIGGO 8 2025</g:title>
+      <g:description>Chery TIGGO 8 1.6 Tgdi TXS MAX Drive | Ano 2025 | 27.235 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>used</g:condition>
-      <g:price>355790.00 BRL</g:price>
+      <g:price>169790.00 BRL</g:price>
       <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
       <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Bmw%20320I%202026%20por%20R%24355.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://lh3.googleusercontent.com/d/1c1lL2rAqRMzwBaAmXL7aAgAbdf9oGusy=s1080</g:image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1H9q4K-BoDxAy6AvWCdAHPiglLs2qMiXj=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pQPWlklEl2QREEUbkDUqeiqWzjq0XcRS=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1E7zagzl7NJSXXgA3Lp5VbhsJSbq7ctnR=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rSZMdA6VC6N6Dib8e-b7dlBtkKc1aWq7=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WmLj6UVnCZdJ9n6RLWcUO-GSeSLmXoOu=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/12PknG1wLwjP9pm5oK8535_RFMA_p-lOR=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eiRlmt4TDkj2Woomc5YX1Cpn0AfACrbV=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PcegZkVna9kqZu_bn5T7NySsXdBvhkja=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JxheG9MTVq0LLiiSxMMTGIUn2gAYhZfQ=s1080</g:additional_image_link>
-      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Hzb8ACiF5Sg-6Env7gSU_r9tkIhFSoJc=s1080</g:additional_image_link>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chery%20TIGGO%208%202025%20por%20R%24169.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1Z6tz66HHDYscbTglWF3r1ui_GKZwqDaF=s1080</g:image_link>
+      <g:brand>Chery</g:brand>
+      <g:make>Chery</g:make>
+      <g:model>TIGGO 8</g:model>
+      <g:year>2025</g:year>
+      <g:mileage value="27235" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.6 Tgdi TXS MAX Drive</g:trim>
+      <g:vehicle_id>2313229</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2296453</g:id>
+      <g:title>Byd SONG PLUS 2027</g:title>
+      <g:description>Byd SONG PLUS 1.5 Dm-i Turbo | Ano 2027 | 0 km | Hybrid | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>247790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Byd%20SONG%20PLUS%202027%20por%20R%24247.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1EN1rCkFKAylH-rbJpfFRK0jushGulMmU=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JahZFFJAndTVYDusfPgJ9O4taEG055DY=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1S89aJpgBfG_WRkRVdB4Y7dszIBHjFPFx=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fnHNpAPObz8K7B44Vcp4hr9B4LdMuZ72=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1kIbLsaqBNckgVJ2W9OmJj3lkO7QdKmE_=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JbgQsVv5OxzWnbb_4PmtCYXXsY26Lwhx=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1z_9FQvSwGnjjxu6cN5LSK5FfK4H-DhM5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1m0X9WZYOc-ddph_VlPYBJGHY_OPk6YDy=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1_2PtJpdC0dUOG7CIsaFWf_MjJ4jun-OP=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1aMhAt7DHGNQkDSY5xYM2NKeljWPcrxIS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1KdzTGbUAEB4tXN6gSiDRGx8wcR_xAtNw=s1080</g:additional_image_link>
+      <g:brand>Byd</g:brand>
+      <g:make>Byd</g:make>
+      <g:model>SONG PLUS</g:model>
+      <g:year>2027</g:year>
+      <g:mileage value="0" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Hybrid</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>1.5 Dm-i Turbo</g:trim>
+      <g:vehicle_id>2296453</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2305209</g:id>
+      <g:title>Byd DOLPHIN MINI 2027</g:title>
+      <g:description>Byd DOLPHIN MINI 38 KW GL | Ano 2027 | 0 km | Electric | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>118790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Byd%20DOLPHIN%20MINI%202027%20por%20R%24118.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1DDE8-nKC4xk2HnbolaGxWXjBzFBe44Vy=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1HgURKi3xcNV28fzIN6PAVha06RCTZ4Oz=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1fnqWGigTKNRLSxJV2d5FdWnref50oOSn=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1hi_Oj8SVCB_hh8X6nyaTQOJi5LQogbA6=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1BwhtcCz2oAHyeZUKviTadEi_VI05fWgc=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/105L55lTmmismGVqUHU1qceSkHZXShVi5=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1qYy_F7wtJH7E2Zw9NGI9AuydNvo4vkiL=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1ZAdxP-F2ffrkq4CKWHNkrvFAPLSgrded=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1AHTEcsbtaiyQReaK6PqLoZtWqzWiLnYW=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1seEeJX5ZL9g-FcnVpR0g-doRX_g6VSXu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1d3zUI4nb_CXn-nWtyeK6icf3alrZAlxs=s1080</g:additional_image_link>
+      <g:brand>Byd</g:brand>
+      <g:make>Byd</g:make>
+      <g:model>DOLPHIN MINI</g:model>
+      <g:year>2027</g:year>
+      <g:mileage value="0" unit="KM"/>
+      <g:body_style>Hatchback</g:body_style>
+      <g:fuel_type>Electric</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>38 KW GL</g:trim>
+      <g:vehicle_id>2305209</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2310703</g:id>
+      <g:title>Bmw X6 2022</g:title>
+      <g:description>Bmw X6 3.0 Twinpower 40I M Sport | Ano 2022 | 22.926 km | Gasoline | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>509790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Bmw%20X6%202022%20por%20R%24509.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1WbhRJ3Jf9JfrGDHGfO53bf1NdHCTkDPS=s1080</g:image_link>
       <g:brand>Bmw</g:brand>
       <g:make>Bmw</g:make>
-      <g:model>320I</g:model>
-      <g:year>2026</g:year>
-      <g:mileage value="3841" unit="KM"/>
-      <g:body_style>Sedan</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:model>X6</g:model>
+      <g:year>2022</g:year>
+      <g:mileage value="22926" unit="KM"/>
+      <g:body_style>SUV</g:body_style>
+      <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
-      <g:trim>2.0 16V Turbo M Sport</g:trim>
-      <g:vehicle_id>2307505</g:vehicle_id>
+      <g:trim>3.0 Twinpower 40I M Sport</g:trim>
+      <g:vehicle_id>2310703</g:vehicle_id>
     </item>
     <item>
       <g:id>2265524</g:id>
@@ -1548,6 +2230,38 @@
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 16V Turbo M Sport</g:trim>
       <g:vehicle_id>2129007</g:vehicle_id>
+    </item>
+    <item>
+      <g:id>2307505</g:id>
+      <g:title>Bmw 320I 2026</g:title>
+      <g:description>Bmw 320I 2.0 16V Turbo M Sport | Ano 2026 | 3.841 km | Flex-fuel | Automático. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>used</g:condition>
+      <g:price>355790.00 BRL</g:price>
+      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
+      <g:inventory>1</g:inventory>
+      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Bmw%20320I%202026%20por%20R%24355.790%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
+      <g:image_link>https://lh3.googleusercontent.com/d/1c1lL2rAqRMzwBaAmXL7aAgAbdf9oGusy=s1080</g:image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1H9q4K-BoDxAy6AvWCdAHPiglLs2qMiXj=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1pQPWlklEl2QREEUbkDUqeiqWzjq0XcRS=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1E7zagzl7NJSXXgA3Lp5VbhsJSbq7ctnR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1rSZMdA6VC6N6Dib8e-b7dlBtkKc1aWq7=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1WmLj6UVnCZdJ9n6RLWcUO-GSeSLmXoOu=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/12PknG1wLwjP9pm5oK8535_RFMA_p-lOR=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1eiRlmt4TDkj2Woomc5YX1Cpn0AfACrbV=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1PcegZkVna9kqZu_bn5T7NySsXdBvhkja=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1JxheG9MTVq0LLiiSxMMTGIUn2gAYhZfQ=s1080</g:additional_image_link>
+      <g:additional_image_link>https://lh3.googleusercontent.com/d/1Hzb8ACiF5Sg-6Env7gSU_r9tkIhFSoJc=s1080</g:additional_image_link>
+      <g:brand>Bmw</g:brand>
+      <g:make>Bmw</g:make>
+      <g:model>320I</g:model>
+      <g:year>2026</g:year>
+      <g:mileage value="3841" unit="KM"/>
+      <g:body_style>Sedan</g:body_style>
+      <g:fuel_type>Flex-fuel</g:fuel_type>
+      <g:transmission>Automatic</g:transmission>
+      <g:trim>2.0 16V Turbo M Sport</g:trim>
+      <g:vehicle_id>2307505</g:vehicle_id>
     </item>
     <item>
       <g:id>2306085</g:id>
