@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo Brabo — Veículos</title>
-  <meta name="description" content="Catálogo de veículos seminovos. Compre com confiança, fale no WhatsApp." />
+  <title>Catálogo Carmax — Veículos Seminovos</title>
+  <meta name="description" content="Catálogo de veículos seminovos da Carmax — o máximo em qualidade. Loja física no Praia AutoShopping, Praia Grande/SP. Desde 2006 na Baixada Santista." />
 
   <!-- Fontes da marca: Oswald (titulos/preco) + DM Sans (corpo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -983,6 +983,27 @@
     .btn-share:hover { border-color: var(--orange); color: var(--orange); }
     .btn-share.copied { border-color: #22c55e; color: #22c55e; background: rgba(34,197,94,0.08); }
 
+
+    /* ── FAIXA CARMAX (loja) ── */
+    .loja-bar {
+      display: flex; align-items: center; justify-content: center;
+      gap: 14px; flex-wrap: wrap;
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+      padding: 10px 18px; text-align: center;
+    }
+    .loja-bar img { height: 30px; width: auto; display: block; }
+    .loja-bar .slogan {
+      font-family: var(--font-head); text-transform: uppercase;
+      letter-spacing: 1.4px; font-size: 0.9rem; color: var(--orange);
+    }
+    .loja-bar .end { font-size: 0.78rem; color: var(--text2); }
+    .loja-bar .sep { color: var(--border); }
+    @media (max-width: 600px) { .loja-bar .sep { display: none; } .loja-bar { gap: 6px; } }
+    /* ── RODAPE CARMAX ── */
+    .foot-loja { line-height: 1.9; }
+    .foot-loja strong { color: var(--text); }
+    .foot-loja .foot-slogan { color: var(--orange); font-family: var(--font-head); letter-spacing: 1.2px; text-transform: uppercase; }
+
     /* ── FOOTER ── */
     footer {
       background: var(--bg2);
@@ -1055,6 +1076,16 @@
     <span id="updated-at">Carregando...</span>
   </div>
 </header>
+
+<!-- FAIXA DA LOJA -->
+<div class="loja-bar">
+  <img src="carmax-logo.png" alt="Carmax" onerror="this.style.display='none'">
+  <span class="slogan">Carmax, o m&aacute;ximo em qualidade!</span>
+  <span class="sep">&bull;</span>
+  <span class="end">Praia AutoShopping &mdash; Av. Ayrton Senna da Silva, 611, Praia Grande/SP</span>
+  <span class="sep">&bull;</span>
+  <span class="end">Desde 2006 na Baixada Santista</span>
+</div>
 
 <!-- VITRINE (aparece so quando o link tem ?ids=) -->
 <div class="vitrine-banner" id="vitrine-banner" style="display:none">
@@ -1230,7 +1261,15 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>Catálogo atualizado automaticamente &bull; <a href="https://wa.me/5513991575019" target="_blank">WhatsApp: (13) 99157-5019</a></p>
+  <p class="foot-loja">
+    <span class="foot-slogan">Carmax, o m&aacute;ximo em qualidade!</span><br>
+    <strong>Unidade Praia Grande</strong> &bull; Praia AutoShopping &mdash; Av. Ayrton Senna da Silva, 611, Praia Grande/SP<br>
+    Loja f&iacute;sica aberta ao p&uacute;blico &bull; Ve&iacute;culos revisados &bull; Desde 2006 na Baixada Santista
+    <!-- PREENCHER: descomente quando tiver o CNPJ e a razao social exatos
+    <br><strong>RAZAO SOCIAL AQUI</strong> &bull; CNPJ 00.000.000/0001-00
+    -->
+  </p>
+  <p>Cat&aacute;logo atualizado automaticamente &bull; <a href="https://wa.me/5513991575019" target="_blank">WhatsApp: (13) 99157-5019</a></p>
 </footer>
 
 <script>
