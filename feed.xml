@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — CarMax Santos / Outlet CarMax. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Tue, 01 Sep 2026 15:49:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 14:59:24 +0000</lastBuildDate>
     <item>
       <g:id>2308205</g:id>
       <g:title>Volkswagen VIRTUS 2023</g:title>
@@ -3328,33 +3328,6 @@
       <g:transmission>Manual</g:transmission>
       <g:trim>1.0 Ti-vct SE Sedan</g:trim>
       <g:vehicle_id>2312493</g:vehicle_id>
-    </item>
-    <item>
-      <g:id>manual_1781100398072</g:id>
-      <g:title>Chevrolet EQUINOX RS (em preparação) 2024</g:title>
-      <g:description>Chevrolet EQUINOX RS (em preparação) 1.5 Turbo Aut. | Ano 2024 | 19.785 km | Flex-fuel | automatico. Laudo cautelar aprovado. garantia de até 2 anos. Fale com O Brabo das Vendas!</g:description>
-      <g:availability>in stock</g:availability>
-      <g:condition>used</g:condition>
-      <g:price>166900.00 BRL</g:price>
-      <g:quantity_to_sell_on_facebook>1</g:quantity_to_sell_on_facebook>
-      <g:inventory>1</g:inventory>
-      <g:link>https://api.whatsapp.com/send?phone=5513991575019&amp;text=Oi%20Luiz%21%20Vi%20o%20Chevrolet%20EQUINOX%20RS%20%28em%20prepara%C3%A7%C3%A3o%29%202024%20por%20R%24166.900%20no%20cat%C3%A1logo%20e%20quero%20saber%20as%20condi%C3%A7%C3%B5es.%20CPF%20limpo</g:link>
-      <g:image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100887779_4fitq.jpg</g:image_link>
-      <g:additional_image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100889601_wcda6.jpg</g:additional_image_link>
-      <g:additional_image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100891553_qtkue.jpg</g:additional_image_link>
-      <g:additional_image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100893265_af1wc.jpg</g:additional_image_link>
-      <g:additional_image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100895023_5op9j.jpg</g:additional_image_link>
-      <g:additional_image_link>https://luizintrepido.github.io/catalogo-brabo/fotos/manual_1781100398072/1781100896954_itrf8.jpg</g:additional_image_link>
-      <g:brand>Chevrolet</g:brand>
-      <g:make>Chevrolet</g:make>
-      <g:model>EQUINOX RS (em preparação)</g:model>
-      <g:year>2024</g:year>
-      <g:mileage value="19785" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
-      <g:fuel_type>Flex-fuel</g:fuel_type>
-      <g:transmission>Automatic</g:transmission>
-      <g:trim>1.5 Turbo Aut.</g:trim>
-      <g:vehicle_id>manual_1781100398072</g:vehicle_id>
     </item>
   </channel>
 </rss>
