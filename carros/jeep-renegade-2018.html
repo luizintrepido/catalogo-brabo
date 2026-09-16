@@ -8,6 +8,10 @@
   <meta name="robots" content="index,follow" />
 
   <!-- Meta Pixel -->
+  <!-- content_type tem que casar com a vertical do catalogo 633946463025211,
+       que e 'commerce' e espera 'product'. Com 'vehicle' a taxa de
+       correspondencia do catalogo fica em 0% e o DPA nao funciona.
+       A vertical do catalogo e imutavel: a API aceita o PUT e ignora. -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,7 +27,7 @@
       content_name: 'Jeep RENEGADE 2018',
       content_category: 'SUV',
       content_ids: ['2305360'],
-      content_type: 'vehicle',
+      content_type: 'product',
       value: 96790,
       currency: 'BRL'
     });
