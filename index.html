@@ -755,16 +755,75 @@
       background: #000;
       aspect-ratio: 4/3;
     }
-    /* No celular a largura manda: palco quadrado = foto bem mais alta.
-       Sem passar de 70svh pra sobrar espaco pras miniaturas e pro preco. */
+    /* No celular quem manda e a largura da tela: foto 4:3 ja ocupa 100% da
+       largura e a altura dela e consequencia disso. Palco com proporcao fixa
+       so acrescentava tarja preta em volta, sem aumentar a foto. Por isso
+       aqui a IMAGEM define a altura (aspect-ratio: auto) em vez de caber
+       dentro de um palco. O overlay tambem perde o padding de 20px, que
+       viram largura de foto. */
     @media (max-width: 600px) {
+      #modal-overlay { padding: 0; }
+      #modal { border-radius: 0; }
       .gallery-wrap {
-        aspect-ratio: 1/1;
-        max-height: 70svh;
+        aspect-ratio: auto;
+        min-height: 200px;   /* segura o layout enquanto a foto carrega */
+      }
+      .gallery-main-wrap { height: auto; }
+      .gallery-main {
+        height: auto;
+        max-height: 78svh;   /* object-fit segura a proporcao se bater o teto */
       }
       .gallery-thumb { width: 56px; height: 42px; }
       .gallery-thumbs { padding: 8px 10px; }
     }
+
+    /* ── FOTO EM TELA CHEIA ──
+       Mesmo ocupando a largura toda, a foto no modal divide espaco com
+       miniaturas, preco e ficha. Tocar nela abre so a foto, na tela inteira,
+       onde o pinch-zoom do proprio celular funciona. */
+    #foto-zoom {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: #000;
+      z-index: 1100;
+      align-items: center;
+      justify-content: center;
+    }
+    #foto-zoom.open { display: flex; }
+    #zoom-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    #zoom-close {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.65);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 1101;
+    }
+    #zoom-counter {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.65);
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 5px 12px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+    .gallery-main { cursor: zoom-in; }
     .gallery-main {
       width: 100%;
       height: 100%;
@@ -1259,6 +1318,13 @@
   </div>
 </div>
 
+<!-- FOTO EM TELA CHEIA -->
+<div id="foto-zoom" aria-hidden="true">
+  <button id="zoom-close" title="Fechar foto" aria-label="Fechar foto">✕</button>
+  <img id="zoom-img" src="" alt="Foto ampliada do veículo" />
+  <div id="zoom-counter"></div>
+</div>
+
 <!-- SELECTION BAR -->
 <div id="selection-bar">
   <span class="sel-count"><strong id="sel-count-n">0</strong> selecionado(s)</span>
@@ -1703,6 +1769,7 @@
 
     const mainImg = document.getElementById('gal-main-img');
     if (mainImg) mainImg.src = fotoGrandeUrl(currentGalPhotos[idx]);
+    if (window._syncZoom) window._syncZoom();  // troca a foto aberta em tela cheia
 
     document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
       t.classList.toggle('active', i === idx);
@@ -1952,6 +2019,9 @@
 
   document.addEventListener('keydown', e => {
     if (!document.getElementById('modal-overlay').classList.contains('open')) return;
+    if (document.getElementById('foto-zoom').classList.contains('open')) {
+      if (e.key === 'Escape') { window._fecharZoom(); return; }
+    }
     if (e.key === 'Escape') closeModal();
     if (e.key === 'ArrowLeft')  setGalPhoto(currentGalIdx - 1);
     if (e.key === 'ArrowRight') setGalPhoto(currentGalIdx + 1);
@@ -2162,6 +2232,46 @@
     let x0 = null;
     wrap.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
     wrap.addEventListener('touchend', e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) setGalPhoto(currentGalIdx + (dx < 0 ? 1 : -1));
+      x0 = null;
+    }, { passive: true });
+  })();
+
+  // ─── FOTO EM TELA CHEIA ────────────────────────────────────────
+  (function() {
+    const box = document.getElementById('foto-zoom');
+    const img = document.getElementById('zoom-img');
+    const cnt = document.getElementById('zoom-counter');
+
+    function sync() {
+      if (!box.classList.contains('open')) return;
+      img.src = fotoGrandeUrl(currentGalPhotos[currentGalIdx]);
+      cnt.textContent = `${currentGalIdx + 1} / ${currentGalPhotos.length}`;
+    }
+    function abrir() {
+      if (!currentGalPhotos.length) return;
+      box.classList.add('open');
+      box.setAttribute('aria-hidden', 'false');
+      sync();
+    }
+    function fechar() {
+      box.classList.remove('open');
+      box.setAttribute('aria-hidden', 'true');
+    }
+    // setGalPhoto e o keydown global precisam alcancar estas duas.
+    window._syncZoom = sync;
+    window._fecharZoom = fechar;
+
+    document.getElementById('gal-main-img').addEventListener('click', abrir);
+    document.getElementById('zoom-close').addEventListener('click', fechar);
+    // Toque no fundo fecha; na foto, nao — senao o swipe acaba fechando.
+    box.addEventListener('click', e => { if (e.target === box) fechar(); });
+
+    let x0 = null;
+    box.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+    box.addEventListener('touchend', e => {
       if (x0 === null) return;
       const dx = e.changedTouches[0].clientX - x0;
       if (Math.abs(dx) > 40) setGalPhoto(currentGalIdx + (dx < 0 ? 1 : -1));
