@@ -745,10 +745,25 @@
     #modal-close:hover { background: var(--orange); border-color: var(--orange); }
 
     /* ── GALLERY ── */
+    /* O palco estava travado em 16/9, mas foto de loja e QUADRADA (793x793)
+       ou 4:3 (793x595) — medido no estoque real. Com `contain` num palco
+       16/9, foto quadrada perdia quase metade da largura em tarja preta e
+       o carro ficava pequeno, principalmente no celular, onde a largura ja
+       e o limite. 4/3 cobre o 4:3 sem corte e deixa pouca tarja na quadrada. */
     .gallery-wrap {
       position: relative;
       background: #000;
-      aspect-ratio: 16/9;
+      aspect-ratio: 4/3;
+    }
+    /* No celular a largura manda: palco quadrado = foto bem mais alta.
+       Sem passar de 70svh pra sobrar espaco pras miniaturas e pro preco. */
+    @media (max-width: 600px) {
+      .gallery-wrap {
+        aspect-ratio: 1/1;
+        max-height: 70svh;
+      }
+      .gallery-thumb { width: 56px; height: 42px; }
+      .gallery-thumbs { padding: 8px 10px; }
     }
     .gallery-main {
       width: 100%;
@@ -1287,6 +1302,10 @@
   const fmtPreco = v => v ? 'R$ ' + v.toLocaleString('pt-BR') : '';
   const fmtKm   = v => v ? v.toLocaleString('pt-BR') + ' km' : '—';
   const thumbUrl = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/thumbnail?id=${e}&sz=w520`;
+  // A foto GRANDE da galeria usava a mesma URL da miniatura (520px de largura).
+  // Num celular com tela densa isso ja aparecia mole, e aumentar o palco so
+  // deixaria pior. Aqui pede 1400px, que cobre retina sem pesar demais.
+  const fotoGrandeUrl = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/thumbnail?id=${e}&sz=w1400`;
   const fullUrl  = e => (e && String(e).startsWith('http')) ? e : `https://drive.google.com/uc?id=${e}&export=view`;
 
   function fmtDate(iso) {
@@ -1651,7 +1670,7 @@
     // Mostra imagem principal, esconde placeholder
     noPhoto.style.display  = 'none';
     mainImg.style.display  = 'block';
-    mainImg.src            = thumbUrl(currentGalPhotos[0]);
+    mainImg.src            = fotoGrandeUrl(currentGalPhotos[0]);
     prevBtn.style.display  = 'flex';
     nextBtn.style.display  = 'flex';
     counter.textContent    = `1 / ${currentGalPhotos.length}`;
@@ -1683,7 +1702,7 @@
     }
 
     const mainImg = document.getElementById('gal-main-img');
-    if (mainImg) mainImg.src = thumbUrl(currentGalPhotos[idx]);
+    if (mainImg) mainImg.src = fotoGrandeUrl(currentGalPhotos[idx]);
 
     document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
       t.classList.toggle('active', i === idx);
