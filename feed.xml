@@ -4,7 +4,7 @@
     <title>O Brabo das Vendas — Estoque de Veículos</title>
     <link>https://luizintrepido.github.io/catalogo-brabo</link>
     <description>Estoque de veículos seminovos e usados — CarMax Santos / Outlet CarMax. Laudo cautelar aprovado, garantia até 2 anos, financiamento facilitado.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 14:17:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:19:53 +0000</lastBuildDate>
     <item>
       <g:id>2330520</g:id>
       <g:title>Volvo XC40 2024</g:title>
@@ -823,7 +823,7 @@
       <g:model>718</g:model>
       <g:year>2017</g:year>
       <g:mileage value="27434" unit="KM"/>
-      <g:body_style>SUV</g:body_style>
+      <g:body_style>Sedan</g:body_style>
       <g:fuel_type>Gasoline</g:fuel_type>
       <g:transmission>Automatic</g:transmission>
       <g:trim>2.0 16V H4 Boxster</g:trim>
