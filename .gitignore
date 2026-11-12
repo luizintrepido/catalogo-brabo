@@ -1,0 +1,9 @@
+
+# Segredos do scraper (restaurados na migracao 23/08/2026)
+credentials.json
+token.json
+service_account*.json*
+.env
+.env.*
+*.pem
+*.key
