@@ -6,6 +6,26 @@
   <title>Catálogo Carmax — Veículos Seminovos</title>
   <meta name="description" content="Catálogo de veículos seminovos da Carmax — o máximo em qualidade. Loja física no Praia AutoShopping, Praia Grande/SP. Desde 2006 na Baixada Santista." />
 
+  <!-- Preview do link no WhatsApp, Facebook e Instagram (Open Graph).
+       Sem isto o link compartilhado chega pelado: sem foto e sem texto.
+       As paginas de cada carro (carros/*.html) ja tinham; o index nao. -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:site_name"    content="Catálogo Brabo" />
+  <meta property="og:title"        content="Catálogo de Seminovos — Carmax" />
+  <meta property="og:description"  content="Laudo cautelar aprovado, garantia de até 2 anos e financiamento facilitado. Santos e Praia Grande. WhatsApp (13) 99157-5019." />
+  <meta property="og:image"        content="https://luizintrepido.github.io/catalogo-brabo/share-catalogo.jpg" />
+  <meta property="og:image:secure_url" content="https://luizintrepido.github.io/catalogo-brabo/share-catalogo.jpg" />
+  <meta property="og:image:type"   content="image/jpeg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"    content="Catálogo de seminovos — O Brabo das Vendas" />
+  <meta property="og:url"          content="https://luizintrepido.github.io/catalogo-brabo/" />
+  <meta property="og:locale"       content="pt_BR" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Catálogo de Seminovos — Carmax" />
+  <meta name="twitter:description" content="Laudo cautelar aprovado, garantia de até 2 anos e financiamento facilitado. Santos e Praia Grande. WhatsApp (13) 99157-5019." />
+  <meta name="twitter:image"       content="https://luizintrepido.github.io/catalogo-brabo/share-catalogo.jpg" />
+
   <!-- Fontes da marca: Oswald (titulos/preco) + DM Sans (corpo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2152,7 +2172,13 @@
     if (!selectedIds.size) return;
     const ids = [...selectedIds];
     const carros = allVehicles.filter(v => selectedIds.has(String(v.id)));
-    const url = CATALOG_BASE + '?ids=' + ids.join(',');
+    // Um carro so: manda o link da pagina DELE. Essa pagina tem og:image e
+    // og:description, entao o WhatsApp mostra a foto e o preco. O link com
+    // ?ids= aponta pro index, e o preview do index e sempre o mesmo cartao
+    // generico, nao da pra mudar por carro em site estatico.
+    const url = carros.length === 1
+      ? 'https://luizintrepido.github.io/catalogo-brabo/carros/' + (carros[0].slug || carros[0].id)
+      : CATALOG_BASE + '?ids=' + ids.join(',');
 
     const linhas = carros.map(v => {
       const preco = v.preco ? `R$ ${Number(v.preco).toLocaleString('pt-BR')}` : 'Sob consulta';
